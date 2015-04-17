@@ -1,0 +1,14 @@
+Phase: thirdstep
+Input: Token DNA_purification_reagent
+Options: control = first
+Rule: thirdstep1b
+(
+({Token.string =~ "[Aa]dd"})
+(({Token})[0,10])
+{DNA_purification_reagent.majorType == "reagents"}
+(({Token})*)
+({Token.string == "." })
+):dnapurification1b
+
+--> 
+:dnapurification1b.Dnapurification1b = {type = "dnapurification1b"}

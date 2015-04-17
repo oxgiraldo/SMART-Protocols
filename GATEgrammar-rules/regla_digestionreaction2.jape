@@ -1,0 +1,20 @@
+Phase: secondstep
+Input: Token sample_DNA_extraction digest_reaction_reagent
+Options: control = first
+Rule: secondstep2
+(
+{sample_DNA_extraction.majorType == "samples"}
+(({Token})[0,5])
+({Token.category == "VBD"} | {Token.category == "VBZ"})
+(({Token})[0,8])
+({Token.category == "CD"})
+(({Token})[0,2])
+({Token.category == "NN"})
+(({Token})[0,6])
+{digest_reaction_reagent.majorType == "reagents"}
+(({Token})*)
+({Token.string == "." })
+):digestionreaction2
+
+--> 
+:digestionreaction2.Digestionreaction2 = {type = "digestionreaction2"}

@@ -1,0 +1,14 @@
+Phase: secondstep
+Input: Token cell_disruption_action sample_DNA_extraction digest_reaction_reagent
+Options: control = first
+Rule: secondstep6
+(
+{cell_disruption_action.majorType == "verbs"}
+(({Token})[0,8])
+{sample_DNA_extraction.majorType == "samples"}
+(({Token})[0,5])
+{digest_reaction_reagent.majorType == "reagents"}
+):digestionreaction6
+
+--> 
+:digestionreaction6.Digestionreaction6 = {type = "digestionreaction6"}

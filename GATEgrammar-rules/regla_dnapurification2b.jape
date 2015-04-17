@@ -1,0 +1,18 @@
+Phase: thirdstep
+Input: Token DNA_purification_reagent
+Options: control = first
+Rule: thirdstep2b
+(
+({Token.category == "CD"})
+(({Token})[0,2])
+{DNA_purification_reagent.majorType == "reagents"}
+(({Token})[0,12])
+({Token.category == "VBD"} | {Token.category == "VBZ"})
+(({Token})[0,2])
+({Token.category == "VBN"})
+(({Token})*)
+({Token.string == "."})
+):dnapurification2b
+
+--> 
+:dnapurification2b.Dnapurification2b = {type = "dnapurification2b"}

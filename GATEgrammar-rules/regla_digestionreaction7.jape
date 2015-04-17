@@ -1,0 +1,13 @@
+Phase: secondstep
+Input: Token digest_reaction_reagent
+Options: control = first
+Rule: secondstep7
+(
+({Token.string =~ "[Aa]dd"})
+{digest_reaction_reagent.majorType == "reagents"}
+(({Token})*)
+({Token.string == "." })
+):digestionreaction7
+
+--> 
+:digestionreaction7.Digestionreaction7 = {type = "digestionreaction7"}

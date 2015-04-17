@@ -1,0 +1,14 @@
+Phase: firststep
+Input: Token cell_disruption_action
+Options: control = first
+Rule: firststep6
+(
+({Token.string == "tissue"} | {Token.string == "tissues"} | {Token.string == "sample"} | {Token.string == "samples"})
+({Token.category == "VBD"} | {Token.category == "VBZ"})
+{cell_disruption_action.majorType == "verbs"}
+(({Token})[0,3])
+{Token.string == "powder"}
+):celldisruption6
+
+--> 
+:celldisruption6.Celldisruption6 = {type = "celldisruption6"}

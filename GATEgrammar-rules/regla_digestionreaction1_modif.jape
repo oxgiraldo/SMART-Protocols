@@ -1,0 +1,16 @@
+Phase: secondstep
+Input: Token digest_reaction_reagent
+Options: control = first
+Rule: secondstep1
+(
+({Token.category == "CD"})
+(({Token})[0,3])
+({Token.category == "NN"})
+(({Token})[0,3])
+{digest_reaction_reagent.majorType == "reagents"}
+(({Token})*)
+({Token.string == "." })
+):digestionreaction1
+
+--> 
+:digestionreaction1.Digestionreaction1 = {type = "digestionreaction1"}

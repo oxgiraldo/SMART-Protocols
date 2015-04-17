@@ -1,0 +1,14 @@
+Phase: firststep
+Input: Token cell_disruption_action cell_disrup_instrument
+Options: control = first
+Rule: firststep2
+(
+{cell_disruption_action.majorType == "verbs"}
+(({Token})[0,6])
+{cell_disrup_instrument.majorType == "instruments"}
+(({Token})*)
+({Token.string == "." })
+):celldisruption2
+
+--> 
+:celldisruption2.Celldisruption2 = {type = "celldisruption2"}

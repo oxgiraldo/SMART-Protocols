@@ -1,0 +1,14 @@
+Phase: firststep
+Input: Token sample_DNA_extraction cell_disrup_instrument
+Options: control = first
+Rule: firststep8
+(
+{sample_DNA_extraction.majorType == "samples"}
+(({Token})[0,12])
+({Token.category == "VBD"} | {Token.category == "VBZ"})
+(({Token})[0,8])
+{cell_disrup_instrument.majorType == "instruments"}
+):celldisruption8
+
+--> 
+:celldisruption8.Celldisruption8 = {type = "celldisruption8"}

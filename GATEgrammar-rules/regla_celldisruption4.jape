@@ -1,0 +1,16 @@
+Phase: firststep
+Input: Token sample_DNA_extraction cell_disrup_instrument cell_disruption_action
+Options: control = first
+Rule: firststep4
+(
+{sample_DNA_extraction.majorType == "samples"}
+(({Token})[0,23])
+{cell_disrup_instrument.majorType == "instruments"}
+(({Token})[0,4])
+{cell_disruption_action.majorType == "verbs"}
+(({Token})*)
+({Token.string == "." })
+):celldisruption4
+
+--> 
+:celldisruption4.Celldisruption4 = {type = "celldisruption4"}
