@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Molecular Cloning | Protocol 9 Print Version</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><!--================== Designed and Developed by WriteDesign =================--><!--======================= Powered by RomeBlack, Inc. =======================--><!--=== Copyright 2000, 2001 Cold Spring Harbor Labs. All Rights Reserved. ===-->
+<META content="" name=keywords>
+<META 
+content="This stage presents a basic plan for capturing a series of images by fluorescent lifetime imaging microscopy. The protocol specifically describes data acquisition for a particular variant of GFP (EGFP) or Oregon Green as a donor fluorophore, but it can be adapted for image acquisition of other chromophore systems as described in the table below. This protocol was provided by Alisa G. Harpur and Philippe I.H. Bastiaens (Imperial Cancer Research Fund, London)." 
+name=description>
+<META content="MSHTML 5.50.4134.600" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff background=../izo/fon.gif>
+<table width=600 border="0" cellspacing="0" cellpadding="0"><tr><td width=600><IMG height=49 hspace=4 src="../izo/logo_csh.gif" 
+width=169 align=left vspace=4><IMG height=49 hspace=4 
+src="../izo/print_header.gif" width=293 align=left vspace=4><BR 
+clear=all><BR><FONT face="arial,verdana, helvetica" size=4><STRONG>Chapter 18, 
+Protocol 9</STRONG></FONT><BR><BR clear=all><FONT face=arial,verdana,helvetica 
+size=3><STRONG>Probing Protein Interactions Using GFP and FRET<BR>Stage 3: 
+FLIM-FRET Measurements</STRONG></FONT><BR><BR><FONT 
+face="arial,verdana, helvetica" size=2>This stage presents a basic plan for 
+capturing a series of images by fluorescent lifetime imaging microscopy. The 
+protocol specifically describes data acquisition for a particular variant of GFP 
+(EGFP) or Oregon Green as a donor fluorophore, but it can be adapted for image 
+acquisition of other chromophore systems as described in the table below. This 
+protocol was provided by Alisa G. Harpur and Philippe I.H. Bastiaens (Imperial 
+Cancer Research Fund, London).</FONT> <BR><BR>
+<TABLE border=1>
+  <TBODY>
+  <TR>
+    <TD width=700><IMG height=11 alt=CSH hspace=4 src="../izo/triangle.gif" 
+      width=11 border=0><FONT face=arial,verdana,helvetica 
+      size=2><STRONG>CAUTION</STRONG></FONT><BR><IMG height=12 alt="" hspace=4 
+      src="../izo/circle.gif" width=12 border=0><FONT 
+      face="arial,verdana, helvetica" size=2> <STRONG>RECIPE</STRONG></FONT> 
+  </TD></TR></TBODY></TABLE><BR><BR><FONT face=arial,verdana,helvetica 
+size=3><STRONG>MATERIALS</STRONG></FONT><BR><BR>
+<TABLE cellPadding=0 cellborder="0">
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=left><FONT face="arial,verdana, helvetica" 
+      size=2><STRONG>Cells and Tissues</STRONG></FONT> </TD></TR>
+  <TR>
+    <TD vAlign=top><FONT face="arial,verdana, helvetica" size=2>Cells (live or 
+      fixed) expressing the probe proteins, prepared as described in <A href="08.htm">Chapter 
+      18, Protocol 8</A> Stage 2</FONT> </TD></TR>
+  <TR>
+    <TD vAlign=top><FONT face="arial,verdana, helvetica" size=2><BR><IMG 
+      src="../izo/chapt18_5.gif"></FONT> </TD></TR>
+  <TR>
+    <TD><IMG height=10 src="../izo/spacer.gif" width=1 
+  border=0></TD></TR></TBODY></TABLE><BR><BR><FONT 
+face="arial,verdana,&#13;&#10;    helvetica" 
+size=3><STRONG>METHOD</STRONG></FONT> <BR><FONT face="arial,verdana, helvetica" 
+color=#000000 size=2>
+<OL>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Select the 
+  488-nm excitation wavelength on the argon laser by adjusting the wavelength 
+  selector prism. Optimize the output power by fine tuning the position of the 
+  high-reflector mirror using the control knobs at the back of the laser. 
+</FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Set the 
+  frequency synthesizer to drive the AOM to approx. 40 MHz at a resonance 
+  frequency (for the experiments described herein, a driving frequency of 40.112 
+  MHz is used). This gives rise to intensity oscillations in the laser light 
+  beam at twice the driving frequency (80.224 MHz). </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Optimize the 
+  diffraction in the AOM and thereby the modulation depth by adjusting the angle 
+  of incidence and monitoring the intensity of the undiffracted zero order beam 
+  with a power meter. The optimal angle of diffraction (corresponding to maximal 
+  diffraction) gives rise to a minimum in the output power of the zero-order 
+  beam. </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Turn on the MCP 
+  and the CCD. Set the bias of the photocathode voltage to -2 V and adjust the 
+  gain to match the full dynamic range on the CCD. This is dependent on the 
+  fluorescence intensity of the sample and must be determined empirically. 
+  Ideally, keep the gain as low as possible to reduce noise. Typically, the gain 
+  is set at 1 for the Hamamatsu C5825, with the gain of the Photometrics Quantix 
+  CCD set at 3. Set the readout of the CCD to 2 x 2 binning. </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Set the master 
+  frequency synthesizer driving the MCP to a value exactly double (for the above 
+  example: 80.224 MHz) that driving the AOM. </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Choose the most 
+  suitable objective for the experiment. For this example, a Zeiss Fluar 
+  100x/1.4 NA oil objective is used. </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>To obtain a 
+  zero lifetime reference image, record a cycle of 16 phase-dependent images, 
+  each separated by 22.5° from a strong scatterer (e.g., a small piece of 
+  aluminum foil placed on the imaging surface of a coverslip or glass bottom 
+  dish). 
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>a.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Exchange the 
+        fluorescence filter set for a half-silvered mirror and reduce the 
+        intensity of the incident beam to a minimum with a variable density 
+        filter wheel. Adjust the focus on the foil 
+        surface.<BR><B>IMPORTANT</B><I> When setting up the foil image, take 
+        extreme care not to look directly into the microscope occular until the 
+        incident laser source has been reduced to a minimum.</I></FONT></TD></TR>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>b.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Take a single 
+        image of the aluminum foil with an exposure time of approx. 100 msec. 
+        This image is taken to select an ROI and to gauge the likely exposure 
+        time required. Because the phase of the master frequency synthesizer may 
+        not be at a maximum, and to avoid saturation of the detector, select an 
+        exposure time that generates approx. 1000 counts.</FONT></TD></TR>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>c.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Record a cycle 
+        of 16 phase images, each separated by 22.5°. Determine the phase setting 
+        at which maximum intensity is reached in the image series. Reset this 
+        phase to zero degrees on the master frequency synthesizer.</FONT></TD></TR>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>d.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Record another 
+        cycle of 16 phase images from the foil to save as a zero lifetime 
+        reference.<BR><I>While performing lifetime imaging, we recommend that 
+        phase stability be monitored over time. In our setup, the phase is 
+        stable within 0.3° during a period of 1 hour. For our setup, a reference 
+        foil sequence is recorded and saved each 
+  hour.</I></FONT></TD></TR></TBODY></TABLE></FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Restore the 
+  incident excitation source to a maximum (using the variable density filter 
+  wheel); the system is now ready for the acquisition of cell imaging data. 
+  </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Acquire a donor 
+  image using the GFP filter set (Dichroic: Q495LP, emission: HQ510/20). Select 
+  an exposure time such that 75% of the dynamic range of the CCD (3000 counts 
+  for a 12-bit CCD) is filled. Select a region of interest in the image on which 
+  to measure fluorescence lifetimes. </FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Create a donor 
+  fluorescence lifetime map: 
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>a.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Take two 
+        contiguous series of 16 phase-dependent images (45° phase-stepped), one 
+        forward and one reverse cycle to correct for photobleaching. Optimize 
+        the set exposure time for each phase image as in Step 9.</FONT></TD></TR>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>b.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>Take an 
+        additional image in the absence of sample illumination. This background 
+        offset image is subtracted from all phase images in the series. Each of 
+        the pairs of equivalent phase images of the forward and reverse cycles 
+        are then summed to first-order to correct for bleaching of the 
+        donor.</FONT></TD></TR>
+    <TR>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>c.</FONT></TD>
+      <TD vAlign=top><FONT face=arial,verdana,helvetica size=2>From these data 
+        and the zero lifetime reference (foil), calculate a donor fluorescence 
+        lifetime map as described in the discussion on Image Processing in the 
+        protocol introduction, pages 18.75-18.78 in the print version of the 
+        manual.</FONT></TD></TR></TBODY></TABLE></FONT>
+  <LI><FONT face="arial,verdana, helvetica" color=#000000 size=2>Record an image 
+  of the acceptor, and then photobleach the acceptor by changing to the 100-W 
+  mercury arc lamp (Zeiss Attoarc) as a source of illumination. Move the Cy3 
+  filter set (excitation: HQ545/30, dichroic: Q565LP, emission: HQ610/75 chroma) 
+  into the detection path. Take an image of the acceptor by optimizing the 
+  exposure time to occupy the full dynamic range of the CCD. Close the detector 
+  port and illuminate the acceptor until there is no discernible Cy3 
+  fluorescence.<BR><I>When performing acceptor photobleaching experiments, it is 
+  crucial to establish that there is no fluorescence from the photoproduct of 
+  the photobleached acceptor in the donor channel.</I> 
+</FONT></LI></OL></FONT><BR><BR><BR><BR><BR><BR>
+<OL></OL><BR><BR><BR><BR><BR><FONT face=Arial,Verdana,Helvetica 
+size=1><STRONG>Copyright © 2000 by Cold Spring Harbor Laboratory Press. All 
+rights reserved.</STRONG><BR>No part of these pages, either text or image may be 
+used for any purpose other than personal use. Therefore, reproduction 
+modification, storage in a retrieval system or retransmission, in any form or by 
+any means, electronic, mechanical, or otherwise, for reasons other than personal 
+use, is strictly prohibited without prior written 
+permission.</FONT><BR><BR>
+</td></tr></table>
+</BODY></HTML>

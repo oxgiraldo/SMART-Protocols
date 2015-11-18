@@ -1,0 +1,104 @@
+Extraction of total RNA from fresh/frozen tissue (FT)   
+
+
+Kim M. Linton1,5*, Yvonne Hey2*, Sian Dibben2, Crispin J. Miller3, Anthony J. Freemont4, John A. Radford1,5, and Stuart D. Pepper2 
+1Cancer Research UK Department of Medical Oncology, The Christie NHS Foundation Trust, Manchester, UK, 2Molecular Biology Core Facility, Cancer Research UK, Paterson Institute for Cancer Research, The University of Manchester, Manchester, UK, 3Applied Computational Biology and Bioinformatics Group, Cancer Research UK, Paterson Institute for Cancer Research, The University of Manchester, Manchester, UK, 4School of Clinical & Laboratory Sciences, The University of Manchester, Manchester, UK, and 5School of Cancer and Imaging Sciences, The University of Manchester, Manchester, UK 
+
+* K.L. and Y.H. contributed equally to this work. 
+Peer-reviewed,author-submitted protocol Published in November 2009 (p.53) DOI: 10.2144/000113260
+
+
+Protocol overview
+
+• The extraction method (steps 2–21) is taken from the method supplied with TRIzol reagent (Invitrogen, Paisley, UK).
+
+• Recover tumor tissue at the time of surgery, trim into 1-cm3 fragments, and immerse immediately in TRIzol reagent prior to freezing at -80°C.
+
+• Thaw and weigh tissue prior to RNA extraction, working quickly.
+
+• Use a tissue power homogenizer (or a mortar and pestle) to homogenize tissue by hand.
+
+• All centrifugation steps are carried out at 4°C.
+
+
+Procedure
+
+1. Prior to RNA extraction:
+
+a. Autoclave or wash equipment (i.e., tissue storage container, homogenizer blades, forceps, scalpel holder) in Neutracon solution for 2–4 h.
+
+b. Rinse equipment well in 1% SDS (prepared using DEPC-treated or other nuclease-free water).
+
+c. Rinse in 100% ethanol and leave to air-dry.
+
+2. Weigh thawed sample to determine quantity of TRIzol reagent required (use 1 mL TRIzol per 50–100 mg of tissue).
+
+3. Homogenize sample using tissue homogenizer.
+
+4. Centrifuge at 12,000x g for 10 min.
+
+5. Transfer cleared homogenate to fresh tube; discard insoluble material and upper fat layer, if present.
+
+6. Incubate homogenized sample at room temperature for 5 min.
+
+7. Add 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly.
+
+8. Shake vigorously by hand for 15 s.
+
+9. Incubate at room temperature for 3 min.
+
+10. Centrifuge at 12,000x g for 15 min.
+
+11. Transfer aqueous phase (colorless upper phase) to a new tube.
+
+12. Retain organic phase for DNA/protein extraction, if required (store at -20°C).
+
+13. Add 0.5 mL isopropyl alcohol per 1 mL TRIzol.
+
+14. Incubate at room temperature for 10 min.
+
+15. Centrifuge at 12,000x g for 10 min (RNA forms a gel-like pellet on the side and bottom of the tube; discard the supernatant).
+
+16. Add 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s.
+
+17. Centrifuge at 7500x g for 5 min.
+
+18. Air-dry RNA pellet for 5–10 min.
+
+19. Add 20 µL RNase-free water and mix by gentle pipetting.
+
+20. Incubate at 60°C for 10 min.
+
+21. Store RNA in labeled tube at -80°C until required.
+
+
+Reagents
+
+• TRIzol (Invitrogen)
+
+• Neutracon (Decon, East Sussex, UK)
+
+• Chloroform (Sigma-Aldrich, Poole, Dorset, UK)
+
+• Ethyl alcohol (Sigma-Aldrich)
+
+• Isopropyl alcohol (Sigma-Aldrich)
+
+• DEPC-free water (Sigma-Aldrich)
+
+• RNase-free water (Ambion, Huntingdon, Cambridgeshire, UK)
+
+
+Equipment
+
+• Tissue storage container
+
+• Homogenizer blades
+
+• Forceps
+
+• Scalpel
+
+• Scalpel holder
+
+Address correspondence to Kim Linton, Cancer Research UK Department of Medical Oncology, The Christie NHS Foundation Trust, Wilmslow Road, Withington M20 4BX, Manchester, UK. email: kim.linton@christie.nhs.uk
