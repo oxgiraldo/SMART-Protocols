@@ -1,0 +1,1989 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+<style type="text/css">
+		/*
+		   This template uses the W3C css for working drafts, with small modiications.
+		   Original copyright:
+		   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+		   The following software licensing rules apply:
+		   http://www.w3.org/Consortium/Legal/copyright-software */
+
+		/* $Id: base.css,v 1.26 2012/08/31 21:24:31 ijacobs Exp $ */
+
+		body {
+		  padding: 2em 1em 2em 70px;
+		  margin: 0;
+		  font-family: sans-serif;
+		  color: black;
+		  background: white;
+		  background-position: top left;
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+		}
+		:link { color: #00C; background: transparent }
+		:visited { color: #609; background: transparent }
+		a:active { color: #C00; background: transparent }
+
+		a:link img, a:visited img { border-style: none } /* no border on img links */
+
+		a img { color: white; }        /* trick to hide the border in Netscape 4 */
+		@media all {                   /* hide the next rule from Netscape 4 */
+		  a img { color: inherit; }    /* undo the color change above */
+		}
+
+		th, td { /* ns 4 */
+		  font-family: sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 { text-align: left }
+		/* background should be transparent, but WebTV has a bug */
+		h1, h2, h3 { color: #005A9C; background: white }
+		h1 { font: 170% sans-serif }
+		h2 { font: 140% sans-serif }
+		h3 { font: 120% sans-serif }
+		h3 {
+			border-bottom: 1px solid navy;
+			margin-top: 3px;
+			padding-bottom: 5px;
+		}
+		h4 { font: bold 100% sans-serif }
+		h5 { font: italic 100% sans-serif }
+		h6 { font: small-caps 100% sans-serif }
+
+		.hide { display: none }
+
+		div.head { margin-bottom: 1em }
+		div.head h1 { margin-top: 2em; clear: both }
+		div.head table { margin-left: 2em; margin-top: 2em }
+
+		p.copyright { font-size: small }
+		p.copyright small { font-size: small }
+
+		@media screen {  /* hide from IE3 */
+		a[href]:hover { background: #ffa }
+		}
+
+		pre { margin-left: 2em }
+		
+		p {
+		  margin-top: 0.6em;
+		  margin-bottom: 0.6em;		  
+		  text-align: justify;
+		}
+		
+		dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+		dt { font-weight: bold }
+
+		ul.toc, ol.toc {
+		  list-style: disc;		/* Mac NS has problem with 'none' */
+		  list-style: none;
+		}
+
+		@media aural {  
+		  h1, h2, h3 { stress: 20; richness: 90 }
+		  .hide { speak: none }
+		  p.copyright { volume: x-soft; speech-rate: x-fast }
+		  dt { pause-before: 20% }
+		  pre { speak-punctuation: code } 
+		}
+		
+		/*Additional css*/
+		.hlist {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			padding: 5px;
+		}
+		.hlist li {
+			display: inline-table;
+			list-style-type: none;
+			padding-right: 20px;
+		}
+		.backlink {
+			background-color: #F4FFFF;
+			border: 1px dotted navy;
+			color: black;
+			float: right;
+			font-size: 10pt;
+			padding: 2px;
+			text-align: right;
+		}
+		.entity {
+			border: 1px solid navy;
+			margin: 5px 0;
+			padding: 5px;
+		}
+		table {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			margin: 20px;
+		}
+		table {
+			text-align: center;
+			vertical-align: middle;
+		}
+		table td {
+			padding: 5px 15px;
+			text-align: left;
+		}
+		table th {
+			background-color: LightGoldenRodYellow;
+		}
+		pre {
+			background-color: #F9F9F9;
+			border: 1px dashed #2F6FAB;
+			color: black;
+			line-height: 1.1em;
+			padding: 1em;
+		}
+		</style>
+		</head>
+		<body><div class="head">
+            <h1>SMART Protocols Ontology: Workflow Module</h1>
+						<h2>Release 1 July 2013</h2>
+						</head><dl>
+							<dt>This version:</dt>
+							<dd><a href="http://vocab.linkeddata.es/sp/version/sp-workflow01072013.htm">http://vocab.linkeddata.es/sp/version/sp-workflow01072013.htm</a></dd>
+							</dl><dl><dt>Latest version:</dt>
+								<dd><a href="http://purl.org/net/SMARTprotocol">http://purl.org/net/SMARTprotocol</a></dd>
+							</dl><dl>
+							<dt>Revision</dt>
+								<dd>Revision 2.0</dd>
+                                </dl><dl><dt>Authors:</dt>
+                                <dd><a href="http://oxgiraldo.wordpress.com">Olga Giraldo</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                </dl><dl><dt>Contributors:</dt>
+                                <dd><a href="http://delicias.dia.fi.upm.es/members/DGarijo/">Daniel Garijo</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                <dd><a href="http://www.dia.fi.upm.es/index.php?page=oscar-corcho/">Oscar Corcho</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>
+                                <dd><a href="http://www.alexandergarcia.name/">Alexander Garcia</a>,  Linkingdata I/O LLC, Fort Collins, Colorado</dd>
+                                </dl><dl>
+                                                <dt>Imported Ontologies:</dt>
+                                                <dd><a href="http://www.ifomis.org/bfo">The Basic Formal Ontology (BFO)</a> </dd>
+                                                <dd><a href="http://obofoundry.org/ro/">OBO Relation Ontology (RO)</a> </dd>
+                                                <dd><a href="http://obi-ontology.org/page/OBI_Minimal_metadata">OBI Minimal Metadata</a> </dd>
+                                                </dl>
+								<dt>Extended Ontologies:</dt>          
+                                                <dd><a href="http://purl.org/net/p-plan#">The P-plan Ontology(P-Plan)</a> </dd>
+                                
+								</dl>
+						</div>
+						<hr>
+						<h2>Abstract</h2>
+							<p>The workflow module of SMART Protocols is expressed in OWL DL. This ontology aims to provide a structured vocabulary of concepts to represent the execution of experimental protocols in life sciences.</p>							
+							<p style="text-align: center;"> <b>The OWL encoding for Version 2.0 of the SMART Protocols-Workflow Module can be found <a href="wfProtocolV2.0.owl"> here </a></b></p>
+						<div id="toc">
+						<h2>Table of Contents</h2><ul><li>
+                            <a href="#namespacedeclarations">1. Namespace declarations</a></li><li>
+							<a href="#ontOverview">2. SMART Protocol-Workflow Overview</a></li><li>
+							<a href="#ontDescription">3. SMART Protocol-Workflow Description</a></li>
+                            <a href="#ontUseCase">4. Use Case</a></li>
+							<li><a href="#crossReference">5. Cross reference for SMART Protocol-Workflow classes, properties and dataproperties</a></li>
+							<ul>
+								<li><a href="#classes">5.1 Classes</a></li>
+								<li><a href="#objectproperties">5.2 Object Properties</a></li>
+								<!--<li><a href="#dataproperties">5.3 Data Properties</a></li>-->
+							</ul>
+							<li>
+							<a href="#references">6. References</a></li><li>
+							<a href="#acknowledgements">7. Acknowledgements</a></li>
+							</ul>
+						</div>
+						<div id="namespacedeclarations">
+						<h2>1. Namespace declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+						</p><div id="ns" align="center">
+						 <table>
+							<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+							<tbody>
+                                <tr><td><b>sp</b></td><td>&lt;http://purl.org/net/SMARTprotocol#&gt;</td></tr>
+								<tr><td><b>bfo</b></td><td>&lt;http://www.ifomis.org/bfo/1.1#&gt;</td></tr>
+                                <tr><td><b>exact</b></td><td>&lt;http://www.owl-ontologies.com/Ontology1184060740.owl#&gt;</td></tr>
+                                <tr><td><b>mgedo</b></td><td>&lt;http://mged.sourceforge.net/ontologies/MGEDOntology.owl#&gt;</td></tr>
+                                <tr><td><b>npo</b></td><td>&lt;http://purl.bioontology.org/ontology/npo#&gt;</td></tr>
+                                <tr><td><b>iao</b></td><td>&lt;http://purl.obolibrary.org/obo/IAO&gt;</td></tr>
+                                <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+                                <tr><td><b>p-plan</b></td><td>&lt;http://purl.org/net/p-plan#&gt;</td></tr>
+                                <tr><td><b>ro</b></td><td>&lt;http://www.obofoundry.org/ro/ro.owl#&gt;</td></tr>
+                                <tr><td><b>so</b></td><td>&lt;http://purl.org/obo/owl/SO#&gt;</td></tr>
+                                <tr><td><b>Thesaurus</b></td><td>&lt;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#&gt;</td></tr>
+							</tbody>
+						  </table>
+						  </div>
+						</div>
+						
+						<div id="ontOverview">
+						<h2>2. SMART Protocol-Workflow Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+						
+						<p>The workflow module of SMART Protocols extends <a href="http://www.opmw.org/model/p-plan10112012/"> P-Plan</a> to represent the workflow aspects in the protocol. The next tables summarize the classes and properties that have been used to extend or complement the P-Plan terms to our domain. No dataproperties are included, because SMART Protocols doesn't define any:</p>
+						<h4>Classes</h4>
+						<ul class="hlist">
+							<li>
+                                <a href="#AgaroseGelElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol">sp:AgaroseGelElectrophoresisProtocol</a>
+							</li>
+							<li>
+                                <a href="#AgaroseInGelState" title="http://purl.org/net/SMARTprotocol#AgaroseInGelState">sp:AgaroseInGelState</a>
+							</li>
+							<li>
+                                <a href="#AgaroseInLiquidState" title="http://purl.org/net/SMARTprotocol#AgaroseInLiquidState">sp:AgaroseInLiquidState</a>
+							</li>
+							<li>
+                                <a href="#AnalyzedDataSet" title="http://purl.org/net/SMARTprotocol#AnalyzedDataSet">sp:AnalyzedDataSet</a>
+							</li>
+							<li>
+                                <a href="#AnalyzingSampleData" title="http://purl.org/net/SMARTprotocol#AnalyzingSampleData">sp:AnalyzingSampleData</a>
+							</li>
+							<li>
+                                <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+							</li>
+							<li>
+                                <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+							</li>
+							<li>
+                                <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+							</li>
+							<li>
+                                <a href="#CastingTheGel" title="http://purl.org/net/SMARTprotocol#CastingTheGel">sp:CastingTheGel</a>
+							</li>
+							<li>
+                                <a href="#CellDisruption" title="http://purl.org/net/SMARTprotocol#CellDisruption">sp:CellDisruption</a>
+							</li>
+							<li>
+                                <a href="#ChoosingPCRReactionCondition" title="http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition">sp:ChoosingPCRReactionCondition</a>
+							</li>
+							<li>
+                                <a href="#ChoosingTargetSubstrateAndPCRPrimer" title="http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer">sp:ChoosingTargetSubstrateAndPCRPrimer</a>
+							</li>
+							<li>
+                                <a href="#DNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#DNAExtractionProcedure">sp:DNAExtractionProcedure</a>
+							</li>
+							<li>
+                                <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+							</li>
+							<li>
+                                <a href="#DNAPellet" title="http://purl.org/net/SMARTprotocol#DNAPellet">sp:DNAPellet</a>
+							</li>
+							<li>
+                                <a href="#DNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize">sp:DNASeparatedByMolecularSize</a>
+							</li>
+							<li>
+                                <a href="#ElectrophoresisProcedure" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure">sp:ElectrophoresisProcedure</a>
+							</li>
+							<li>
+                                <a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+							</li>
+							<li>
+                                <a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+							</li>
+							<li>
+                                <a href="#EnzymaticAmplificationProcedure" title="http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure">sp:EnzymaticAmplificationProcedure</a>
+							</li>
+							<li>
+                                <a href="#ExtractionBuffer" title="http://purl.org/net/SMARTprotocol#ExtractionBuffer">sp:ExtractionBuffer</a>
+							</li>
+							<li>
+                                <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+							</li>
+							<li>
+			    <a href="#DigestionReaction" title="http://purl.org/net/SMARTprotocol#DigestionReaction">sp:DigestionReaction</a>
+							</li>
+							<li>
+			   <a href="#DigestedContaminant" title="http://purl.org/net/SMARTprotocol#DigestedContaminant">sp:DigestedContaminant</a>
+							</li>
+							<li>
+			   <a href="#DNAPurification" title="http://purl.org/net/SMARTprotocol#DNAPurification">sp:DNAPurification</a>
+							</li>
+							<li>
+                                <a href="#LoadingAndRunningTheGel" title="http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel">sp:LoadingAndRunningTheGel</a>
+							</li>
+							<li>
+                                <a href="#NucleicAcidExtractionProcedure" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure">sp:NucleicAcidExtractionProcedure</a>
+							</li>
+							<li>
+                                <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+							</li>
+							<li>
+                                <a href="#PCRProgram" title="http://purl.org/net/SMARTprotocol#PCRProgram">sp:PCRProgram</a>
+							</li>
+							<li>
+                                <a href="#PlantTissue" title="http://purl.org/net/SMARTprotocol#PlantTissue">sp:PlantTissue</a>
+							</li>
+							<li>
+                                <a href="#PlantTissueHarvestProcedure" title="http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure">sp:PlantTissueHarvestProcedure</a>
+							</li>
+							<li>
+                                <a href="#PolimeraseChainReactionProcedure" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure">sp:PolimeraseChainReactionProcedure</a>
+							</li>
+							<li>
+                                <a href="#PolimeraseChainReactionProtocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+							</li>
+							<li>
+                                <a href="#PowderedTissue" title="http://purl.org/net/SMARTprotocol#PowderedTissue">sp:PowderedTissue</a>
+							</li>
+							<li>
+                                <a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+							</li>
+							<li>
+                                <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+							</li>
+							<li>
+                                <a href="#ProcessedRNA" title="http://purl.org/net/SMARTprotocol#ProcessedRNA">sp:ProcessedRNA</a>
+							</li>
+							<li>
+                                <a href="#Protein-FreeDNA" title="http://purl.org/net/SMARTprotocol#Protein-FreeDNA">sp:Protein-FreeDNA</a>
+							</li>
+							<li>
+                                <a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+							</li>
+							<li>
+                                <a href="#RawDataSet" title="http://purl.org/net/SMARTprotocol#RawDataSet">sp:RawDataSet</a>
+							</li>
+							<li>
+                                <a href="#RNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#RNAExtractionProcedure">sp:RNAExtractionProcedure</a>
+							</li>
+							<li>
+                                <a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+							</li>
+							<li>
+                                <a href="#RNA-FreeDNA" title="http://purl.org/net/SMARTprotocol#RNA-FreeDNA">sp:RNA-FreeDNA</a>
+							</li>
+							<li>
+                                <a href="#RNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize">sp:RNASeparatedByMolecularSize</a>
+							</li>
+							<li>
+                                <a href="#SettingUpThePCRReaction" title="http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction">sp:SettingUpThePCRReaction</a>
+							</li>
+							<li>
+                                <a href="#StainedDNA" title="http://purl.org/net/SMARTprotocol#StainedDNA">sp:StainedDNA</a>
+							</li>
+							</ul>
+						<h4>Object properties</h4>
+						<ul class="hlist">
+							<li>
+                                <a href="#hasProtocol" title="http://purl.org/net/SMARTprotocol#hasProtocol">sp:hasProtocol</a>
+							</li>
+						</ul>						
+						
+						</div>
+						<div id="ontDescription">
+							<h2>3. SMART Protocol-Workflow Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+							<p>
+							The workflow module of SMART Protocols intends to be compatible with other formalisms, to share and reuse already formalized knowledge. For example it reuses classes from <a href="http://www.ebi.ac.uk/chebi/"> CHEBI</a>, <a href="http://mged.sourceforge.net/ontologies/MGEDontology.php"> MGDEO</a>, <a href="http://www.sequenceontology.org/"> SO</a>, <a href="http://obi-ontology.org/page/Main_Page"> OBI</a>  and <a href="http://www.nano-ontology.org/"> NPO</a>.
+                            Besides, SMART Protocols-workflow extending the <a href="http://www.opmw.org/model/p-plan10112012/"> P-plan</a>, an ontology developed to describe scientific processes as plans and link them to their past executions. In the workflow module of SMART Protocols the experimental protocol, as a <a href="http://purl.org/net/p-plan#Plan"> p-plan:Plan</a>, is a description of a sequence of operations (<a href="http://purl.org/net/p-plan#Step"> p-plan:Step</a>), that includes an input and an output (<a href="http://purl.org/net/p-plan#Variable"> p-plan:Variable</a>), in this sense a protocol is a type of workflow (<a href="#fig1">Figure 1</a>).
+							</p>
+							<div align="center" id="fig1">
+								<img src="Imagenes/figure4.png"></src>
+                                    <div> <a href="#fig1">Figure 1: </a> Extending the P-plan ontology to represent experimental protocols in life sciences. The sp prefix indicates the terms proposed by the smart protocols ontology
+                                    </div>
+                        </div>
+                        <div id="ontUseCase">
+                        <h2>4. Use Case <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+                        
+                        <p>DNA extraction is a procedure frequently used to collect DNA for subsequent molecular or forensic analysis. DNA extraction includes three basic <a style="font-family:'Courier New'">p-plan:Steps</a>: i) cell disruption or cell lysis, to expose the DNA within, ii) Digestion reaction (in this step, contaminants such as lipid membrane, proteins and RNA are removed from the DNA solution), and iii) DNA purification. Each one of these steps may include different protocols (or <a style="font-family:'Courier New'">p-plan:Plans</a>) to be executed. For example, the step <a style="font-family:'Courier New'">sp:cell disruption</a> or cell lysis may be achieved by chemical and physical methods - blending, grinding or sonicating the sample. Also, the ontology considers that each step is executed following a predetermined order. For instance, according to the protocol published by CIMMYT, the cell disruption by lyophilization and grinding has an input variable, <a style="font-family:'Courier New'">p-plan:hasInputVar</a>, as well as <a style="font-family:'Courier New'">sp:plant tissue</a>; it also has an output, <a style="font-family:'Courier New'">p-plan:hasOutputVar</a>, and <a style="font-family:'Courier New'">sp:powdered tissue</a>. The next step, <a style="font-family:'Courier New'">sp:digestion reaction</a>, has as input the output of the immediately previous step, <a style="font-family:'Courier New'">sp:powdered tissue</a>, and as output <a style="font-family:'Courier New'">sp:digested contaminant</a>. The last one, <a style="font-family:'Courier New'">sp:DNA purification</a> has as input <a style="font-family:'Courier New'">sp:digested contaminant</a>, and as output <a style="font-family:'Courier New'">obi:DNA extract</a> (<a href="#fig2">Figure 2</a>).
+                            </p>
+                            <div align="center" id="fig2">
+								<img src="Imagenes/figure5.png"></src>
+                                    <div> <a href="#fig2">Figure 2: </a> Extending the P-plan ontology to represent experimental protocols in life sciences. The sp prefix indicates the terms proposed by the smart protocols ontology
+                                    </div>
+						</div>
+						<div id="crossReference">
+							<h2>5. Cross reference for SMART Protocol-Workflow classes and properties</h2>
+							This section provides details for each class and property defined by the SMART Protocol-Workflow.
+							<div id="classes">
+<h2>Classes</h2>
+<ul class="hlist">
+<li>
+    <a href="#AgaroseGelElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol">sp:AgaroseGelElectrophoresisProtocol</a>
+</li>
+<li>
+    <a href="#AgaroseInGelState" title="http://purl.org/net/SMARTprotocol#AgaroseInGelState">sp:AgaroseInGelState</a>
+</li>
+<li>
+    <a href="#AgaroseInLiquidState" title="http://purl.org/net/SMARTprotocol#AgaroseInLiquidState">sp:AgaroseInLiquidState</a>
+</li>
+<li>
+    <a href="#AnalyzedDataSet" title="http://purl.org/net/SMARTprotocol#AnalyzedDataSet">sp:AnalyzedDataSet</a>
+</li>
+<li>
+    <a href="#AnalyzingSampleData" title="http://purl.org/net/SMARTprotocol#AnalyzingSampleData">sp:AnalyzingSampleData</a>
+</li>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+</li>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+</li>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+</li>
+<li>
+    <a href="#CastingTheGel" title="http://purl.org/net/SMARTprotocol#CastingTheGel">sp:CastingTheGel</a>
+</li>
+<li>
+    <a href="#CellDisruption" title="http://purl.org/net/SMARTprotocol#CellDisruption">sp:CellDisruption</a>
+</li>
+<li>
+    <a href="#ChoosingPCRReactionCondition" title="http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition">sp:ChoosingPCRReactionCondition</a>
+</li>
+<li>
+    <a href="#ChoosingTargetSubstrateAndPCRPrimer" title="http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer">sp:ChoosingTargetSubstrateAndPCRPrimer</a>
+</li>
+<li>
+    <a href="#DNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#DNAExtractionProcedure">sp:DNAExtractionProcedure</a>
+</li>
+<li>
+    <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+</li>
+<li>
+    <a href="#DNAPellet" title="http://purl.org/net/SMARTprotocol#DNAPellet">sp:DNAPellet</a>
+</li>
+<li>
+    <a href="#DNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize">sp:DNASeparatedByMolecularSize</a>
+</li>
+<li>
+<a href="#DigestionReaction" title="http://purl.org/net/SMARTprotocol#DigestionReaction">sp:DigestionReaction</a>
+</li>
+<li>
+<a href="#DigestedContaminant" title="http://purl.org/net/SMARTprotocol#DigestedContaminant">sp:DigestedContaminant</a>
+</li>
+<li>
+<a href="#DNAPurification" title="http://purl.org/net/SMARTprotocol#DNAPurification">sp:DNAPurification</a>
+</li>
+<li>
+    <a href="#ElectrophoresisProcedure" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure">sp:ElectrophoresisProcedure</a>
+</li>
+<li>
+    <a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+</li>
+<li>
+    <a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+</li>
+<li>
+    <a href="#EnzymaticAmplificationProcedure" title="http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure">sp:EnzymaticAmplificationProcedure</a>
+</li>
+<li>
+    <a href="#ExtractionBuffer" title="http://purl.org/net/SMARTprotocol#ExtractionBuffer">sp:ExtractionBuffer</a>
+</li>
+<li>
+    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+</li>
+<li>
+    <a href="#LoadingAndRunningTheGel" title="http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel">sp:LoadingAndRunningTheGel</a>
+</li>
+<li>
+    <a href="#NucleicAcidExtractionProcedure" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure">sp:NucleicAcidExtractionProcedure</a>
+</li>
+<li>
+    <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+</li>
+<li>
+    <a href="#PCRProgram" title="http://purl.org/net/SMARTprotocol#PCRProgram">sp:PCRProgram</a>
+</li>
+<li>
+    <a href="#PlantTissue" title="http://purl.org/net/SMARTprotocol#PlantTissue">sp:PlantTissue</a>
+</li>
+<li>
+    <a href="#PlantTissueHarvestProcedure" title="http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure">sp:PlantTissueHarvestProcedure</a>
+</li>
+<li>
+    <a href="#PolimeraseChainReactionProcedure" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure">sp:PolimeraseChainReactionProcedure</a>
+</li>
+<li>
+    <a href="#PolimeraseChainReactionProtocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+</li>
+<li>
+    <a href="#PowderedTissue" title="http://purl.org/net/SMARTprotocol#PowderedTissue">sp:PowderedTissue</a>
+</li>
+<li>
+    <a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+</li>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+</li>
+<li>
+    <a href="#ProcessedRNA" title="http://purl.org/net/SMARTprotocol#ProcessedRNA">sp:ProcessedRNA</a>
+</li>
+<li>
+    <a href="#Protein-FreeDNA" title="http://purl.org/net/SMARTprotocol#Protein-FreeDNA">sp:Protein-FreeDNA</a>
+</li>
+<li>
+    <a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+</li>
+<li>
+    <a href="#RawDataSet" title="http://purl.org/net/SMARTprotocol#RawDataSet">sp:RawDataSet</a>
+</li>
+<li>
+       <a href="#RNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#RNAExtractionProcedure">sp:RNAExtractionProcedure</a>
+</li>
+<li>
+    <a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+</li>
+<li>
+    <a href="#RNA-FreeDNA" title="http://purl.org/net/SMARTprotocol#RNA-FreeDNA">sp:RNA-FreeDNA</a>
+</li>
+<li>
+    <a href="#RNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize">sp:RNASeparatedByMolecularSize</a>
+</li>
+<li>
+    <a href="#SettingUpThePCRReaction" title="http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction">sp:SettingUpThePCRReaction</a>
+</li>
+<li>
+    <a href="#StainedDNA" title="http://purl.org/net/SMARTprotocol#StainedDNA">sp:StainedDNA</a>
+</li>
+</ul>
+<div class="entity" id="AgaroseGelElectrophoresisProtocol">
+<a name="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol"/>
+<h3>sp:AgaroseGelElectrophoresisProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol</p>
+<dl class="description">
+<p>Agarose Gel Electrophoresis Protocol is a subclass of ExperimentalProtocol. Agarose Gel Electrophoresis Protocol is a step by step description of a procedure used to separate DNA or RNA molecules by size, achieved by moving negatively charged nucleic acid molecules through an agarose matrix with an electric field.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="AgaroseInGelState">
+<a name="http://purl.org/net/SMARTprotocol#AgaroseInGelState"/>
+<h3>sp:AgaroseInGelState<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AgaroseInGelState</p>
+<dl class="description">
+<p>AgaroseInGelState Is a gel resulting from the polymerization of agarose after heating agarose suspended in some buffer solution.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e315" title="http://purl.bioontology.org/ontology/npo#NPO_1509">npo:GelState</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="AgaroseInLiquidState">
+<a name="http://purl.org/net/SMARTprotocol#AgaroseInLiquidState"/>
+<h3>sp:AgaroseInLiquidState<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AgaroseInLiquidState</p>
+<dl class="description">
+<p>The agarose will be in a liquid state acording to its gelling temperature and concentration.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e297" title="http://purl.bioontology.org/ontology/npo#NPO_1504">npo:LiquidState</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="AnalyzedDataSet">
+<a name="http://purl.org/net/SMARTprotocol#AnalyzedDataSet"/>
+<h3>sp:AnalyzedDataSet<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AnalyzedDataSet</p>
+<dl class="description">
+<p>AnalyzedDataSet is the result of data analysis process. This data can be organized into charts, graphs and tables to better visualize the information.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e515" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#RawDataSet" title="http://purl.org/net/SMARTprotocol#RawDataSet">sp:RawDataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="AnalyzingSampleData">
+<a name="http://purl.org/net/SMARTprotocol#AnalyzingSampleData"/>
+<h3>sp:AnalyzingSampleData<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AnalyzingSampleData</p>
+<dl class="description">
+<p>AnalyzingSampleData is the third basic step in a electrophoresis procedure. This step include the data collection and analysis of sample data.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#RawDataSet" title="http://purl.org/net/SMARTprotocol#RawDataSet">sp:RawDataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#AnalyzedDataSet" title="http://purl.org/net/SMARTprotocol#AnalyzedDataSet">sp:AnalyzedDataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="BasicStepOfDNAExtraction">
+<a name="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction"/>
+<h3>sp:BasicStepOfDNAExtraction<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction</p>
+<dl class="description">
+<p>Basic steps of DNA extraction are the steps commonly used in any DNA extraction protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e1814" title="http://purl.org/net/p-plan#Step">p-plan:Step</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#CellDisruption" title="http://purl.org/net/SMARTprotocol#CellDisruption">sp:CellDisruption</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#DNAPurification" title="http://purl.org/net/SMARTprotocol#DNAPurification">sp:DNAPurification</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#DigestionReaction" title="http://purl.org/net/SMARTprotocol#DigestionReaction">sp:DigestionReaction</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="BasicStepOfElectrophoresis">
+<a name="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis"/>
+<h3>sp:BasicStepOfElectrophoresis<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis</p>
+<dl class="description">
+<p>Basic steps of electrophoresis are the steps commonly used in any electrophoresis protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e1814" title="http://purl.org/net/p-plan#Step">p-plan:Step</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#AnalyzingSampleData" title="http://purl.org/net/SMARTprotocol#AnalyzingSampleData">sp:AnalyzingSampleData</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#CastingTheGel" title="http://purl.org/net/SMARTprotocol#CastingTheGel">sp:CastingTheGel</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#LoadingAndRunningTheGel" title="http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel">sp:LoadingAndRunningTheGel</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="BasicStepOfPCR">
+<a name="http://purl.org/net/SMARTprotocol#BasicStepOfPCR"/>
+<h3>sp:BasicStepOfPCR<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#BasicStepOfPCR</p>
+<dl class="description">
+<p>Basic steps of PCR are the steps commonly used in any PCR protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e1814" title="http://purl.org/net/p-plan#Step">p-plan:Step</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#ChoosingPCRReactionCondition" title="http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition">sp:ChoosingPCRReactionCondition</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#ChoosingTargetSubstrateAndPCRPrimer" title="http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer">sp:ChoosingTargetSubstrateAndPCRPrimer</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#SettingUpThePCRReaction" title="http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction">sp:SettingUpThePCRReaction</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="CastingTheGel">
+<a name="http://purl.org/net/SMARTprotocol#CastingTheGel"/>
+<h3>sp:CastingTheGel<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#CastingTheGel</p>
+<dl class="description">
+<p>This is the first basic step in a electrophoresis procedure. This step include:1) the preparation of the gel matrix, 2) its solidification and 3) place it into electrophoresis apparatus.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#AgaroseInLiquidState" title="http://purl.org/net/SMARTprotocol#AgaroseInLiquidState">sp:AgaroseInLiquidState</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#AgaroseInGelState" title="http://purl.org/net/SMARTprotocol#AgaroseInGelState">sp:AgaroseInGelState</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#AgaroseGelElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol">sp:AgaroseGelElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="CellDisruption">
+<a name="http://purl.org/net/SMARTprotocol#CellDisruption"/>
+<h3>sp:CellDisruption<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#CellDisruption</p>
+<dl class="description">
+<p>Breaking the cells open, is the first basic step in a DNA extraction. This is commonly achieved by chemical and physical methods-blending, grinding or sonicating the sample.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PowderedTissue" title="http://purl.org/net/SMARTprotocol#PowderedTissue">sp:PowderedTissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PlantTissue" title="http://purl.org/net/SMARTprotocol#PlantTissue">sp:PlantTissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ChoosingPCRReactionCondition">
+<a name="http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition"/>
+<h3>sp:ChoosingPCRReactionCondition<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition</p>
+<dl class="description">
+<p>ChoosingPCRReactionCondition is the third basic step in a PCR reaction. The reaction conditions of a PCR amplification are composed of the total number of cycles to be run and the temperature and duration of each step in those cycles. The decision as to how many cycles to run is based upon the amount of DNA target material. In general, 25 to 35 cycles is the standard for a PCR reaction.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PCRProgram" title="http://purl.org/net/SMARTprotocol#PCRProgram">sp:PCRProgram</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Polimerase Chain Reaction Protocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ChoosingTargetSubstrateAndPCRPrimer">
+<a name="http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer"/>
+<h3>sp:ChoosingTargetSubstrateAndPCRPrimer<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer</p>
+<dl class="description">
+<p>This is the first step in a PCR. The choice of the target DNA is dictated by the specific experiment. The choosing of PCR primers is fundamental to avoid amplification of the wrong thing.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e654" title="http://purl.obolibrary.org/obo/OBI_0001051">obi:DNAExtract</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Polimerase Chain Reaction Protocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNAExtractionProcedure">
+<a name="http://purl.org/net/SMARTprotocol#DNAExtractionProcedure"/>
+<h3>sp:DNAExtractionProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNAExtractionProcedure</p>
+<dl class="description">
+<p>A DNAExtractionProcedure is a subclass of NucleicAcidExtractionProcedure where the desired output material is DNA.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#NucleicAcidExtractionProcedure" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure">sp:NucleicAcidExtractionProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNAExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol"/>
+<h3>sp:DNAExtractionProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNAExtractionProtocol</p>
+<dl class="description">
+<p>DNAExtractionProtocol is a subclass of NucleicAcidExtractionProtocol. DNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of DNA from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNAPellet">
+<a name="http://purl.org/net/SMARTprotocol#DNAPellet"/>
+<h3>sp:DNAPellet<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNAPellet</p>
+<dl class="description">
+    <p>DNAPellet is a bfo:MaterialEntity which results from the aggregation of DNA produced by the application of centrifugal force to a liquid containing DNA in suspension.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNASeparatedByMolecularSize">
+<a name="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize"/>
+<h3>sp:DNASeparatedByMolecularSize<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize</p>
+<dl class="description">
+<p>DNASeparatedByMolecularSize is obtained after the aplication of electrical potential to move material through a defined matrix.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DigestionReaction">
+<a name="http://purl.org/net/SMARTprotocol#DigestionReaction"/>
+<h3>sp:DigestionReaction<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DigestionReaction</p>
+<dl class="description">
+<p>Digestion reaction is the DNA extraction stage where are removed membrane lipids, proteins and RNA.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DigestedContaminant" title="http://purl.org/net/SMARTprotocol#DigestedContaminant">sp:DigestedContaminant</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PowderedTissue" title="http://purl.org/net/SMARTprotocol#PowderedTissue">sp:PowderedTissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DigestedContaminant">
+<a name="http://purl.org/net/SMARTprotocol#DigestedContaminant"/>
+<h3>sp:DigestedContaminant<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DigestedContaminant</p>
+<dl class="description">
+    <p>Digested contaminant is a p-plan:Variable. Digested contaminants are all those organelles and biomolecules that result degradated during the digestion reaction in a DNA extraction procedure.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNAPurification">
+<a name="http://purl.org/net/SMARTprotocol#DNAPurification"/>
+<h3>sp:DNAPurification<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNAPurification</p>
+<dl class="description">
+<p>DNA purification is the third basic step in a DNA extraction.  It is a DNA purification from detergents, proteins, salts and reagents used during cell lysis step.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfDNAExtraction" title="http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction">sp:BasicStepOfDNAExtraction</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#DNAExtract" title="http://purl.obolibrary.org/obo/OBI_0001051">obi:DNAExtract</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DigestedContaminant" title="http://purl.org/net/SMARTprotocol#DigestedContaminant">sp:DigestedContaminant</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ElectrophoresisProcedure">
+<a name="http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure"/>
+<h3>sp:ElectrophoresisProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure</p>
+<dl class="description">
+    <p>ElectrophoresisProcedure is a subclass of nci:LaboratoryProcedure. Electrophoresis procedure is a protocol application that uses an electrical potential to move material through a defined matrix in order to separate it by its resistance to movement and its charge.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e241" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294">nci:LaboratoryProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#PlantTissueHarvestProcedure" title="http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure">sp:PlantTissueHarvestProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ElectrophoresisProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol"/>
+<h3>sp:ElectrophoresisProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol</p>
+<dl class="description">
+<p>ElectrophoresisProtocol is a subclass of ExperimentalProtocol. Electrophoresis protocol is a step by step description of an electrophoresis procedure in which are recovered fragments of biomolecules separated by charge.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#AgaroseGelElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol">sp:AgaroseGelElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="EnzimaticAmplificationProtocol">
+<a name="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol"/>
+<h3>sp:EnzimaticAmplificationProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol</p>
+<dl class="description">
+<p>EnzimaticAmplificationProtocol is a subclass of ExperimentalProtocol. Enzimatic amplification protocol, is a step by step description of a procedure about the use of enzymes to increase the number of molecules from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#PolimeraseChainReactionProtocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="EnzymaticAmplificationProcedure">
+<a name="http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure"/>
+<h3>sp:EnzymaticAmplificationProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure</p>
+<dl class="description">
+<p>Enzymatic amplification procedure is a subclass of laboratory procedure that uses enzymes to increase the number of molecules of a biomaterial.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e241" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294">nci:LaboratoryProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#PolimeraseChainReactionProcedure" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure">sp:PolimeraseChainReactionProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#PlantTissueHarvestProcedure" title="http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure">sp:PlantTissueHarvestProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ExtractionBuffer">
+<a name="http://purl.org/net/SMARTprotocol#ExtractionBuffer"/>
+<h3>sp:ExtractionBuffer<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ExtractionBuffer</p>
+<dl class="description">
+    <p>ExtractionBuffer is a subclass of chebi:Buffer. An extraction buffer with correct pH, gets rid of the cell components, but retains the organelles.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e447" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ExperimentalProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
+<h3>sp:ExperimentalProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ExperimentalProtocol</p>
+<dl class="description">
+<p>ExperimentalProtocol is a document. Also ExperimentalProtocol is a subclass of p-plan:Plan. Experimental protocol is a list of instructions to perform an experiment. It is a plan used to duplicate favorable results from a previous test.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e1801" title="http://purl.org/net/p-plan#Plan">p-plan:Plan</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is in range of</dt>
+<dd>
+    <a href="#hasProtocol" title="http://purl.org/net/SMARTprotocol#hasProtocol">sp:hasProtocol</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="LoadingAndRunningTheGel">
+<a name="http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel"/>
+<h3>sp:LoadingAndRunningTheGel<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel</p>
+<dl class="description">
+<p>LoadingAndRunningTheGel is the second basic step in a Electrophoresis procedure. This stage has as input: loading of the samples; and as output: DNA fragments separated acording to their molecular weight.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfElectrophoresis" title="http://purl.org/net/SMARTprotocol#BasicStepsOfElectrophoresis">sp:BasicStepOfElectrophoresis</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#DNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize">sp:DNASeparatedByMolecularSize</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e614" title="http://purl.obolibrary.org/obo/OBI_0000809">obi:AmplifiedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e1131" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e636" title="http://purl.obolibrary.org/obo/OBI_0000880">obi:RNAExtract</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e99" title="http://purl.org/net/p-plan#hasOutputVar">p-plan:hasOutputVar</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e1604" title="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize">sp:RNASeparatedByMolecularSize</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e81" title="http://purl.org/net/p-plan#hasInputVar">p-plan:hasInputVar</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e654" title="http://purl.obolibrary.org/obo/OBI_0001051">obi:DNAExtract</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="NucleicAcidExtractionProcedure">
+<a name="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure"/>
+<h3>sp:NucleicAcidExtractionProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure</p>
+<dl class="description">
+<p>NucleicAcidExtractionProcedure is a subclass of nci:LaboratoryProcedure used to recover the nucleic acid fraction of an input material entity.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e241" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294">nci:LaboratoryProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#DNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#DNAExtractionProcedure">sp:DNAExtractionProcedure</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#RNAExtractionProcedure" title="http://purl.org/net/SMARTprotocol#RNAExtractionProcedure">sp:RNAExtractionProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="NucleicAcidExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol"/>
+<h3>sp:NucleicAcidExtractionProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol</p>
+<dl class="description">
+<p>NucleicAcidExtractionProtocol is a subclass of ExperimentalProtocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PCRProgram">
+<a name="http://purl.org/net/SMARTprotocol#PCRProgram"/>
+<h3>sp:PCRProgram<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PCRProgram</p>
+<dl class="description">
+    <p>PCR Program is a iao:TextualEntity that consists in define a series of 20-40 repeated temperature changes, called cycles, with each cycle commonly consisting of 2-3 discrete temperature steps, usually three (denaturation, annealing and extention).</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e539" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PlantTissue">
+<a name="http://purl.org/net/SMARTprotocol#PlantTissue"/>
+<h3>sp:PlantTissue<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PlantTissue</p>
+<dl class="description">
+    <p>PlantTissue is a bfo:MaterialEntity. Plant tissue is the tissue derived from plants.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e219" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801">nci:Tissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PlantTissueHarvestProcedure">
+<a name="http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure"/>
+<h3>sp:PlantTissueHarvestProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure</p>
+<dl class="description">
+    <p>PlantTissueHarvestProcedure is a subclass of nci:LaboratoryProcedure that may to have one or several protocols associated.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e241" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294">nci:LaboratoryProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ElectrophoresisProcedure" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure">sp:ElectrophoresisProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#EnzymaticAmplificationProcedure" title="http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure">sp:EnzymaticAmplificationProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PolimeraseChainReactionProcedure">
+<a name="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure"/>
+<h3>sp:PolimeraseChainReactionProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure</p>
+<dl class="description">
+<p>PCR is a subclass of EnzymaticAmplificationProcedure. PCR is the process in which a DNA polymerase is used to amplify a piece of DNA by in vitro enzymatic replication. As PCR progresses, the DNA thus generated is itself used as a template for replication. This sets in motion a chain reaction in which the DNA template is exponentially amplified.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#EnzymaticAmplificationProcedure" title="http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure">sp:EnzymaticAmplificationProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PolimeraseChainReactionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol"/>
+<h3>sp:PolimeraseChainReactionProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol</p>
+<dl class="description">
+<p>PCR protocol is a step by step description of the procedure to amplify a particular DNA sequence.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PowderedTissue">
+<a name="http://purl.org/net/SMARTprotocol#PowderedTissue"/>
+<h3>sp:PowderedTissue<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PowderedTissue</p>
+<dl class="description">
+    <p>PowderedTissue is a bfo:MaterialEntity. Powdered tissue is a tissue that has been pulverirized.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e219" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801">nci:Tissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Primer">
+<a name="http://purl.org/net/SMARTprotocol#Primer"/>
+<h3>sp:Primer<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Primer</p>
+<dl class="description">
+<p>A primer is a short strand of nucleic acid that serves as a starting point for DNA or RNA synthesis.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e426" title="http://purl.obolibrary.org/obo/CHEBI_33893">chebi:Reagent</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e2003" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+<a href="#d4e1847" title="http://purl.org/obo/owl/SO#SO_0000121">so:ForwardPrimer</a>
+<sup class="type-c" title="class">c</sup>, <a href="#d4e1870" title="http://purl.org/obo/owl/SO#SO_0000132">so:ReversePrimer</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e369" title="http://purl.obolibrary.org/obo/CHEBI_33695">chebi:InformationBiomacromolecule</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e447" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e588" title="http://purl.obolibrary.org/obo/OBI_0000747">obi:MaterialSample</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e673" title="http://purl.obolibrary.org/obo/OBI_0100026">obi:Organism</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ProcessedDNA">
+<a name="http://purl.org/net/SMARTprotocol#ProcessedDNA"/>
+<h3>sp:ProcessedDNA<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ProcessedDNA</p>
+<dl class="description">
+<p>ProcessedDNA is a DNA that suffers changes during a laboratory procedure.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e351" title="http://purl.obolibrary.org/obo/CHEBI_16991">chebi:DeoxyribonucleicAcid</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#d4e614" title="http://purl.obolibrary.org/obo/OBI_0000809">obi:AmplifiedDNA</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#d4e654" title="http://purl.obolibrary.org/obo/OBI_0001051">obi:DNAExtract</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#DNAInSuspension" title="http://purl.org/net/SMARTprotocol#DNAInSuspension">sp:DNAInSuspension</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#DNAPellet" title="http://purl.org/net/SMARTprotocol#DNAPellet">sp:DNAPellet</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#DNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize">sp:DNASeparatedByMolecularSize</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#StainedDNA" title="http://purl.org/net/SMARTprotocol#StainedDNA">sp:StainedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ProcessedRNA">
+<a name="http://purl.org/net/SMARTprotocol#ProcessedRNA"/>
+<h3>sp:ProcessedRNA<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ProcessedRNA</p>
+<dl class="description">
+<p>ProcessedRNA is a RNA that suffers changes during a laboratory procedure.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e410" title="http://purl.obolibrary.org/obo/CHEBI_33697">chebi:RibonucleicAcid</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#d4e636" title="http://purl.obolibrary.org/obo/OBI_0000880">obi:RNAExtract</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#RNASeparatedByMolecularSize" title="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize">sp:RNASeparatedByMolecularSize</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Protein-FreeDNA">
+<a name="http://purl.org/net/SMARTprotocol#Protein-FreeDNA"/>
+<h3>sp:Protein-FreeDNA<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Protein-FreeDNA</p>
+<dl class="description">
+<p>The Protein-freeDNA is obtained during the third basic step of DNA extraction by adding a protease.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ProteinExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol"/>
+<h3>sp:ProteinExtractionProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol</p>
+<dl class="description">
+<p>ProteinExtractionProtocol is a subclass of Experimental protocol. Protein extraction is an extraction where the desired output material is protein.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RawDataSet">
+<a name="http://purl.org/net/SMARTprotocol#RawDataSet"/>
+<h3>sp:RawDataSet<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RawDataSet</p>
+<dl class="description">
+<p>RawDataSet is an unanalyzed data set; data not yet subjected to analysis.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e515" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#AnalyzedDataSet" title="http://purl.org/net/SMARTprotocol#AnalyzedDataSet">sp:AnalyzedDataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RNAExtractionProcedure">
+<a name="http://purl.org/net/SMARTprotocol#RNAExtractionProcedure"/>
+<h3>sp:RNAExtractionProcedure<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RNAExtractionProcedure</p>
+<dl class="description">
+<p>A RNAExtractionProcedure is a subclass of NucleicAcidExtractionProcedure where the desired output material is RNA</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#NucleicAcidExtractionProcedure" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure">sp:NucleicAcidExtractionProcedure</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RNAExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"/>
+<h3>sp:RNAExtractionProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RNAExtractionProtocol</p>
+<dl class="description">
+<p>RNAExtractionProtocol is a subclass of NucleicAcidExtractionProtocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RNA-FreeDNA">
+<a name="http://purl.org/net/SMARTprotocol#RNA-FreeDNA"/>
+<h3>sp:RNA-FreeDNA<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RNA-FreeDNA</p>
+<dl class="description">
+<p>The RNA-freeDNA is obtained during the fourth basic step of DNA extraction by adding an RNase.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RNASeparatedByMolecularSize">
+<a name="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize"/>
+<h3>sp:RNASeparatedByMolecularSize<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize</p>
+<dl class="description">
+<p>RNASeparatedByMolecularSize is obtained after the aplication of electrical potential to move material through a defined matrix.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedRNA" title="http://purl.org/net/SMARTprotocol#ProcessedRNA">sp:ProcessedRNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SettingUpThePCRReaction">
+<a name="http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction"/>
+<h3>sp:SettingUpThePCRReaction<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction</p>
+<dl class="description">
+<p>SettingUpThePCRReaction is the second basic step in this type of procedure. Here are defined the quantities and/or concentrations of each one of the components reaction (Water, 10x Reaction Buffer, MgCl2, dNTPs, Forward Primer, Reverse Primer, Target DNA and Polymerase enzyme).</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#BasicStepOfPCR" title="http://purl.org/net/SMARTprotocol#BasicStepOfPCR">sp:BasicStepOfPCR</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e118" title="http://purl.org/net/p-plan#isStepOfPlan">p-plan:isStepOfPlan</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PolimeraseChainReactionProtocol" title="http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol">sp:PolimeraseChainReactionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="StainedDNA">
+<a name="http://purl.org/net/SMARTprotocol#StainedDNA"/>
+<h3>sp:StainedDNA<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#StainedDNA</p>
+<dl class="description">
+    <p>StainedDNA is a bfo:MaterialEntity. After the electrophoresis is complete, the molecules in the gel can be stained to make them visible. DNA may be visualized using ethidium bromide which, when intercalated into DNA, fluoresce under ultraviolet light. EtBr is a known mutagen, and safer alternatives are available, such as GelRed, which binds to the minor groove. SYBER Green I is another dsDNA stain. It is 25 times more sensitive, and possibly safer than EtBr, though there is no data addressing its mutagenicity or toxicity in humans. SYBER Safe is a variant of SYBR Green that has been shown to have low enough levels of mutagenicity and toxicity to be deemed nonhazardous waste under U.S. Federal regulations. If the molecules to be separated contain radioactivity, for example in DNA sequencing gel, an autoradiogram can be recorded of the gel. If the molecules to be separated not contain radioactivity in a DNA sequencing gel, it may be visualized using silver nitrate.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#ProcessedDNA" title="http://purl.org/net/SMARTprotocol#ProcessedDNA">sp:ProcessedDNA</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#d4e1830" title="http://purl.org/net/p-plan#Variable">p-plan:Variable</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+</dl>
+</div>
+</div>
+							<div id="objectproperties">
+								<h2>Object Properties</h2>
+								<ul class="hlist">
+								<li>
+                                    <a href="#hasProtocol" title="http://purl.org/net/SMARTprotocol#hasProtocol">sp:hasProtocol</a>
+								</li>
+								</ul>
+								<div class="entity" id="hasProtocol">
+								<a name="http://purl.org/net/SMARTprotocol#hasProtocol"/>
+								<h3>sp:hasProtocol<sup class="type-op" title="object property">op</sup></a>
+								<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+								</span>
+								</h3>
+								<p>
+								<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasProtocol</p>
+								<p>hasProtocol is a relation that binds a laboratory procedure to a Experimental protocol.</p>
+								<div class="description">
+								<dl>
+								<dt>has domain</dt>
+								<dd>
+								<ul>
+								<li>
+								<a href="#d4e241" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294">nci:LaboratoryProcedure</a>
+								<sup class="type-c" title="class">c</sup>
+								</li>
+								</ul>
+								</dd>
+								<dt>has range</dt>
+								<dd>
+								<ul>
+								<li>
+                                    <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+								<sup class="type-c" title="class">c</sup>
+								</li>
+								</ul>
+								</dd>
+								</dl>
+								</div>
+								</div>
+								</div>
+						
+						<div id="references">
+								<h2>6. References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+								<ul>
+                                    <li id="BFO"><b>[BFO]</b>:Robert Arp and Barry Smith. (2008) <a href="http://precedings.nature.com/documents/1941/version/1/files/npre20081941-1.pdf">
+                                        <cite>Function, Role, and Disposition in Basic Formal Ontology</cite></a>. Available from Nature Precedings.</a></li>
+                                    
+                                    <li id="CIMMYT"><b>[CIMMYT]</b>:CIMMYT. (2005) <a href="http://ageconsearch.umn.edu/bitstream/56184/2/abc_amgl.pdf"><cite>Laboratory Protocols: CIMMYT Applied Molecular
+                                        Genetics Laboratory</cite></a>. Third Edition. Mexico, D.F.: CIMMYT.</a></li>
+                                    
+                                    <li id="ChEBI"><b>[ChEBI]</b>:Kirill Degtyarenko, Paula de Matos, Marcus Ennis, Janna Hastings, Martin Zbinden, Alan McNaught, Rafael Alcántara, Michael Darsow, Mickaël Guedj, and Michael Ashburner. (2008) <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238832/"><cite>ChEBI: a database and ontology for chemical entities of biological interest</cite></a>. Nucleic Acids Res.Vol. 36(Database issue), pages D344–D350.</a></li>
+                                    
+                                    <li id="EXACT"><b>[EXACT]</b>: Larisa N. Soldatova, Wayne Aubrey, Ross D. King and Amanda Clare. (2008).
+                                        <cite>The EXACT description of biomedical protocols</cite>.</a> Bioinformatics.Vol. 24 ISMB 2008, pages i295–i303.</a></li>
+                                    
+                                    <li id="MGEDO"><b>[MGEDO]</b>:Whetzel PL, Parkinson H, Causton HC, Fan L, Fostel J, Fragoso G, Game L, Heiskanen M, Morrison N, Rocca-Serra P, Sansone SA, Taylor C, White J, Stoeckert CJ Jr. (2006) <a href="http://www.ncbi.nlm.nih.gov/pubmed/16428806"><cite>The MGED Ontology: a resource for semantics-based description of microarray experiments</cite></a>. Bioinformatics.  Vol. 1; 22(7), pages 866-73.</a></li>
+                                    
+                                    <li id="NCI Thesaurus"><b>[NCI Thesaurus]</b> <a href="http://ncit.nci.nih.gov/"><cite>NCI Thesaurus</cite></a>.</a></li>
+                                    
+                                    <li id="NPO"><b>[NPO]</b> <a href="http://www.nano-ontology.org/"><cite>NPO:NanoParticle Ontology for Cancer Nanotechnology Research</cite></a>.</a></li>
+                                    
+                                    <li id="OBI"><b>[OBI]</b>:Mélanie Courtot, William Bug, Frank Gibson, Allyson L. Lister, James Malone, Daniel Schober, Ryan R. Brinkman and Alan Ruttenberg. (2008) <a href="http://obi.svn.sourceforge.net/viewvc/obi/trunk/docs/papers/owled2008/owled2008eu_submission_38.pdf"><cite>The OWL of Biomedical Investigations</cite></a>. OWLED.</a></li>
+                                    
+                                    <li id="OBO_REL"><b>[OBO_REL]</b>:Barry Smith, Werner Ceusters, Bert Klagges, Jacob Köhler, Anand Kumar, Jane Lomax, Chris Mungall, Fabian Neuhaus, Alan L Rector and Cornelius Rosse. (2005) <a href="http://genomebiology.com/2005/6/5/R46"><cite>Relations in biomedical ontologies</cite></a>. Genome Biology, Vol. 6:R46.</a></li>
+                                    
+                                    <li id="P-Plan"><b>[P-Plan]</b> <a href="http://www.opmw.org/model/p-plan10112012/"><cite>P-Plan Ontology</cite></a>.</a></li>
+                                    
+                                    <li id="SO"><b>[SO]</b>:Karen Eilbeck, Suzanna E Lewis, Christopher J Mungall, Mark Yandell, Lincoln Stein, Richard Durbin and Michael Ashburner. (2005) <a href="http://genomebiology.com/2005/6/5/R44"><cite>The Sequence Ontology: a tool for the unification of genome annotations</cite></a>. Genome Biology, Vol. 6:R44.</a></li>
+								</ul>
+						</div>
+						<div id="acknowledgements">
+								<h2>7. Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+								<p>
+								I would like thank <a href="http://www.oeg-upm.net/"> Ontology Engineering Group</a>, <a href="http://www.wf4ever-project.org/"> Wf4Ever</a> project for supporting this research and Silvio Peroni for developing LODE, tool 
+								used to create part of the cross-reference sections of this document.
+								</p>
+						</div>						
+</body></html>

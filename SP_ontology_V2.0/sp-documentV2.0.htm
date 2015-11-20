@@ -1,0 +1,3131 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+<style type="text/css">
+		/*
+		   This template uses the W3C css for working drafts, with small modiications.
+		   Original copyright:
+		   Copyright 1997-2003 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+		   The following software licensing rules apply:
+		   http://www.w3.org/Consortium/Legal/copyright-software */
+
+		/* $Id: base.css,v 1.26 2012/08/31 21:24:31 ijacobs Exp $ */
+
+		body {
+		  padding: 2em 1em 2em 70px;
+		  margin: 0;
+		  font-family: sans-serif;
+		  color: black;
+		  background: white;
+		  background-position: top left;
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+		}
+		:link { color: #00C; background: transparent }
+		:visited { color: #609; background: transparent }
+		a:active { color: #C00; background: transparent }
+
+		a:link img, a:visited img { border-style: none } /* no border on img links */
+
+		a img { color: white; }        /* trick to hide the border in Netscape 4 */
+		@media all {                   /* hide the next rule from Netscape 4 */
+		  a img { color: inherit; }    /* undo the color change above */
+		}
+
+		th, td { /* ns 4 */
+		  font-family: sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 { text-align: left }
+		/* background should be transparent, but WebTV has a bug */
+		h1, h2, h3 { color: #005A9C; background: white }
+		h1 { font: 170% sans-serif }
+		h2 { font: 140% sans-serif }
+		h3 { font: 120% sans-serif }
+		h3 {
+			border-bottom: 1px solid navy;
+			margin-top: 3px;
+			padding-bottom: 5px;
+		}
+		h4 { font: bold 100% sans-serif }
+		h5 { font: italic 100% sans-serif }
+		h6 { font: small-caps 100% sans-serif }
+
+		.hide { display: none }
+
+		div.head { margin-bottom: 1em }
+		div.head h1 { margin-top: 2em; clear: both }
+		div.head table { margin-left: 2em; margin-top: 2em }
+
+		p.copyright { font-size: small }
+		p.copyright small { font-size: small }
+
+		@media screen {  /* hide from IE3 */
+		a[href]:hover { background: #ffa }
+		}
+
+		pre { margin-left: 2em }
+		
+		p {
+		  margin-top: 0.6em;
+		  margin-bottom: 0.6em;		  
+		  text-align: justify;
+		}
+		
+		dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+		dt { font-weight: bold }
+
+		ul.toc, ol.toc {
+		  list-style: disc;		/* Mac NS has problem with 'none' */
+		  list-style: none;
+		}
+
+		@media aural {  
+		  h1, h2, h3 { stress: 20; richness: 90 }
+		  .hide { speak: none }
+		  p.copyright { volume: x-soft; speech-rate: x-fast }
+		  dt { pause-before: 20% }
+		  pre { speak-punctuation: code } 
+		}
+		
+		/*Additional css*/
+		.hlist {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			padding: 5px;
+		}
+		.hlist li {
+			display: inline-table;
+			list-style-type: none;
+			padding-right: 20px;
+		}
+		.backlink {
+			background-color: #F4FFFF;
+			border: 1px dotted navy;
+			color: black;
+			float: right;
+			font-size: 10pt;
+			padding: 2px;
+			text-align: right;
+		}
+		.entity {
+			border: 1px solid navy;
+			margin: 5px 0;
+			padding: 5px;
+		}
+		table {
+			background-color: #F4FFFF;
+			border: 1px solid navy;
+			margin: 20px;
+		}
+		table {
+			text-align: center;
+			vertical-align: middle;
+		}
+		table td {
+			padding: 5px 15px;
+			text-align: left;
+		}
+		table th {
+			background-color: LightGoldenRodYellow;
+		}
+		pre {
+			background-color: #F9F9F9;
+			border: 1px dashed #2F6FAB;
+			color: black;
+			line-height: 1.1em;
+			padding: 1em;
+		}
+		</style>
+		</head>
+		<body><div class="head">
+            <h1>SMART Protocols Ontology: Document Module</h1>
+						<h2>Release 1 July 2013</h2>
+            <dl>
+							<dt>This version:</dt>
+							<dd><a href="http://vocab.linkeddata.es/sp/version/sp-document01072013.htm">http://vocab.linkeddata.es/sp/version/sp-document01072013.htm</a></dd>
+							</dl><dl><dt>Latest version:</dt>
+								<dd><a href="http://purl.org/net/SMARTprotocol">http://purl.org/net/SMARTprotocol</a></dd>
+							</dl><dl>
+							<dt>Revision</dt>
+								<dd>Revision 3.0</dd>
+								</dl><dl><dt>Authors:</dt>
+									<dd><a href="http://oxgiraldo.wordpress.com">Olga Giraldo</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>                
+								</dl><dl><dt>Contributors:</dt>
+									<dd><a href="http://delicias.dia.fi.upm.es/members/DGarijo/">Daniel Garijo</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>                
+                                    <dd><a href="http://www.dia.fi.upm.es/index.php?page=oscar-corcho/">Oscar Corcho</a>,  Ontology Engineering Group, Universidad Polit&eacute;cnica de Madrid</dd>                
+                                    <dd><a href="http://www.alexandergarcia.name/">Alexander Garcia</a>,  Linkingdata I/O LLC, Fort Collins, Colorado</dd>
+								</dl><dl>
+								<dt>Imported Ontologies:</dt>
+								<dd><a href="http://www.ifomis.org/bfo">The Basic Formal Ontology (BFO)</a> </dd>
+								<dd><a href="http://obofoundry.org/ro/">OBO Relation Ontology (RO)</a> </dd>
+                                    <dd><a href="http://obi-ontology.org/page/OBI_Minimal_metadata">OBI Minimal Metadata</a> </dd>
+								</dl><dl>
+								<dt>Extended Ontologies:</dt>				
+                                    <dd><a href="https://code.google.com/p/information-artifact-ontology/">Information Artifact Ontology (IAO)</a> </dd>
+                                    
+                                    
+								</dl>
+						</div>
+						<hr>
+						<h2>Abstract</h2>
+							<p>The document module of SMART Protocols is expressed in OWL. This ontology aims to provide a structured vocabulary of concepts to represent information for recording and reporting an experimental protocol.</p>
+							<p style="text-align: center;"> <b>The OWL encoding for Version 3.0 of the SMART Protocols-Document Module can be found <a href="docProtocolV2.0.owl"> here </a></b></p>
+						<div id="toc">
+						<h2>Table of Contents</h2><ul><li>
+							<a href="#ontOverview">1. Namespace declarations</a></li><li>
+							<a href="#ontOverview">2. SMART Protocol-Document Overview</a></li><li>
+							<a href="#ontDescription">3. SMART Protocol-Document Description</a></li>
+							<a href="#ontUseCase">4. Use Case</a></li>
+							<li><a href="#crossReference">5. Cross reference for SMART Protocol-Document classes, properties and dataproperties</a></li>
+							<ul>
+								<li><a href="#classes">5.1 Classes</a></li>
+								<li><a href="#objectproperties">5.2 Object Properties</a></li>
+								<!--<li><a href="#dataproperties">4.3 Data Properties</a></li>-->
+							</ul>
+							<li>
+							<a href="#references">6. References</a></li><li>
+							<a href="#acknowledgements">7. Acknowledgements</a></li>
+							</ul>
+						</div>
+						<div id="namespacedeclarations">
+						<h2>1. Namespace declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+						</p><div id="ns" align="center">
+						 <table>
+							<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+							<tbody>
+							<tr><td><b>sp</b></td><td>&lt;http://purl.org/net/SMARTprotocol#&gt;</td></tr>
+							<tr><td><b>bfo</b></td><td>&lt;http://www.ifomis.org/bfo/1.1#&gt;</td></tr>
+                            <tr><td><b>exact</b></td><td>&lt;http://www.owl-ontologies.com/Ontology1184060740.owl#&gt;</td></tr>
+                            <tr><td><b>mgedo</b></td><td>&lt;http://mged.sourceforge.net/ontologies/MGEDOntology.owl#&gt;</td></tr>
+                            <tr><td><b>msh</b></td><td>&lt;http://purl.bioontology.org/ontology/MSH/&gt;</td></tr>
+                            <tr><td><b>iao</b></td><td>&lt;http://purl.obolibrary.org/obo/IAO&gt;</td></tr>
+                            <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+							<tr><td><b>ro</b></td><td>&lt;http://www.obofoundry.org/ro/ro.owl#&gt;</td></tr>
+                            <tr><td><b>so</b></td><td>&lt;http://purl.org/obo/owl/SO#&gt;</td></tr>
+							<tr><td><b>Thesaurus</b></td><td>&lt;http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#&gt;</td></tr>
+							</tbody>
+						  </table>
+						  </div>
+						</div>
+						
+						<div id="ontOverview">
+						<h2>2. SMART Protocol-Document Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>					
+						
+						<p>The document module of SMART Protocols extends <a href="https://code.google.com/p/information-artifact-ontology/"> IAO</a> to represent the document aspects in the protocol. The next tables summarize the classes and properties that have been used to extend or complement the IAO terms to our domain. No dataproperties are included, because SMART Protocols doesn't define any:</p>
+						<h4>Classes</h4>
+						<ul class="hlist">
+							<li>
+							<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+							</li>
+							<li>
+							<a href="#Bag" title="http://purl.org/net/SMARTprotocol#Bag">sp:Bag</a>
+							</li>
+							<li>
+							<a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+							</li>
+							<li>
+							<a href="#BufferName" title="http://purl.org/net/SMARTprotocol#BufferName">sp:BufferName</a>
+							</li>
+							<li>
+							<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+							</li>
+							<li>
+							<a href="#CentrifugeTube" title="http://purl.org/net/SMARTprotocol#CentrifugeTube">sp:CentrifugeTube</a>
+							</li>
+							<li>
+							<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+							</li>
+							<li>
+							<a href="#CriticalStep" title="http://purl.org/net/SMARTprotocol#CriticalStep">sp:CriticalStep</a>
+							</li>
+							<li>
+							<a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+							</li>
+							<li>
+							<a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+							</li>
+							<li>
+							<a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+							</li>
+							<li>
+							<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+							</li>
+							<li>
+							<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+							</li>
+							<li>
+							<a href="#ExtractionBuffer" title="http://purl.org/net/SMARTprotocol#ExtractionBuffer">sp:ExtractionBuffer</a>
+							</li>
+							<li>
+							<a href="#FinalConcentration" title="http://purl.org/net/SMARTprotocol#FinalConcentration">sp:FinalConcentration</a>
+							</li>
+							<li>
+							<a href="#Flammable" title="http://purl.org/net/SMARTprotocol#Flammable">sp:Flammable</a>
+							</li>
+							<li>
+							<a href="#GrindingMachine" title="http://purl.org/net/SMARTprotocol#GrindingMachine">sp:GrindingMachine</a>
+							</li>
+							<li>
+							<a href="#Hint" title="http://purl.org/net/SMARTprotocol#Hint">sp:Hint</a>
+							</li>
+							<li>
+							<a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+							</li>
+							<li>
+							<a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">sp:Kit</a>
+							</li>
+							<li>
+							<a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">sp:KitList</a>
+							</li>
+							<li>
+							<a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">sp:KitName</a>
+							</li>
+							<li>
+							<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:experimentalProtocol</a>
+							</li>
+							<li>
+							<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+							</li>
+							<li>
+							<a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+							</li>
+							<li>
+							<a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+							</li>
+							<li>
+							<a href="#MethodsSection" title="http://purl.org/net/SMARTprotocol#MethodsSection">sp:MethodsSection</a>
+							</li>
+							<li>
+							<a href="#MicrocentrifugeTube" title="http://purl.org/net/SMARTprotocol#MicrocentrifugeTube">sp:MicrocentrifugeTube</a>
+							</li>
+							<li>
+							<a href="#Neurotoxic" title="http://purl.org/net/SMARTprotocol#Neurotoxic">sp:Neurotoxic</a>
+							</li>
+							<li>
+							<a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+							</li>
+							<li>
+							<a href="#PausePoint" title="http://purl.org/net/SMARTprotocol#PausePoint">sp:PausePoint</a>
+							</li>
+							<li>
+							<a href="#PlantTissue" title="http://purl.org/net/SMARTprotocol#PlantTissue">sp:PlantTissue</a>
+							</li>
+							<li>
+							<a href="#PortableIceChest" title="http://purl.org/net/SMARTprotocol#PortableIceChest">sp:PortableIceChest</a>
+							</li>
+							<li>
+							<a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+							</li>
+							<li>
+							<a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+							</li>
+							<li>
+							<a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+							</li>
+							<li>
+							<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+							</li>
+							<li>
+							<a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+							</li>
+							<li>
+							<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+							</li>
+							<li>
+							<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+							</li>
+							<li>
+							<a href="#Pyrophoric" title="http://purl.org/net/SMARTprotocol#Pyrophoric">sp:Pyrophoric</a>
+							</li>
+							<li>
+							<a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">sp:ReagentList</a>
+							</li>
+							<li>
+							<a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">sp:ReagentName</a>
+							</li>
+							<li>
+							<a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+							</li>
+							<li>
+							<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+							</li>
+							<li>
+							<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+							</li>
+							<li>
+							<a href="#SoftwareVersion" title="http://purl.org/net/SMARTprotocol#SoftwareVersion">sp:SoftwareVersion</a>
+							</li>
+							<li>
+							<a href="#SolutionList" title="http://purl.org/net/SMARTprotocol#SolutionList">sp:SolutionList</a>
+							</li>
+							<li>
+							<a href="#SolutionName" title="http://purl.org/net/SMARTprotocol#SolutionName">sp:SolutionName</a>
+							</li>
+							<li>
+							<a href="#StorageCondition" title="http://purl.org/net/SMARTprotocol#StorageCondition">sp:StorageCondition</a>
+							</li>
+							<li>
+							<a href="#Timing" title="http://purl.org/net/SMARTprotocol#Timing">sp:Timing</a>
+							</li>
+							<li>
+							<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+							</li>
+							<li>
+							<a href="#Toxic" title="http://purl.org/net/SMARTprotocol#Toxic">sp:Toxic</a>
+							</li>
+							<li>
+							<a href="#Troubleshooting" title="http://purl.org/net/SMARTprotocol#Troubleshooting">sp:Troubleshooting</a>
+							</li>
+							<li>
+							<a href="#Volatile" title="http://purl.org/net/SMARTprotocol#Volatile">sp:Volatile</a>
+							</li>
+							</ul>
+						<h4>Object properties</h4>
+						<ul class="hlist">							
+							<li>
+							<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+							</li>
+							<li>
+							<a href="#hasAuthor" title="http://purl.org/net/SMARTprotocol#hasAuthor">sp:hasAuthor</a>
+							</li>
+							<li>
+							<a href="#hasCatalogNumber" title="http://purl.org/net/SMARTprotocol#hasCatalogNumber">sp:hasCatalogNumber</a>
+							</li>
+							<li>
+							<a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">sp:hasName</a>
+							</li>
+							<li>
+							<a href="#hasSequence" title="http://purl.org/net/SMARTprotocol#hasSequence">sp:hasSequence</a>
+							</li>
+							<li>
+							<a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">sp:hasTitle</a>
+							</li>
+							<li>
+							<a href="#hasVersion" title="http://purl.org/net/SMARTprotocol#hasVersion">sp:hasVersion</a>
+							</li>
+							<li>
+							
+						</ul>						
+						
+						</div>
+						<div id="ontDescription">
+							<h2>3. SMART Protocol-Document Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2> 							
+							<p>
+							The document module of SMART Protocols intends to be compatible with other formalisms, to share and reuse already formalized 
+							knowledge. For example it reuses classes from <a href="http://www.ebi.ac.uk/chebi/"> CHEBI</a>, 
+							<a href="http://www.aber.ac.uk/en/cs/research/cb/dss/exact/"> EXACT</a>, 
+							<a href="http://mged.sourceforge.net/ontologies/MGEDontology.php"> MGDEO</a>, <a href="http://www.sequenceontology.org/"> SO
+							</a>, <a href="http://obi-ontology.org/page/Main_Page"> OBI</a> and 
+							<a href="http://www.loria.fr/~coulet/snpontology1.4_description.php"> SNPO</a>. Also, SMART Protocols-document reuses 
+							<a href="http://obofoundry.org/ro/"> the OBO Relation Ontology (RO)</a> and extending the class 
+							<a href="http://purl.obolibrary.org/obo/IAO_0000030"> iao:InformationContentEntity</a> proposed by the Information Artifact 
+							Ontology (IAO) to represent the laboratory protocol as a <a href="http://purl.obolibrary.org/obo/IAO_0000310"> iao:Document
+							</a> that <a style="font-family:'Courier New'">ro:hasParts</a> <a href="http://purl.obolibrary.org/obo/IAO_0000314"> iao:DocumentPart</a> 
+							(<a href="http://purl.org/net/SMARTprotocol#IntroductionSection"> sp:IntroductionSection</a>, 
+							<a href="http://purl.org/net/SMARTprotocol#MaterialsSection"> sp:MaterialsSection</a> and 
+							<a href="http://purl.org/net/SMARTprotocol#MethodsSection"> sp:MethodsSection</a>). Each one of these sections includes 
+							information from a <a href="https://docs.google.com/forms/d/1-qxix77aPmfjesWGl48ZgukWg5gC7j8NEMsM11rxu5A/viewform?"> 
+							checklist</a> to report an experimental protocol. This checklist is the result of analyzing 175 experimental protocols related 
+							to plant biology and validating it with 20 domain experts (<a href="#fig1">Figure 1</a>).
+                            In addition to maximizing the reuse of relevant domain ontologies and according to the OBO Foundry best practices, each term 
+							from SMART Protocols-document is represented by annotation properties imported from 
+							<a href="http://obi-ontology.org/page/OBI_Minimal_metadata"> OBI_Minimal_metadata</a>.
+							</p>
+							<div align="center" id="fig1">
+								<img src="Imagenes/figure2.png"></src> 
+								<div> <a href="#fig1">Figure 1: </a> The document aspects in a protocol are captured with IAO. The terms proposed in SMART Protocols use the sp prefix.
+							</div>
+							
+                        </div>
+                        <div id="ontUseCase">
+                        <h2>4. Use Case <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+                        
+                        <p>
+                        The document module of SMART Protocols represents information such as, the protocol type, <a style="font-family:'Courier New'">sp:DNAExtractionProtocol</a>; it has a tittle, identified by the property <a style="font-family:'Courier New'">sp:hasTitle</a>, it is instantiated by Genomic DNA Isolation. Also, the author entry, <a style="font-family:'Courier New'">iao:author identification</a>, is instantiated by CIMMYT. This protocol is derived, <a style="font-family:'Courier New'">sp:ProvenanceOfTheProtocol</a>, from the protocol published by Saghai-Maroof et al., 1984 (PNAS 81:8014-8019) and its purpose is instantiated by Plant DNA Extraction Of High Quality (<a href="#fig2">Figure 2</a>).
+                        </p>
+                        <div align="center" id="fig1">
+							<img src="Imagenes/figure3.png"></src>
+                            <div> <a href="#fig2">Figure 2: </a> The document aspects in a protocol are captured with IAO. The terms proposed in SMART Protocols use the sp prefix.
+							</div>							
+						
+                        </div>
+						<div id="crossReference">
+							<h2>5. Cross reference for SMART Protocol-Document classes and properties</h2>
+							This section provides details for each class and property defined by the SMART Protocol-Document.                
+							<div id="classes">
+<h2>Classes</h2>
+<ul class="hlist">
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+</li>
+<li>
+<a href="#Bag" title="http://purl.org/net/SMARTprotocol#Bag">sp:Bag</a>
+</li>
+<li>
+<a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+</li>
+<li>
+<a href="#BufferName" title="http://purl.org/net/SMARTprotocol#BufferName">sp:BufferName</a>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+</li>
+<li>
+<a href="#CentrifugeTube" title="http://purl.org/net/SMARTprotocol#CentrifugeTube">sp:CentrifugeTube</a>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol"</a>
+</li>
+<li>
+<a href="#CriticalStep" title="http://purl.org/net/SMARTprotocol#CriticalStep">sp:CriticalStep</a>
+</li>
+<li>
+<a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+</li>
+<li>
+<a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+</li>
+<li>
+<a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+</li>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+</li>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+</li>
+<li>
+<a href="#ExtractionBuffer" title="http://purl.org/net/SMARTprotocol#ExtractionBuffer">sp:ExtractionBuffer</a>
+</li>
+<li>
+<a href="#FinalConcentration" title="http://purl.org/net/SMARTprotocol#FinalConcentration">sp:FinalConcentration</a>
+</li>
+<li>
+<a href="#Flammable" title="http://purl.org/net/SMARTprotocol#Flammable">sp:Flammable</a>
+</li>
+<li>
+<a href="#GrindingMachine" title="http://purl.org/net/SMARTprotocol#GrindingMachine">sp:GrindingMachine</a>
+</li>
+<li>
+<a href="#Hint" title="http://purl.org/net/SMARTprotocol#Hint">sp:Hint</a>
+</li>
+<li>
+<a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+</li>
+<li>
+<a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">sp:Kit</a>
+</li>
+<li>
+<a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">sp:KitList</a>
+</li>
+<li>
+<a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">sp:KitName</a>
+</li>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+</li>
+<li>
+<a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+</li>
+<li>
+<a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+</li>
+<li>
+<a href="#MethodsSection" title="http://purl.org/net/SMARTprotocol#MethodsSection">sp:MethodsSection</a>
+</li>
+<li>
+<a href="#MicrocentrifugeTube" title="http://purl.org/net/SMARTprotocol#MicrocentrifugeTube">sp:MicrocentrifugeTube</a>
+</li>
+<li>
+<a href="#Neurotoxic" title="http://purl.org/net/SMARTprotocol#Neurotoxic">sp:Neurotoxic</a>
+</li>
+<li>
+<a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+</li>
+<li>
+<a href="#PausePoint" title="http://purl.org/net/SMARTprotocol#PausePoint">sp:PausePoint</a>
+</li>
+<li>
+<a href="#PlantTissue" title="http://purl.org/net/SMARTprotocol#PlantTissue">sp:PlantTissue</a>
+</li>
+<li>
+<a href="#PortableIceChest" title="http://purl.org/net/SMARTprotocol#PortableIceChest">sp:PortableIceChest</a>
+</li>
+<li>
+<a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+</li>
+<li>
+<a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+</li>
+<li>
+<a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+</li>
+<li>
+<a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+</li>
+<li>
+<a href="#Pyrophoric" title="http://purl.org/net/SMARTprotocol#Pyrophoric">sp:Pyrophoric</a>
+</li>
+<li>
+<a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">sp:ReagentList</a>
+</li>
+<li>
+<a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">sp:ReagentName</a>
+</li>
+<li>
+<a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+</li>
+<li>
+<a href="#SoftwareVersion" title="http://purl.org/net/SMARTprotocol#SoftwareVersion">sp:SoftwareVersion</a>
+</li>
+<li>
+<a href="#SolutionList" title="http://purl.org/net/SMARTprotocol#SolutionList">sp:SolutionList</a>
+</li>
+<li>
+<a href="#SolutionName" title="http://purl.org/net/SMARTprotocol#SolutionName">sp:SolutionName</a>
+</li>
+<li>
+<a href="#StorageCondition" title="http://purl.org/net/SMARTprotocol#StorageCondition">sp:StorageCondition</a>
+</li>
+<li>
+<a href="#Timing" title="http://purl.org/net/SMARTprotocol#Timing">sp:Timing</a>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+</li>
+<li>
+<a href="#Toxic" title="http://purl.org/net/SMARTprotocol#Toxic">sp:Toxic</a>
+</li>
+<li>
+<a href="#Troubleshooting" title="http://purl.org/net/SMARTprotocol#Troubleshooting">sp:Troubleshooting</a>
+</li>
+<li>
+<a href="#Volatile" title="http://purl.org/net/SMARTprotocol#Volatile">sp:Volatile</a>
+</li>
+</ul>
+<div class="entity" id="ApplicationOfTheProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol"/></a>
+<h3>sp:ApplicationOfTheProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol</p>
+<dl class="description">
+    <p>Applications of the protocol is a subclass of iao:TextualEntity. Applications of the protocol list the full diversity of the applications of the method and support if is possible to extend the range of applications of the protocol.</p>  
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302l" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Bag">
+<a name="http://purl.org/net/SMARTprotocol#Bag"/></a>
+<h3>sp:Bag<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Bag</p>
+<dl class="description">
+    <p>A bag is a supply. A bag is a simple tool in the form of a non-rigid container.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="BufferList">
+<a name="http://purl.org/net/SMARTprotocol#BufferList"/></a>
+<h3>sp:BufferList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#BufferList</p>
+<dl class="description">
+    <p>Buffer list is a iao:DataSet of the names or identifiers of the buffers that are part of materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="BufferName">
+<a name="http://purl.org/net/SMARTprotocol#BufferName"/></a>
+<h3>sp:BufferName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#BufferName</p>
+<dl class="description">
+    <p>Buffer name is a iao:TextualEntity. Buffer name is the name of the buffer produced by or used in a reaction involving changes in atoms or molecules. If is applicable, the name of the buffer should be including the follow information: buffer concentration, and final volume.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="CatalogNumber">
+<a name="http://purl.org/net/SMARTprotocol#CatalogNumber"/></a>
+<h3>sp:CatalogNumber<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#CatalogNumber</p>
+<dl class="description">
+    <p>Catalog number is a subclass of iao:TextualEntity. Catalog number is a numeral or string of numerals that is used for identification.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is in range of</dt>
+<dd>
+<a href="#hasCatalogNumber" title="http://purl.org/net/SMARTprotocol#hasCatalogNumber">sp:hasCatalogNumber</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="CentrifugeTube">
+<a name="http://purl.org/net/SMARTprotocol#CentrifugeTube"/></a>
+<h3>sp:CentrifugeTube<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#CentrifugeTube</p>
+<dl class="description">
+<p>Centrifuge tube is a supply. centrifuge tubes are tapered tubes of various sizes made of glass or plastic. They may vary in capacity from tens of millilitres.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="AdvantageOfTheProtocol">
+<a name="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol"/></a>
+<h3>sp:AdvantageOfTheProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol</p>
+<dl class="description">
+    <p>Advantage of the protocol is a subclass of iao:TextualEntity. It should be made clear in which situations the Protocol has been successfully employed.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="CriticalStep">
+<a name="http://purl.org/net/SMARTprotocol#CriticalStep"/></a>
+<h3>sp:CriticalStep<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#CriticalStep</p>
+<dl class="description">
+<p>A critical step is a message given to a user to perform a protocol instruction in a very precise manner e.g., where the time and temperature of a step is crucial or the use of RNase free solutions is required.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="DNAExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol"/></a>
+<h3>sp:DNAExtractionProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#DNAExtractionProtocol</p>
+<dl class="description">
+<p>DNA extraction protocol is a subclass of NucleicAcidExtractionOrotocol. DNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of DNA from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ElectrophoresisProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol"/></a>
+<h3>sp:ElectrophoresisProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol</p>
+<dl class="description">
+<p>Electrophoresis protocol is a subclass of ExperimentalProtocol. Electrophoresis protocol is a step by step description of an electrophoresis procedure in which are recovered fragments of biomolecules separated by charge.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="EnzimaticAmplificationProtocol">
+<a name="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol"/></a>
+<h3>sp:EnzimaticAmplificationProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol</p>
+<dl class="description">
+<p>Enzimatic amplification protocol is a subclass of ExperimentalProtocol. Enzimatic amplification protocol, is a step by step description of a procedure about the use of enzymes to increase the number of molecules from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="EquipmentAndSuppliesList">
+<a name="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList"/></a>
+<h3>sp:EquipmentAndSuppliesList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList</p>
+<dl class="description">
+    <p>Equipment and supplies list is a iao:DataSet of the names or identifiers of the equipments and supplies  that are part of  materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">sp:ReagentList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SolutionList" title="http://purl.org/net/SMARTprotocol#SolutionList">sp:SolutionList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="EquipmentOrSuppliesName">
+<a name="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName"/></a>
+<h3>sp:EquipmentOrSuppliesName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName</p>
+<dl class="description">
+    <p>Equipment or supply name is a iao:TextualEntity. Equipment or supply name is the name of equipment or supply.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferName" title="http://purl.org/net/SMARTprotocol#BufferName">sp:BufferName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">sp:ReagentName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SolutionName" title="http://purl.org/net/SMARTprotocol#SolutionName">sp:SolutionName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ExtractionBuffer">
+<a name="http://purl.org/net/SMARTprotocol#ExtractionBuffer"/></a>
+<h3>sp:ExtractionBuffer<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ExtractionBuffer</p>
+<dl class="description">
+    <p>Extraction buffer is a subclass of chebi:buffer. An extraction buffer with correct pH, gets rid of the cell components, but retains the organelles.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e759" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="FinalConcentration">
+<a name="http://purl.org/net/SMARTprotocol#FinalConcentration"/></a>
+<h3>sp:FinalConcentration<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#FinalConcentration</p>
+<dl class="description">
+<p>The final measured concentration of a compound in a substance.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e386" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41185">nci:Concentration</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e759" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+    <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#d4e440" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830">nci:Solution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e565" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C85644">nci:InitialConcentration</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Flammable">
+<a name="http://purl.org/net/SMARTprotocol#Flammable"/></a>
+<h3>sp:Flammable<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Flammable</p>
+<dl class="description">
+<p>Easily ignited.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3089" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122">exact:Caution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="GrindingMachine">
+<a name="http://purl.org/net/SMARTprotocol#GrindingMachine"/></a>
+<h3>sp:GrindingMachine<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#GrindingMachine</p>
+<dl class="description">
+<p>Grinding machine is a equipment. Grinding machine is a machine used to grind grains and leaves.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Hint">
+<a name="http://purl.org/net/SMARTprotocol#Hint"/></a>
+<h3>sp:Hint<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Hint</p>
+<dl class="description">
+<p>A hint is a message given to a user of a protocol that will help to perform the experiment.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="IntroductionSection">
+<a name="http://purl.org/net/SMARTprotocol#IntroductionSection"/></a>
+<h3>sp:IntroductionSection<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#IntroductionSection</p>
+<dl class="description">
+<p>Introduction section is part of a document. In the context of a protocol, this section show to reader about essential components of the protocol. So, the scientific community could make a decision as to the suitability of the protocol to their experimental problem.This section must include: applications of the protocol, comparison with other protocols, development of the protocol, limitations and purpose.</p>   
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e1043" title="http://purl.obolibrary.org/obo/IAO_0000314">iao:DocumentPart</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#MethodsSection" title="http://purl.org/net/SMARTprotocol#MethodsSection">sp:MethodsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="entity" id="Kit">
+<a name="http://purl.org/net/SMARTprotocol#Kit"/></a>
+<h3>sp:Kit<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Kit</p>
+<p>
+<dl class="description">
+<p>A set of chemical substances, articles or equipment needed for a specific purpose.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e66" title="http://purl.obolibrary.org/obo/OBI_0000304">obi:isManufacturedBy</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">sp:KitList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasCatalogNumber" title="http://purl.org/net/SMARTprotocol#hasCatalogNumber">sp:hasCatalogNumber</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">sp:hasName</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">sp:KitName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e1123" title="http://purl.obolibrary.org/obo/OBI_0000747">obi:MaterialSample</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e1210" title="http://purl.obolibrary.org/obo/OBI_0100026">obi:Organism</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="entity" id="KitList">
+<a name="http://purl.org/net/SMARTprotocol#KitList"/></a>
+<h3>sp:KitList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#KitList</p>
+<div class="comment">
+<p>Kit list is a data set of the names or identifiers of the kits that are part of materials section of a protocol.</p>
+</div>
+<dl class="description">
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="KitName">
+<a name="http://purl.org/net/SMARTprotocol#KitName"/></a>
+<h3>sp:KitName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#KitName</p>
+<dl class="description">
+<p>Kit name is a iao:TextualEntity. Kit name is the name of a kit.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+<div class="entity" id="ExperimentalProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/></a>
+<h3>sp:ExperimentalProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ExperimentalProtocol</p>
+<dl class="description">
+<p>Experimental protocol is a iao:Document. Also experimental protocol is a subclass of p-plan:Plan. Experimental protocol is a list of instructions to perform an experiment. It is a plan used to duplicate favorable results from a previous test.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e1012" title="http://purl.obolibrary.org/obo/IAO_0000310">iao:Document</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#CriticalStep" title="http://purl.org/net/SMARTprotocol#CriticalStep">sp:CriticalStep</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">sp:hasTitle</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MethodsSection" title="http://purl.org/net/SMARTprotocol#MethodsSection">sp:MethodsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Hint" title="http://purl.org/net/SMARTprotocol#Hint">sp:Hint</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAuthor" title="http://purl.org/net/SMARTprotocol#hasAuthor">sp:hasAuthor</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Troubleshooting" title="http://purl.org/net/SMARTprotocol#Troubleshooting">sp:Troubleshooting</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PausePoint" title="http://purl.org/net/SMARTprotocol#PausePoint">sp:PausePoint</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Timing" title="http://purl.org/net/SMARTprotocol#Timing">sp:Timing</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+<a href="#ElectrophoresisProtocol" title="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">sp:ElectrophoresisProtocol</a>
+<sup class="type-c" title="class">c</sup>, <a href="#EnzimaticAmplificationProtocol" title="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">sp:EnzimaticAmplificationProtocol</a>
+<sup class="type-c" title="class">c</sup>, <a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>, <a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is in domain of</dt>
+<dd>
+<a href="#hasAuthor" title="http://purl.org/net/SMARTprotocol#hasAuthor">sp:hasAuthor</a>
+<sup class="type-op" title="object property">op</sup>, <a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">sp:hasTitle</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+</dl>
+</div>
+
+<div class="entity" id="LimitationOfTheProtocol">
+<a name="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol"/></a>
+<h3>sp:LimitationOfTheProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol</p>
+<dl class="description">
+<p>Limitations of the protocol is a subclass of iao:TextualEntity where the possible limitations of the protocol should be discussed. It should be made clear in which situations the Protocol would be unreliable or otherwise unsuccessful.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Manufacturer">
+<a name="http://purl.org/net/SMARTprotocol#Manufacturer"/></a>
+<h3>sp:Manufacturer<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Manufacturer</p>
+<dl class="description">
+<p>Manufacturer is a subclass of bfo:MaterialEntity. Manufacturer is a person, enterprise, or entity that produces equipments, reagents, primers or other laboratory supplies.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is in range of</dt>
+<dd>
+    <a href="#d4e66" title="http://purl.obolibrary.org/obo/OBI_0000304">obi:isManufacturedBy</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e440" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830">nci:Solution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e696" title="http://purl.obolibrary.org/obo/CHEBI_33893">chebi:Reagent</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e759" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e1123" title="http://purl.obolibrary.org/obo/OBI_0000747">obi:MaterialSample</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">sp:Kit</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="MaterialsSection">
+<a name="http://purl.org/net/SMARTprotocol#MaterialsSection"/></a>
+<h3>sp:MaterialsSection<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#MaterialsSection</p>
+<dl class="description">
+<p>Materials section is part of a document. In the context of a protocol, this section should list the sample, buffers, reagents, consumables, equipments, kits, software etc., necessary for carrying out your technique.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e1043" title="http://purl.obolibrary.org/obo/IAO_0000314">iao:DocumentPart</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SolutionList" title="http://purl.org/net/SMARTprotocol#SolutionList">sp:SolutionList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">sp:KitList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SampleFromOrganism" title="http://purl.obolibrary.org/obo/OBI_0000671">obi:SampleFromOrganism</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">sp:ReagentList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#MethodsSection" title="http://purl.org/net/SMARTprotocol#MethodsSection">sp:MethodsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="MethodsSection">
+<a name="http://purl.org/net/SMARTprotocol#MethodsSection"/></a>
+<h3>sp:MethodsSection<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#MethodsSection</p>
+<dl class="description">
+<p>Methods section is part of a document. This is the section where the protocol is presented.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e1043" title="http://purl.obolibrary.org/obo/IAO_0000314">iao:DocumentPart</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e230" title="http://www.obofoundry.org/ro/ro.owl#has_part">ro:has_part</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="MicrocentrifugeTube">
+<a name="http://purl.org/net/SMARTprotocol#MicrocentrifugeTube"/></a>
+<h3>sp:MicrocentrifugeTube<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#MicrocentrifugeTube</p>
+<dl class="description">
+<p>Microcentrifuge tube is a supply. Microcentrifuge tubes are plastic tubes with capacities from 250 ul to 2.0 ml.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Neurotoxic">
+<a name="http://purl.org/net/SMARTprotocol#Neurotoxic"/></a>
+<h3>sp:Neurotoxic<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Neurotoxic</p>
+<dl class="description">
+<p>Poisonous to nerves or nerve cells.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3089" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122">exact:Caution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="NucleicAcidExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol"/></a>
+<h3>sp:NucleicAcidExtractionProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol</p>
+<dl class="description">
+<p>Nucleic acid extraction protocol is a subclass of laboratory protocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+<a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>, <a href="#RNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol">sp:RNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#ProteinExtractionProtocol" title="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol">sp:ProteinExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PausePoint">
+<a name="http://purl.org/net/SMARTprotocol#PausePoint"/></a>
+<h3>sp:PausePoint<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PausePoint</p>
+<dl class="description">
+<p>Pause point is the point were the protocol naturally breaks into separate stages.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PlantTissue">
+<a name="http://purl.org/net/SMARTprotocol#PlantTissue"/></a>
+<h3>sp:PlantTissue<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PlantTissue</p>
+<dl class="description">
+<p>Plant tissue is a bfo:MaterialEntity. Plant tissue is the tissue derived from plants.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e323" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801">nci:Tissue</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PortableIceChest">
+<a name="http://purl.org/net/SMARTprotocol#PortableIceChest"/></a>
+<h3>sp:PortableIceChest<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PortableIceChest</p>
+<dl class="description">
+<p>A portable ice chest is a supply. A cooler, cool box, portable ice chest, chilly bin (in New Zealand), or esky (Australia) most commonly is an insulated box used to keep the things cool.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Primer">
+<a name="http://purl.org/net/SMARTprotocol#Primer"/></a>
+<h3>sp:Primer<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Primer</p>
+<dl class="description">
+<p>A primer is a short strand of nucleic acid that serves as a starting point for DNA or RNA synthesis.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+        <a href="#d4e66" title="http://purl.obolibrary.org/obo/OBI_0000304">obi:isManufacturedBy</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">sp:hasName</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#hasSequence" title="http://purl.org/net/SMARTprotocol#hasSequence">sp:hasSequence</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has sub-classes</dt>
+<dd>
+    <a href="#d4e2881" title="http://purl.org/obo/owl/SO#SO_0000121">so:ForwardPrimer</a>
+    <sup class="type-c" title="class">c</sup>, <a href="#d4e2904" title="http://purl.org/obo/owl/SO#SO_0000132">so:ReversePrimer</a>
+<sup class="type-c" title="class">c</sup>
+</dd>
+<dt>is in domain of</dt>
+<dd>
+<a href="#hasSequence" title="http://purl.org/net/SMARTprotocol#hasSequence">sp:hasSequence</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e623" title="http://purl.bioontology.org/ontology/MSH/D004864">msh:EquipmentAndSupplies</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e759" title="http://purl.obolibrary.org/obo/CHEBI_35225">chebi:Buffer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e1123" title="http://purl.obolibrary.org/obo/OBI_0000747">obi:MaterialSample</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e1210" title="http://purl.obolibrary.org/obo/OBI_0100026">obi:Organism</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">sp:Manufacturer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PrimerList">
+<a name="http://purl.org/net/SMARTprotocol#PrimerList"/></a>
+<h3>sp:PrimerList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PrimerList</p>
+<dl class="description">
+    <p>Primer list is a iao:DataSet of the names or identifiers of the primers that are part of materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PrimerName">
+<a name="http://purl.org/net/SMARTprotocol#PrimerName"/></a>
+<h3>sp:PrimerName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PrimerName</p>
+<dl class="description">
+<p>Primer name is a  iao:TextualEntity. Primer name is the name of a primer.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferName" title="http://purl.org/net/SMARTprotocol#BufferName">sp:BufferName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PrimerSequence">
+<a name="http://purl.org/net/SMARTprotocol#PrimerSequence"/></a>
+<h3>sp:PrimerSequence<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PrimerSequence</p>
+<dl class="description">
+<p>Primer sequence is a iao:TextualEntity. Primer sequence is a serie ordered of bases coded as letters (A,C,G,T) without spaces, that identify to a particular primer.</p>    
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is in range of</dt>
+<dd>
+<a href="#hasSequence" title="http://purl.org/net/SMARTprotocol#hasSequence">sp:hasSequence</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ProteinExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol"/></a>
+<h3>sp:ProteinExtractionProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol</p>
+<dl class="description">
+<p>Protein extraction protocol is a subclass of laboratory protocol. Protein extraction is an extraction where the desired output material is protein.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ProvenanceOfTheProtocol">
+<a name="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol"/>
+<h3>sp:ProvenanceOfTheProtocol<sup class="type-c" title="class">c</sup></a>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol</p>
+<dl class="description">
+    <p>Provenance of the protocol is a subclass of iao:TextualEntity. Provenance of the protocol include references to key papers where the protocol has been used previously. Indicate if your protocol is the result of modify a previous one or if it is the result of reuse steps of several (more than 1) protocols.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="PurposeOfProtocol">
+<a name="http://purl.org/net/SMARTprotocol#PurposeOfProtocol"/></a>
+<h3>sp:PurposeOfProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#PurposeOfProtocol</p>
+<dl class="description">
+    <p>The purpose of a protocol is a subclass of iao:TextualEntity. Its role, is to enable readers to make a decision as to the suitability of the protocol to their experimental problem.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#IntroductionSection" title="http://purl.org/net/SMARTprotocol#IntroductionSection">sp:IntroductionSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Pyrophoric">
+<a name="http://purl.org/net/SMARTprotocol#Pyrophoric"/></a>
+<h3>sp:Pyrophoric<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Pyrophoric</p>
+<dl class="description">
+<p>A chemical substance that will ignite spontaneously in air at or below a temperature of 130 F (54.4 C).</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3089" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122">exact:Caution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ReagentList">
+<a name="http://purl.org/net/SMARTprotocol#ReagentList"/></a>
+<h3>sp:ReagentList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ReagentList</p>
+<dl class="description">
+<p>Reagent list is a iao:DataSet of the names or identifiers of the reagents that are part of materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="ReagentName">
+<a name="http://purl.org/net/SMARTprotocol#ReagentName"/></a>
+<h3>sp:ReagentName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#ReagentName</p>
+<dl class="description">
+<p>Reagent name is a iao:TextualEntity. Reagent name is the name of a reagent.<p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="RNAExtractionProtocol">
+<a name="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"/></a>
+<h3>sp:RNAExtractionProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#RNAExtractionProtocol</p>
+<dl class="description">
+<p>RNA extraction protocol is a subclass of NucleicAcidExtractionProtocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+<a href="#NucleicAcidExtractionProtocol" title="http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol">sp:NucleicAcidExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#DNAExtractionProtocol" title="http://purl.org/net/SMARTprotocol#DNAExtractionProtocol">sp:DNAExtractionProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SoftwareList">
+<a name="http://purl.org/net/SMARTprotocol#SoftwareList"/></a>
+<h3>sp:SoftwareList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SoftwareList</p>
+<dl class="description">
+    <p>Software list is a iao:DataSet of the names of softwares that are part of materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferList" title="http://purl.org/net/SMARTprotocol#BufferList">sp:BufferList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerList" title="http://purl.org/net/SMARTprotocol#PrimerList">sp:PrimerList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">sp:ReagentList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SolutionList" title="http://purl.org/net/SMARTprotocol#SolutionList">sp:SolutionList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SoftwareName">
+<a name="http://purl.org/net/SMARTprotocol#SoftwareName"/></a>
+<h3>sp:SoftwareName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SoftwareName</p>
+<dl class="description">
+    <p>Software name is a iao:TextualEntity. Software name is the name of a software.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#BufferName" title="http://purl.org/net/SMARTprotocol#BufferName">sp:BufferName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerName" title="http://purl.org/net/SMARTprotocol#PrimerName">sp:PrimerName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">sp:ReagentName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SolutionName" title="http://purl.org/net/SMARTprotocol#SolutionName">sp:SolutionName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SoftwareVersion">
+<a name="http://purl.org/net/SMARTprotocol#SoftwareVersion"/></a>
+<h3>sp:SoftwareVersion<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SoftwareVersion</p>
+<dl class="description">
+    <p>Software version is a iao:TextualEntity. A software version number is a software attribute that represents the version of software.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e604" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C93484">nci:DocumentVersion</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SolutionList">
+<a name="http://purl.org/net/SMARTprotocol#SolutionList"/></a>
+<h3>sp:SolutionList<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SolutionList</p>
+<dl class="description">
+<p>Solution list is a iao:DataSet of the names or identifiers of solutions that are part of materials section of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e942" title="http://purl.obolibrary.org/obo/IAO_0000100">iao:DataSet</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e246" title="http://www.obofoundry.org/ro/ro.owl#part_of">ro:partOf</a>
+<sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#MaterialsSection" title="http://purl.org/net/SMARTprotocol#MaterialsSection">sp:MaterialsSection</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentAndSuppliesList" title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">sp:EquipmentAndSuppliesList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareList" title="http://purl.org/net/SMARTprotocol#SoftwareList">sp:SoftwareList</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="SolutionName">
+<a name="http://purl.org/net/SMARTprotocol#SolutionName"/></a>
+<h3>sp:SolutionName<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#SolutionName</p>
+<dl class="description">
+    <p>Solution name is a iao:TextualEntity. Solution name is the name of a liquid preparation that contains at least 2 chemical substances, one playing the role of solvent and the other one playing the role of solute. If is applicable, the name of the buffer should including the follow information: solution concentration, and final volume.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+<a href="#EquipmentOrSuppliesName" title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">sp:EquipmentOrSuppliesName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">sp:SoftwareName</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="StorageCondition">
+<a name="http://purl.org/net/SMARTprotocol#StorageCondition"/></a>
+<h3>sp:StorageCondition<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#StorageCondition</p>
+<dl class="description">
+<p>Storage condition is a message given to a user of a protocol about the shelf life (maximum storage time) and temperature of storage of a buffer, reagent or solution.</p>   
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Timing">
+<a name="http://purl.org/net/SMARTprotocol#Timing"/></a>
+<h3>sp:Timing<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Timing</p>
+<dl class="description">
+<p>Timing is a message used to indicate the approximate time that a step, or set of steps, could take.</p>   
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="TitleOfProtocol">
+<a name="http://purl.org/net/SMARTprotocol#TitleOfProtocol"/></a>
+<h3>sp:TitleOfProtocol<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#TitleOfProtocol</p>
+<dl class="description">
+    <p>Title of protocol is a subclass of iao:TextualEntity. Title of protocol is the name of a protocol.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e989" title="http://purl.obolibrary.org/obo/IAO_0000300">iao:TextualEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>is in range of</dt>
+<dd>
+<a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">sp:hasTitle</a>
+<sup class="type-op" title="object property">op</sup>
+</dd>
+<dt>is disjoint with</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ApplicationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol">sp:ApplicationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#AdvantageOfTheProtocol" title="http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol">sp:AdvantageOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#LimitationOfTheProtocol" title="http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol">sp:LimitationOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#ProvenanceOfTheProtocol" title="http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol">sp:ProvenanceOfTheProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+<a href="#PurposeOfProtocol" title="http://purl.org/net/SMARTprotocol#PurposeOfProtocol">sp:PurposeOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Toxic">
+<a name="http://purl.org/net/SMARTprotocol#Toxic"/></a>
+<h3>sp:Toxic<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Toxic</p>
+<dl class="description">
+<p>Of or relating to or caused by a toxin or poison 'suffering from exposure to toxic substances'</p>   
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3089" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122">exact:Caution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Troubleshooting">
+<a name="http://purl.org/net/SMARTprotocol#Troubleshooting"/></a>
+<h3>sp:Troubleshooting<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Troubleshooting</p>
+<dl class="description">
+<p>A troubleshooting is a message given to a user of a protocol where common problems, possible causes, and solutions/methods of correction should be listed.</p>
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">exact:AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="entity" id="Volatile">
+<a name="http://purl.org/net/SMARTprotocol#Volatile"/></a>
+<h3>sp:Volatile<sup class="type-c" title="class">c</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Volatile</p>
+<dl class="description">
+<p>The property of a substance of changing readily from a solid or liquid to a vapor.</p>   
+<dt>has super-classes</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3089" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122">exact:Caution</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+
+						<div id="objectproperties">
+<h2>Object Properties</h2>
+<ul class="hlist">
+
+<li>
+<a href="#hasAlertMessage" title="http://purl.org/net/SMARTprotocol#hasAlertMessage">sp:hasAlertMessage</a>
+</li>
+<li>
+<a href="#hasAuthor" title="http://purl.org/net/SMARTprotocol#hasAuthor">sp:hasAuthor</a>
+</li>
+<li>
+<a href="#hasCatalogNumber" title="http://purl.org/net/SMARTprotocol#hasCatalogNumber">sp:hasCatalogNumber</a>
+</li>
+<li>
+<a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">sp:hasName</a>
+</li>
+<li>
+<a href="#hasSequence" title="http://purl.org/net/SMARTprotocol#hasSequence">sp:hasSequence</a>
+</li>
+<li>
+<a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">sp:hasTitle</a>
+</li>
+<li>
+<a href="#hasVersion" title="http://purl.org/net/SMARTprotocol#hasVersion">sp:hasVersion</a>
+</li>
+</ul>
+
+
+
+<div class="entity" id="hasAlertMessage">
+<a name="http://purl.org/net/SMARTprotocol#hasAlertMessage"/></a>
+<h3>sp:hasAlertMessage<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasAlertMessage</p>
+<div class="description">
+<p>hasAlertMessage is a relation that binds a chemical substance or protocol to an alert message such as caution, critical step, timing, etc.</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:experimentalProtocol</a>
+    <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+<a href="#d4e3073" title="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121">AlertMessage</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasAuthor">
+<a name="http://purl.org/net/SMARTprotocol#hasAuthor"/></a>
+<h3>sp:hasAuthor<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasAuthor</p>
+<div class="description">
+<p>hasAuthor is a relation that binds a document such as laboratory protocol to an author of protocol.</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+<a href="#obo:IAO_0000302" title="http://purl.obolibrary.org/obo/IAO_0000302">iao:AuthorIdentification</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasCatalogNumber">
+<a name="http://purl.org/net/SMARTprotocol#hasCatalogNumber"/></a>
+<h3>sp:hasCatalogNumber<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasCatalogNumber</p>
+<div class="description">
+<p>hasCatalogNumber binds a thing to a numeral or string of numerals that is used for identification.</p>    
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+<a href="#CatalogNumber" title="http://purl.org/net/SMARTprotocol#CatalogNumber">sp:CatalogNumber</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasName">
+<a name="http://purl.org/net/SMARTprotocol#hasName"/></a>
+<h3>sp:hasName<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasName</p>
+<div class="description">
+<p>hasName binds to a person, animal, place or thing to a word or set of words by which someone or something  is known, addressed, or referred to.</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e3021" title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">bfo:MaterialEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e402" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">nci:Name</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasSequence">
+<a name="http://purl.org/net/SMARTprotocol#hasSequence"/></a>
+<h3>sp:hasSequence<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasSequence</p>
+<div class="description">
+<p>hasSequence binds a oligonucleotide or nucleic acid  to a sequence.</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+<a href="#Primer" title="http://purl.org/net/SMARTprotocol#Primer">sp:Primer</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+<a href="#PrimerSequence" title="http://purl.org/net/SMARTprotocol#PrimerSequence">sp:PrimerSequence</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasTitle">
+<a name="http://purl.org/net/SMARTprotocol#hasTitle"/></a>
+<h3>sp:hasTitle<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasTitle</p>
+<div class="description">
+<p>hasTitle is a relation that binds a document such as experimental protocol to a title of protocol.</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+<a href="#ExperimentalProtocol" title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">sp:ExperimentalProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+<a href="#TitleOfProtocol" title="http://purl.org/net/SMARTprotocol#TitleOfProtocol">sp:TitleOfProtocol</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="entity" id="hasVersion">
+<a name="http://purl.org/net/SMARTprotocol#hasVersion"/></a>
+<h3>sp:hasVersion<sup class="type-op" title="object property">op</sup>
+<span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+</span>
+</h3>
+<p>
+<strong>IRI:</strong> http://purl.org/net/SMARTprotocol#hasVersion</p>
+<div class="description">
+<p>hasVersion binds a document, software, or other type of information content entity to a version (one of a sequence of copies of a program, document or software).</p>
+<dl>
+<dt>has domain</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e919" title="http://purl.obolibrary.org/obo/IAO_0000030">iao:InformationContentEntity</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+<dt>has range</dt>
+<dd>
+<ul>
+<li>
+    <a href="#d4e342" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714">nci:Version</a>
+<sup class="type-c" title="class">c</sup>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+						
+						<div id="references">
+								<h2>6. References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+								<ul>
+                                    <li id="BFO"><b>[BFO]</b>:Robert Arp and Barry Smith. (2008) <a href="http://precedings.nature.com/documents/1941/version/1/files/npre20081941-1.pdf">
+                                        <cite>Function, Role, and Disposition in Basic Formal Ontology</cite></a>. Available from Nature Precedings.</a></li>
+                                    
+                                    <li id="ChEBI"><b>[ChEBI]</b>:Kirill Degtyarenko, Paula de Matos, Marcus Ennis, Janna Hastings, Martin Zbinden, Alan McNaught, Rafael Alcántara, Michael Darsow, Mickaël Guedj, and Michael Ashburner. (2008) <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238832/"><cite>ChEBI: a database and ontology for chemical entities of biological interest</cite></a>. Nucleic Acids Res.Vol. 36(Database issue), pages D344–D350.</a></li>
+                                    
+                                    <li id="EXACT"><b>[EXACT]</b>: Larisa N. Soldatova, Wayne Aubrey, Ross D. King and Amanda Clare. (2008).
+									<cite>The EXACT description of biomedical protocols</cite>.</a> Bioinformatics.Vol. 24 ISMB 2008, pages i295–i303.</a></li>
+									
+								    <li id="IAO"><b>[IAO]</b> <a href="https://code.google.com/p/information-artifact-ontology/"><cite>information-artifact-ontology</cite></a>.</a></li>
+                                    
+                                    <li id="MeSH"><b>[MeSH]</b> <a href="http://www.nlm.nih.gov/mesh/meshhome.html"><cite>Medical Subject Headings</cite></a>.</a></li>
+                                    
+                                    <li id="MGEDO"><b>[MGEDO]</b>:Whetzel PL, Parkinson H, Causton HC, Fan L, Fostel J, Fragoso G, Game L, Heiskanen M, Morrison N, Rocca-Serra P, Sansone SA, Taylor C, White J, Stoeckert CJ Jr. (2006) <a href="http://www.ncbi.nlm.nih.gov/pubmed/16428806"><cite>The MGED Ontology: a resource for semantics-based description of microarray experiments</cite></a>. Bioinformatics.  Vol. 1; 22(7), pages 866-73.</a></li>
+                                    
+                                    <li id="NCI Thesaurus"><b>[NCI Thesaurus] </b><a href="http://ncit.nci.nih.gov/"><cite>NCI Thesaurus</cite></a>.</a></li>
+                                    
+                                    <li id="OBI"><b>[OBI]</b>:Mélanie Courtot, William Bug, Frank Gibson, Allyson L. Lister, James Malone, Daniel Schober, Ryan R. Brinkman and Alan Ruttenberg. (2008) <a href="http://obi.svn.sourceforge.net/viewvc/obi/trunk/docs/papers/owled2008/owled2008eu_submission_38.pdf"><cite>The OWL of Biomedical Investigations</cite></a>. OWLED.</a></li>
+                        
+                                    <li id="OBO_REL"><b>[OBO_REL]</b>:Barry Smith, Werner Ceusters, Bert Klagges, Jacob Köhler, Anand Kumar, Jane Lomax, Chris Mungall, Fabian Neuhaus, Alan L Rector and Cornelius Rosse. (2005) <a href="http://genomebiology.com/2005/6/5/R46"><cite>Relations in biomedical ontologies</cite></a>. Genome Biology, Vol. 6:R46.</a></li>
+                            
+                                    <li id="SO"><b>[SO]</b>:Karen Eilbeck, Suzanna E Lewis, Christopher J Mungall, Mark Yandell, Lincoln Stein, Richard Durbin and Michael Ashburner. (2005) <a href="http://genomebiology.com/2005/6/5/R44"><cite>The Sequence Ontology: a tool for the unification of genome annotations</cite></a>. Genome Biology, Vol. 6:R44.</a></li>
+                            </ul>
+						</div>
+						<div id="acknowledgements">
+								<h2>7. Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+								<p>
+								I would like thank <a href="http://www.oeg-upm.net/"> Ontology Engineering Group</a>, <a href="http://www.wf4ever-project.org/"> Wf4Ever</a> project for supporting this research and Silvio Peroni for developing LODE, tool 
+								used to create part of the cross-reference sections of this document.
+								</p>
+						</div>						
+</body></html>
