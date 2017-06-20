@@ -39,9 +39,8 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-01</terms:created>
         <vann:preferredNamespacePrefix>sp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/net/SMARTprotocol#</vann:preferredNamespaceUri>
-        <terms:license>http://creativecommons.org/licenses/by-nc-sa/2.0/</terms:license>
         <owl:versionInfo xml:lang="en">4.0</owl:versionInfo>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://delicias.dia.fi.upm.es/members/DGarijo/#me</terms:contributor>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:label xml:lang="en">SMART Protocols Ontology: workflow Module</rdfs:label>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.dia.fi.upm.es/index.php?page=oscar-corcho/</terms:contributor>
     </owl:Ontology>
@@ -560,7 +559,6 @@ Trypanosoma brucei subgroup</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
         <obo:IAO_0000115 xml:lang="en">Introduction of object AND/OR substance into or onto body, including injection, implantation, infusion, perfusion, transfusion, irrigation, instillation, insertion, placement, replacement, packing, intubation, catheterization, cannulation Introduction of object AND/OR substance into or onto body, including injection, implantation, infusion, perfusion, transfusion, irrigation, instillation, insertion, placement, replacement, packing, intubation, catheterization, cannulation.</obo:IAO_0000115>
         <obo:IAO_0000412 xml:lang="en">SNOMEDCT</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">Introduction of object AND/OR substance into or onto body, including injection, implantation, infusion, perfusion, transfusion, irrigation, instillation, insertion, placement, replacement, packing, intubation, catheterization, cannulation Introduction of object AND/OR substance into or onto body, including injection, implantation, infusion, perfusion, transfusion, irrigation, instillation, insertion, placement, replacement, packing, intubation, catheterization, cannulation.</rdfs:comment>
         <rdfs:label xml:lang="en">Introduction procedure</rdfs:label>
     </owl:Class>
     
@@ -581,7 +579,6 @@ Trypanosoma brucei subgroup</obo:IAO_0000118>
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/SNOMEDCT/59108006">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/107733003"/>
         <obo:IAO_0000115 xml:lang="en">injection is a introduction procedure where a substance is introduced into a organism, usually by means of a hypodermic syringe, as a liquid into the veins or muscles of the body.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Injection</rdfs:label>
         <rdfs:label xml:lang="en">injection</rdfs:label>
     </owl:Class>
     
@@ -961,23 +958,7 @@ Isopropylalkohol
 2-hydroxypropane
 ISOPROPYL ALCOHOL
 1-methylethanol</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">A secondary alcohol that is propane in which one of the hydrogens attached to the central carbon is substituted by a hydroxy group.</rdfs:comment>
         <rdfs:label xml:lang="en">propan-2-ol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">i-propanol
-C3H8O
-Isopropanol
-1-methylethyl alcohol
-IPA
-sec-propanol
-i-Propylalkohol
-Isopropyl alcohol
-2-Propanol
-isopropyl alcohol
-CC(C)O
-Isopropylalkohol
-2-hydroxypropane
-ISOPROPYL ALCOHOL
-1-methylethanol</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2852,15 +2833,7 @@ Avian Myeloblastosis Virus Reverse Transcriptase
 Reverse Transcriptase AMV
 AMV RT</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://link.springer.com/article/10.1007%2Fs10529-012-0904-9</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">AMV reverse transcriptase is an enzyme from the avian myeloblastosis virus like HIV has two subunits, a 63kDa subunit and a 95kDa subunit.
-
-Definition source:
-http://link.springer.com/article/10.1007%2Fs10529-012-0904-9</rdfs:comment>
         <rdfs:label xml:lang="en">AMV reverse transcriptase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Avian Myeloblastosis Virus (AMV) Reverse Transcriptase
-Avian Myeloblastosis Virus Reverse Transcriptase
-Reverse Transcriptase AMV
-AMV RT</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2874,14 +2847,7 @@ AMV RT</rdfs:seeAlso>
 10X Advantage 2 SA PCR Buffer
 Advantage 2 SA PCR Buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">file:///Users/olgaxgiraldop/Downloads/PT3281-1_PR9Z3414%20(1).pdf</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Advantage 2 PCR buffer is a buffer optimized for amplifying genomic DNA, and in particular with products less than 1-2 kb.
-
-Definition source:
-file:///Users/olgaxgiraldop/Downloads/PT3281-1_PR9Z3414%20(1).pdf</rdfs:comment>
         <rdfs:label xml:lang="en">Advantage 2 PCR buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Advantage 2 PCR Buffer
-10X Advantage 2 SA PCR Buffer
-Advantage 2 SA PCR Buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2891,7 +2857,6 @@ Advantage 2 SA PCR Buffer</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Agarose Gel Electrophoresis Protocol is a subclass of laboratory protocol. Agarose Gel Electrophoresis Protocol is a step by step description of a procedure used to separate DNA or RNA molecules by size, achieved by moving negatively charged nucleic acid molecules through an agarose matrix with an electric field.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Agarose Gel Electrophoresis Protocol is a subclass of laboratory protocol. Agarose Gel Electrophoresis Protocol is a step by step description of a procedure used to separate DNA or RNA molecules by size, achieved by moving negatively charged nucleic acid molecules through an agarose matrix with an electric field.</rdfs:comment>
         <rdfs:label xml:lang="en">agarose gel electrophoresis protocol</rdfs:label>
     </owl:Class>
     
@@ -2903,10 +2868,6 @@ Advantage 2 SA PCR Buffer</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1509"/>
         <obo:IAO_0000115 xml:lang="en">AgaroseInGelState Is a gel resulting from the polymerization of agarose after heating agarose suspended in some buffer solution.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Adapted from OBI</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">AgaroseInGelState Is a gel resulting from the polymerization of agarose after heating agarose suspended in some buffer solution.
-
-Definition source:
-Adapted from OBI</rdfs:comment>
         <rdfs:label xml:lang="en">agarose in gel state</rdfs:label>
     </owl:Class>
     
@@ -2917,7 +2878,6 @@ Adapted from OBI</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#AgaroseInLiquidState">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1504"/>
         <obo:IAO_0000115 xml:lang="en">The agarose will be in a liquid state acording to its gelling temperature and concentration.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">The agarose will be in a liquid state acording to its gelling temperature and concentration.</rdfs:comment>
         <rdfs:label xml:lang="en">agarose in liquid state</rdfs:label>
     </owl:Class>
     
@@ -2929,10 +2889,6 @@ Adapted from OBI</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ChemicalCompoundReagent"/>
         <obo:IAO_0000115 xml:lang="en">Alkali metal salt reagent are any of the following chemical elements of the periodic table —namely, lithium (Li), sodium (Na) and potassium (K). Sodium and potassium are the sixth and seventh most abundant of the elements; constituting, respectively, 2.6 and 2.4 percent of Earth’s crust. Other alkali metals are considerably more rares, the lithium, for example, constitutes 0.007 percent of Earth’s crust.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://global.britannica.com/science/alkali-metal</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Alkali metal salt reagent are any of the following chemical elements of the periodic table —namely, lithium (Li), sodium (Na) and potassium (K). Sodium and potassium are the sixth and seventh most abundant of the elements; constituting, respectively, 2.6 and 2.4 percent of Earth’s crust. Other alkali metals are considerably more rares, the lithium, for example, constitutes 0.007 percent of Earth’s crust.
-
-Definition source:
-https://global.britannica.com/science/alkali-metal</rdfs:comment>
         <rdfs:label xml:lang="en">alkali metal salt reagent</rdfs:label>
     </owl:Class>
     
@@ -2946,11 +2902,7 @@ https://global.britannica.com/science/alkali-metal</rdfs:comment>
         <obo:IAO_0000118 xml:lang="en">an alkanesulfonate
 O3RS
 alkanesulfonates</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">alkanesulfonates are used for the separation of small or pollar cations.</rdfs:comment>
         <rdfs:label xml:lang="en">alkanesulfonate reagent</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">an alkanesulfonate
-O3RS
-alkanesulfonates</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2964,13 +2916,6 @@ alkanesulfonates</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">HO4SR
 alkyl sulfates</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Organosulfate</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Alkyl sulfate reagent is a reagent commonly used as an anionic surfactant in liquid soaps, detergents to clean wool, surface cleaners, as active ingredients in laundry detergents, shampoos and conditioners.
-
-Definition source:
-https://en.wikipedia.org/wiki/Organosulfate
-
-Example of usage:
-A sodium dodecyl sulfate.</rdfs:comment>
         <rdfs:label xml:lang="en">alkyl sulfate reagent</rdfs:label>
         <rdfs:seeAlso xml:lang="en">HO4SR
 alkyl sulfates</rdfs:seeAlso>
@@ -2984,10 +2929,6 @@ alkyl sulfates</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#TaqPolymerase"/>
         <obo:IAO_0000115 xml:lang="en">AmpliTaq DNA Polymerase is a 94 kDa, thermostable, recombinant DNA polymerase obtained by expression of a modified form of the Thermus aquaticus (Taq) DNA polymerase gene in E. coli.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/order/catalog/product/N8080155</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">AmpliTaq DNA Polymerase is a 94 kDa, thermostable, recombinant DNA polymerase obtained by expression of a modified form of the Thermus aquaticus (Taq) DNA polymerase gene in E. coli.
-
-Definition source:
-https://www.thermofisher.com/order/catalog/product/N8080155</rdfs:comment>
         <rdfs:label xml:lang="en">AmpliTaq DNA Polymerase</rdfs:label>
     </owl:Class>
     
@@ -3000,12 +2941,7 @@ https://www.thermofisher.com/order/catalog/product/N8080155</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">AmpliTaq Gold is a thermostable DNA polymerase designed to make advanced polymerase Chain Reaction techniques. The key component in AmpliTaq Gold is AmpliTaq® DNA Polymerase (Deoxynucleoside triphosphate: DNA Deoxynucleotidyltransferase, E.C.2.7.7.7).</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">AmpliTaq Gold DNA Polymerase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://mvz.berkeley.edu/egl/inserts/AmpliTaq%20Gold_041554.pdf</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">AmpliTaq Gold is a thermostable DNA polymerase designed to make advanced polymerase Chain Reaction techniques. The key component in AmpliTaq Gold is AmpliTaq® DNA Polymerase (Deoxynucleoside triphosphate: DNA Deoxynucleotidyltransferase, E.C.2.7.7.7).
-
-Definition source:
-http://mvz.berkeley.edu/egl/inserts/AmpliTaq%20Gold_041554.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">AmpliTaq Gold</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">AmpliTaq Gold DNA Polymerase</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3017,9 +2953,6 @@ http://mvz.berkeley.edu/egl/inserts/AmpliTaq%20Gold_041554.pdf</rdfs:comment>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#RawDataSet"/>
         <obo:IAO_0000115 xml:lang="en">Is the result of data analysis process. This data can be organized into charts, graphs and tables to better visualize the information.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Adapted from: www.unit5.org/villhauer/Glossary/Glossary.htm</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Is the result of data analysis process. This data can be organized into charts, graphs and tables to better visualize the information.
-
-Definition source: Adapted from: www.unit5.org/villhauer/Glossary/Glossary.htm</rdfs:comment>
         <rdfs:label xml:lang="en">analyzed data set</rdfs:label>
     </owl:Class>
     
@@ -3031,7 +2964,6 @@ Definition source: Adapted from: www.unit5.org/villhauer/Glossary/Glossary.htm</
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16991"/>
         <obo:IAO_0000115 xml:lang="en">DNA recovered from ancient biological material (e.g., archaeological and historical skeletal material, mummified tissues, preserved plant remains, ice and permafrost cores).</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en"> NCI Thesaurus</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">DNA recovered from ancient biological material (e.g., archaeological and historical skeletal material, mummified tissues, preserved plant remains, ice and permafrost cores).</rdfs:comment>
         <rdfs:label xml:lang="en">ancient DNA</rdfs:label>
     </owl:Class>
     
@@ -3057,13 +2989,7 @@ Definition source: Adapted from: www.unit5.org/villhauer/Glossary/Glossary.htm</
         <obo:IAO_0000118 xml:lang="en">animal sacrifice
 method of sacrifice</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A procedure in which is the end of life of animal is brought about in accordance with local regulations on treatment of animal subjects and using a method which causes minimal pain and distress to the animal subject may later be refined with more specific list of organisms.
-
-Definition source:
-OBI</rdfs:comment>
         <rdfs:label xml:lang="en">animal euthanization procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">animal sacrifice
-method of sacrifice</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3073,7 +2999,6 @@ method of sacrifice</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#AnimalEuthanizationProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">A animal euthanization protocol is a protocol used in a parasitology experiments and defines instructions on how end the life of animals.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">A animal euthanization protocol is a protocol used in a parasitology experiments and defines instructions on how end the life of animals.</rdfs:comment>
         <rdfs:label xml:lang="en">animal euthanization protocol</rdfs:label>
     </owl:Class>
     
@@ -3088,14 +3013,7 @@ method of sacrifice</rdfs:seeAlso>
 APEX taq DNA polymerase
 Apex taq DNA polymerase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://corebio.ucsd.edu/4DCGI/Catalog/ProductDetail.html?prod_id=7924</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Apex Taq DNA Polymerase is a thermostable enzyme. The enzyme is isolated from Thermus aquaticus and has a molecular weight of approximately 94 kDa.
-
-Definition source:
-https://corebio.ucsd.edu/4DCGI/Catalog/ProductDetail.html?prod_id=7924</rdfs:comment>
         <rdfs:label xml:lang="en">Apex Taq DNA Polymerase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">APEX Taq polymerase
-APEX taq DNA polymerase
-Apex taq DNA polymerase</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3118,10 +3036,6 @@ Apex taq DNA polymerase</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/MSH/D004864"/>
         <obo:IAO_0000112 xml:lang="en">Laboratory bags: autoclavable biohazard bags, specimen/document zipper bags</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A bag is a supply. A bag is a simple tool in the form of a non-rigid container.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">A bag is a supply. A bag is a simple tool in the form of a non-rigid container.
-
-Example of usage:
-Laboratory bags: autoclavable biohazard bags, specimen/document zipper bags</rdfs:comment>
         <rdfs:label xml:lang="en">bag</rdfs:label>
     </owl:Class>
     
@@ -3133,9 +3047,7 @@ Laboratory bags: autoclavable biohazard bags, specimen/document zipper bags</rdf
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">Disruption caused by collision with agitated beads in liquid suspension.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">bead-beating machine</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Disruption caused by collision with agitated beads in liquid suspension.</rdfs:comment>
         <rdfs:label xml:lang="en">bead beater</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">bead-beating machine</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3171,7 +3083,6 @@ Gallensaeuren</obo:IAO_0000118>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Blender">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">blender is an instrument that ensure a homogenized blending of the diluted sample.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">blender is an instrument that ensure a homogenized blending of the diluted sample.</rdfs:comment>
         <rdfs:label xml:lang="en">blender</rdfs:label>
     </owl:Class>
     
@@ -3240,12 +3151,7 @@ Buffer ATL</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">Buffer B2 (Bacterial Lysis Buffer 2) consists of 3 M guanidine hydrochloride, 20% Tween 20. Buffer B2 is used in combination with Buffer B1, lysozyme or lysostaphin and Proteinase K for efficient lysis of bacteria prior to DNA purification using QIAGEN Genomic-tips.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Bacterial Lysis Buffer 2</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.qiagen.com/es/resources/faq?id=92b08ae8-b395-4961-b71b-b1e784c7c8ea&amp;lang=en</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Buffer B2 (Bacterial Lysis Buffer 2) consists of 3 M guanidine hydrochloride, 20% Tween 20. Buffer B2 is used in combination with Buffer B1, lysozyme or lysostaphin and Proteinase K for efficient lysis of bacteria prior to DNA purification using QIAGEN Genomic-tips.
-
-Definition source:
-https://www.qiagen.com/es/resources/faq?id=92b08ae8-b395-4961-b71b-b1e784c7c8ea&amp;lang=en</rdfs:comment>
         <rdfs:label xml:lang="en">buffer B2</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Bacterial Lysis Buffer 2</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3255,7 +3161,6 @@ https://www.qiagen.com/es/resources/faq?id=92b08ae8-b395-4961-b71b-b1e784c7c8ea&
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#BufferC1">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LysisBuffer"/>
         <obo:IAO_0000115 xml:lang="en">cell lysis buffer</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">cell lysis buffer</rdfs:comment>
         <rdfs:label xml:lang="en">buffer C1</rdfs:label>
     </owl:Class>
     
@@ -3266,7 +3171,6 @@ https://www.qiagen.com/es/resources/faq?id=92b08ae8-b395-4961-b71b-b1e784c7c8ea&
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#BufferY1">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LysisBuffer"/>
         <obo:IAO_0000115 xml:lang="en">yeast lysis buffer</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">yeast lysis buffer</rdfs:comment>
         <rdfs:label xml:lang="en">buffer Y1</rdfs:label>
     </owl:Class>
     
@@ -3281,13 +3185,7 @@ https://www.qiagen.com/es/resources/faq?id=92b08ae8-b395-4961-b71b-b1e784c7c8ea&
         <obo:IAO_0000118 xml:lang="en">CTAB extraction buffer
 CTAB DNA extraction buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PERSON:Olga Giraldo</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">CTAB buffer is a buffer used during the extraction/isolation of highly polymerized DNA from plant material. The main chemical compound, CTAB, simultaneously solubilizes the plant cell wall and lipid membranes of internal organelles and denatures proteins (enzymes).
-
-Example of usage:
-DNA purification</rdfs:comment>
         <rdfs:label xml:lang="en">CTAB buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">CTAB extraction buffer
-CTAB DNA extraction buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3310,9 +3208,7 @@ CTAB DNA extraction buffer</rdfs:seeAlso>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Breaking the cells open, is the first basic step in a DNA extraction. This is commonly achieved by chemical and physical methods-blending, grinding or sonicating the sample.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Cell lysis</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Breaking the cells open, is the first basic step in a DNA extraction. This is commonly achieved by chemical and physical methods-blending, grinding or sonicating the sample.</rdfs:comment>
         <rdfs:label xml:lang="en">cell disruption</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Cell lysis</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3325,15 +3221,7 @@ CTAB DNA extraction buffer</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">Centrifuge tube is a supply. centrifuge tubes are tapered tubes of various sizes made of glass or plastic. They may vary in capacity from tens of millilitres.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">centrifuge tips</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Laboratory_centrifuge#Centrifuge_tubes</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Centrifuge tube is a supply. centrifuge tubes are tapered tubes of various sizes made of glass or plastic. They may vary in capacity from tens of millilitres.
-
-Definition source:
-http://en.wikipedia.org/wiki/Laboratory_centrifuge#Centrifuge_tubes
-
-Example of usage:
-Weigh 300-400 mg of ground, lyophilized tissue, into a 15 ml polypropylene centrifuge tube.</rdfs:comment>
         <rdfs:label xml:lang="en">centrifuge tube</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">centrifuge tips</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3356,13 +3244,7 @@ Weigh 300-400 mg of ground, lyophilized tissue, into a 15 ml polypropylene centr
         <obo:IAO_0000118 xml:lang="en">chloride salts
 chlorides</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Chloride</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Chloride salts such as sodium chloride are often very soluble in water. It is an essential electrolyte located in all body fluids responsible for maintaining acid/base balance, transmitting nerve impulses and regulating fluid in and out of cells.
-
-Definition source:
-https://en.wikipedia.org/wiki/Chloride</rdfs:comment>
         <rdfs:label xml:lang="en">chloride salt reagent</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">chloride salts
-chlorides</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3372,7 +3254,6 @@ chlorides</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ChloroformIsoamylAlcoholMixture">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"/>
         <obo:IAO_0000115 xml:lang="en">mixture suitable for nucleic acid purification in plants.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">mixture suitable for nucleic acid purification in plants.</rdfs:comment>
         <rdfs:label xml:lang="en">Chloroform:Isoamyl alcohol</rdfs:label>
     </owl:Class>
     
@@ -3399,18 +3280,7 @@ hash
 hew
 split
 cleave</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">cut (something) into pieces with repeated sharp blows using a sharp instrument.</rdfs:comment>
         <rdfs:label xml:lang="en">chop</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">cut up
-cut into pieces
-chop up
-cube
-dice
-mince
-hash
-hew
-split
-cleave</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3421,9 +3291,7 @@ cleave</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">Coffee mill is an instrument used (during the first stage of nucleic acids purification), to crush leaf tissue to make leaf powder.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">coffee grinder</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Coffee mill is an instrument used (during the first stage of nucleic acids purification), to crush leaf tissue to make leaf powder.</rdfs:comment>
         <rdfs:label xml:lang="en">coffee mill</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">coffee grinder</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3472,13 +3340,7 @@ CRITICAL STEP: The supernatant in each step should be carefully transferred with
         <obo:IAO_0000118 xml:lang="en">CEB
 CEB buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The cytoplasmic extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues. This buffer causes selective membrane permeabilization, releasing soluble cytoplasmic contents.
-
-Definition source:
-https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</rdfs:comment>
         <rdfs:label xml:lang="en">cytoplasmic extraction buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">CEB
-CEB buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3496,10 +3358,7 @@ CEB buffer</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">A DNA extraction procedure is a subclass of nucleic acid extraction procedure where the desired output material is DNA.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">DNA isolation procedure
 DNA purification</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">A DNA extraction procedure is a subclass of nucleic acid extraction procedure where the desired output material is DNA.</rdfs:comment>
         <rdfs:label xml:lang="en">DNA extraction procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">DNA isolation procedure
-DNA purification</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3535,9 +3394,7 @@ DNA purification</rdfs:seeAlso>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"/>
         <obo:IAO_0000115 xml:lang="en">DNA extraction protocol is a subclass of nucleic acid extraction protocol. DNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of DNA from a material entity.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">DNA isolation protocol</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">DNA extraction protocol is a subclass of nucleic acid extraction protocol. DNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of DNA from a material entity.</rdfs:comment>
         <rdfs:label xml:lang="en">DNA extraction protocol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">DNA isolation protocol</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3548,10 +3405,6 @@ DNA purification</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProcessedDNA"/>
         <obo:IAO_0000115 xml:lang="en">A material entity which results from the aggregation of DNA produced by the application of centrifugal force to a liquid containing DNA in suspension.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Adapted from OBI</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A material entity which results from the aggregation of DNA produced by the application of centrifugal force to a liquid containing DNA in suspension.
-
-Definition source:
-Adapted from OBI</rdfs:comment>
         <rdfs:label xml:lang="en">DNA pellet</rdfs:label>
     </owl:Class>
     
@@ -3562,7 +3415,6 @@ Adapted from OBI</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProcessedDNA"/>
         <obo:IAO_0000115 xml:lang="en">DNA separated by molecular size is obtained after the aplication of electrical potential to move material through a defined matrix.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">DNA separated by molecular size is obtained after the aplication of electrical potential to move material through a defined matrix.</rdfs:comment>
         <rdfs:label xml:lang="en">DNA separated by molecular size</rdfs:label>
     </owl:Class>
     
@@ -3593,13 +3445,6 @@ Adapted from OBI</rdfs:comment>
         <obo:IAO_0000112 xml:lang="en">protocols for extracting DNA use detergents or surfactants for denaturating membrane lipids; or adding protease for denaturing proteins; or RNase for denaturing RNA.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Denaturation reaction is a set of instructions in which proteins or nucleic acids lose the quaternary structure, tertiary structure and secondary structure which is present in their native state, by application of some external stress or compound such as a strong acid or base, a concentrated inorganic salt, an organic solvent (e.g., alcohol or chloroform), radiation or heat.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Denaturation_(biochemistry)</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Denaturation reaction is a set of instructions in which proteins or nucleic acids lose the quaternary structure, tertiary structure and secondary structure which is present in their native state, by application of some external stress or compound such as a strong acid or base, a concentrated inorganic salt, an organic solvent (e.g., alcohol or chloroform), radiation or heat.
-
-Definition source:
-https://en.wikipedia.org/wiki/Denaturation_(biochemistry)
-
-Example of usage:
-protocols for extracting DNA use detergents or surfactants for denaturating membrane lipids; or adding protease for denaturing proteins; or RNase for denaturing RNA.</rdfs:comment>
         <rdfs:label xml:lang="en">denaturation reaction</rdfs:label>
     </owl:Class>
     
@@ -3660,27 +3505,7 @@ C4H10O2S2
 DL-threo-1,4-Dimercapto-2,3-butanediol
 DTL</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Dithiothreitol</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Dithiothreitol (DTT) is the common name for a small-molecule redox reagent also known as Cleland&apos;s reagent. DTT&apos;s formula is C4H10O2S2. Its name derives from the four-carbon sugar, threose. DTT has an epimeric (&apos;sister&apos;) compound, dithioerythritol (DTE).
-
-Definition source:
-https://en.wikipedia.org/wiki/Dithiothreitol
-
-Example of usage:
-DTT is used as a reducing or &quot;deprotecting&quot; agent for thiolated DNA. DTT is frequently used to reduce the disulfide bonds of proteins. DTT can also be used as an oxidizing agent.</rdfs:comment>
         <rdfs:label xml:lang="en">dithiothreitol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">rel-(2R,3R)-1,4-disulfanylbutane-2,3-diol
-1,4-Dithiothreitol
-1,4-dithiothreitol
-Cleland&apos;s reagent
-rac-Dithiothreitol
-threo-1,4-Dimercapto-2,3-butanediol
-DTT
-(R*,R*)-1,4-dimercapto-2,3-butanediol
-Dithiothreitol
-Dithiotreitol
-C4H10O2S2
-DL-threo-1,4-Dimercapto-2,3-butanediol
-DTL</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3691,9 +3516,7 @@ DTL</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#Homogenizer"/>
         <obo:IAO_0000115 xml:lang="en">Shearing caused by a round glass pestle that is manually driven into a glass tube</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">tissue grinder</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Shearing caused by a round glass pestle that is manually driven into a glass tube.</rdfs:comment>
         <rdfs:label xml:lang="en">dounce homogenizer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">tissue grinder</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3711,16 +3534,7 @@ gimlet,
 awl, 
 bradawl,
 hydraulic drill</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">a tool or machine with a rotating cutting tip or reciprocating hammer or chisel, used for making holes.</rdfs:comment>
         <rdfs:label xml:lang="en">drill</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">drilling tool, 
-boring tool, 
-rotary tool, 
-auger, 
-gimlet, 
-awl, 
-bradawl,
-hydraulic drill</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3749,10 +3563,6 @@ hydraulic drill</rdfs:seeAlso>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Loading a mixture of proteins into a polyacrylamide gel and the application of an electrical current to the gel to separate the proteins by size and change.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Electrophoresis procedure is a subclass of laboratory procedure. Electrophoresis procedure is a protocol application that uses an electrical potential to move material through a defined matrix in order to separate it by its resistance to movement and its charge.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Electrophoresis procedure is a subclass of laboratory procedure. Electrophoresis procedure is a protocol application that uses an electrical potential to move material through a defined matrix in order to separate it by its resistance to movement and its charge.
-
-Example of usage:
-Loading a mixture of proteins into a polyacrylamide gel and the application of an electrical current to the gel to separate the proteins by size and change.</rdfs:comment>
         <rdfs:label xml:lang="en">electrophoresis procedure</rdfs:label>
     </owl:Class>
     
@@ -3763,7 +3573,6 @@ Loading a mixture of proteins into a polyacrylamide gel and the application of a
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Electrophoresis protocol is a subclass of laboratory protocol. Electrophoresis protocol is a step by step description of an electrophoresis procedure in which are recovered fragments of biomolecules separated by charge.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Electrophoresis protocol is a subclass of laboratory protocol. Electrophoresis protocol is a step by step description of an electrophoresis procedure in which are recovered fragments of biomolecules separated by charge.</rdfs:comment>
         <rdfs:label xml:lang="en">electrophoresis protocol</rdfs:label>
     </owl:Class>
     
@@ -3788,20 +3597,7 @@ Tritirachium Alkaline Proteinase
 Tritirachium album serine proteinase
 Tritirachium album proteinase K</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">National Drug File-Reference Terminology</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">An enzyme that catalyzes the hydrolysis of keratin, and of other proteins with subtilisin-like specificity. It hydrolyses peptide amides. Endopeptidase K is from the mold Tritirachium album Limber.
-
-Definition source:
-National Drug File-Reference Terminology
-
-Example of usage:
-Proteinase K is commonly used in molecular biology to digest protein and remove contamination from preparations of nucleic acid.</rdfs:comment>
         <rdfs:label xml:lang="en">endopeptidase K</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Proteinase K
-Endopeptidase K
-Protease K
-Tritirachium Alkaline Proteinase
-Tritirachium album serine proteinase
-Tritirachium album proteinase K</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3811,7 +3607,6 @@ Tritirachium album proteinase K</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Enzimatic amplification protocol is a subclass of laboratory protocol. Enzimatic amplification protocol, is a step by step description of a procedure about the use of enzymes to increase the number of molecules from a material entity.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Enzimatic amplification protocol is a subclass of laboratory protocol. Enzimatic amplification protocol, is a step by step description of a procedure about the use of enzymes to increase the number of molecules from a material entity.</rdfs:comment>
         <rdfs:label xml:lang="en">enzimatic amplification protocol</rdfs:label>
     </owl:Class>
     
@@ -3823,10 +3618,6 @@ Tritirachium album proteinase K</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
         <obo:IAO_0000112 xml:lang="en">polymerase chain reaction (PCR), reverse transcribed polymerase chain reaction (RT-PCR).</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Enzymatic amplification procedure is a subclass of laboratory procedure that uses enzymes to increase the number of molecules of a biomaterial.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Enzymatic amplification procedure is a subclass of laboratory procedure that uses enzymes to increase the number of molecules of a biomaterial.
-
-Example of usage:
-polymerase chain reaction (PCR), reverse transcribed polymerase chain reaction (RT-PCR).</rdfs:comment>
         <rdfs:label xml:lang="en">enzymatic amplification procedure</rdfs:label>
     </owl:Class>
     
@@ -3886,13 +3677,6 @@ S1000 Thermal Cycler with 96-Deep Well Reaction Module.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">70% ethanol</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A homogeneous mixture of ethanol and water.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://cameochemicals.noaa.gov/chemical/19240</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A homogeneous mixture of ethanol and water.
-
-Definition source:
-http://cameochemicals.noaa.gov/chemical/19240
-
-Example of usage:
-70% ethanol</rdfs:comment>
         <rdfs:label xml:lang="en">ethanol solution</rdfs:label>
     </owl:Class>
     
@@ -3909,7 +3693,6 @@ Example of usage:
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An experimental protocol is a sequence of tasks and operations executed to perform experimental research. The protocols often include equipment, reagents, critical steps, troubleshooting, tips and all the information that facilitates reusability.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">An experimental protocol is a sequence of tasks and operations executed to perform experimental research. The protocols often include equipment, reagents, critical steps, troubleshooting, tips and all the information that facilitates reusability.</rdfs:comment>
         <rdfs:label xml:lang="en">experimental protocol</rdfs:label>
     </owl:Class>
     
@@ -3970,12 +3753,7 @@ Example of usage:
 freezer grinding,
 cryomilling,
 freezer mill</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Freezer milling is a type of cryogenic milling that uses a solenoid to mill samples. The solenoid moves the grinding media back and forth inside the vial, grinding the sample down to analytical fineness.</rdfs:comment>
         <rdfs:label xml:lang="en">freezer milling</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Cryogenic grinding,
-freezer grinding,
-cryomilling,
-freezer mill</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3986,9 +3764,7 @@ freezer mill</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">French pressure cell press is a sample mill. The shearing is caused by high pressure when sample is forced through a small hole.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">french press</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">French pressure cell press is a sample mill. The shearing is caused by high pressure when sample is forced through a small hole.</rdfs:comment>
         <rdfs:label xml:lang="en">french pressure cell press</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">french press</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4004,14 +3780,7 @@ GeneAmp10X PCR Gold Buffer
 GeneAmp PCR Buffer I
 GeneAmp PCR Buffer II
 GeneAmp PCR Gold Buffer</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">GeneAmp PCR Buffer is optimized for use with the enzyme AmpliTaq DNA Polymerase.</rdfs:comment>
         <rdfs:label xml:lang="en">GeneAmp PCR Buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">GeneAmp 10X PCR Buffer I
-GeneAmp 10X PCR Buffer II
-GeneAmp10X PCR Gold Buffer
-GeneAmp PCR Buffer I
-GeneAmp PCR Buffer II
-GeneAmp PCR Gold Buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4041,21 +3810,7 @@ Sequence Specific Primers
 Sequence-Specific Primers
 SSPs</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PERSON: Olga Giraldo</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A gene-specific primer is a short strand of nucleic acid that hybridizes only to sequences exactly complementary to the primer sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">gene-specific primer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">gene-specific primers
-Gene-Specific Primer
-Gene-specific primers
-Gene-specific primer
-gene specific primers
-gene specific primer
-Gene specific primers
-Gene specific primer
-Gene Specific Primer
-GSP
-Sequence Specific Primers
-Sequence-Specific Primers
-SSPs</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4070,13 +3825,7 @@ GenoGrinder
 GenoGrinder machine
 genogrinder
 genogrinder machine</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Geno grinder is a plant and animal tissue homogenizer used for high-throughput applications involving sample preparation for DNA, RNA, and protein extractions, pesticide residue analysis, and more.</rdfs:comment>
         <rdfs:label xml:lang="en">geno grinder</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Geno/Grinder
-GenoGrinder
-GenoGrinder machine
-genogrinder
-genogrinder machine</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4124,26 +3873,7 @@ smash
 press
 fragment
 kibble</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Grind is a experimetnal action. Grind is to reduce (something) to small particles or powder by crushing it.</rdfs:comment>
         <rdfs:label xml:lang="en">grind</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">ground
-crush
-pound
-pulverize
-pulverized 
-mill
-powder
-powdered 
-granulate
-grate
-mince
-shred
-crumble
-mash
-smash
-press
-fragment
-kibble</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4155,12 +3885,7 @@ kibble</rdfs:seeAlso>
         <obo:IAO_0000112 xml:lang="en">Put the number of seed indicated by the kit protocol in the grinding machine and grind the seed to a powder.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Grinding machine is a equipment. Grinding machine is a machine used to grind grains and leaves.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Grinding device</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Grinding machine is a equipment. Grinding machine is a machine used to grind grains and leaves.
-
-Example of usage:
-Put the number of seed indicated by the kit protocol in the grinding machine and grind the seed to a powder.</rdfs:comment>
         <rdfs:label xml:lang="en">grinding machine</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Grinding device</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4177,15 +3902,7 @@ TRIzol
 TRI reagent
 Trisure
 STAT-60</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">guanidinium thiocyanate-phenol is a mixture used in RNA/DNA/protein extraction.</rdfs:comment>
         <rdfs:label xml:lang="en">guanidinium thiocyanate-phenol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">guanidine thiocyanate-phenol
-guanidine thiocyanate-phenol solution
-guanidinium thiocyanate-phenol solution
-TRIzol
-TRI reagent
-Trisure
-STAT-60</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4226,21 +3943,7 @@ amalgamate
 synthesize
 combine
 join together</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Homogenize is a experimental action. Homogenize is to make uniform or similar.</rdfs:comment>
         <rdfs:label xml:lang="en">homogenize</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">make uniform
-make similar
-unite
-integrate
-fuse
-merge
-blend
-meld
-coalesce 
-amalgamate
-synthesize
-combine
-join together</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4251,10 +3954,6 @@ join together</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">A homogenizer is a equipment of laboratory used for the homogenization of various types of material, such as tissue, plant, food, soil, and many others. Many different models have been developed using various physical technologies for disruption.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Homogenizer</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A homogenizer is a equipment of laboratory used for the homogenization of various types of material, such as tissue, plant, food, soil, and many others. Many different models have been developed using various physical technologies for disruption.
-
-Definition source:
-https://en.wikipedia.org/wiki/Homogenizer</rdfs:comment>
         <rdfs:label xml:lang="en">homogenizer</rdfs:label>
     </owl:Class>
     
@@ -4275,20 +3974,7 @@ Taq-star DNA polymerase
 TaqStar
 Hot-Start Taq DNA polymerase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.neb.com/products/m0495-hot-start-taq-dna-polymerase</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Hot Start Taq DNA Polymerase is a mixture of Taq DNA Polymerase and an aptamer-based inhibitor.
-
-Definition source:
-https://www.neb.com/products/m0495-hot-start-taq-dna-polymerase</rdfs:comment>
         <rdfs:label xml:lang="en">Hot Start Taq DNA Polymerase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">HotStarTaq DNA Polymerase
-HotStarTaq
-Hot Start DNA Polymerase
-Hot Start Taq
-Taq Hot Start DNA Polymerase
-Taq-star enzyme
-Taq-star DNA polymerase
-TaqStar
-Hot-Start Taq DNA polymerase</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4305,10 +3991,6 @@ Hot-Start Taq DNA polymerase</rdfs:seeAlso>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The term “housing conditions” includes the physiological, chemical, and social environment as well as handling procedures and environmental enrichment. Scientists strive to standardize these conditions so that it is only the factor of interest which is changed in order to obtain both reliable and repeatable results from the minimum number of animals.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4378295/</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The term “housing conditions” includes the physiological, chemical, and social environment as well as handling procedures and environmental enrichment. Scientists strive to standardize these conditions so that it is only the factor of interest which is changed in order to obtain both reliable and repeatable results from the minimum number of animals.
-
-Definition source:
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4378295/</rdfs:comment>
         <rdfs:label xml:lang="en">housing condition procedure</rdfs:label>
     </owl:Class>
     
@@ -4319,7 +4001,6 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4378295/</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#HousingConditionProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Housing condition protocol is a protocol that defines instructions about the environmental conditions and handling of experimental organims.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Housing condition protocol is a protocol that defines instructions about the environmental conditions and handling of experimental organims.</rdfs:comment>
         <rdfs:label xml:lang="en">housing condition protocol</rdfs:label>
     </owl:Class>
     
@@ -4343,10 +4024,6 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4378295/</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">EFO</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The state of being infected such as from the introduction of a foreign agent such as serum, vaccine, antigenic substance or organism.
-
-Definition source:
-EFO</rdfs:comment>
         <rdfs:label xml:lang="en">infection procedure</rdfs:label>
     </owl:Class>
     
@@ -4357,7 +4034,6 @@ EFO</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#InfectionProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Infection protocol is a protocol used in parasitology experiments and defines instructions on how carry out the infection of a organism that acts as host.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Infection protocol is a protocol used in parasitology experiments and defines instructions on how carry out the infection of a organism that acts as host.</rdfs:comment>
         <rdfs:label xml:lang="en">infection protocol</rdfs:label>
     </owl:Class>
     
@@ -4391,18 +4067,7 @@ Omniklentaq
 Omni Klentaq LA
 Omniklentaq-LA</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.klentaq.com/products/klentaq</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">KlenTaq DNA Polymerase is missing the N-terminal portion of the gene, encoding Thermus aquaticus (Taq) DNA polymerase, leaving a highly active and even more thermal stable DNA polymerase activity. The missing N-terminal portion is homologous to the 5’→3’ exonuclease region of E. coli. DNA polymerase I.
-
-Definition source:
-http://www.klentaq.com/products/klentaq</rdfs:comment>
         <rdfs:label xml:lang="en">KlenTaq DNA Polymerase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Cesium Klentaq
-Klentaq LA
-Klentaq
-Omni Klentaq
-Omniklentaq
-Omni Klentaq LA
-Omniklentaq-LA</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4448,14 +4113,7 @@ Laboratory Test
 Tests 
 Lab Test 
 Lab Tests</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">A laboratory procedure is the conversion of an input into an output.</rdfs:comment>
         <rdfs:label xml:lang="en">laboratory procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Test 
-LBTEST 
-Laboratory Test 
-Tests 
-Lab Test 
-Lab Tests</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4489,7 +4147,6 @@ Lab Tests</rdfs:seeAlso>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A Sub procedure is a serie of statements that are executed. A sub procedure acts as a module of a procedure.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">A Sub procedure is a serie of statements that are executed. A sub procedure acts as a module of a procedure.</rdfs:comment>
         <rdfs:label>laboratory subprocedure</rdfs:label>
     </owl:Class>
     
@@ -4502,10 +4159,7 @@ Lab Tests</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">lyophilized ground tissue is a ground tissue dried by freezing in a high vacuum.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">freeze-dried ground tissue
 freeze dried ground tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">lyophilized ground tissue is a ground tissue dried by freezing in a high vacuum.</rdfs:comment>
         <rdfs:label xml:lang="en">lyophilized ground tissue</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">freeze-dried ground tissue
-freeze dried ground tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4518,11 +4172,7 @@ freeze dried ground tissue</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">freeze-dried leaf
 freeze dried leaf
 lyophilized leaf tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">lyophilized leaf is a leaf tissue dried by freezing in a high vacuum.</rdfs:comment>
         <rdfs:label xml:lang="en">lyophilized leaf</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">freeze-dried leaf
-freeze dried leaf
-lyophilized leaf tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4535,11 +4185,7 @@ lyophilized leaf tissue</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">freeze-dried root
 freeze dried root
 lyophilized root tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">lyophilized root is a root tissue dried by freezing in a high vacuum.</rdfs:comment>
         <rdfs:label xml:lang="en">lyophilized root</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">freeze-dried root
-freeze dried root
-lyophilized root tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4552,11 +4198,7 @@ lyophilized root tissue</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">freeze-dried seed
 freeze dried seed
 lyophilized seed tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">lyophilized seed is a seed tissue dried by freezing in a high vacuum.</rdfs:comment>
         <rdfs:label xml:lang="en">lyophilized seed</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">freeze-dried seed
-freeze dried seed
-lyophilized seed tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4567,10 +4209,6 @@ lyophilized seed tissue</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801"/>
         <obo:IAO_0000112 xml:lang="en">lyophilized leaf, lyophilized root, lyophilized seed</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">lyophilized tissue is a tissue dried by freezing in a high vacuum.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">lyophilized tissue is a tissue dried by freezing in a high vacuum.
-
-Example of usage:
-lyophilized leaf, lyophilized root, lyophilized seed</rdfs:comment>
         <rdfs:label xml:lang="en">lyophilized tissue</rdfs:label>
     </owl:Class>
     
@@ -4619,22 +4257,7 @@ M-MLV RT
 MMuLV
 M-MuLV RT</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://link.springer.com/article/10.1007%2Fs10529-012-0904-9</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">M-MLV reverse transcriptaseis an enzyme from the Moloney murine leukemia virus is a single 75 kDa monomer.
-
-Definition source:
-http://link.springer.com/article/10.1007%2Fs10529-012-0904-9</rdfs:comment>
         <rdfs:label xml:lang="en">M-MLV reverse transcriptase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Moloney Murine Leukemia Virus (M-MuLV) Reverse Transcriptase
-Moloney Murine Leukemia Virus (MMLV) Reverse Transcriptase
-Moloney Murine Leukemia Virus (M-MLV) Reverse Transcriptase
-Moloney Murine Leukemia Virus Reverse Transcriptase
-M-MuLV Reverse Transcriptase
-MMuLV Reverse Transcriptase
-MMLV Reverse Transcriptase
-MMLV RT
-M-MLV RT
-MMuLV
-M-MuLV RT</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4649,15 +4272,7 @@ M-MuLV RT</rdfs:seeAlso>
 2-methyl-2,4-pentanediol buffer
 MPDB
 MPDB-buffer</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">MPDB buffer is a lysis buffer used during isolation of DNA.
-
-Example of usage:
-DNA purification</rdfs:comment>
         <rdfs:label xml:lang="en">MPDB buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">MPDB Buffer
-2-methyl-2,4-pentanediol buffer
-MPDB
-MPDB-buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4668,9 +4283,7 @@ MPDB-buffer</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">mechanical milling is a plant and animal tissue homogenizer used for applications involving sample preparation for DNA, RNA, and protein extractions.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">mechanical mill</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">mechanical milling is a plant and animal tissue homogenizer used for applications involving sample preparation for DNA, RNA, and protein extractions.</rdfs:comment>
         <rdfs:label xml:lang="en">mechanical milling</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">mechanical mill</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4692,18 +4305,7 @@ MEB buffer
 Membrane Extraction Buffer
 MEB extraction buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.embl.de/pepcore/pepcore_services/protein_purification/extraction_clarification/solubilisation_membrane_proteins/</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The membrane extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues.Membrane extraction buffer is a buffer used for membrane protein solubilization.
-
-Definition source:
-https://www.embl.de/pepcore/pepcore_services/protein_purification/extraction_clarification/solubilisation_membrane_proteins/
-
-Example of usage:
-Protein purification</rdfs:comment>
         <rdfs:label xml:lang="en">membrane extraction buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">MEB
-MEB buffer
-Membrane Extraction Buffer
-MEB extraction buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4717,16 +4319,7 @@ MEB extraction buffer</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">Microcentrifuge tips
 microfuge tube</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Laboratory_centrifuge#Centrifuge_tubes</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Microcentrifuge tube is a supply. Microcentrifuge tubes are plastic tubes with capacities from 250 ul to 2.0 ml.
-
-Definition source:
-http://en.wikipedia.org/wiki/Laboratory_centrifuge#Centrifuge_tubes
-
-Example of usage:
-Pour off supernatant into 1.5 ml microfuge tube.</rdfs:comment>
         <rdfs:label xml:lang="en">microcentrifuge tube</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Microcentrifuge tips
-microfuge tube</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4736,7 +4329,6 @@ microfuge tube</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Micropestle">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">micropestle is a very small pestle used for tissue homogenization. Some micropestles have an end which fits 1.5mL microcentrifuge tube; others micropestles have an end which fits 2ml microcentrifuge tube.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">micropestle is a very small pestle used for tissue homogenization. Some micropestles have an end which fits 1.5mL microcentrifuge tube; others micropestles have an end which fits 2ml microcentrifuge tube.</rdfs:comment>
         <rdfs:label xml:lang="en">micropestle</rdfs:label>
     </owl:Class>
     
@@ -4751,12 +4343,7 @@ microfuge tube</rdfs:seeAlso>
 MixerMill
 shaker mill
 high-energy ball mill</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Mixer mill is a machine used for grinding dry, brittle samples.</rdfs:comment>
         <rdfs:label xml:lang="en">mixer mill</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Mixer/Mill
-MixerMill
-shaker mill
-high-energy ball mill</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4770,14 +4357,7 @@ high-energy ball mill</rdfs:seeAlso>
 mortar grinder
 pestle and mortar</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Mortar_and_pestle</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A mortar and pestle is a device used to crushing and grinding tissue into a fine powder.
-
-Definition source:
-https://en.wikipedia.org/wiki/Mortar_and_pestle</rdfs:comment>
         <rdfs:label xml:lang="en">mortar and pestle</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">mortar grinding machine
-mortar grinder
-pestle and mortar</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4819,14 +4399,7 @@ PTB</obo:IAO_0000118>
 NEB + MNase
 nuclear extraction buffer plus micrococcal nuclease (chromatin-bound fraction)</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The nuclear extraction buffer plus MNase is part of the Subcellular Protein Fractionation Kit for Tissues. Nuclear extraction buffer with micrococcal nuclease releases chromatin-bound nuclear proteins.
-
-Definition source:
-https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</rdfs:comment>
         <rdfs:label xml:lang="en">nuclear extraction buffer plus MNase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">nuclear extraction buffer with micrococcal nuclease
-NEB + MNase
-nuclear extraction buffer plus micrococcal nuclease (chromatin-bound fraction)</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4839,10 +4412,7 @@ nuclear extraction buffer plus micrococcal nuclease (chromatin-bound fraction)</
         <obo:IAO_0000118 xml:lang="en">Taq Buffer with (NH4)2SO4
 NH4 Buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PERSON:Olga Giraldo</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">NH4 Buffer is an ready-to-use buffer for PCR using Taq DNA Polymerases (both recombinant and native).</rdfs:comment>
         <rdfs:label xml:lang="en">NH4 buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Taq Buffer with (NH4)2SO4
-NH4 Buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4870,7 +4440,6 @@ NH4 Buffer</rdfs:seeAlso>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">The nuclear extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">The nuclear extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues.</rdfs:comment>
         <rdfs:label xml:lang="en">nuclear extraction buffer</rdfs:label>
     </owl:Class>
     
@@ -4883,12 +4452,7 @@ NH4 Buffer</rdfs:seeAlso>
         <obo:IAO_0000112 xml:lang="en">DNA extraction procedure, RNA extraction procedure.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Nucleic acid extraction procedure is a subclass of laboratory procedure used to recover the nucleic acid fraction of an input material entity.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Nucleic acid isolation procedure</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Nucleic acid extraction procedure is a subclass of laboratory procedure used to recover the nucleic acid fraction of an input material entity.
-
-Example of usage:
-DNA extraction procedure, RNA extraction procedure.</rdfs:comment>
         <rdfs:label xml:lang="en">nucleic acid extraction procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Nucleic acid isolation procedure</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4923,7 +4487,6 @@ DNA extraction procedure, RNA extraction procedure.</rdfs:comment>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Nucleic acid extraction protocol is a subclass of laboratory protocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Nucleic acid extraction protocol is a subclass of laboratory protocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity.</rdfs:comment>
         <rdfs:label xml:lang="en">nucleic acid extraction protocol</rdfs:label>
     </owl:Class>
     
@@ -4948,10 +4511,6 @@ oligo(dT) primers
 Oligo(dT) primer
 oligo (dT) primers</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/CDNA_library</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">oligo (dT) primer is a short sequence of deoxy-thymine nucleotides. Oligo (dT) is tagged as a complementary primer which binds to the poly-A tail providing a free 3&apos;-OH end that can be extended by reverse transcriptase to create the complementary DNA strand.
-
-Definition source:
-https://en.wikipedia.org/wiki/CDNA_library</rdfs:comment>
         <rdfs:label xml:lang="en">oligo (dT) primer</rdfs:label>
     </owl:Class>
     
@@ -4962,7 +4521,6 @@ https://en.wikipedia.org/wiki/CDNA_library</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#PCRAmplification">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProtocolInstruction"/>
         <obo:IAO_0000115 xml:lang="en">PCR amplification is a set of instructions describing the concentration and quantity of the PCR components (target DNA, thermostable DNA polymerase, primers, deoxynucleotide triphosphates (dNTPs), reaction buffer and magnesium); as well as, the cycling conditions.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">PCR amplification is a set of instructions describing the concentration and quantity of the PCR components (target DNA, thermostable DNA polymerase, primers, deoxynucleotide triphosphates (dNTPs), reaction buffer and magnesium); as well as, the cycling conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">PCR amplification</rdfs:label>
     </owl:Class>
     
@@ -4983,16 +4541,7 @@ https://en.wikipedia.org/wiki/CDNA_library</rdfs:comment>
         <obo:IAO_0000118 xml:lang="en">PCR Buffer
 PCR enzyme buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Polymerase_chain_reaction</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">PCR buffer is a solution that provide a suitable chemical environment for optimum activity and stability of the DNA polymerase
-
-Definition source:
-https://en.wikipedia.org/wiki/Polymerase_chain_reaction
-
-Example of usage:
-Taqman buffer, PCR Buffer with (or without) MgCl2</rdfs:comment>
         <rdfs:label xml:lang="en">PCR buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">PCR Buffer
-PCR enzyme buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5010,17 +4559,6 @@ PCR enzyme buffer</rdfs:seeAlso>
 7) 72 C, 5:00 
 8) 10 C, forever</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">PCR program is a textual entity that consists in define a series of 20-40 repeated temperature changes, called cycles, with each cycle commonly consisting of 2-3 discrete temperature steps, usually three (denaturation, annealing and extention).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">PCR program is a textual entity that consists in define a series of 20-40 repeated temperature changes, called cycles, with each cycle commonly consisting of 2-3 discrete temperature steps, usually three (denaturation, annealing and extention).
-
-Example of usage:
-1) 95 C, forever 
-2) 95 C, 5:00 
-3) 95 C, 0:30 
-4) 45-65 C, 0:30 
-5) 72 C, 1:00 
-6) Go to step 3, 34 times
-7) 72 C, 5:00 
-8) 10 C, forever</rdfs:comment>
         <rdfs:label xml:lang="en">PCR program</rdfs:label>
     </owl:Class>
     
@@ -5031,7 +4569,6 @@ Example of usage:
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ParasitologyExperiment">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42790"/>
         <obo:IAO_0000115 xml:lang="en">Parasitology experiment is an experiment. In this type of experiments are tested (under controlled conditions), parasites, their hosts, and the relationship between them.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Parasitology experiment is an experiment. In this type of experiments are tested (under controlled conditions), parasites, their hosts, and the relationship between them.</rdfs:comment>
         <rdfs:label xml:lang="en">parasitology experiment</rdfs:label>
     </owl:Class>
     
@@ -5061,10 +4598,7 @@ Example of usage:
         <obo:IAO_0000115 xml:lang="en">The pellet extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues. Pellet extraction buffer is used to isolate cytoskeletal proteins.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">PEB
 PEB buffer</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">The pellet extraction buffer is part of the Subcellular Protein Fractionation Kit for Tissues. Pellet extraction buffer is used to isolate cytoskeletal proteins.</rdfs:comment>
         <rdfs:label xml:lang="en">pellet extraction buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">PEB
-PEB buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5091,10 +4625,6 @@ Bromomethyl phenyl ketone
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"/>
         <obo:IAO_0000115 xml:lang="en">A mixture consisting of equal parts of equilibrated phenol and chloroform:isoamyl alcohol (24:1) is frequently used to remove proteins from preparations of nucleic acids. The chloroform denatures proteins and facilitates the separation of the aqueous and organic phases, and the isoamyl alcohol reduces foaming during extraction.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://cshprotocols.cshlp.org/content/2006/1/pdb.rec8282.full?text_only=true</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A mixture consisting of equal parts of equilibrated phenol and chloroform:isoamyl alcohol (24:1) is frequently used to remove proteins from preparations of nucleic acids. The chloroform denatures proteins and facilitates the separation of the aqueous and organic phases, and the isoamyl alcohol reduces foaming during extraction.
-
-Definition source:
-http://cshprotocols.cshlp.org/content/2006/1/pdb.rec8282.full?text_only=true</rdfs:comment>
         <rdfs:label xml:lang="en">Phenol:Chloroform:Isoamyl alcohol</rdfs:label>
     </owl:Class>
     
@@ -5116,16 +4646,7 @@ http://cshprotocols.cshlp.org/content/2006/1/pdb.rec8282.full?text_only=true</rd
 Phosphate Buffered Saline
 phosphate-buffered saline</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.maths.lancs.ac.uk/~lucy/publications/Martin-Pirie-Ford-Callaghan-McTurk-Lucy-Scrimger-2006.pdf</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Example of usage:
-PBS has many uses because it is isotonic and non-toxic to cells. It can be used to dilute substances. It is used to rinse containers containing cells. PBS can be used as a diluent in methods to dry biomolecules, as water molecules within it will be structured around the substance (protein, for example) to be ‘dried’ and immobilized to a solid surface. The thin film of water that binds to the substance prevents denaturation or other conformational changes. Carbonate buffers may be used for the same purpose but with less effectiveness. PBS can be used to take a reference spectrum when measuring the protein adsorption in ellipsometry (http://protocolsonline.com/recipes/phosphate-buffered-saline-pbs/)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Phosphate buffered saline (PBS) is a non toxic solution used in many biological laboratories. Unlike water, PBS prevents cells rupturing or shrivelling up due to osmosis. PBS can be used for the extraction of spermatozoa and cells from swabs and PBS does not affect subsequent DNA profiling.
-
-Definition source:
-http://www.maths.lancs.ac.uk/~lucy/publications/Martin-Pirie-Ford-Callaghan-McTurk-Lucy-Scrimger-2006.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">phosphate buffered saline</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">PBS
-Phosphate Buffered Saline
-phosphate-buffered saline</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5135,7 +4656,6 @@ phosphate-buffered saline</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/MSH/D004864"/>
         <obo:IAO_0000115 xml:lang="en">physical disruption equipment and supplies are instruments used during a physical cell disruption.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">physical disruption equipment and supplies are instruments used during a physical cell disruption.</rdfs:comment>
         <rdfs:label xml:lang="en">physical disruption equipment and supplies</rdfs:label>
     </owl:Class>
     
@@ -5148,12 +4668,7 @@ phosphate-buffered saline</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">Pluronic F68 is used in cell culture as a stabilizer of cell membranes protecting from membrane shearing and additionally acts as an anti-foaming agent.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Pluronic F-68</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/jp/ja/home/life-science/cell-culture/mammalian-cell-culture/media-supplements/pluronic-f68.html</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Pluronic F68 is used in cell culture as a stabilizer of cell membranes protecting from membrane shearing and additionally acts as an anti-foaming agent.
-
-Definition source:
-https://www.thermofisher.com/jp/ja/home/life-science/cell-culture/mammalian-cell-culture/media-supplements/pluronic-f68.html</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pluronic F-68</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Pluronic F-68</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5179,14 +4694,7 @@ https://www.thermofisher.com/jp/ja/home/life-science/cell-culture/mammalian-cell
 PCR process
 PCR</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">adapted from wikipedia</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">PCR is a subclass of enzymatic amplification procedure. PCR is the process in which a DNA polymerase is used to amplify a piece of DNA by in vitro enzymatic replication. As PCR progresses, the DNA thus generated is itself used as a template for replication. This sets in motion a chain reaction in which the DNA template is exponentially amplified.
-
-Definition source:
-adapted from wikipedia</rdfs:comment>
         <rdfs:label xml:lang="en">polymerase chain reaction procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">PCR procedure 
-PCR process
-PCR</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5202,7 +4710,6 @@ PCR</rdfs:seeAlso>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">PCR protocol is a step by step description of the procedure to amplify a particular DNA sequence.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">PCR protocol is a step by step description of the procedure to amplify a particular DNA sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">polimerase chain reaction protocol</rdfs:label>
     </owl:Class>
     
@@ -5256,11 +4763,7 @@ Poly(ethylene glycol)</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">polytron
 poly-tron mixer
 polytron mixer</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Polytron homogenizer is a instrument used for pulverizing plant and animal tissue, grain and seed, soil extraction, DNA/RNA extraction.</rdfs:comment>
         <rdfs:label xml:lang="en">polytron homogenizer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">polytron
-poly-tron mixer
-polytron mixer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5332,18 +4835,7 @@ cool box
 chilly bin
 esky</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Cooler</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A portable ice chest is a supply. A cooler, cool box, portable ice chest, chilly bin (in New Zealand), or esky (Australia) most commonly is an insulated box used to keep the things cool.
-
-Definition source:
-http://en.wikipedia.org/wiki/Cooler
-
-Example of usage:
-Place bags in a portable ice chest or other container with ice to keep samples cool.</rdfs:comment>
         <rdfs:label xml:lang="en">portable ice chest</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">cooler
-cool box
-chilly bin
-esky</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5367,7 +4859,6 @@ Kaliumsalz</obo:IAO_0000118>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#Homogenizer"/>
         <obo:IAO_0000115 xml:lang="en">Shearing is caused by a PTFE- coated pestle that is manually or mechanically driven into a conical vessel</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Shearing is caused by a PTFE- coated pestle that is manually or mechanically driven into a conical vessel</rdfs:comment>
         <rdfs:label xml:lang="en">potter-elvehjem homogenizer</rdfs:label>
     </owl:Class>
     
@@ -5381,11 +4872,7 @@ Kaliumsalz</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">pulverized leaf
 pulverized leaf tissue
 powdered leaf tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Powdered leaf is a material entity. Powdered leaf is a leaf tissue that has been pulverirized.</rdfs:comment>
         <rdfs:label xml:lang="en">powdered leaf</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">pulverized leaf
-pulverized leaf tissue
-powdered leaf tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5398,11 +4885,7 @@ powdered leaf tissue</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">pulverized root
 pulverized root tissue
 powdered root tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Powdered root is a material entity. Powdered root is a root tissue that has been pulverirized.</rdfs:comment>
         <rdfs:label xml:lang="en">powdered root</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">pulverized root
-pulverized root tissue
-powdered root tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5415,11 +4898,7 @@ powdered root tissue</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">pulverized seed
 pulverized seed tissue
 powdered seed tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Powdered seed is a material entity. Powdered seed is a seed tissue that has been pulverirized.</rdfs:comment>
         <rdfs:label xml:lang="en">powdered seed</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">pulverized seed
-pulverized seed tissue
-powdered seed tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5431,12 +4910,7 @@ powdered seed tissue</rdfs:seeAlso>
         <obo:IAO_0000112 xml:lang="en">Grind the seed to a powder. Transfer the powdered seed to a container and weigh the specified amount.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Powdered tissue is a material entity. Powdered tissue is a tissue that has been pulverirized.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">pulverized tissue</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Powdered tissue is a material entity. Powdered tissue is a tissue that has been pulverirized.
-
-Example of usage:
-Grind the seed to a powder. Transfer the powdered seed to a container and weigh the specified amount.</rdfs:comment>
         <rdfs:label xml:lang="en">powdered tissue</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">pulverized tissue</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5481,7 +4955,6 @@ Grind the seed to a powder. Transfer the powdered seed to a container and weigh 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Precipitation reactions can be used for removing denatured proteins, cells, salts and nucleic acids. Precipitation may occur when an antisolvent (a solvent in which the product is insoluble) is added, drastically reducing the solubility of the desired product. Thereafter, the precipitate may easily be separated by filtration, decanting, or centrifugation. An important application of an antisolvent is in ethanol precipitation of DNA.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Precipitation reactions can be used for removing denatured proteins, cells, salts and nucleic acids. Precipitation may occur when an antisolvent (a solvent in which the product is insoluble) is added, drastically reducing the solubility of the desired product. Thereafter, the precipitate may easily be separated by filtration, decanting, or centrifugation. An important application of an antisolvent is in ethanol precipitation of DNA.</rdfs:comment>
         <rdfs:label xml:lang="en">precipitation reaction</rdfs:label>
     </owl:Class>
     
@@ -5497,17 +4970,7 @@ Grind the seed to a powder. Transfer the powdered seed to a container and weigh 
 primers
 Primers</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Primer_%28molecular_biology%29</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A primer is a short strand of nucleic acid that serves as a starting point for DNA or RNA synthesis.
-
-Definition source:
-http://en.wikipedia.org/wiki/Primer_%28molecular_biology%29
-
-Example of usage:
-Oligos used in PCR.</rdfs:comment>
         <rdfs:label xml:lang="en">primer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Primer
-primers
-Primers</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5538,7 +5001,6 @@ Primers</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ProcessedRNA">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33697"/>
         <obo:IAO_0000115 xml:lang="en">Is a RNA that suffers changes during a laboratory procedure.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Is a RNA that suffers changes during a laboratory procedure.</rdfs:comment>
         <rdfs:label xml:lang="en">processed RNA</rdfs:label>
     </owl:Class>
     
@@ -5562,12 +5024,7 @@ Primers</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">Protein purification is a series of processes intended to isolate one or a few proteins from a complex mixture, usually cells, tissues or whole organisms. Protein purification is vital for the characterization of the function, structure and interactions of the protein of interest. The purification process may separate the protein and non-protein parts of the mixture, and finally separate the desired protein from all other proteins. Separation of one protein from all others is typically the most laborious aspect of protein purification. Separation steps usually exploit differences in protein size, physico-chemical properties, binding affinity and biological activity. The pure result may be termed protein isolate.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">protein purification</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Protein_purification</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Protein purification is a series of processes intended to isolate one or a few proteins from a complex mixture, usually cells, tissues or whole organisms. Protein purification is vital for the characterization of the function, structure and interactions of the protein of interest. The purification process may separate the protein and non-protein parts of the mixture, and finally separate the desired protein from all other proteins. Separation of one protein from all others is typically the most laborious aspect of protein purification. Separation steps usually exploit differences in protein size, physico-chemical properties, binding affinity and biological activity. The pure result may be termed protein isolate.
-
-Definition source:
-https://en.wikipedia.org/wiki/Protein_purification</rdfs:comment>
         <rdfs:label xml:lang="en">protein extraction procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">protein purification</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5578,9 +5035,7 @@ https://en.wikipedia.org/wiki/Protein_purification</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">Protein extraction protocol is a subclass of laboratory protocol. Protein extraction is an extraction where the desired output material is protein.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">Protein isolation protocol</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Protein extraction protocol is a subclass of laboratory protocol. Protein extraction is an extraction where the desired output material is protein.</rdfs:comment>
         <rdfs:label xml:lang="en">protein extraction protocol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Protein isolation protocol</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5636,10 +5091,7 @@ https://en.wikipedia.org/wiki/Protein_purification</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">A RNA extraction procedure is a subclass of nucleic acid extraction procedure where the desired output material is RNA</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">RNA isolation procedure
 RNA purification</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">A RNA extraction procedure is a subclass of nucleic acid extraction procedure where the desired output material is RNA</rdfs:comment>
         <rdfs:label xml:lang="en">RNA extraction procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">RNA isolation procedure
-RNA purification</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5674,9 +5126,7 @@ RNA purification</rdfs:seeAlso>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">RNA extraction protocol is a subclass of nucleic acid extraction protocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">RNA isolation protocol</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">RNA extraction protocol is a subclass of nucleic acid extraction protocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity.</rdfs:comment>
         <rdfs:label xml:lang="en">RNA extraction protocol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">RNA isolation protocol</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5686,7 +5136,6 @@ RNA purification</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RNAPellet">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize"/>
         <obo:IAO_0000115 xml:lang="en">A material entity which results from the aggregation of RNA produced by the application of centrifugal force to a liquid containing RNA in suspension.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">A material entity which results from the aggregation of RNA produced by the application of centrifugal force to a liquid containing RNA in suspension.</rdfs:comment>
         <rdfs:label xml:lang="en">RNA pellet</rdfs:label>
     </owl:Class>
     
@@ -5697,7 +5146,6 @@ RNA purification</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProcessedRNA"/>
         <obo:IAO_0000115 xml:lang="en">RNA separated by molecular size is obtained after the aplication of electrical potential to move material through a defined matrix.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">RNA separated by molecular size is obtained after the aplication of electrical potential to move material through a defined matrix.</rdfs:comment>
         <rdfs:label xml:lang="en">RNA separated by molecular size</rdfs:label>
     </owl:Class>
     
@@ -5728,13 +5176,6 @@ RNA purification</rdfs:seeAlso>
         <obo:IAO_0000115 xml:lang="en">Raw data set is an unanalyzed data set; data not yet subjected to analysis.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">wordnetweb.princeton.edu/perl/webwn</obo:IAO_0000119>
         <obo:IAO_0000412 xml:lang="en">OBI</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">Raw data set is an unanalyzed data set; data not yet subjected to analysis.
-
-Definition source:
-wordnetweb.princeton.edu/perl/webwn
-
-Example of usage:
-Preliminary results about a DNA extraction, PCR, sequensing, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">raw data set</rdfs:label>
     </owl:Class>
     
@@ -5746,7 +5187,6 @@ Preliminary results about a DNA extraction, PCR, sequensing, etc.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#RawDataSet"/>
         <obo:IAO_0000115 xml:lang="en">Raw output of a Sequencing Process.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">NGS ontology</obo:IAO_0000119>
-        <rdfs:comment>Raw output of a Sequencing Process.</rdfs:comment>
         <rdfs:label xml:lang="en">raw reads</rdfs:label>
     </owl:Class>
     
@@ -5781,6 +5221,21 @@ Preliminary results about a DNA extraction, PCR, sequensing, etc.</rdfs:comment>
         <obo:IAO_0000112 xml:lang="en">Taq DNA Polymerase from Thermus aquaticus with 10X reaction buffer without MgCl2.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Reagent name is a textual entity. Reagent name is the name of a reagent.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">reagent name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#RecipeExecution -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RecipeExecution">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#isDocumentedIn"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">recipe execution</rdfs:label>
     </owl:Class>
     
 
@@ -5836,20 +5291,7 @@ RNA-directed DNA polymerase
 RNA-dependent DNA-polymerase
 RNA-dependent DNA polymerase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Reverse_transcriptase</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A Reverse transcriptase (RT) is an enzyme used to generate complementary DNA (cDNA) from an RNA template, a process termed reverse transcription.
-
-Definition source:
-https://en.wikipedia.org/wiki/Reverse_transcriptase
-
-Example of usage:
-HIV-1 reverse transcriptase
-M-MLV reverse transcriptase
-AMV reverse transcriptase</rdfs:comment>
         <rdfs:label xml:lang="en">reverse transcriptase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">RNA-directed DNA-polymerase
-RNA-directed DNA polymerase
-RNA-dependent DNA-polymerase
-RNA-dependent DNA polymerase</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5859,7 +5301,6 @@ RNA-dependent DNA polymerase</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ReverseTranscription">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProtocolInstruction"/>
         <obo:IAO_0000115 xml:lang="en">In this step, total RNA or messenger RNA (mRNA) is first transcribed into complementary DNA (cDNA) by reverse transcriptase.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">In this step, total RNA or messenger RNA (mRNA) is first transcribed into complementary DNA (cDNA) by reverse transcriptase.</rdfs:comment>
         <rdfs:label xml:lang="en">reverse transcription</rdfs:label>
     </owl:Class>
     
@@ -5880,14 +5321,7 @@ RNA-dependent DNA polymerase</rdfs:seeAlso>
 reverse transcription polymerase chain reaction
 reverse transcription PCR</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">EFO</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Reverse transcription PCR is a process which allow amplification of cDNA during a pcr reaction while the cDNA results from a retrotranscription of messenger RNA isolated from a material entity.
-
-Definition source:
-EFO</rdfs:comment>
         <rdfs:label xml:lang="en">reverse transcription PCR procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">RT-PCR 
-reverse transcription polymerase chain reaction
-reverse transcription PCR</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5897,7 +5331,6 @@ reverse transcription PCR</rdfs:seeAlso>
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ReverseTranscriptionPCRProtocol">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol"/>
         <obo:IAO_0000115 xml:lang="en">reverse transcription PCR protocol is a step by step description of the procedure to reverse-transcribe and amplify RNA to cDNA.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">reverse transcription PCR protocol is a step by step description of the procedure to reverse-transcribe and amplify RNA to cDNA.</rdfs:comment>
         <rdfs:label xml:lang="en">reverse transcription PCR protocol</rdfs:label>
     </owl:Class>
     
@@ -5914,7 +5347,6 @@ reverse transcription PCR</rdfs:seeAlso>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">sample mills cover a broad range of sample preparation equipment and supplies. The range includes homogenizers, blenders and mills for the preparation of high-fat, high-moisture, dry, frozen and fibrous samples.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">sample mills cover a broad range of sample preparation equipment and supplies. The range includes homogenizers, blenders and mills for the preparation of high-fat, high-moisture, dry, frozen and fibrous samples.</rdfs:comment>
         <rdfs:label xml:lang="en">sample mill</rdfs:label>
     </owl:Class>
     
@@ -5977,16 +5409,7 @@ Alcohol, Ethyl 75%
 75% RNase-free ethanol
 75% RNase free ethanol
 75% EtOH</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">An aqueous dilution of ethanol containing 75% ethanol by volume.</rdfs:comment>
         <rdfs:label xml:lang="en">75% ethanol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">75% Ethyl Alcohol
-Ethyl Alcohol, 75%
-Alcohol, Ethyl 75%
-75% (v/v) ethanol
-75 per cent alcohol
-75% RNase-free ethanol
-75% RNase free ethanol
-75% EtOH</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6126,15 +5549,7 @@ sample preparation step
 specimen preparation
 specimen preparative method
 specimen preparation step</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Any method used to modify an existing sample/specimen</rdfs:comment>
         <rdfs:label xml:lang="en">specimen preparation procedure</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">preparative method
-sample preparation 
-sample preparative method
-sample preparation step
-specimen preparation
-specimen preparative method
-specimen preparation step</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6145,9 +5560,7 @@ specimen preparation step</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
         <obo:IAO_0000115 xml:lang="en">A specimen preparation protocol is a protocol used in a biological experiment and defines instructions on how a specimen or sample should be treated in a given experimental scenario.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">sample preparation protocol</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">A specimen preparation protocol is a protocol used in a biological experiment and defines instructions on how a specimen or sample should be treated in a given experimental scenario.</rdfs:comment>
         <rdfs:label xml:lang="en">specimen preparation protocol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">sample preparation protocol</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6161,14 +5574,7 @@ specimen preparation step</rdfs:seeAlso>
         <obo:IAO_0000118 xml:lang="en">SEB
 Stain Extraction Buffer
 SEB extraction buffer</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Stain extraction buffer is a buffer used to digest and extract DNA.
-
-Example of usage:
-DNA purification</rdfs:comment>
         <rdfs:label xml:lang="en">stain extraction buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">SEB
-Stain Extraction Buffer
-SEB extraction buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6179,10 +5585,6 @@ SEB extraction buffer</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#ProcessedDNA"/>
         <obo:IAO_0000115 xml:lang="en">Stained DNA is a material entity. After the electrophoresis is complete, the molecules in the gel can be stained to make them visible. DNA may be visualized using ethidium bromide which, when intercalated into DNA, fluoresce under ultraviolet light. EtBr is a known mutagen, and safer alternatives are available, such as GelRed, which binds to the minor groove. SYBER Green I is another dsDNA stain. It is 25 times more sensitive, and possibly safer than EtBr, though there is no data addressing its mutagenicity or toxicity in humans. SYBER Safe is a variant of SYBR Green that has been shown to have low enough levels of mutagenicity and toxicity to be deemed nonhazardous waste under U.S. Federal regulations. If the molecules to be separated contain radioactivity, for example in DNA sequencing gel, an autoradiogram can be recorded of the gel. If the molecules to be separated not contain radioactivity in a DNA sequencing gel, it may be visualized using silver nitrate.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Gel_electrophoresis</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Stained DNA is a material entity. After the electrophoresis is complete, the molecules in the gel can be stained to make them visible. DNA may be visualized using ethidium bromide which, when intercalated into DNA, fluoresce under ultraviolet light. EtBr is a known mutagen, and safer alternatives are available, such as GelRed, which binds to the minor groove. SYBER Green I is another dsDNA stain. It is 25 times more sensitive, and possibly safer than EtBr, though there is no data addressing its mutagenicity or toxicity in humans. SYBER Safe is a variant of SYBR Green that has been shown to have low enough levels of mutagenicity and toxicity to be deemed nonhazardous waste under U.S. Federal regulations. If the molecules to be separated contain radioactivity, for example in DNA sequencing gel, an autoradiogram can be recorded of the gel. If the molecules to be separated not contain radioactivity in a DNA sequencing gel, it may be visualized using silver nitrate.
-
-Definition source:
-http://en.wikipedia.org/wiki/Gel_electrophoresis</rdfs:comment>
         <rdfs:label xml:lang="en">stained DNA</rdfs:label>
     </owl:Class>
     
@@ -6234,10 +5636,6 @@ http://en.wikipedia.org/wiki/Gel_electrophoresis</rdfs:comment>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">subcellular protein fractionation kit for tissues includes five cellular components to obtain proteins.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">subcellular protein fractionation kit for tissues includes five cellular components to obtain proteins.
-
-Definition source:
-https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/protein-biology-application-notes/subcellular-protein-fractionation.html</rdfs:comment>
         <rdfs:label xml:lang="en">subcellular protein fractionation kit for tissues</rdfs:label>
     </owl:Class>
     
@@ -6290,24 +5688,7 @@ SuperScript III RT
 SuperScript II Reverse Transcriptase (RT)
 SuperScript III Reverse Transcriptase (RT)
 SuperScript IV Reverse Transcriptase (RT)</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">SuperScript reverse transcriptase (RT) is a family of enzymes widely used for cDNA synthesis.</rdfs:comment>
         <rdfs:label xml:lang="en">SuperScript reverse transcriptase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Superscript II
-SuperScript II
-SuperScript III
-Superscript III
-SuperScript IV
-Superscript IV
-SuperScript II Reverse Transcriptase
-SuperScript III Reverse Transcriptase
-SuperScript IV Reverse Transcriptase
-Superscript II RT
-SuperScript II RT
-Superscript III RT
-SuperScript III RT
-SuperScript II Reverse Transcriptase (RT)
-SuperScript III Reverse Transcriptase (RT)
-SuperScript IV Reverse Transcriptase (RT)</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6323,16 +5704,7 @@ TaqMan Master Mix
 TaqMan Universal PCR Master Mix
 TaqMan universal PCR master mix</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://cancer.ucsf.edu/_docs/cores/genome/protocols/TaqManBuffer.pdf</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">TaqMan buffer is PCR buffer with ROX added for florescence.
-
-Definition source:
-http://cancer.ucsf.edu/_docs/cores/genome/protocols/TaqManBuffer.pdf</rdfs:comment>
         <rdfs:label xml:lang="en">TaqMan buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">TaqMan Buffer
-TaqMan master mix
-TaqMan Master Mix
-TaqMan Universal PCR Master Mix
-TaqMan universal PCR master mix</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6359,19 +5731,7 @@ Taq DNA polymerase
 Thermostable DNA polymerase
 thermostable DNA polymerase
 thermophilic bacterium Thermus aquaticus</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">Taq polymerase is a heat stable DNA-direct DNA polymerase from the bacteria Thermus aquaticus. It is widely used for the amplification of genes through the process of Polymerase Chain Reaction.</rdfs:comment>
         <rdfs:label xml:lang="en">taq polymerase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Taq Polymerase
-Thermus aquaticus Polymerase
-Taq DNA Polymerase
-Taq1 Polymerase
-Taq pol
-Taq Enzyme
-Taq enzyme
-Taq DNA polymerase
-Thermostable DNA polymerase
-thermostable DNA polymerase
-thermophilic bacterium Thermus aquaticus</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6385,11 +5745,7 @@ thermophilic bacterium Thermus aquaticus</rdfs:seeAlso>
 Taq buffer
 Taq Buffer</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">PERSON:Olga Giraldo</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Taq polymerase buffer is a buffer formulated to provide efficient activation of the enzyme Taq DNA polymerase, resulting in PCR amplification.</rdfs:comment>
         <rdfs:label xml:lang="en">Taq polymerase buffer</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">Taq DNA polymerase buffer
-Taq buffer
-Taq Buffer</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6407,16 +5763,7 @@ Alcohol, Ethyl 10%
 10% RNase-free ethanol
 10% RNase free ethanol
 10% EtOH</obo:IAO_0000118>
-        <rdfs:comment xml:lang="en">An aqueous dilution of ethanol containing 10% ethanol by volume.</rdfs:comment>
         <rdfs:label xml:lang="en">10% ethanol</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">10% Ethyl Alcohol
-Ethyl Alcohol, 10%
-Alcohol, Ethyl 10%
-10% (v/v) ethanol
-10 per cent alcohol
-10% RNase-free ethanol
-10% RNase free ethanol
-10% EtOH</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6450,12 +5797,7 @@ Alcohol, Ethyl 10%
         <obo:IAO_0000115 xml:lang="en">Titanium Taq is a mixture consisting of a 5’ exonuclease-deficient Taq polymerase, and TaqStart Antibody, a monoclonal antibody which inhibits Taq at ambient temperatures. TaqStart Antibody provides automatic hot start PCR.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">TITANIUM Taq DNA Polymerase</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.clontech.com/RO/Products/cDNA_Synthesis_and_Library_Construction/cDNA_and_Genomic_DNA/RACE-Ready_cDNA/ibcGetAttachment.jsp?cItemId=31113&amp;fileId=5994516&amp;sitex=10020:22372:US</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Titanium Taq is a mixture consisting of a 5’ exonuclease-deficient Taq polymerase, and TaqStart Antibody, a monoclonal antibody which inhibits Taq at ambient temperatures. TaqStart Antibody provides automatic hot start PCR.
-
-Definition source:
-http://www.clontech.com/RO/Products/cDNA_Synthesis_and_Library_Construction/cDNA_and_Genomic_DNA/RACE-Ready_cDNA/ibcGetAttachment.jsp?cItemId=31113&amp;fileId=5994516&amp;sitex=10020:22372:US</rdfs:comment>
         <rdfs:label xml:lang="en">Titanium Taq DNA Polymerase</rdfs:label>
-        <rdfs:seeAlso xml:lang="en">TITANIUM Taq DNA Polymerase</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6514,7 +5856,6 @@ Possible solutions: increase amount of cDNA template in PCR; use new polyA taili
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Trypanosoma experiment is a parasitology experiment. In this type of experiments physiological, metabolic, immunologic, biochemical, nutritional, and chemotherapeutic aspects of trypanosoma and host-parasite relationships are tested (under controlled conditions).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Trypanosoma experiment is a parasitology experiment. In this type of experiments physiological, metabolic, immunologic, biochemical, nutritional, and chemotherapeutic aspects of trypanosoma and host-parasite relationships are tested (under controlled conditions).</rdfs:comment>
         <rdfs:label xml:lang="en">Trypanosoma experiment</rdfs:label>
     </owl:Class>
     
@@ -6550,10 +5891,6 @@ Possible solutions: increase amount of cDNA template in PCR; use new polyA taili
         <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#SampleMill"/>
         <obo:IAO_0000115 xml:lang="en">Instrument used in mechanical lysis. Rotating blades grind and disperse cells and tissues</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/traditional-methods-cell-lysis.html</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Instrument used in mechanical lysis. Rotating blades grind and disperse cells and tissues.
-
-Definition source:
-https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/traditional-methods-cell-lysis.html</rdfs:comment>
         <rdfs:label xml:lang="en">waring blender polytron</rdfs:label>
     </owl:Class>
     
@@ -6577,10 +5914,6 @@ https://www.thermofisher.com/es/en/home/life-science/protein-biology/protein-bio
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">This step is to wash any residual salt away from the pelleted DNA/RNA.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://bitesizebio.com/253/the-basics-how-ethanol-precipitation-of-dna-and-rna-works/</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">This step is to wash any residual salt away from the pelleted DNA/RNA.
-
-Definition source:
-http://bitesizebio.com/253/the-basics-how-ethanol-precipitation-of-dna-and-rna-works/</rdfs:comment>
         <rdfs:label xml:lang="en">washing nucleic acids</rdfs:label>
     </owl:Class>
     
@@ -6592,10 +5925,6 @@ http://bitesizebio.com/253/the-basics-how-ethanol-precipitation-of-dna-and-rna-w
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000521"/>
         <obo:IAO_0000115 xml:lang="en">A general term denoting true fungi of the family Saccharomycetaceae that are widely distributed in substrates that contain sugars (such as fruits), and in soil, animal excreta, the vegetative parts of plants, etc. Because of their ability to ferment carbohydrates, some yeasts are important to the brewing and baking industries.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Yeast cell. (n.d.) Farlex Partner Medical Dictionary. (2012). Retrieved July 11 2016 from http://medical-dictionary.thefreedictionary.com/Yeast+cell</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A general term denoting true fungi of the family Saccharomycetaceae that are widely distributed in substrates that contain sugars (such as fruits), and in soil, animal excreta, the vegetative parts of plants, etc. Because of their ability to ferment carbohydrates, some yeasts are important to the brewing and baking industries.
-
-Definition source:
-Yeast cell. (n.d.) Farlex Partner Medical Dictionary. (2012). Retrieved July 11 2016 from http://medical-dictionary.thefreedictionary.com/Yeast+cell</rdfs:comment>
         <rdfs:label xml:lang="en">yeast cell</rdfs:label>
     </owl:Class>
     
@@ -6672,7 +6001,6 @@ oligo DNA reverse primer
 reverse primer 
 reverse DNA primer</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNP Ontology</obo:IAO_0000412>
-        <rdfs:comment xml:lang="en">This term is mapped to MGED. Do not obsolete without consulting MGED ontology.</rdfs:comment>
         <rdfs:label xml:lang="en">reverse primer</rdfs:label>
     </owl:Class>
     
@@ -6710,11 +6038,41 @@ reverse DNA primer</obo:IAO_0000118>
     <!-- http://semanticscience.org/resource/SIO_001042 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001042">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#Hint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#StorageCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAlertMessage"/>
+                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A recipe is a set of instructions that describe how to prepare or make something.</obo:IAO_0000115>
@@ -6941,7 +6299,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experimental action is a process of manipulation in the domain of the experiment in order to achieve a particular sub goal, which is a part of the goal of the experiment.
         Reference: EXPO</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment action</rdfs:label>
         <rdfs:label xml:lang="en">experiment action</rdfs:label>
     </owl:Class>
     
@@ -6953,7 +6310,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To pour is an experiment action “to cause or allow (a substance, esp. a liquid) to flow out of a vessel or receptacle; to emit in a stream”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pour</rdfs:label>
         <rdfs:label xml:lang="en">pour</rdfs:label>
     </owl:Class>
     
@@ -6964,7 +6320,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_111">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data action is an action of estimation or evaluation of data</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data action</rdfs:label>
         <rdfs:label xml:lang="en">data action</rdfs:label>
     </owl:Class>
     
@@ -6975,7 +6330,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_112">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An equipment setup action is an action to put equipment into a required state for the experiment action to be executed</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equipment setup action</rdfs:label>
         <rdfs:label xml:lang="en">equipment setup action</rdfs:label>
     </owl:Class>
     
@@ -6985,7 +6339,6 @@ RNA extract</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_114">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Store</rdfs:label>
         <rdfs:label xml:lang="en">store</rdfs:label>
     </owl:Class>
     
@@ -6996,7 +6349,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mode of property transformation is an experimental action with a goal of property transformation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of property transformation</rdfs:label>
         <rdfs:label xml:lang="en">mode of property transformation</rdfs:label>
     </owl:Class>
     
@@ -7029,7 +6381,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_13">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_35"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To wait is an experiment action to allow a time interval to pass without experiment actions</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wait</rdfs:label>
         <rdfs:label xml:lang="en">wait</rdfs:label>
     </owl:Class>
     
@@ -7041,7 +6392,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To aspirate is an experiment action “to draw in or remove by suction”
         Reference: Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspirate</rdfs:label>
         <rdfs:label xml:lang="en">aspirate</rdfs:label>
     </owl:Class>
     
@@ -7052,7 +6402,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of separation is a way of separation, an experiment action with a goal of separation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of separation</rdfs:label>
         <rdfs:label xml:lang="en">mode of separation</rdfs:label>
     </owl:Class>
     
@@ -7063,7 +6412,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_20">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To shake is an experiment action to move regularly in the defined restricted space</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shake</rdfs:label>
         <rdfs:label xml:lang="en">shake</rdfs:label>
     </owl:Class>
     
@@ -7074,7 +6422,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_21">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_20"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To swirl is an experiment action to shake fluid in constant circular or semicircular motion</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swirl</rdfs:label>
         <rdfs:label xml:lang="en">swirl</rdfs:label>
     </owl:Class>
     
@@ -7085,7 +6432,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_22">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To sterilise is an experiment action to make something free from micro-organisms</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterilise</rdfs:label>
         <rdfs:label xml:lang="en">sterilise</rdfs:label>
     </owl:Class>
     
@@ -7097,7 +6443,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_112"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To calibrate is an experiment action “to determine the correct position, value, capacity, etc., of; to set an instrument so that readings taken from it are absolute rather than relative”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calibrate</rdfs:label>
         <rdfs:label xml:lang="en">calibrate</rdfs:label>
     </owl:Class>
     
@@ -7121,7 +6466,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_55"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To filter is an experiment action “to pass (a liquid) through a filter, or some porous medium, for the purpose of removing solid particles or impurities”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filter</rdfs:label>
         <rdfs:label xml:lang="en">filter</rdfs:label>
     </owl:Class>
     
@@ -7132,7 +6476,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_26">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_55"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To de-lid is an experiment action to remove a lid from a base and move it to a lid location</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De-lid</rdfs:label>
         <rdfs:label xml:lang="en">de-lid</rdfs:label>
     </owl:Class>
     
@@ -7143,7 +6486,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_27">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_55"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To discard is an experiment action to move something to a waste location</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discard</rdfs:label>
         <rdfs:label xml:lang="en">discard</rdfs:label>
     </owl:Class>
     
@@ -7167,7 +6509,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_45"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To vortex is an experiment action of a spiral rotatory movement of matter with the increasing gravity round a centre or axis
         Reference:	based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vortex</rdfs:label>
         <rdfs:label xml:lang="en">vortex</rdfs:label>
     </owl:Class>
     
@@ -7178,7 +6519,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of combination is a way of combining, an experimental action with a goal of combination</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of combination</rdfs:label>
         <rdfs:label xml:lang="en">mode of combination</rdfs:label>
     </owl:Class>
     
@@ -7190,7 +6530,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_45"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To rotate is an experiment action “to cause (a thing) to turn round or revolve on a centre or axis”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotate</rdfs:label>
         <rdfs:label xml:lang="en">rotate</rdfs:label>
     </owl:Class>
     
@@ -7202,7 +6541,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To inoculate is an experiment action “to join or unite by insertion”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inoculate</rdfs:label>
         <rdfs:label xml:lang="en">inoculate</rdfs:label>
     </owl:Class>
     
@@ -7214,7 +6552,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To cover is an experiment action to put or lay a top over a base, with the effect of enclosing
         Reference: based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cover</rdfs:label>
         <rdfs:label xml:lang="en">cover</rdfs:label>
     </owl:Class>
     
@@ -7226,7 +6563,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_32"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Seal is an experiment action to close or fasten tightly a base and a top by any substance or devise used as sealant
         Reference: based on Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seal</rdfs:label>
         <rdfs:label xml:lang="en">seal</rdfs:label>
     </owl:Class>
     
@@ -7238,7 +6574,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_28"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To join is an experiment action “to put (things) together, so that they become physically united or continuous; to fasten, attach, connect, unite (one thing to another); also, to connect by means of something intervening or attached to each”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Join</rdfs:label>
         <rdfs:label xml:lang="en">join</rdfs:label>
     </owl:Class>
     
@@ -7249,7 +6584,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_35">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of time transformation is an experimental action with a goal of time transformation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of time transformation</rdfs:label>
         <rdfs:label xml:lang="en">mode of time transformation</rdfs:label>
     </owl:Class>
     
@@ -7260,7 +6594,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_36">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of transformation of a spatial location is an experimental action with a goal of transformation of a spatial location</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of transformation of spatial location</rdfs:label>
         <rdfs:label xml:lang="en">mode of transformation of spacial location</rdfs:label>
     </owl:Class>
     
@@ -7272,7 +6605,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To ignite is an experiment action “to subject to the action of fire”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ignite</rdfs:label>
         <rdfs:label xml:lang="en">ignite</rdfs:label>
     </owl:Class>
     
@@ -7284,7 +6616,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to thaw is an experiment action to change a substance from a frozen state to a liquid state
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thaw</rdfs:label>
         <rdfs:label xml:lang="en">thaw</rdfs:label>
     </owl:Class>
     
@@ -7296,7 +6627,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_36"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To take is an experiment action “to lay hold of, grasp”, it is a part of a move action
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Take</rdfs:label>
         <rdfs:label xml:lang="en">take</rdfs:label>
     </owl:Class>
     
@@ -7307,7 +6637,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mode of transformation is an experimental action with a goal of transformation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of transformation</rdfs:label>
         <rdfs:label xml:lang="en">mode of transformation</rdfs:label>
     </owl:Class>
     
@@ -7319,7 +6648,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_36"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To place is an experiment action “to put in a particular place, spot, or position” (into the end location), it is a part of a move action
         Reference: based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place</rdfs:label>
         <rdfs:label xml:lang="en">place</rdfs:label>
     </owl:Class>
     
@@ -7330,7 +6658,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_41">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_61"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To assign name is an experiment action to designate a new name to an entity</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assign name</rdfs:label>
         <rdfs:label xml:lang="en">assign name</rdfs:label>
     </owl:Class>
     
@@ -7341,7 +6668,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_42">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_61"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To re-name is an experiment action to designate a new name instead of the old name to an entity</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re-name</rdfs:label>
         <rdfs:label xml:lang="en">re-name</rdfs:label>
     </owl:Class>
     
@@ -7353,7 +6679,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to dissolve is an experiment action “to change or cause to change from a solid to a dispersed form by immersion in a fluid of suitable properties”
         Reference: biology online dictionary http://www.biology-online.org/dictionary/Dissolve -</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dissolve</rdfs:label>
         <rdfs:label xml:lang="en">dissolve</rdfs:label>
     </owl:Class>
     
@@ -7365,7 +6690,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To mix is an experiment action “to put together or combine (two or more substances or things) so that the constituents or particles of each are interspersed or diffused more or less evenly among those of the rest”
         Reference:	THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mix</rdfs:label>
         <rdfs:label xml:lang="en">mix</rdfs:label>
     </owl:Class>
     
@@ -7376,10 +6700,7 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mode of category transformation is an experimental action with a goal of category transformation</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of category transform</rdfs:label>
         <rdfs:label xml:lang="en">mode of category transform</rdfs:label>
-        <rdfs:label xml:lang="en">mode of category trnsform</rdfs:label>
-        <rdfs:label xml:lang="en">mode of transform</rdfs:label>
     </owl:Class>
     
 
@@ -7396,7 +6717,6 @@ RNA extract</obo:IAO_0000118>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To break is an experiment action “to separate into two or more pieces” regardless of precision of the separation
         Reference: based on Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Break</rdfs:label>
         <rdfs:label xml:lang="en">break</rdfs:label>
     </owl:Class>
     
@@ -7408,7 +6728,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To penetrate; to pass or break through or into something, esp. as or in the manner of a sharp-pointed object
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierce</rdfs:label>
         <rdfs:label xml:lang="en">pierce</rdfs:label>
     </owl:Class>
     
@@ -7420,7 +6739,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To incubate is an experiment action to maintain optimal environmental conditions in order to promote growth or chemical reaction
         to cause to develop in an incubator or culture medium</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incubate</rdfs:label>
         <rdfs:label xml:lang="en">incubate</rdfs:label>
     </owl:Class>
     
@@ -7432,7 +6750,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To heat is an experiment action “to raise the temperature of”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heat</rdfs:label>
         <rdfs:label xml:lang="en">heat</rdfs:label>
     </owl:Class>
     
@@ -7444,7 +6761,6 @@ RNA extract</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_12"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To boil is an experiment action “o bubble up in agitation through the action of heat causing the lowest portions of the liquid to pass into the gaseous form and escape; to reach the boiling point, to turn from the liquid into the gaseous state”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boil</rdfs:label>
         <rdfs:label xml:lang="en">boil</rdfs:label>
     </owl:Class>
     
@@ -7455,7 +6771,6 @@ RNA extract</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_52">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To streak is an experiment action to spread a microbial sample in a line across the surface of solid culture medium to isolate individual cells</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Streak</rdfs:label>
         <rdfs:label xml:lang="en">streak</rdfs:label>
     </owl:Class>
     
@@ -7473,7 +6788,6 @@ RNA extract</obo:IAO_0000118>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To centrifuge is an experiment action “to subject to centrifugal motion; to separate by means of a centrifuge”.
         Reference: Based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centrifuge</rdfs:label>
         <rdfs:label xml:lang="en">centrifuge</rdfs:label>
     </owl:Class>
     
@@ -7493,7 +6807,6 @@ RNA extract</obo:IAO_0000118>
 washed</obo:IAO_0000118>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To wash is an experiment action “to cleanse, remove” the unwanted material” from (something) by affusion of or immersion in” fluid
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wash</rdfs:label>
         <rdfs:label xml:lang="en">wash</rdfs:label>
     </owl:Class>
     
@@ -7505,7 +6818,6 @@ washed</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To remove is an experiment action “to move or shift from or out of the place occupied; to lift or push aside; to lift up and take away; to take off”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remove</rdfs:label>
         <rdfs:label xml:lang="en">remove</rdfs:label>
     </owl:Class>
     
@@ -7516,7 +6828,6 @@ washed</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_56">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_111"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To record is an experiment action to represent symbolically a value of a measurement or an observation in order to preserve information for later use</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Record</rdfs:label>
         <rdfs:label xml:lang="en">record</rdfs:label>
     </owl:Class>
     
@@ -7527,7 +6838,6 @@ washed</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_57">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_2"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To re-suspend is an experiment action to suspend material that have been previously suspended, being made homologies, uniformly distributed</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re-suspend</rdfs:label>
         <rdfs:label xml:lang="en">re-suspend</rdfs:label>
     </owl:Class>
     
@@ -7539,7 +6849,6 @@ washed</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_111"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To measure is an experiment action “to determine the extent, quantity, amount or degree of something”
         Reference: Based on Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure</rdfs:label>
         <rdfs:label xml:lang="en">measure</rdfs:label>
     </owl:Class>
     
@@ -7551,7 +6860,6 @@ washed</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_111"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To calculate is an experiment action to estimate or determine a value of an entity by arithmetical or mathematical reckoning
         Reference: based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculate</rdfs:label>
         <rdfs:label xml:lang="en">calculate</rdfs:label>
     </owl:Class>
     
@@ -7562,7 +6870,6 @@ washed</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_61">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_111"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To label is an experiment action to designate a name to an entity</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
     </owl:Class>
     
@@ -7574,7 +6881,6 @@ washed</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Divide is an experiment action “to separate (a thing) into parts, or (a number or collective body) into smaller groups; to split up, cleave; to break or cut asunder”
         Reference: THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divide</rdfs:label>
         <rdfs:label xml:lang="en">divide</rdfs:label>
     </owl:Class>
     
@@ -7585,7 +6891,6 @@ washed</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_8">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_36"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To move is an experiment action to change a spatial location of an entity from a start location to an end location</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Move</rdfs:label>
         <rdfs:label xml:lang="en">move</rdfs:label>
     </owl:Class>
     
@@ -7603,7 +6908,6 @@ washed</obo:IAO_0000118>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an action is “the process of doing something or being active”
         Reference: Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action</rdfs:label>
         <rdfs:label xml:lang="en">action</rdfs:label>
     </owl:Class>
     
@@ -7615,7 +6919,6 @@ washed</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to add is an experiment action “to join or unite a component to another so as to increase the number, quantity in the container. The end container is the same for all components”
         Reference: based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add</rdfs:label>
         <rdfs:label xml:lang="en">add</rdfs:label>
     </owl:Class>
     
@@ -7626,7 +6929,6 @@ washed</obo:IAO_0000118>
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a command action is an action with a goal to control the flow of the process of executing of the experiment, e.g. stop, check, continues.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Command action</rdfs:label>
         <rdfs:label xml:lang="en">command action</rdfs:label>
     </owl:Class>
     
@@ -7636,7 +6938,6 @@ washed</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_91">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continue</rdfs:label>
         <rdfs:label xml:lang="en">continue</rdfs:label>
     </owl:Class>
     
@@ -7646,7 +6947,6 @@ washed</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_92">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stop</rdfs:label>
         <rdfs:label xml:lang="en">stop</rdfs:label>
     </owl:Class>
     
@@ -7656,7 +6956,6 @@ washed</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_93">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Check</rdfs:label>
         <rdfs:label xml:lang="en">check</rdfs:label>
     </owl:Class>
     
@@ -7666,7 +6965,6 @@ washed</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_94">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_90"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Go</rdfs:label>
         <rdfs:label xml:lang="en">go</rdfs:label>
     </owl:Class>
     
@@ -7743,5 +7041,5 @@ washed</obo:IAO_0000118>
 
 
 
-<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
