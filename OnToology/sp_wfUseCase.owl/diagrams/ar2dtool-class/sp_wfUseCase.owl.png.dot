@@ -1,0 +1,51 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "snap:DependentContinuant" "Thesaurus:C70830" "sp:DenaturationReaction" "span:Occurrent" "snap:IndependentContinuant" "bfo:Entity" "obo:CHEBI_33893" "sp:ExperimentalProtocol" "sp:WashingNucleicAcids" "e712ec4:15f818ea61e:-7fe4" "sp:RNAExtractionProtocol" "Thesaurus:C25294" "snap:Continuant" "sp:CellDisruption" "sp:ProtocolInstruction" "sp:NucleicAcidExtractionProtocol" "sp:PrecipitationReaction" "obo:OBI_0000747" "MSH:D004864" ; /*classes style*/
+	"NULL" -> "sp:NucleicAcidExtractionProtocol" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "sp:RNAExtractionProtocol" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "obo:BFO_0000061" [ label = "owl:onProperty" ];
+	"NULL" -> "sp:hasProtocol" [ label = "owl:onProperty" ];
+	"NULL" -> "span:Occurrent" [ label = "rdf:first" ];
+	"NULL" -> "e712ec4:15f818ea61e:-7fe3" [ label = "owl:unionOf" ];
+	"NULL" -> "sp:WashingNucleicAcids" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "ro:part_of" [ label = "owl:onProperty" ];
+	"NULL" -> "sp:CellDisruption" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "sp:PrecipitationReaction" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "sp:DenaturationReaction" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "e712ec4:15f818ea61e:-7fe2" [ label = "rdf:rest" ];
+	"NULL" -> "obo:RO_0000056" [ label = "owl:onProperty" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "snap:Continuant" [ label = "rdf:first" ];
+	"NULL" -> "obo:BFO_0000062" [ label = "owl:onProperty" ];
+	"NULL" -> "sp:hasStep" [ label = "owl:onProperty" ];
+	"sp:isopropylAlcohol" -> "sp:precipitationReaction01" [ label = "obo:RO_0000056" ];
+	"sp:tissueHomogenizer" -> "sp:cellDisruption1" [ label = "obo:RO_0000056" ];
+	"Thesaurus:C70830" -> "obo:OBI_0000747" [ label = "owl:disjointWith" ];
+	"sp:add1.3" -> "sp:washingNucleicAcid01" [ label = "obo:RO_0000056" ];
+	"sp:tumorTissue" -> "sp:cellDisruption1" [ label = "obo:RO_0000056" ];
+	"obo:CHEBI_33893" -> "obo:OBI_0000747" [ label = "owl:disjointWith" ];
+	"sp:precipitationReaction01" -> "sp:washingNucleicAcid01" [ label = "obo:BFO_0000061" ];
+	"sp:precipitationReaction01" -> "sp:denaturationReaction01" [ label = "obo:BFO_0000062" ];
+	"sp:washingNucleicAcid01" -> "sp:precipitationReaction01" [ label = "obo:BFO_0000062" ];
+	"MSH:D004864" -> "obo:OBI_0000747" [ label = "owl:disjointWith" ];
+	"MSH:D004864" -> "obo:CHEBI_33893" [ label = "owl:disjointWith" ];
+	"sp:add1.2" -> "sp:precipitationReaction01" [ label = "obo:RO_0000056" ];
+	"snap:DependentContinuant" -> "snap:IndependentContinuant" [ label = "owl:disjointWith" ];
+	"sp:homogenize1" -> "sp:cellDisruption1" [ label = "obo:RO_0000056" ];
+	"sp:cellDisruption1" -> "sp:denaturationReaction01" [ label = "obo:BFO_0000061" ];
+	"sp:seventyFivePercentEthanol" -> "sp:washingNucleicAcid01" [ label = "obo:RO_0000056" ];
+	"sp:denaturationReaction01" -> "sp:precipitationReaction01" [ label = "obo:BFO_0000061" ];
+	"sp:denaturationReaction01" -> "sp:cellDisruption1" [ label = "obo:BFO_0000062" ];
+	"sp:add1.1" -> "sp:denaturationReaction01" [ label = "obo:RO_0000056" ];
+	"bfo:Entity" -> "e712ec4:15f818ea61e:-7fe4" [ label = "owl:equivalentClass" ];
+	"sp:chloroform" -> "sp:denaturationReaction01" [ label = "obo:RO_0000056" ];
+	"snap:Continuant" -> "span:Occurrent" [ label = "owl:disjointWith" ];
+	"sp:RNAextraction01" -> "sp:washingNucleicAcid01" [ label = "sp:hasStep" ];
+	"sp:RNAextraction01" -> "sp:precipitationReaction01" [ label = "sp:hasStep" ];
+	"sp:RNAextraction01" -> "sp:denaturationReaction01" [ label = "sp:hasStep" ];
+	"sp:RNAextraction01" -> "sp:cellDisruption1" [ label = "sp:hasStep" ];
+	"Thesaurus:C25294" -> "sp:ExperimentalProtocol" [ label = "sp:hasProtocol" ];
+	"sp:ExperimentalProtocol" -> "sp:ProtocolInstruction" [ label = "sp:hasStep" ];
+
+}

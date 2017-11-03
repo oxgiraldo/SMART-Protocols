@@ -1,0 +1,861 @@
+<http://purl.org/net/SMARTprotocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/contributor> "http://delicias.dia.fi.upm.es/members/DGarijo/#me"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/contributor> "http://www.alexandergarcia.name/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/contributor> "http://www.dia.fi.upm.es/index.php?page=oscar-corcho/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/created> "2013-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/creator> "http://oxgiraldo.wordpress.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/description> "Here is presented an example showing information that is being modeled in SP-Workflow. The individuals and their corresponding descriptions were extracted from a protocol about extraction of total RNA (the protocols is available here: http://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html)"@en .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/" .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/dc/terms/title> "SP-Workflow Module: Use case"@en .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sp" .
+<http://purl.org/net/SMARTprotocol> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/net/SMARTprotocol#" .
+<http://purl.org/net/SMARTprotocol> <http://www.w3.org/2000/01/rdf-schema#label> "SP-Workflow Module: Use case"@en .
+<http://purl.org/net/SMARTprotocol> <http://www.w3.org/2002/07/owl#versionInfo> "3.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000115> "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/2000/01/rdf-schema#label> "example of usage" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions." .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/2000/01/rdf-schema#label> "definition" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000115> "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)" .
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.w3.org/2000/01/rdf-schema#label> "alternative term" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000115> "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007" .
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/2000/01/rdf-schema#label> "definition source" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000115> "For external terms/classes, the ontology from which the term was imported" .
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://www.w3.org/2000/01/rdf-schema#label> "imported from" .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000061
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://purl.obolibrary.org/obo/IAO_0000115> "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff \u03C9(x) <= \u03B1(y), where \u03B1 is a function that maps a process to a start point, and \u03C9 is a function that maps a process to an end point."@en .
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://purl.obolibrary.org/obo/IAO_0000412> "BFO"@en .
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://www.w3.org/2000/01/rdf-schema#label> "precedes"@en .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000062
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.obolibrary.org/obo/BFO_0000061> .
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/IAO_0000118> "preceded by" .
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.obolibrary.org/obo/IAO_0000412> "BFO"@en .
+<http://purl.obolibrary.org/obo/BFO_0000062> <http://www.w3.org/2000/01/rdf-schema#label> "is preceded by"@en .
+# 
+# http://purl.obolibrary.org/obo/RO_0000056
+<http://purl.obolibrary.org/obo/RO_0000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/IAO_0000115> "participates in is a relation that binds a material entity and a protocol instruction."@en .
+<http://purl.obolibrary.org/obo/RO_0000056> <http://www.w3.org/2000/01/rdf-schema#label> "participates in"@en .
+# 
+# http://purl.obolibrary.org/obo/RO_0001000
+<http://purl.obolibrary.org/obo/RO_0001000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000112> "this cell derives from this parent cell (cell division); this nucleus derives from this parent nucleus (nuclear division)" .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity" .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://www.w3.org/2000/01/rdf-schema#label> "derives from" .
+# 
+# http://purl.org/net/SMARTprotocol#hasProtocol
+<http://purl.org/net/SMARTprotocol#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> .
+<http://purl.org/net/SMARTprotocol#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/net/SMARTprotocol#hasProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "hasProtocol is a relation that binds a laboratory procedure to a experimental protocol."@en .
+<http://purl.org/net/SMARTprotocol#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "has protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasStep
+<http://purl.org/net/SMARTprotocol#hasStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasStep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/net/SMARTprotocol#hasStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/SMARTprotocol#ProtocolInstruction> .
+<http://purl.org/net/SMARTprotocol#hasStep> <http://purl.obolibrary.org/obo/IAO_0000115> "hasStep is a relation that binds a experimental protocol to a protocol instruction."@en .
+<http://purl.org/net/SMARTprotocol#hasStep> <http://www.w3.org/2000/01/rdf-schema#label> "has step" .
+# 
+# http://www.obofoundry.org/ro/ro.owl#has_part
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://purl.obolibrary.org/obo/IAO_0000412> "OBO Relation Ontology" .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+# 
+# http://www.obofoundry.org/ro/ro.owl#part_of
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.obolibrary.org/obo/IAO_0000115> "Parthood as a relation between instances: The primitive instance-level relation p part_of p1 is illustrated in assertions such as: this instance of rhodopsin mediated phototransduction part_of this instance of visual perception. This relation satisfies at least the following standard axioms of mereology: reflexivity (for all p, p part_of p); anti-symmetry (for all p, p1, if p part_of p1 and p1 part_of p then p and p1 are identical); and transitivity (for all p, p1, p2, if p part_of p1 and p1 part_of p2, then p part_of p2). Analogous axioms hold also for parthood as a relation between spatial regions. For parthood as a relation between continuants, these axioms need to be modified to take account of the incorporation of a temporal argument. Thus for example the axiom of transitivity for continuants will assert that if c part_of c1 at t and c1 part_of c2 at t, then also c part_of c2 at t. Parthood as a relation between classes: To define part_of as a relation between classes we again need to distinguish the two cases of continuants and processes, even though the explicit reference to instants of time now falls away. For continuants, we have C part_of C1 if and only if any instance of C at any time is an instance-level part of some instance of C1 at that time, as for example in: cell nucleus part_ of cell." .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.obolibrary.org/obo/IAO_0000412> "OBO Relation Ontology" .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#has_Part_of
+<http://www.owl-ontologies.com/Ontology1184060740.owl#has_Part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000671> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://purl.obolibrary.org/obo/IAO_0000115> "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function."@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://purl.obolibrary.org/obo/IAO_0000119> "CDISC" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://purl.obolibrary.org/obo/IAO_0000412> "NCI thesaurus" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> <http://www.w3.org/2000/01/rdf-schema#label> "tissue"@en .
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000999> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://purl.obolibrary.org/obo/IAO_0000115> "Any procedure that involves testing or manipulating a sample of blood, urine, or other body substance in a laboratory setting."@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://purl.obolibrary.org/obo/IAO_0000118> "Test \nLBTEST \nLaboratory Test \nTests \nLab Test \nLab Tests"@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://purl.obolibrary.org/obo/IAO_0000412> "NCI thesaurus" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> <http://www.w3.org/2000/01/rdf-schema#label> "laboratory procedure"@en .
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://purl.obolibrary.org/obo/IAO_0000115> "A message describing how something is to be done."@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://purl.obolibrary.org/obo/IAO_0000118> "step"@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://purl.obolibrary.org/obo/IAO_0000412> "NCIT"@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://www.w3.org/2000/01/rdf-schema#label> "Instruction"@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> <http://www.w3.org/2000/01/rdf-schema#label> "instruction"@en .
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/OBI_0000747> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://purl.obolibrary.org/obo/IAO_0000115> "A homogeneous mixture of two or more substances; frequently (but not necessarily) a liquid solution."@en .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://purl.obolibrary.org/obo/IAO_0000412> "NCI thesaurus" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> <http://www.w3.org/2000/01/rdf-schema#label> "solution"@en .
+# 
+# http://purl.bioontology.org/ontology/CSP/4000-0119
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://purl.obolibrary.org/obo/IAO_0000115> "tissue and cells derived from animals for use in research."@en .
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://purl.obolibrary.org/obo/IAO_0000118> "nonhuman tissue"@en .
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://purl.obolibrary.org/obo/IAO_0000412> "CRISP"@en .
+<http://purl.bioontology.org/ontology/CSP/4000-0119> <http://www.w3.org/2000/01/rdf-schema#label> "animal tissue"@en .
+# 
+# http://purl.bioontology.org/ontology/MSH/D004864
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/CHEBI_33893> .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/OBI_0000747> .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://purl.obolibrary.org/obo/IAO_0000115> "Expendable and nonexpendable equipment, supplies, apparatus, and instruments that are used in diagnostic, surgical, therapeutic, scientific, and experimental procedures."@en .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://purl.obolibrary.org/obo/IAO_0000118> "Device\nApparatus and Instruments\nDevice, Medical\nDevices, Medical\nInstruments and Apparatus\nInventory\nMedical Device\nSupplies and Equipment\nMED DEVICE\nEQUIPMENT SUPPLIES\nMED DEVICES\nAPPARATUS INSTRUM\nDEVICES MED\nDEVICE MED\nDevices\nEquipment\nInventories\nMedical Devices\nSupplies"@en .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://purl.obolibrary.org/obo/IAO_0000412> "Medical Subject Headings (MeSH)" .
+<http://purl.bioontology.org/ontology/MSH/D004864> <http://www.w3.org/2000/01/rdf-schema#label> "equipment and supplies"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_17824
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_35681> .
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000056> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://purl.obolibrary.org/obo/IAO_0000115> "A secondary alcohol that is propane in which one of the hydrogens attached to the central carbon is substituted by a hydroxy group."@en .
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://purl.obolibrary.org/obo/IAO_0000118> "i-propanol\nC3H8O\nIsopropanol\n1-methylethyl alcohol\nIPA\nsec-propanol\ni-Propylalkohol\nIsopropyl alcohol\n2-Propanol\nisopropyl alcohol\nCC(C)O\nIsopropylalkohol\n2-hydroxypropane\nISOPROPYL ALCOHOL\n1-methylethanol"@en .
+<http://purl.obolibrary.org/obo/CHEBI_17824> <http://www.w3.org/2000/01/rdf-schema#label> "propan-2-ol"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_30879
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_33893> .
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://purl.obolibrary.org/obo/IAO_0000115> "A compound in which a hydroxy group, -OH, is attached to a saturated carbon atom."@en .
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://purl.obolibrary.org/obo/IAO_0000118> "O[*]\nan alcohol\nHOR"@en .
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://purl.obolibrary.org/obo/IAO_0000412> "CHEBI"@en .
+<http://purl.obolibrary.org/obo/CHEBI_30879> <http://www.w3.org/2000/01/rdf-schema#label> "alcohol"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_33893
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/OBI_0000747> .
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://purl.obolibrary.org/obo/IAO_0000115> "A substance used in a chemical reaction to detect, measure, examine, or produce other substances."@en .
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://purl.obolibrary.org/obo/IAO_0000412> "ChEBI" .
+<http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2000/01/rdf-schema#label> "reagent"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_35255
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_64708> .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000056> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/IAO_0000115> "A one-carbon compound that is methane in which three of the hydrogens are replaced by chlorines."@en .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/IAO_0000118> "trichloromethane\nCHCl3\nTrichlormethan\nchloroforme\n[H]C(Cl)(Cl)Cl\n1,1,1-trichloromethane\nchloroformium pro narcosi"@en .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://purl.obolibrary.org/obo/IAO_0000412> "CHEBI"@en .
+<http://purl.obolibrary.org/obo/CHEBI_35255> <http://www.w3.org/2000/01/rdf-schema#label> "chloroform"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_35681
+<http://purl.obolibrary.org/obo/CHEBI_35681> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_35681> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_30879> .
+<http://purl.obolibrary.org/obo/CHEBI_35681> <http://purl.obolibrary.org/obo/IAO_0000115> "A secondary alcohol is a compound in which a hydroxy group, -OH, is attached to a saturated carbon atom which has two other carbon atoms attached to it."@en .
+<http://purl.obolibrary.org/obo/CHEBI_35681> <http://purl.obolibrary.org/obo/IAO_0000118> "secondary alcohols\nCH2OR2\na secondary alcohol"@en .
+<http://purl.obolibrary.org/obo/CHEBI_35681> <http://www.w3.org/2000/01/rdf-schema#label> "secondary alcohol"@en .
+# 
+# http://purl.obolibrary.org/obo/CHEBI_64708
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/CHEBI_33893> .
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://purl.obolibrary.org/obo/IAO_0000115> "An organic molecular entity containing a single carbon atom (C1)."@en .
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://purl.obolibrary.org/obo/IAO_0000118> "one-carbon compounds"@en .
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://purl.obolibrary.org/obo/IAO_0000412> "CHEBI"@en .
+<http://purl.obolibrary.org/obo/CHEBI_64708> <http://www.w3.org/2000/01/rdf-schema#label> "one-carbon compound"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of information content entites include journal articles, data, graphical layouts, and graphs." .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000115> "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000142" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000300
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000112> "Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities"@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000115> "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc."@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000118> "text"@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/2000/01/rdf-schema#label> "textual entity"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000310
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000112> "an experimental protocol"@en .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000115> "A collection of information content entities intended to be understood together as a whole."@en .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000412> "IAO"@en .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/2000/01/rdf-schema#label> "document"@en .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000671
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000747> .
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://purl.obolibrary.org/obo/IAO_0000115> "a material obtained from an organism in order to be a representative of the whole"@en .
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://purl.obolibrary.org/obo/IAO_0000118> "sample\nspecimen\nbiospecimen"@en .
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/OBI_0000671> <http://www.w3.org/2000/01/rdf-schema#label> "sample from organism"@en .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000747
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://purl.obolibrary.org/obo/IAO_0000112> "blood drawn from patient to measure his systemic glucose level. A population of humans with HIV enrolled in a study taken to represent patients with HIV in general."@en .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity that has the material sample role"@en .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://purl.obolibrary.org/obo/IAO_0000118> "sample population"@en .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/OBI_0000747> <http://www.w3.org/2000/01/rdf-schema#label> "material sample"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0009007
+<http://purl.obolibrary.org/obo/PO_0009007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://purl.obolibrary.org/obo/IAO_0000112> "roots, leaves, flowers, stems."@en .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://purl.obolibrary.org/obo/IAO_0000115> "A plant structure (PO:0009011) that consists predominantly of similarly specialized plant cells (PO:0009002) of one or more types. "@en .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://purl.obolibrary.org/obo/IAO_0000118> "portion of plant tissue\nportion of tissue"@en .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0009007> <http://www.w3.org/2000/01/rdf-schema#label> "plant tissue"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0009010
+<http://purl.obolibrary.org/obo/PO_0009010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://purl.obolibrary.org/obo/IAO_0000115> "A multi-tissue plant structure (PO:0025496) that develops from a plant ovule (PO:0020003) and has as parts a plant embryo (PO:0009009) enclosed in a seed coat (PO:0009088)."@en .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://purl.obolibrary.org/obo/IAO_0000118> "pyrene\ndiaspore\nsemilla\nseed tissue"@en .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://www.w3.org/2000/01/rdf-schema#comment> "A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms)."@en .
+<http://purl.obolibrary.org/obo/PO_0009010> <http://www.w3.org/2000/01/rdf-schema#label> "seed"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0009046
+<http://purl.obolibrary.org/obo/PO_0009046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0009046> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/IAO_0000115> "A determinate reproductive shoot system that has as part at least one carpel or at least one stamen and does not contain any other determinate shoot system as a part."@en .
+<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/IAO_0000118> "diclinous flower\npistillate flower\nstaminate flower\nbasal flower\ndouble flower\nfemale flower\nhermaphrodite flower\nmale flower\nperfect flower \nimperfect flower\nmonoclinous flower\nflor"@en .
+<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0009046> <http://www.w3.org/2000/01/rdf-schema#label> "flower"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0009047
+<http://purl.obolibrary.org/obo/PO_0009047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.org/obo/IAO_0000115> "A shoot axis (PO:0025029) that is the primary axis of a plant."@en .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.org/obo/IAO_0000118> "stalk\ntrunk \ncane\ncaudices\nprimocane\nscape\ncaudex \nbole\nprimary stem\ntallo \ntronco \nculm; \neje primario\nprimary axis"@en .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://www.w3.org/2000/01/rdf-schema#comment> "Often bears leaves and buds. It is usually above ground, more or less negatively geotropic, and exogenous in origin."@en .
+<http://purl.obolibrary.org/obo/PO_0009047> <http://www.w3.org/2000/01/rdf-schema#label> "stem"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0025025
+<http://purl.obolibrary.org/obo/PO_0025025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0025025> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0025025> <http://purl.obolibrary.org/obo/IAO_0000115> "A collective plant organ structure (PO:0025007) that produces root apical meristems (PO:0020147) and the plant structures that arise from them."@en .
+<http://purl.obolibrary.org/obo/PO_0025025> <http://purl.obolibrary.org/obo/IAO_0000118> "root tissue"@en .
+<http://purl.obolibrary.org/obo/PO_0025025> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0025025> <http://www.w3.org/2000/01/rdf-schema#label> "root"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0025034
+<http://purl.obolibrary.org/obo/PO_0025034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0025034> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0025034> <http://purl.obolibrary.org/obo/IAO_0000115> "A phyllome (PO:0006001) that is not associated with a reproductive structure. "@en .
+<http://purl.obolibrary.org/obo/PO_0025034> <http://purl.obolibrary.org/obo/IAO_0000118> "hoja\nleaf sample\nleaves\nleaf tissue\nleaf material\nfresh-leaf tissue\nfresh leaf tissue\ndried leaf tissue\ndried leaf sample\ndried leaf\nLeaf blade"@en .
+<http://purl.obolibrary.org/obo/PO_0025034> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0025034> <http://www.w3.org/2000/01/rdf-schema#label> "leaf"@en .
+# 
+# http://purl.obolibrary.org/obo/PO_0025059
+<http://purl.obolibrary.org/obo/PO_0025059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/PO_0009007> .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://purl.obolibrary.org/obo/IAO_0000115> "Any portion of plant tissue (PO:0009007) other than epidermis (PO:0005679) or vascular tissue (PO:0009015)."@en .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://purl.obolibrary.org/obo/IAO_0000118> "portion of ground tissue"@en .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://purl.obolibrary.org/obo/IAO_0000412> "plant ontology (PO)"@en .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://www.w3.org/2000/01/rdf-schema#label> "ground tissue"@en .
+<http://purl.obolibrary.org/obo/PO_0025059> <http://www.w3.org/2000/01/rdf-schema#label> "portion of ground tissue"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0000948
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://purl.obolibrary.org/obo/IAO_0000115> "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ."@en .
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://purl.obolibrary.org/obo/IAO_0000118> "chambered heart\nvertebrate heart\nHerz\nbranchial heart\nEntire heart"@en .
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0000948> <http://www.w3.org/2000/01/rdf-schema#label> "heart"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0000955
+<http://purl.obolibrary.org/obo/UBERON_0000955> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0000955> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0000955> <http://purl.obolibrary.org/obo/IAO_0000115> "The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP]."@en .
+<http://purl.obolibrary.org/obo/UBERON_0000955> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0000955> <http://www.w3.org/2000/01/rdf-schema#label> "brain"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0002048
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://purl.obolibrary.org/obo/IAO_0000115> "Respiration organ that develops as an oupocketing of the esophagus."@en .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://purl.obolibrary.org/obo/IAO_0000118> "pulmo"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://www.w3.org/2000/01/rdf-schema#comment> "Snakes and limbless lizards typically possess only the right lung as a major respiratory organ; the left lung is greatly reduced, or even absent. Amphisbaenians, however, have the opposite arrangement, with a major left lung, and a reduced or absent right lung [WP]"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002048> <http://www.w3.org/2000/01/rdf-schema#label> "lung"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0002106
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://purl.obolibrary.org/obo/IAO_0000115> "the organ that functions to filter blood and to store red corpuscles and platelets"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://purl.obolibrary.org/obo/IAO_0000118> "lien"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002106> <http://www.w3.org/2000/01/rdf-schema#label> "spleen"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0002107
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://purl.obolibrary.org/obo/IAO_0000115> "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO]."@en .
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://purl.obolibrary.org/obo/IAO_0000118> "jecur\niecur"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002107> <http://www.w3.org/2000/01/rdf-schema#label> "liver"@en .
+# 
+# http://purl.obolibrary.org/obo/UBERON_0002113
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/CSP/4000-0119> .
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://purl.obolibrary.org/obo/IAO_0000115> "A paired organ of the urinary tract which has the production of urine as its primary function."@en .
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://purl.obolibrary.org/obo/IAO_0000118> "reniculate kidney"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://purl.obolibrary.org/obo/IAO_0000412> "UBERON"@en .
+<http://purl.obolibrary.org/obo/UBERON_0002113> <http://www.w3.org/2000/01/rdf-schema#label> "kidney"@en .
+# 
+# http://purl.org/net/SMARTprotocol#CellDisruption
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ProtocolInstruction> .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000061> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://purl.obolibrary.org/obo/IAO_0000115> "Breaking the cells open, is the first basic step in a DNA extraction. This is commonly achieved by chemical and physical methods-blending, grinding or sonicating the sample."@en .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://purl.obolibrary.org/obo/IAO_0000118> "Cell lysis"@en .
+<http://purl.org/net/SMARTprotocol#CellDisruption> <http://www.w3.org/2000/01/rdf-schema#label> "cell disruption"@en .
+# 
+# http://purl.org/net/SMARTprotocol#DenaturationReaction
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ProtocolInstruction> .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000061> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000062> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://purl.obolibrary.org/obo/IAO_0000115> "The biological activity of a biopolymer is closely linked to its native structure which is retained only if critical factors such as temperature, pH, solvent and solute are kept within narrow limits. Any alteration of the native structure causing a loss of biological activity is called denaturation."@en .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://purl.obolibrary.org/obo/IAO_0000119> "http://www.sigmaaldrich.com/life-science/metabolomics/bioultra-reagents/denaturation.html#sthash.5rKMTmls.dpuf"@en .
+<http://purl.org/net/SMARTprotocol#DenaturationReaction> <http://www.w3.org/2000/01/rdf-schema#label> "denaturation reaction"@en .
+# 
+# http://purl.org/net/SMARTprotocol#DounceHomogenizer
+<http://purl.org/net/SMARTprotocol#DounceHomogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#DounceHomogenizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#Homogenizer> .
+<http://purl.org/net/SMARTprotocol#DounceHomogenizer> <http://purl.obolibrary.org/obo/IAO_0000115> "Shearing caused by a round glass pestle that is manually driven into a glass tube"@en .
+<http://purl.org/net/SMARTprotocol#DounceHomogenizer> <http://purl.obolibrary.org/obo/IAO_0000118> "tissue grinder"@en .
+<http://purl.org/net/SMARTprotocol#DounceHomogenizer> <http://www.w3.org/2000/01/rdf-schema#label> "dounce homogenizer"@en .
+# 
+# http://purl.org/net/SMARTprotocol#EthanolSolution
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830> .
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://purl.obolibrary.org/obo/IAO_0000112> "70% ethanol"@en .
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://purl.obolibrary.org/obo/IAO_0000115> "A homogeneous mixture of ethanol and water."@en .
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://purl.obolibrary.org/obo/IAO_0000119> "http://cameochemicals.noaa.gov/chemical/19240"@en .
+<http://purl.org/net/SMARTprotocol#EthanolSolution> <http://www.w3.org/2000/01/rdf-schema#label> "ethanol solution"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ExperimentalProtocol
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000310> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental protocol is a sequence of tasks and operations executed to perform experimental research. The protocols often include equipment, reagents, critical steps, troubleshooting, tips and all the information that facilitates reusability."@en .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "experimental protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Homogenize
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> .
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000056> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://purl.obolibrary.org/obo/IAO_0000115> "Homogenize is a experimental action. Homogenize is to make uniform or similar."@en .
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://purl.obolibrary.org/obo/IAO_0000118> "make uniform\nmake similar\nunite\nintegrate\nfuse\nmerge\nblend\nmeld\ncoalesce \namalgamate\nsynthesize\ncombine\njoin together"@en .
+<http://purl.org/net/SMARTprotocol#Homogenize> <http://www.w3.org/2000/01/rdf-schema#label> "homogenize"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Homogenizer
+<http://purl.org/net/SMARTprotocol#Homogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#Homogenizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#SampleMill> .
+<http://purl.org/net/SMARTprotocol#Homogenizer> <http://purl.obolibrary.org/obo/IAO_0000115> "A homogenizer is a equipment of laboratory used for the homogenization of various types of material, such as tissue, plant, food, soil, and many others. Many different models have been developed using various physical technologies for disruption."@en .
+<http://purl.org/net/SMARTprotocol#Homogenizer> <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Homogenizer"@en .
+<http://purl.org/net/SMARTprotocol#Homogenizer> <http://www.w3.org/2000/01/rdf-schema#label> "homogenizer"@en .
+# 
+# http://purl.org/net/SMARTprotocol#LyophilizedGroundTissue
+<http://purl.org/net/SMARTprotocol#LyophilizedGroundTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#LyophilizedGroundTissue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#LyophilizedTissue> .
+<http://purl.org/net/SMARTprotocol#LyophilizedGroundTissue> <http://purl.obolibrary.org/obo/IAO_0000118> "freeze-dried ground tissue\nfreeze dried ground tissue\n"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedGroundTissue> <http://www.w3.org/2000/01/rdf-schema#label> "lyophilized ground tissue"@en .
+# 
+# http://purl.org/net/SMARTprotocol#LyophilizedLeaf
+<http://purl.org/net/SMARTprotocol#LyophilizedLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#LyophilizedLeaf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#LyophilizedTissue> .
+<http://purl.org/net/SMARTprotocol#LyophilizedLeaf> <http://purl.obolibrary.org/obo/IAO_0000118> "freeze-dried leaf\nfreeze dried leaf\nlyophilized leaf tissue"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedLeaf> <http://www.w3.org/2000/01/rdf-schema#label> "lyophilized leaf"@en .
+# 
+# http://purl.org/net/SMARTprotocol#LyophilizedRoot
+<http://purl.org/net/SMARTprotocol#LyophilizedRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#LyophilizedRoot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#LyophilizedTissue> .
+<http://purl.org/net/SMARTprotocol#LyophilizedRoot> <http://purl.obolibrary.org/obo/IAO_0000118> "freeze-dried root\nfreeze dried root\nlyophilized root tissue"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedRoot> <http://www.w3.org/2000/01/rdf-schema#label> "lyophilized root"@en .
+# 
+# http://purl.org/net/SMARTprotocol#LyophilizedSeed
+<http://purl.org/net/SMARTprotocol#LyophilizedSeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#LyophilizedSeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#LyophilizedTissue> .
+<http://purl.org/net/SMARTprotocol#LyophilizedSeed> <http://purl.obolibrary.org/obo/IAO_0000118> "freeze-dried seed\nfreeze dried seed\nlyophilized seed tissue"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedSeed> <http://www.w3.org/2000/01/rdf-schema#label> "lyophilized seed"@en .
+# 
+# http://purl.org/net/SMARTprotocol#LyophilizedTissue
+<http://purl.org/net/SMARTprotocol#LyophilizedTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#LyophilizedTissue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+<http://purl.org/net/SMARTprotocol#LyophilizedTissue> <http://purl.obolibrary.org/obo/IAO_0000112> "lyophilized leaf, lyophilized root, lyophilized seed"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedTissue> <http://purl.obolibrary.org/obo/IAO_0000115> "lyophilized tissue is a tissue dried by freezing in a high vacuum"@en .
+<http://purl.org/net/SMARTprotocol#LyophilizedTissue> <http://www.w3.org/2000/01/rdf-schema#label> "lyophilized tissue"@en .
+# 
+# http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://purl.obolibrary.org/obo/IAO_0000112> "DNA extraction procedure, RNA extraction procedure"@en .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://purl.obolibrary.org/obo/IAO_0000115> "Nucleic acid extraction procedure is a subclass of laboratory procedure used to recover the nucleic acid fraction of an input material entity."@en .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://purl.obolibrary.org/obo/IAO_0000118> "Nucleic acid isolation procedure"@en .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "nucleic acid extraction procedure"@en .
+# 
+# http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#WashingNucleicAcids> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "Nucleic acid extraction protocol is a subclass of laboratory protocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity."@en .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "nucleic acid extraction protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies
+<http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.bioontology.org/ontology/MSH/D004864> .
+<http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000056> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies> <http://www.w3.org/2000/01/rdf-schema#label> "physical disruption equipment and supplies"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PolytronHomogenizer
+<http://purl.org/net/SMARTprotocol#PolytronHomogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PolytronHomogenizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#Homogenizer> .
+<http://purl.org/net/SMARTprotocol#PolytronHomogenizer> <http://purl.obolibrary.org/obo/IAO_0000115> "Polytron homogenizer is a instrument used for pulverizing plant and animal tissue, grain and seed, soil extraction, DNA/RNA extraction."@en .
+<http://purl.org/net/SMARTprotocol#PolytronHomogenizer> <http://purl.obolibrary.org/obo/IAO_0000118> "polytron\npoly-tron mixer\npolytron mixer"@en .
+<http://purl.org/net/SMARTprotocol#PolytronHomogenizer> <http://www.w3.org/2000/01/rdf-schema#label> "polytron homogenizer"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer
+<http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#Homogenizer> .
+<http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer> <http://purl.obolibrary.org/obo/IAO_0000115> "Shearing is caused by a PTFE- coated pestle that is manually or mechanically driven into a conical vessel"@en .
+<http://purl.org/net/SMARTprotocol#PotterElvehjemHomogenizer> <http://www.w3.org/2000/01/rdf-schema#label> "potter-elvehjem homogenizer"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PowderedLeaf
+<http://purl.org/net/SMARTprotocol#PowderedLeaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PowderedLeaf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#PowderedTissue> .
+<http://purl.org/net/SMARTprotocol#PowderedLeaf> <http://purl.obolibrary.org/obo/IAO_0000118> "pulverized leaf\npulverized leaf tissue\npowdered leaf tissue"@en .
+<http://purl.org/net/SMARTprotocol#PowderedLeaf> <http://www.w3.org/2000/01/rdf-schema#label> "powdered leaf"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PowderedRoot
+<http://purl.org/net/SMARTprotocol#PowderedRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PowderedRoot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#PowderedTissue> .
+<http://purl.org/net/SMARTprotocol#PowderedRoot> <http://purl.obolibrary.org/obo/IAO_0000118> "pulverized root\npulverized root tissue\npowdered root tissue"@en .
+<http://purl.org/net/SMARTprotocol#PowderedRoot> <http://www.w3.org/2000/01/rdf-schema#label> "powdered root"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PowderedSeed
+<http://purl.org/net/SMARTprotocol#PowderedSeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PowderedSeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#PowderedTissue> .
+<http://purl.org/net/SMARTprotocol#PowderedSeed> <http://purl.obolibrary.org/obo/IAO_0000118> "pulverized seed\npulverized seed tissue\npowdered seed tissue"@en .
+<http://purl.org/net/SMARTprotocol#PowderedSeed> <http://www.w3.org/2000/01/rdf-schema#label> "powdered seed"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PowderedTissue
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://purl.obolibrary.org/obo/IAO_0000112> "Grind the seed to a powder. Transfer the powdered seed to a container and weigh the specified amount."@en .
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://purl.obolibrary.org/obo/IAO_0000115> "Powdered tissue is a material entity. Powdered tissue is a tissue that has been pulverirized."@en .
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://purl.obolibrary.org/obo/IAO_0000118> "pulverized tissue"@en .
+<http://purl.org/net/SMARTprotocol#PowderedTissue> <http://www.w3.org/2000/01/rdf-schema#label> "powdered tissue"@en .
+# 
+# http://purl.org/net/SMARTprotocol#PrecipitationReaction
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ProtocolInstruction> .
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000061> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#WashingNucleicAcids> .
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000062> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#PrecipitationReaction> <http://www.w3.org/2000/01/rdf-schema#label> "precipitation reaction"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ProtocolInstruction
+<http://purl.org/net/SMARTprotocol#ProtocolInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ProtocolInstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42688> .
+<http://purl.org/net/SMARTprotocol#ProtocolInstruction> <http://purl.obolibrary.org/obo/IAO_0000115> "A protocol instruction should have sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the procedure."@en .
+<http://purl.org/net/SMARTprotocol#ProtocolInstruction> <http://purl.obolibrary.org/obo/IAO_0000119> "EFO"@en .
+<http://purl.org/net/SMARTprotocol#ProtocolInstruction> <http://www.w3.org/2000/01/rdf-schema#label> "protocol instruction"@en .
+# 
+# http://purl.org/net/SMARTprotocol#RNAExtractionProcedure
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasProtocol> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://purl.obolibrary.org/obo/IAO_0000115> "A RNA extraction procedure is a subclass of nucleic acid extraction procedure where the desired output material is RNA"@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://purl.obolibrary.org/obo/IAO_0000118> "RNA isolation procedure"@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProcedure> <http://www.w3.org/2000/01/rdf-schema#label> "RNA extraction procedure"@en .
+# 
+# http://purl.org/net/SMARTprotocol#RNAExtractionProtocol
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasStep> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#WashingNucleicAcids> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "RNA extraction protocol is a subclass of nucleic acid extraction protocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity."@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000118> "RNA isolation protocol"@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "RNA extraction protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#SampleMill
+<http://purl.org/net/SMARTprotocol#SampleMill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#SampleMill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#PhysicalDisruptionEquipmentAndSupplies> .
+<http://purl.org/net/SMARTprotocol#SampleMill> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/RO_0000056> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#SampleMill> <http://purl.obolibrary.org/obo/IAO_0000115> "sample mills cover a broad range of sample preparation equipment and supplies. The range includes homogenizers, blenders and mills for the preparation of high-fat, high-moisture, dry, frozen and fibrous samples."@en .
+<http://purl.org/net/SMARTprotocol#SampleMill> <http://www.w3.org/2000/01/rdf-schema#label> "sample mill"@en .
+# 
+# http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol
+<http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#EthanolSolution> .
+<http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> <http://purl.obolibrary.org/obo/IAO_0000115> "An aqueous dilution of ethanol containing 75% ethanol by volume."@en .
+<http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> <http://purl.obolibrary.org/obo/IAO_0000118> "75% Ethyl Alcohol\nEthyl Alcohol, 75%\nAlcohol, Ethyl 75%\n75% (v/v) ethanol\n75 per cent alcohol\n75% RNase-free ethanol\n75% RNase free ethanol\n75% EtOH"@en .
+<http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> <http://www.w3.org/2000/01/rdf-schema#label> "75% ethanol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#WashingNucleicAcids
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ProtocolInstruction> .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.obolibrary.org/obo/BFO_0000062> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://purl.obolibrary.org/obo/IAO_0000115> "This step is to wash any residual salt away from the pelleted DNA/RNA."@en .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://purl.obolibrary.org/obo/IAO_0000119> "http://bitesizebio.com/253/the-basics-how-ethanol-precipitation-of-dna-and-rna-works/"@en .
+<http://purl.org/net/SMARTprotocol#WashingNucleicAcids> <http://www.w3.org/2000/01/rdf-schema#label> "washing nucleic acids"@en .
+# 
+# http://semanticscience.org/resource/SIO_000999
+<http://semanticscience.org/resource/SIO_000999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semanticscience.org/resource/SIO_000999> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/span#Occurrent> .
+<http://semanticscience.org/resource/SIO_000999> <http://purl.obolibrary.org/obo/IAO_0000115> "A procedure is a process that attempts to achieve one or more objectives by following an established set of actions."@en .
+<http://semanticscience.org/resource/SIO_000999> <http://purl.obolibrary.org/obo/IAO_0000412> "SIO"@en .
+<http://semanticscience.org/resource/SIO_000999> <http://www.w3.org/2000/01/rdf-schema#label> "procedure"@en .
+# 
+# http://www.ifomis.org/bfo/1.1#Entity
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ifomis.org/bfo/1.1/span#Occurrent> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#Continuant
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ifomis.org/bfo/1.1/span#Occurrent> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Synonyms: endurant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#label> "continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#DependentContinuant
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities." .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "dependent continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time." .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: a certain PDF file that exists in different and in several hard drives" .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "generically dependent continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: A continuant [snap:Continuant] that is a bearer of quality [snap:Quality] and realizable entity [snap:RealizableEntity] entities, in which other entities inhere and which itself cannot inhere in anything." .
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: an organism, a heart, a leg, a person, a symphony orchestra, a chair, the bottom right portion of a human torso, the lawn and atmosphere in front of our building" .
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Synonyms: substantial entity" .
+<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "independent continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#MaterialEntity
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology." .
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: collection of random bacteria, a chair, dorsal surface of the body" .
+<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "material entity"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/span#Occurrent
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants." .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh's life, the spatiotemporal region occupied by the development of a cancer tumor" .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Synonyms: perdurant" .
+<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.w3.org/2000/01/rdf-schema#label> "occurrent"@en .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> <http://www.w3.org/2000/01/rdf-schema#comment> "An experimental action is a process of manipulation in the domain of the experiment in order to achieve a particular sub goal, which is a part of the goal of the experiment.\n        Reference: EXPO" .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> <http://www.w3.org/2000/01/rdf-schema#label> "experiment action"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment action" .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> <http://www.w3.org/2000/01/rdf-schema#comment> "A mode of combination is a way of combining, an experimental action with a goal of combination" .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> <http://www.w3.org/2000/01/rdf-schema#label> "mode of combination"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> <http://www.w3.org/2000/01/rdf-schema#label> "Mode of combination" .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_1> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> <http://www.w3.org/2000/01/rdf-schema#comment> "A mode of transformation is an experimental action with a goal of transformation" .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> <http://www.w3.org/2000/01/rdf-schema#label> "mode of transformation"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> <http://www.w3.org/2000/01/rdf-schema#label> "Mode of transformation" .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_4> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#comment> "a mode of category transformation is an experimental action with a goal of category transformation" .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#label> "mode of category transform"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#label> "mode of category trnsform"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#label> "mode of transform"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_46> <http://www.w3.org/2000/01/rdf-schema#label> "Mode of category transform" .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/span#Occurrent> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> <http://www.w3.org/2000/01/rdf-schema#comment> "an action is \u201Cthe process of doing something or being active\u201D\n        Reference: Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993." .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> <http://www.w3.org/2000/01/rdf-schema#label> "action"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_89> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
+# 
+# http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_3> .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> <http://www.w3.org/2000/01/rdf-schema#comment> "to add is an experiment action \u201Cto join or unite a component to another so as to increase the number, quantity in the container. The end container is the same for all components\u201D\n        Reference: based on THE OXFORD ENGLISH DICTIONARY (1989) OXFORD UNIVERSITY PRESS, 2 ED." .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> <http://www.w3.org/2000/01/rdf-schema#label> "add"@en .
+<http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> <http://www.w3.org/2000/01/rdf-schema#label> "Add" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/SMARTprotocol#RNAextraction01
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasStep> <http://purl.org/net/SMARTprotocol#cellDisruption1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasStep> <http://purl.org/net/SMARTprotocol#denaturationReaction01> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasStep> <http://purl.org/net/SMARTprotocol#precipitationReaction01> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasStep> <http://purl.org/net/SMARTprotocol#washingNucleicAcid01> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/2000/01/rdf-schema#label> "RNA extraction 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#add1.1
+<http://purl.org/net/SMARTprotocol#add1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#add1.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> .
+<http://purl.org/net/SMARTprotocol#add1.1> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#denaturationReaction01> .
+# 
+# http://purl.org/net/SMARTprotocol#add1.2
+<http://purl.org/net/SMARTprotocol#add1.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#add1.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> .
+<http://purl.org/net/SMARTprotocol#add1.2> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#precipitationReaction01> .
+# 
+# http://purl.org/net/SMARTprotocol#add1.3
+<http://purl.org/net/SMARTprotocol#add1.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#add1.3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/Ontology1184060740.owl#Class_9> .
+<http://purl.org/net/SMARTprotocol#add1.3> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#washingNucleicAcid01> .
+# 
+# http://purl.org/net/SMARTprotocol#cellDisruption1
+<http://purl.org/net/SMARTprotocol#cellDisruption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#cellDisruption1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#CellDisruption> .
+<http://purl.org/net/SMARTprotocol#cellDisruption1> <http://purl.obolibrary.org/obo/BFO_0000061> <http://purl.org/net/SMARTprotocol#denaturationReaction01> .
+<http://purl.org/net/SMARTprotocol#cellDisruption1> <http://purl.org/dc/terms/description> "\u201CHomogenize sample using tissue homogenizer.\u201D"@en .
+<http://purl.org/net/SMARTprotocol#cellDisruption1> <http://www.w3.org/2000/01/rdf-schema#label> "cell disruption 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#chloroform
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/CHEBI_35255> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#denaturationReaction01> .
+# 
+# http://purl.org/net/SMARTprotocol#denaturationReaction01
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#DenaturationReaction> .
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://purl.obolibrary.org/obo/BFO_0000061> <http://purl.org/net/SMARTprotocol#precipitationReaction01> .
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.org/net/SMARTprotocol#cellDisruption1> .
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://purl.org/dc/terms/description> "\u201CAdd 0.2 mL chloroform per 1 mL TRIzol and cap tube tightly.\u201D"@en .
+<http://purl.org/net/SMARTprotocol#denaturationReaction01> <http://www.w3.org/2000/01/rdf-schema#label> "denaturation reaction 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#homogenize1
+<http://purl.org/net/SMARTprotocol#homogenize1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#homogenize1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#Homogenize> .
+<http://purl.org/net/SMARTprotocol#homogenize1> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#cellDisruption1> .
+# 
+# http://purl.org/net/SMARTprotocol#isopropylAlcohol
+<http://purl.org/net/SMARTprotocol#isopropylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#isopropylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/CHEBI_17824> .
+<http://purl.org/net/SMARTprotocol#isopropylAlcohol> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#precipitationReaction01> .
+<http://purl.org/net/SMARTprotocol#isopropylAlcohol> <http://www.w3.org/2000/01/rdf-schema#label> "isopropyl alcohol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#precipitationReaction01
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#PrecipitationReaction> .
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://purl.obolibrary.org/obo/BFO_0000061> <http://purl.org/net/SMARTprotocol#washingNucleicAcid01> .
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.org/net/SMARTprotocol#denaturationReaction01> .
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://purl.org/dc/terms/description> "\u201CAdd 0.5 mL isopropyl alcohol per 1 mL TRIzol\u201D"@en .
+<http://purl.org/net/SMARTprotocol#precipitationReaction01> <http://www.w3.org/2000/01/rdf-schema#label> "precipitation reaction 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#seventyFivePercentEthanol
+<http://purl.org/net/SMARTprotocol#seventyFivePercentEthanol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#seventyFivePercentEthanol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#SeventyFivePercentAlcohol> .
+<http://purl.org/net/SMARTprotocol#seventyFivePercentEthanol> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#washingNucleicAcid01> .
+<http://purl.org/net/SMARTprotocol#seventyFivePercentEthanol> <http://www.w3.org/2000/01/rdf-schema#label> "75% ethanol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#tissueHomogenizer
+<http://purl.org/net/SMARTprotocol#tissueHomogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#tissueHomogenizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#Homogenizer> .
+<http://purl.org/net/SMARTprotocol#tissueHomogenizer> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#cellDisruption1> .
+<http://purl.org/net/SMARTprotocol#tissueHomogenizer> <http://www.w3.org/2000/01/rdf-schema#label> "tissue homogenizer"@en .
+# 
+# http://purl.org/net/SMARTprotocol#tumorTissue
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801> .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.org/net/SMARTprotocol#cellDisruption1> .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/2000/01/rdf-schema#label> "tumor-tissue"@en .
+# 
+# http://purl.org/net/SMARTprotocol#washingNucleicAcid01
+<http://purl.org/net/SMARTprotocol#washingNucleicAcid01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#washingNucleicAcid01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#WashingNucleicAcids> .
+<http://purl.org/net/SMARTprotocol#washingNucleicAcid01> <http://purl.obolibrary.org/obo/BFO_0000062> <http://purl.org/net/SMARTprotocol#precipitationReaction01> .
+<http://purl.org/net/SMARTprotocol#washingNucleicAcid01> <http://purl.org/dc/terms/description> "\u201CAdd 1 mL 75% ethanol per 1 mL TRIzol and vortex for 10 s.\u201D"@en .
+<http://purl.org/net/SMARTprotocol#washingNucleicAcid01> <http://www.w3.org/2000/01/rdf-schema#label> "washing nucleic acids 1"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

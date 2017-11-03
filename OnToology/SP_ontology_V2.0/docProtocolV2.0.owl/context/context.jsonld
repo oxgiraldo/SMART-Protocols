@@ -1,0 +1,395 @@
+{
+  "@context" : {
+    "OBI_0100026" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    },
+    "hasTitle" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasTitle",
+      "@type" : "@id"
+    },
+    "hasCatalogNumber" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasCatalogNumber",
+      "@type" : "@id"
+    },
+    "hasSequence" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasSequence",
+      "@type" : "@id"
+    },
+    "IAO_0000010" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000010"
+    },
+    "Class_121" : {
+      "@id" : "http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121"
+    },
+    "TitleOfProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#TitleOfProtocol"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "PortableIceChest" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PortableIceChest"
+    },
+    "PrimerList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PrimerList"
+    },
+    "ReagentList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ReagentList"
+    },
+    "D004864" : {
+      "@id" : "http://purl.bioontology.org/ontology/MSH/D004864"
+    },
+    "ExtractionBuffer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ExtractionBuffer"
+    },
+    "SoftwareVersion" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SoftwareVersion"
+    },
+    "DependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "ProteinExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol"
+    },
+    "OBI_0400106" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0400106"
+    },
+    "OBI_0400116" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0400116"
+    },
+    "Hint" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Hint"
+    },
+    "PlantTissue" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PlantTissue"
+    },
+    "SoftwareName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SoftwareName"
+    },
+    "C84327" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84327"
+    },
+    "C12801" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801"
+    },
+    "hasName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasName",
+      "@type" : "@id"
+    },
+    "part_of" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#part_of",
+      "@type" : "@id"
+    },
+    "PrimerName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PrimerName"
+    },
+    "CentrifugeTube" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#CentrifugeTube"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasVersion",
+      "@type" : "@id"
+    },
+    "ProvenanceOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol"
+    },
+    "PrimerSequence" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PrimerSequence"
+    },
+    "ApplicationOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol"
+    },
+    "Neurotoxic" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Neurotoxic"
+    },
+    "SolutionName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SolutionName"
+    },
+    "MaterialsSection" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#MaterialsSection"
+    },
+    "Manufacturer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Manufacturer"
+    },
+    "Bag" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Bag"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "IAO_0000112" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000112"
+    },
+    "Class_122" : {
+      "@id" : "http://www.owl-ontologies.com/Ontology1184060740.owl#Class_122"
+    },
+    "MethodsSection" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#MethodsSection"
+    },
+    "IndependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"
+    },
+    "Toxic" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Toxic"
+    },
+    "Pyrophoric" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Pyrophoric"
+    },
+    "C93484" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C93484"
+    },
+    "IAO_0000300" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000300"
+    },
+    "C85644" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C85644"
+    },
+    "OBI_0000747" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000747"
+    },
+    "EquipmentOrSuppliesName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName"
+    },
+    "KitName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#KitName"
+    },
+    "SO_0000132" : {
+      "@id" : "http://purl.org/obo/owl/SO#SO_0000132"
+    },
+    "C25714" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25714"
+    },
+    "hasAlertMessage" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAlertMessage",
+      "@type" : "@id"
+    },
+    "EquipmentAndSuppliesList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList"
+    },
+    "BufferList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#BufferList"
+    },
+    "IAO_0000118" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000118"
+    },
+    "ReagentName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ReagentName"
+    },
+    "GenericallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"
+    },
+    "Quality" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Quality"
+    },
+    "MaterialEntity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+    },
+    "ElectrophoresisProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol"
+    },
+    "Continuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Continuant"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "OBI_0000671" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000671"
+    },
+    "OBI_0001128" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0001128"
+    },
+    "Flammable" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Flammable"
+    },
+    "C41185" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41185"
+    },
+    "IAO_0000119" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000119"
+    },
+    "ExperimentalProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ExperimentalProtocol"
+    },
+    "C70830" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"
+    },
+    "SoftwareList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SoftwareList"
+    },
+    "CatalogNumber" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#CatalogNumber"
+    },
+    "hasAuthor" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAuthor",
+      "@type" : "@id"
+    },
+    "Timing" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Timing"
+    },
+    "OBI_0001100" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0001100"
+    },
+    "EnzimaticAmplificationProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol"
+    },
+    "AdvantageOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AdvantageOfTheProtocol"
+    },
+    "Cultivar" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#Cultivar"
+    },
+    "SO_0000121" : {
+      "@id" : "http://purl.org/obo/owl/SO#SO_0000121"
+    },
+    "KitList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#KitList"
+    },
+    "CriticalStep" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#CriticalStep"
+    },
+    "Ecotype" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#Ecotype"
+    },
+    "IntroductionSection" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#IntroductionSection"
+    },
+    "PausePoint" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PausePoint"
+    },
+    "FinalConcentration" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#FinalConcentration"
+    },
+    "OBI_0400155" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0400155"
+    },
+    "SpecificallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"
+    },
+    "IAO_0000314" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000314"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "OBI_0001087" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0001087"
+    },
+    "RNAExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"
+    },
+    "CHEBI_33893" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_33893"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Kit" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Kit"
+    },
+    "MicrocentrifugeTube" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#MicrocentrifugeTube"
+    },
+    "PurposeOfProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PurposeOfProtocol"
+    },
+    "OBI_0400120" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0400120"
+    },
+    "IAO_0000310" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000310"
+    },
+    "IAO_0000030" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    },
+    "Troubleshooting" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Troubleshooting"
+    },
+    "StrainOrLine" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#StrainOrLine"
+    },
+    "Entity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1#Entity"
+    },
+    "IAO_0000412" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000412"
+    },
+    "C42614" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
+    },
+    "NucleicAcidExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol"
+    },
+    "has_part" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#has_part",
+      "@type" : "@id"
+    },
+    "IAO_0000104" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000104"
+    },
+    "BufferName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#BufferName"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "IAO_0000321" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000321"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "IAO_0000100" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000100"
+    },
+    "SolutionList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SolutionList"
+    },
+    "IAO_0000302" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000302"
+    },
+    "OBI_0000304" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000304",
+      "@type" : "@id"
+    },
+    "DNAExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNAExtractionProtocol"
+    },
+    "Primer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Primer"
+    },
+    "OBI_0000136" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000136"
+    },
+    "LimitationOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#LimitationOfTheProtocol"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "StorageCondition" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#StorageCondition"
+    },
+    "GrindingMachine" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#GrindingMachine"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Volatile" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Volatile"
+    },
+    "CHEBI_35225" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_35225"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}
