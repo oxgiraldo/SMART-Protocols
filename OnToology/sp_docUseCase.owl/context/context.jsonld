@@ -1,0 +1,250 @@
+{
+  "@context" : {
+    "hasTitle" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasTitle",
+      "@type" : "@id"
+    },
+    "hasCatalogNumber" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasCatalogNumber",
+      "@type" : "@id"
+    },
+    "hasSequence" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasSequence",
+      "@type" : "@id"
+    },
+    "TitleOfProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#TitleOfProtocol"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "ReagentList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ReagentList"
+    },
+    "DependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "adaptedFrom" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#adaptedFrom",
+      "@type" : "@id"
+    },
+    "hasSpecimenTreatment" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasSpecimenTreatment",
+      "@type" : "@id"
+    },
+    "hasName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasName",
+      "@type" : "@id"
+    },
+    "part_of" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#part_of",
+      "@type" : "@id"
+    },
+    "hasExperimentalInputs" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasExperimentalInputs",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/pav/hasVersion",
+      "@type" : "@id"
+    },
+    "ProvenanceOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol"
+    },
+    "hasAdvantage" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAdvantage",
+      "@type" : "@id"
+    },
+    "ApplicationOfTheProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol"
+    },
+    "ProtocolIdentifier" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProtocolIdentifier"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasIdentifier" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasIdentifier",
+      "@type" : "@id"
+    },
+    "IAO_0000112" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000112"
+    },
+    "IAO_0000300" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000300"
+    },
+    "EquipmentOrSuppliesName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName"
+    },
+    "hasStep" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasStep",
+      "@type" : "@id"
+    },
+    "titleOf" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#titleOf",
+      "@type" : "@id"
+    },
+    "BFO_0000061" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000061",
+      "@type" : "@id"
+    },
+    "hasAlertMessage" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAlertMessage",
+      "@type" : "@id"
+    },
+    "EquipmentAndSuppliesList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList"
+    },
+    "IAO_0000118" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000118"
+    },
+    "ReagentName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ReagentName"
+    },
+    "GenericallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"
+    },
+    "Continuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Continuant"
+    },
+    "hasLimitation" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasLimitation",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "hasApplication" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasApplication",
+      "@type" : "@id"
+    },
+    "hasOutcome" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasOutcome",
+      "@type" : "@id"
+    },
+    "hasGrowthConditions" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasGrowthConditions",
+      "@type" : "@id"
+    },
+    "IAO_0000119" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000119"
+    },
+    "ExperimentalProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ExperimentalProtocol"
+    },
+    "hasAuthor" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAuthor",
+      "@type" : "@id"
+    },
+    "hasPurpose" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasPurpose",
+      "@type" : "@id"
+    },
+    "IAO_0000314" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000314"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "RNAExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "hasTechnique" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasTechnique",
+      "@type" : "@id"
+    },
+    "IAO_0000310" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000310"
+    },
+    "IAO_0000030" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    },
+    "RO_0001000" : {
+      "@id" : "http://purl.obolibrary.org/obo/RO_0001000",
+      "@type" : "@id"
+    },
+    "Entity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1#Entity"
+    },
+    "hasDevelopmentalStage" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasDevelopmentalStage",
+      "@type" : "@id"
+    },
+    "IAO_0000412" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000412"
+    },
+    "C42614" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
+    },
+    "NucleicAcidExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol"
+    },
+    "has_part" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#has_part",
+      "@type" : "@id"
+    },
+    "hasCurrentVersion" : {
+      "@id" : "http://purl.org/pav/hasCurrentVersion",
+      "@type" : "@id"
+    },
+    "SpecimenName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SpecimenName"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "IAO_0000321" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000321"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "IAO_0000028" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000028"
+    },
+    "hasAuthorIdentification" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasAuthorIdentification",
+      "@type" : "@id"
+    },
+    "IAO_0000100" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000100"
+    },
+    "AuthorName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AuthorName"
+    },
+    "hasDescription" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasDescription",
+      "@type" : "@id"
+    },
+    "OBI_0000304" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000304",
+      "@type" : "@id"
+    },
+    "hasInstruction" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasInstruction",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "ManufacturerName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ManufacturerName"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "Thesaurus:C42614" "sp^^http://www.w3.org/2001/XMLSchema#string:ManufacturerName" "obo:IAO_0000028" "obo:IAO_0000310" "sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" "sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" "obo:IAO_0000314" "obo:IAO_0000100" "sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" "sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol" "snap:GenericallyDependentContinuant" "sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier" "obo:IAO_0000321" "obo:IAO_0000300" "sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" "sp^^http://www.w3.org/2001/XMLSchema#string:AuthorName" "sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenName" "sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" "sp^^http://www.w3.org/2001/XMLSchema#string:RNAExtractionProtocol" "obo:IAO_0000030" "snap:Continuant" "snap:DependentContinuant" "sp^^http://www.w3.org/2001/XMLSchema#string:NucleicAcidExtractionProtocol" "sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList" "bfo:Entity" "sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" ; /*classes style*/
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:RNAExtractionProtocol" -> "sp^^http://www.w3.org/2001/XMLSchema#string:NucleicAcidExtractionProtocol" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000321" -> "obo:IAO_0000314" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier" -> "obo:IAO_0000028" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:NucleicAcidExtractionProtocol" -> "sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList" -> "obo:IAO_0000100" [ label = "rdfs:subClassOf" ];
+	"Thesaurus:C42614" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
+	"snap:GenericallyDependentContinuant" -> "snap:DependentContinuant" [ label = "rdfs:subClassOf" ];
+	"snap:DependentContinuant" -> "snap:Continuant" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" -> "obo:IAO_0000310" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000028" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000310" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000300" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" -> "Thesaurus:C42614" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenName" -> "Thesaurus:C42614" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000030" -> "snap:GenericallyDependentContinuant" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" -> "Thesaurus:C42614" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000314" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:ManufacturerName" -> "Thesaurus:C42614" [ label = "rdfs:subClassOf" ];
+	"obo:IAO_0000100" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
+	"snap:Continuant" -> "bfo:Entity" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" -> "obo:IAO_0000100" [ label = "rdfs:subClassOf" ];
+	"sp^^http://www.w3.org/2001/XMLSchema#string:AuthorName" -> "Thesaurus:C42614" [ label = "rdfs:subClassOf" ];
+
+}
