@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "SMART Protocols Ontology";
+	 prov:wasAttributedTo <http://oxgiraldo.wordpress.com/>;
+	 dc:creator <http://oxgiraldo.wordpress.com/>;
+	 prov:wasAttributedTo <http://www.alexandergarcia.name/>;
+	 dc:contributor <http://www.alexandergarcia.name/>;
+	 prov:wasAttributedTo <http://www.dia.fi.upm.es/index.php?page=oscar-corcho/>;
+	 dc:contributor <http://www.dia.fi.upm.es/index.php?page=oscar-corcho/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <SMART Protocols ontology V3.0 (https://github.com/oxgiraldo/SMART-Protocols/tree/master/SP_ontology_V3.0)>;
+	 prov:wasGeneratedAt "2013-07-01";
+.

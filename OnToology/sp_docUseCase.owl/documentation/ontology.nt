@@ -1,0 +1,655 @@
+<http://purl.org/net/SMARTprotocol#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/contributor> "http://delicias.dia.fi.upm.es/members/DGarijo/#me"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/contributor> "http://www.alexandergarcia.name/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/contributor> "http://www.dia.fi.upm.es/index.php?page=oscar-corcho/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/created> "2013-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/creator> "http://oxgiraldo.wordpress.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/description> "Here is presented an example showing information that is being modeled in SP-Document. The individuals and their corresponding descriptions were extracted from a protocol about extraction of total RNA (the protocols is available here: http://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html)"@en .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by-nc-sa/2.0/" .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/dc/terms/title> "SP-Document Module: Use case"@en .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sp" .
+<http://purl.org/net/SMARTprotocol#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/net/SMARTprotocol#" .
+<http://purl.org/net/SMARTprotocol#> <http://www.w3.org/2000/01/rdf-schema#label> "SP-Document Module: Use case"@en .
+<http://purl.org/net/SMARTprotocol#> <http://www.w3.org/2002/07/owl#versionInfo> "3.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000115> "A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" .
+<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.w3.org/2000/01/rdf-schema#label> "example of usage" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions." .
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/2000/01/rdf-schema#label> "definition" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000115> "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)" .
+<http://purl.obolibrary.org/obo/IAO_0000118> <http://www.w3.org/2000/01/rdf-schema#label> "alternative term" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000115> "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007" .
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/2000/01/rdf-schema#label> "definition source" .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000115> "For external terms/classes, the ontology from which the term was imported" .
+<http://purl.obolibrary.org/obo/IAO_0000412> <http://www.w3.org/2000/01/rdf-schema#label> "imported from" .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/BFO_0000061
+<http://purl.obolibrary.org/obo/BFO_0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000304
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.obolibrary.org/obo/IAO_0000112> "http://www.affymetrix.com/products/arrays/specific/hgu133.affx is_manufactered_by http://www.affymetrix.com/ (if we decide to use these URIs for the actual entities)"@en .
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.obolibrary.org/obo/IAO_0000115> "c is_manufactured_by o means that there was a process p in which c was built in which a person, or set of people or machines did the work(bore the &quot;Manufacturer Role&quot;, and those people/and or machines were members or of directed by the organization to do this."@en .
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.obolibrary.org/obo/IAO_0000118> "has_manufacturer" .
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/OBI_0000304> <http://www.w3.org/2000/01/rdf-schema#label> "is manufactured by" .
+# 
+# http://purl.obolibrary.org/obo/RO_0001000
+<http://purl.obolibrary.org/obo/RO_0001000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000112> "this cell derives from this parent cell (cell division); this nucleus derives from this parent nucleus (nuclear division)."@en .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000115> "derives from is a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity."@en .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000118> "derives_from"@en .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/IAO_0000412> "ro.owl"@en .
+<http://purl.obolibrary.org/obo/RO_0001000> <http://www.w3.org/2000/01/rdf-schema#label> "derives from"@en .
+# 
+# http://purl.org/net/SMARTprotocol#adaptedFrom
+<http://purl.org/net/SMARTprotocol#adaptedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#adaptedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#adaptedFrom> <http://purl.obolibrary.org/obo/IAO_0000115> "the property adaptedFrom is the retationship that binds a protocol to a  provenance of the protocol"@en .
+<http://purl.org/net/SMARTprotocol#adaptedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "adapted from"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasAdvantage
+<http://purl.org/net/SMARTprotocol#hasAdvantage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasAdvantage> <http://www.w3.org/2000/01/rdf-schema#label> "has advantage"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasAlertMessage
+<http://purl.org/net/SMARTprotocol#hasAlertMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasAlertMessage> <http://purl.obolibrary.org/obo/IAO_0000112> "\"DNA Extraction Protocol\" hasAlertMessage \"Critical Step\"" .
+<http://purl.org/net/SMARTprotocol#hasAlertMessage> <http://purl.obolibrary.org/obo/IAO_0000115> "hasAlertMessage is a relation that binds a chemical substance or protocol to an alert message such as caution, critical step, timing, etc." .
+<http://purl.org/net/SMARTprotocol#hasAlertMessage> <http://www.w3.org/2000/01/rdf-schema#label> "has alert message"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasApplication
+<http://purl.org/net/SMARTprotocol#hasApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasApplication> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#hasApplication> <http://purl.obolibrary.org/obo/IAO_0000115> "hasApplication is a relation that binds a document such as experimental protocol to a application of the protocol."@en .
+<http://purl.org/net/SMARTprotocol#hasApplication> <http://www.w3.org/2000/01/rdf-schema#label> "has application"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasAuthor
+<http://purl.org/net/SMARTprotocol#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasAuthor> <http://purl.obolibrary.org/obo/IAO_0000112> "\"Laboratory protocol\" hasAuthor \"John Smith\"" .
+<http://purl.org/net/SMARTprotocol#hasAuthor> <http://purl.obolibrary.org/obo/IAO_0000115> "hasAuthor is a relation that binds a document such as laboratory protocol to an author of protocol." .
+<http://purl.org/net/SMARTprotocol#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has author"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasAuthorIdentification
+<http://purl.org/net/SMARTprotocol#hasAuthorIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasAuthorIdentification> <http://purl.obolibrary.org/obo/IAO_0000115> "hasAuthorIdentification is a relation that binds a document such as laboratory protocol to an author identification." .
+<http://purl.org/net/SMARTprotocol#hasAuthorIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "has author identification"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasCatalogNumber
+<http://purl.org/net/SMARTprotocol#hasCatalogNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasCatalogNumber> <http://purl.obolibrary.org/obo/IAO_0000112> "\"Nalgene Cryogenic Tube\" hasCatalogNumber \"5000-0012\"" .
+<http://purl.org/net/SMARTprotocol#hasCatalogNumber> <http://purl.obolibrary.org/obo/IAO_0000115> "hasCatalogNumber binds a thing to a numeral or string of numerals that is used for identification." .
+<http://purl.org/net/SMARTprotocol#hasCatalogNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has catalog number"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasDescription
+<http://purl.org/net/SMARTprotocol#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasDescription> <http://purl.org/dc/terms/description> "the property adaptedFrom is a relationship used to " .
+<http://purl.org/net/SMARTprotocol#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasDevelopmentalStage
+<http://purl.org/net/SMARTprotocol#hasDevelopmentalStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasDevelopmentalStage> <http://purl.obolibrary.org/obo/IAO_0000115> "hasDevelopmentalStage is a relation that binds a specimen entry to an developmental stage entry"@en .
+<http://purl.org/net/SMARTprotocol#hasDevelopmentalStage> <http://www.w3.org/2000/01/rdf-schema#label> "has developmental stage"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasExperimentalInputs
+<http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://www.w3.org/2000/01/rdf-schema#label> "has experimental input"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasGrowthConditions
+<http://purl.org/net/SMARTprotocol#hasGrowthConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasGrowthConditions> <http://purl.obolibrary.org/obo/IAO_0000115> "hasGrowthConditions is a relation that binds a specimen entry to an growth conditions entry"@en .
+<http://purl.org/net/SMARTprotocol#hasGrowthConditions> <http://www.w3.org/2000/01/rdf-schema#label> "has growth conditions"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasIdentifier
+<http://purl.org/net/SMARTprotocol#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/IAO_0000028> .
+<http://purl.org/net/SMARTprotocol#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasInstruction
+<http://purl.org/net/SMARTprotocol#hasInstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasInstruction> <http://www.w3.org/2000/01/rdf-schema#label> "has instruction"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasLimitation
+<http://purl.org/net/SMARTprotocol#hasLimitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "has limitation"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasName
+<http://purl.org/net/SMARTprotocol#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#hasName> <http://purl.obolibrary.org/obo/IAO_0000112> "\"Buffer\" hasName \"1X Queen\u2019s lysis buffer (1L)\"" .
+<http://purl.org/net/SMARTprotocol#hasName> <http://purl.obolibrary.org/obo/IAO_0000115> "hasName binds to a person, animal, place or thing to a word or set of words by which someone or something  is known, addressed, or referred to." .
+<http://purl.org/net/SMARTprotocol#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasOutcome
+<http://purl.org/net/SMARTprotocol#hasOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has outcome"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasPurpose
+<http://purl.org/net/SMARTprotocol#hasPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "has purpose"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasSequence
+<http://purl.org/net/SMARTprotocol#hasSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasSequence> <http://purl.obolibrary.org/obo/IAO_0000112> "The primer CII-fw hasSequence 5\u2032-GAATGATGTACCACCTTTG-3\u2032" .
+<http://purl.org/net/SMARTprotocol#hasSequence> <http://purl.obolibrary.org/obo/IAO_0000115> "hasSequence binds a oligonucleotide or nucleic acid  to a sequence." .
+<http://purl.org/net/SMARTprotocol#hasSequence> <http://www.w3.org/2000/01/rdf-schema#label> "has sequence"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasSpecimenTreatment
+<http://purl.org/net/SMARTprotocol#hasSpecimenTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasSpecimenTreatment> <http://purl.obolibrary.org/obo/IAO_0000115> "hasSpecimenTreatment is a relation that binds a specimen  to a specimen treatment protocol"@en .
+<http://purl.org/net/SMARTprotocol#hasSpecimenTreatment> <http://purl.obolibrary.org/obo/IAO_0000118> "has sample treatment"@en .
+<http://purl.org/net/SMARTprotocol#hasSpecimenTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "has specimen treatment"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasStep
+<http://purl.org/net/SMARTprotocol#hasStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/SMARTprotocol#hasTechnique
+<http://purl.org/net/SMARTprotocol#hasTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasTechnique> <http://www.w3.org/2000/01/rdf-schema#label> "has technique"@en .
+# 
+# http://purl.org/net/SMARTprotocol#hasTitle
+<http://purl.org/net/SMARTprotocol#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://purl.org/net/SMARTprotocol#hasTitle> <http://purl.obolibrary.org/obo/IAO_0000112> "\"Laboratory protocol\" hasTitle \"An Optimized Chloroplast DNA Extraction Protocol for Grasses (Poaceae) Proves Suitable for Whole Plastid Genome Sequencing and SNP Detection\"" .
+<http://purl.org/net/SMARTprotocol#hasTitle> <http://purl.obolibrary.org/obo/IAO_0000115> "hasTitle is a relation that binds a document such as laboratory protocol to a title of protocol." .
+<http://purl.org/net/SMARTprotocol#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en .
+# 
+# http://purl.org/net/SMARTprotocol#titleOf
+<http://purl.org/net/SMARTprotocol#titleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/SMARTprotocol#titleOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/SMARTprotocol#hasTitle> .
+<http://purl.org/net/SMARTprotocol#titleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://purl.org/net/SMARTprotocol#titleOf> <http://www.w3.org/2000/01/rdf-schema#label> "title of"@en .
+# 
+# http://purl.org/pav/hasCurrentVersion
+<http://purl.org/pav/hasCurrentVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/pav/hasCurrentVersion> <http://purl.obolibrary.org/obo/IAO_0000412> "PAV ontology"@en .
+<http://purl.org/pav/hasCurrentVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has current version"@en .
+# 
+# http://purl.org/pav/hasVersion
+<http://purl.org/pav/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/pav/hasVersion> <http://purl.obolibrary.org/obo/IAO_0000412> "PAV ontology"@en .
+<http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version"@en .
+# 
+# http://www.obofoundry.org/ro/ro.owl#has_part
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://www.obofoundry.org/ro/ro.owl#has_part> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+# 
+# http://www.obofoundry.org/ro/ro.owl#part_of
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.obolibrary.org/obo/IAO_0000115> "Parthood as a relation between instances: The primitive instance-level relation p part_of p1 is illustrated in assertions such as: this instance of rhodopsin mediated phototransduction part_of this instance of visual perception. This relation satisfies at least the following standard axioms of mereology: reflexivity (for all p, p part_of p); anti-symmetry (for all p, p1, if p part_of p1 and p1 part_of p then p and p1 are identical); and transitivity (for all p, p1, p2, if p part_of p1 and p1 part_of p2, then p part_of p2). Analogous axioms hold also for parthood as a relation between spatial regions. For parthood as a relation between continuants, these axioms need to be modified to take account of the incorporation of a temporal argument. Thus for example the axiom of transitivity for continuants will assert that if c part_of c1 at t and c1 part_of c2 at t, then also c part_of c2 at t. Parthood as a relation between classes: To define part_of as a relation between classes we again need to distinguish the two cases of continuants and processes, even though the explicit reference to instants of time now falls away. For continuants, we have C part_of C1 if and only if any instance of C at any time is an instance-level part of some instance of C1 at that time, as for example in: cell nucleus part_ of cell." .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.obolibrary.org/obo/IAO_0000412> "OBO Relation Ontology" .
+<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.w3.org/2000/01/rdf-schema#label> "part of"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://purl.obolibrary.org/obo/IAO_0000115> "The words or language units by which a thing is known." .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://purl.obolibrary.org/obo/IAO_0000412> "NCI thesaurus" .
+<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000028
+<http://purl.obolibrary.org/obo/IAO_0000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000028> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/IAO_0000115> "An information content entity that is a mark or character used as a conventional representation of another entity."@en .
+<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/IAO_0000412> "IAO"@en .
+<http://purl.obolibrary.org/obo/IAO_0000028> <http://www.w3.org/2000/01/rdf-schema#label> "symbol"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000030
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000112> "Examples of information content entites include journal articles, data, graphical layouts, and graphs." .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000115> "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000119> "OBI_0000142" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.w3.org/2000/01/rdf-schema#label> "information content entity"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000100
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000112> "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)." .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000115> "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets." .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000119> "group:OBI\nOBI_0000042" .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000100> <http://www.w3.org/2000/01/rdf-schema#label> "data set"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000300
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000112> "Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities"@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000115> "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc."@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000118> "text"@en .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000300> <http://www.w3.org/2000/01/rdf-schema#label> "textual entity"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000310
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#has_part> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/IAO_0000314> .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000112> "A journal article, patent application, laboratory notebook, or a book" .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000115> "A collection of information content entities intended to be understood together as a whole" .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000310> <http://www.w3.org/2000/01/rdf-schema#label> "document"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000314
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/IAO_0000310> .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://purl.obolibrary.org/obo/IAO_0000112> "An abstract, introduction, method or results section."@en .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://purl.obolibrary.org/obo/IAO_0000115> "an information content entity that is part of a document"@en .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://purl.obolibrary.org/obo/IAO_0000412> "OBI" .
+<http://purl.obolibrary.org/obo/IAO_0000314> <http://www.w3.org/2000/01/rdf-schema#label> "document part"@en .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000321
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000314> .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#has_part> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://purl.obolibrary.org/obo/IAO_0000112> "Lawrence Hunter and Kevin Brettonel Cohen"@en .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://purl.obolibrary.org/obo/IAO_0000115> "part of a document that enumerates the authors of the document"@en .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://purl.obolibrary.org/obo/IAO_0000412> "IAO"@en .
+<http://purl.obolibrary.org/obo/IAO_0000321> <http://www.w3.org/2000/01/rdf-schema#label> "author list"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://purl.obolibrary.org/obo/IAO_0000112> "The protocol works in northern blot assays using cactus, agave, banana,  tomato, Arabidopsis and tobacco. Allwood, J.W., et al., Inter-laboratory reproducibility of fast gas chromatography-electron impact-time of flight mass spectrometry (GC-EI-TOF/MS) based plant metabolomics. Metabolomics, 2009. 5(4): p. 479-496."@en .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "Applications of the protocol is a subclass of textual entity. Applications of the protocol list the full diversity of the applications of the method and support if is possible to extend the range of applications of the protocol."@en .
+<http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "application of the protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#AuthorName
+<http://purl.org/net/SMARTprotocol#AuthorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#AuthorName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#AuthorName> <http://purl.obolibrary.org/obo/IAO_0000112> "Olga Giraldo"@en .
+<http://purl.org/net/SMARTprotocol#AuthorName> <http://purl.obolibrary.org/obo/IAO_0000115> "Author name is a textual entity. Author name is the name of a person or institution.  If is applicable, the author name should include the first name and last name."@en .
+<http://purl.org/net/SMARTprotocol#AuthorName> <http://www.w3.org/2000/01/rdf-schema#label> "author name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList
+<http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000100> .
+<http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#ReagentList> .
+<http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> <http://purl.obolibrary.org/obo/IAO_0000115> "Equipment and supplies list is a data set of the names or identifiers of the equipments and supplies  that are part of  materials section of a protocol."@en .
+<http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> <http://www.w3.org/2000/01/rdf-schema#label> "equipment and supplies list"@en .
+# 
+# http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#ReagentName> .
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://purl.obolibrary.org/obo/IAO_0000112> "Nalgene Cryogenic Tube, sterile, 1.2 ml. \nS1000 Thermal Cycler with 96-Deep Well Reaction Module."@en .
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://purl.obolibrary.org/obo/IAO_0000115> "Equipment or supply name is a  textual entity. Equipment or supply name is the name of equipment or supply."@en .
+<http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> <http://www.w3.org/2000/01/rdf-schema#label> "equipment or supplies name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ExperimentalProtocol
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000310> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ReagentList> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasIdentifier> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ProtocolIdentifier> .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "An experimental protocol is a sequence of tasks and operations executed to perform experimental research. The protocols often include equipment, reagents, critical steps, troubleshooting, tips and all the information that facilitates reusability."@en .
+<http://purl.org/net/SMARTprotocol#ExperimentalProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "experimental protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ManufacturerName
+<http://purl.org/net/SMARTprotocol#ManufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ManufacturerName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#ManufacturerName> <http://purl.obolibrary.org/obo/IAO_0000115> "Manufacturer name is a subclass of textual entity. Manufacturer name is the name of  a person, enterprise, or entity that produces equipments, reagents, primers or other laboratory supplies."@en .
+<http://purl.org/net/SMARTprotocol#ManufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "Nucleic acid extraction protocol is a subclass of laboratory protocol. A nucleic acid extraction protocol is a step by step description of a procedure used to recover the nucleic acid fraction of an input material entity."@en .
+<http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "nucleic acid extraction protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ProtocolIdentifier
+<http://purl.org/net/SMARTprotocol#ProtocolIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ProtocolIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000028> .
+<http://purl.org/net/SMARTprotocol#ProtocolIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "protocol identifier"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://purl.obolibrary.org/obo/IAO_0000112> "The extraction procedure precisely followed that of Lisec et al. (2006), which was developed from the protocol of Fiehn et al. (2000a). Allwood J. W., 2009"@en .
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "Provenance of the protocol is a subclass of textual entity. Provenance of the protocol include references to key papers where the protocol has been used previously. Indicate if your protocol is the result of modify a previous one or if it is the result of reuse steps of several (more than 1) protocols."@en .
+<http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "provenance of the protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#RNAExtractionProtocol
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#adaptedFrom> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasApplication> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasAuthor> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.obolibrary.org/obo/IAO_0000321> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ReagentList> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#SpecimenName> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasIdentifier> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#ProtocolIdentifier> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/SMARTprotocol#hasTitle> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "RNA extraction protocol is a subclass of nucleic acid extraction protocol. RNA extraction protocol, is a step by step description of a procedure in which is recovered a fraction of RNA from a material entity."@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://purl.obolibrary.org/obo/IAO_0000118> "RNA isolation protocol"@en .
+<http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "RNA extraction protocol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ReagentList
+<http://purl.org/net/SMARTprotocol#ReagentList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ReagentList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000100> .
+<http://purl.org/net/SMARTprotocol#ReagentList> <http://purl.obolibrary.org/obo/IAO_0000115> "Reagent list is a data set of the names or identifiers of the reagents (purchased ready-to-use), that are part of materials section of a protocol."@en .
+<http://purl.org/net/SMARTprotocol#ReagentList> <http://www.w3.org/2000/01/rdf-schema#label> "reagent list"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ReagentName
+<http://purl.org/net/SMARTprotocol#ReagentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#ReagentName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#ReagentName> <http://purl.obolibrary.org/obo/IAO_0000112> "Taq DNA Polymerase from Thermus aquaticus with 10X reaction buffer without MgCl2."@en .
+<http://purl.org/net/SMARTprotocol#ReagentName> <http://purl.obolibrary.org/obo/IAO_0000115> "Reagent name is a textual entity. Reagent name is the name of a reagent."@en .
+<http://purl.org/net/SMARTprotocol#ReagentName> <http://www.w3.org/2000/01/rdf-schema#label> "reagent name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#SpecimenName
+<http://purl.org/net/SMARTprotocol#SpecimenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#SpecimenName> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> .
+<http://purl.org/net/SMARTprotocol#SpecimenName> <http://purl.obolibrary.org/obo/IAO_0000115> "Specimen name is a textual entity. Specimen name is the name of the organism, strain, line, ecotype, cultivar, etc. used in a protocol."@en .
+<http://purl.org/net/SMARTprotocol#SpecimenName> <http://purl.obolibrary.org/obo/IAO_0000118> "sample name"@en .
+<http://purl.org/net/SMARTprotocol#SpecimenName> <http://www.w3.org/2000/01/rdf-schema#label> "specimen name"@en .
+# 
+# http://purl.org/net/SMARTprotocol#TitleOfProtocol
+<http://purl.org/net/SMARTprotocol#TitleOfProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/SMARTprotocol#TitleOfProtocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000300> .
+<http://purl.org/net/SMARTprotocol#TitleOfProtocol> <http://purl.obolibrary.org/obo/IAO_0000115> "Title of protocol is a subclass of textual entity. Title of protocol is the name of a protocol."@en .
+<http://purl.org/net/SMARTprotocol#TitleOfProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "title of the protocol"@en .
+# 
+# http://www.ifomis.org/bfo/1.1#Entity
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity"@en .
+<http://www.ifomis.org/bfo/1.1#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "entity" .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#Continuant
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1#Entity> .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Synonyms: endurant" .
+<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.w3.org/2000/01/rdf-schema#label> "continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#DependentContinuant
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#Continuant> .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities." .
+<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "dependent continuant"@en .
+# 
+# http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time." .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples: a certain PDF file that exists in different and in several hard drives" .
+<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.w3.org/2000/01/rdf-schema#label> "generically dependent continuant"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/SMARTprotocol#AnthonyJFreemont
+<http://purl.org/net/SMARTprotocol#AnthonyJFreemont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#AnthonyJFreemont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#AnthonyJFreemont> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#AnthonyJFreemont> <http://www.w3.org/2000/01/rdf-schema#label> "Anthony J. Freemont"@en .
+# 
+# http://purl.org/net/SMARTprotocol#CrispinJMiller
+<http://purl.org/net/SMARTprotocol#CrispinJMiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#CrispinJMiller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#CrispinJMiller> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#CrispinJMiller> <http://www.w3.org/2000/01/rdf-schema#label> "Crispin J. Miller"@en .
+# 
+# http://purl.org/net/SMARTprotocol#EthylAlcohol
+<http://purl.org/net/SMARTprotocol#EthylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#EthylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ReagentName> .
+<http://purl.org/net/SMARTprotocol#EthylAlcohol> <http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.org/net/SMARTprotocol#SigmaAldrich> .
+<http://purl.org/net/SMARTprotocol#EthylAlcohol> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#reagentList1> .
+<http://purl.org/net/SMARTprotocol#EthylAlcohol> <http://www.w3.org/2000/01/rdf-schema#label> "Ethyl alcohol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Forceps
+<http://purl.org/net/SMARTprotocol#Forceps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#Forceps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> .
+<http://purl.org/net/SMARTprotocol#Forceps> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#Forceps> <http://www.w3.org/2000/01/rdf-schema#label> "Forceps"@en .
+# 
+# http://purl.org/net/SMARTprotocol#HomogenizerBlades
+<http://purl.org/net/SMARTprotocol#HomogenizerBlades> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#HomogenizerBlades> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> .
+<http://purl.org/net/SMARTprotocol#HomogenizerBlades> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#HomogenizerBlades> <http://www.w3.org/2000/01/rdf-schema#label> "Homogenizer blades"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Id1
+<http://purl.org/net/SMARTprotocol#Id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#Id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ProtocolIdentifier> .
+<http://purl.org/net/SMARTprotocol#Id1> <http://purl.org/dc/terms/description> "DOI:\u00A010.2144/000113260"@en .
+<http://purl.org/net/SMARTprotocol#Id1> <http://www.w3.org/2000/01/rdf-schema#label> "protocol Id1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Invitrogen
+<http://purl.org/net/SMARTprotocol#Invitrogen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#Invitrogen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ManufacturerName> .
+# 
+# http://purl.org/net/SMARTprotocol#IsopropylAlcohol
+<http://purl.org/net/SMARTprotocol#IsopropylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#IsopropylAlcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ReagentName> .
+<http://purl.org/net/SMARTprotocol#IsopropylAlcohol> <http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.org/net/SMARTprotocol#SigmaAldrich> .
+<http://purl.org/net/SMARTprotocol#IsopropylAlcohol> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#reagentList1> .
+<http://purl.org/net/SMARTprotocol#IsopropylAlcohol> <http://www.w3.org/2000/01/rdf-schema#label> "Isopropyl alcohol"@en .
+# 
+# http://purl.org/net/SMARTprotocol#JohnARadford
+<http://purl.org/net/SMARTprotocol#JohnARadford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#JohnARadford> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#JohnARadford> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#JohnARadford> <http://www.w3.org/2000/01/rdf-schema#label> "John A. Radford"@en .
+# 
+# http://purl.org/net/SMARTprotocol#KimMLinton
+<http://purl.org/net/SMARTprotocol#KimMLinton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#KimMLinton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#KimMLinton> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#KimMLinton> <http://www.w3.org/2000/01/rdf-schema#label> "Kim M. Linton"@en .
+# 
+# http://purl.org/net/SMARTprotocol#RNAextraction01
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#RNAExtractionProtocol> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#adaptedFrom> <http://purl.org/net/SMARTprotocol#provenance1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasApplication> <http://purl.org/net/SMARTprotocol#application1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasAuthor> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://purl.org/net/SMARTprotocol#reagentList1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasExperimentalInputs> <http://purl.org/net/SMARTprotocol#tumorTissue> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasIdentifier> <http://purl.org/net/SMARTprotocol#Id1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/net/SMARTprotocol#hasTitle> <http://purl.org/net/SMARTprotocol#title1> .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://purl.org/dc/terms/description> "protocol available here: http://www.biotechniques.com/protocols/Peer-Reviewed_Protocols/Extraction-of-total-RNA-from-freshfrozen-tissue-FT/biotechniques-181792.html"@en .
+<http://purl.org/net/SMARTprotocol#RNAextraction01> <http://www.w3.org/2000/01/rdf-schema#label> "RNA extraction 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#Scalpel
+<http://purl.org/net/SMARTprotocol#Scalpel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#Scalpel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> .
+<http://purl.org/net/SMARTprotocol#Scalpel> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#Scalpel> <http://www.w3.org/2000/01/rdf-schema#label> "Scalpel"@en .
+# 
+# http://purl.org/net/SMARTprotocol#ScalpelHolder
+<http://purl.org/net/SMARTprotocol#ScalpelHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#ScalpelHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> .
+<http://purl.org/net/SMARTprotocol#ScalpelHolder> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#ScalpelHolder> <http://www.w3.org/2000/01/rdf-schema#label> "Scalpel holder"@en .
+# 
+# http://purl.org/net/SMARTprotocol#SianDibben
+<http://purl.org/net/SMARTprotocol#SianDibben> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#SianDibben> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#SianDibben> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#SianDibben> <http://www.w3.org/2000/01/rdf-schema#label> "Sian Dibben"@en .
+# 
+# http://purl.org/net/SMARTprotocol#SigmaAldrich
+<http://purl.org/net/SMARTprotocol#SigmaAldrich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#SigmaAldrich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ManufacturerName> .
+<http://purl.org/net/SMARTprotocol#SigmaAldrich> <http://www.w3.org/2000/01/rdf-schema#label> "Sigma-Aldrich"@en .
+# 
+# http://purl.org/net/SMARTprotocol#StuartDPepper
+<http://purl.org/net/SMARTprotocol#StuartDPepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#StuartDPepper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#StuartDPepper> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#StuartDPepper> <http://www.w3.org/2000/01/rdf-schema#label> "Stuart D. Pepper"@en .
+# 
+# http://purl.org/net/SMARTprotocol#TRIZol
+<http://purl.org/net/SMARTprotocol#TRIZol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#TRIZol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ReagentName> .
+<http://purl.org/net/SMARTprotocol#TRIZol> <http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.org/net/SMARTprotocol#Invitrogen> .
+<http://purl.org/net/SMARTprotocol#TRIZol> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#reagentList1> .
+# 
+# http://purl.org/net/SMARTprotocol#TissueStorageContainer
+<http://purl.org/net/SMARTprotocol#TissueStorageContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#TissueStorageContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName> .
+<http://purl.org/net/SMARTprotocol#TissueStorageContainer> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#equipmentList1> .
+<http://purl.org/net/SMARTprotocol#TissueStorageContainer> <http://www.w3.org/2000/01/rdf-schema#label> "Tissue storage container"@en .
+# 
+# http://purl.org/net/SMARTprotocol#YvonneHey
+<http://purl.org/net/SMARTprotocol#YvonneHey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#YvonneHey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#AuthorName> .
+<http://purl.org/net/SMARTprotocol#YvonneHey> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#authorList1> .
+<http://purl.org/net/SMARTprotocol#YvonneHey> <http://www.w3.org/2000/01/rdf-schema#label> "Yvonne Hey"@en .
+# 
+# http://purl.org/net/SMARTprotocol#application1
+<http://purl.org/net/SMARTprotocol#application1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#application1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ApplicationOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#application1> <http://purl.org/dc/terms/description> "Methods comparison for high-resolution transcriptional analysis of archival material on Affymetrix Plus 2.0 and Exon 1.0 microarrays"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/net/SMARTprotocol#application1> <http://www.w3.org/2000/01/rdf-schema#label> "application 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#authorList1
+<http://purl.org/net/SMARTprotocol#authorList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#authorList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/IAO_0000321> .
+<http://purl.org/net/SMARTprotocol#authorList1> <http://www.w3.org/2000/01/rdf-schema#label> "author list 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#chloroform
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ReagentName> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://purl.obolibrary.org/obo/OBI_0000304> <http://purl.org/net/SMARTprotocol#SigmaAldrich> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.org/net/SMARTprotocol#reagentList1> .
+<http://purl.org/net/SMARTprotocol#chloroform> <http://www.w3.org/2000/01/rdf-schema#label> "Chloroform"@en .
+# 
+# http://purl.org/net/SMARTprotocol#equipmentList1
+<http://purl.org/net/SMARTprotocol#equipmentList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#equipmentList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList> .
+<http://purl.org/net/SMARTprotocol#equipmentList1> <http://www.w3.org/2000/01/rdf-schema#label> "equipment list 1"@en .
+<http://purl.org/net/SMARTprotocol#equipmentList1> <http://www.w3.org/2000/01/rdf-schema#label> "equipment-list1"@en .
+<http://purl.org/net/SMARTprotocol#equipmentList1> <http://www.w3.org/2000/01/rdf-schema#label> "equipmentList1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#provenance1
+<http://purl.org/net/SMARTprotocol#provenance1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#provenance1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ProvenanceOfTheProtocol> .
+<http://purl.org/net/SMARTprotocol#provenance1> <http://purl.org/dc/terms/description> "The extraction method (steps 2\u201321) is taken from the method supplied with TRIzol reagent (Invitrogen, Paisley, UK)."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/net/SMARTprotocol#provenance1> <http://www.w3.org/2000/01/rdf-schema#label> "provenance 1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#reagentList1
+<http://purl.org/net/SMARTprotocol#reagentList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#reagentList1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#ReagentList> .
+<http://purl.org/net/SMARTprotocol#reagentList1> <http://www.w3.org/2000/01/rdf-schema#label> "reagent list 1"@en .
+<http://purl.org/net/SMARTprotocol#reagentList1> <http://www.w3.org/2000/01/rdf-schema#label> "reagentList1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#title1
+<http://purl.org/net/SMARTprotocol#title1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#title1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#TitleOfProtocol> .
+<http://purl.org/net/SMARTprotocol#title1> <http://purl.org/dc/terms/description> "Extraction of total RNA from fresh/frozen tissue (FT)"@en .
+<http://purl.org/net/SMARTprotocol#title1> <http://www.w3.org/2000/01/rdf-schema#label> "title1"@en .
+# 
+# http://purl.org/net/SMARTprotocol#tumorTissue
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/SMARTprotocol#SpecimenName> .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/2000/01/rdf-schema#label> "tumor tissue"@en .
+<http://purl.org/net/SMARTprotocol#tumorTissue> <http://www.w3.org/2000/01/rdf-schema#label> "tumor-tissue"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,342 @@
+{
+  "@context" : {
+    "OBI_0100026" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    },
+    "DNAPurification" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNAPurification"
+    },
+    "Occurrent" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#Occurrent"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "ProcessedDNA" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProcessedDNA"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "ExtractionBuffer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ExtractionBuffer"
+    },
+    "DependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "CastingTheGel" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#CastingTheGel"
+    },
+    "ProteinExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProteinExtractionProtocol"
+    },
+    "CHEBI_33696" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_33696"
+    },
+    "NPO_1509" : {
+      "@id" : "http://purl.bioontology.org/ontology/npo#NPO_1509"
+    },
+    "DNAExtractionProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNAExtractionProcedure"
+    },
+    "BasicStepOfDNAExtraction" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#BasicStepOfDNAExtraction"
+    },
+    "PlantTissue" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PlantTissue"
+    },
+    "ChoosingTargetSubstrateAndPCRPrimer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ChoosingTargetSubstrateAndPCRPrimer"
+    },
+    "LoadingAndRunningTheGel" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#LoadingAndRunningTheGel"
+    },
+    "C12801" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801"
+    },
+    "part_of" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#part_of",
+      "@type" : "@id"
+    },
+    "DNAPellet" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNAPellet"
+    },
+    "NucleicAcidExtractionProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProcedure"
+    },
+    "CHEBI_36080" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_36080"
+    },
+    "SettingUpThePCRReaction" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#SettingUpThePCRReaction"
+    },
+    "AgaroseInLiquidState" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AgaroseInLiquidState"
+    },
+    "DIgestedRNA" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DIgestedRNA"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "IAO_0000112" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000112"
+    },
+    "IndependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"
+    },
+    "PlantTissueHarvestProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PlantTissueHarvestProcedure"
+    },
+    "OBI_0000880" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000880"
+    },
+    "ElectrophoresisProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ElectrophoresisProcedure"
+    },
+    "IAO_0000300" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000300"
+    },
+    "OBI_0000747" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000747"
+    },
+    "StainedDNA" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#StainedDNA"
+    },
+    "SO_0000132" : {
+      "@id" : "http://purl.org/obo/owl/SO#SO_0000132"
+    },
+    "DigestedLipidMembrane" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DigestedLipidMembrane"
+    },
+    "BFO_0000061" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000061",
+      "@type" : "@id"
+    },
+    "DigestedProtein" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DigestedProtein"
+    },
+    "IAO_0000118" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000118"
+    },
+    "BasicStepOfPCR" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#BasicStepOfPCR"
+    },
+    "CHEBI_33697" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_33697"
+    },
+    "GenericallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"
+    },
+    "Quality" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Quality"
+    },
+    "MaterialEntity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+    },
+    "Step" : {
+      "@id" : "http://purl.org/net/p-plan#Step"
+    },
+    "ElectrophoresisProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ElectrophoresisProtocol"
+    },
+    "CHEBI_16991" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_16991"
+    },
+    "Continuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Continuant"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "hasOutputVar" : {
+      "@id" : "http://purl.org/net/p-plan#hasOutputVar",
+      "@type" : "@id"
+    },
+    "OBI_0000671" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000671"
+    },
+    "isStepOfPlan" : {
+      "@id" : "http://purl.org/net/p-plan#isStepOfPlan",
+      "@type" : "@id"
+    },
+    "NPO_1504" : {
+      "@id" : "http://purl.bioontology.org/ontology/npo#NPO_1504"
+    },
+    "IAO_0000119" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000119"
+    },
+    "ExperimentalProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ExperimentalProtocol"
+    },
+    "RNASeparatedByMolecularSize" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RNASeparatedByMolecularSize"
+    },
+    "C70830" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"
+    },
+    "C25294" : {
+      "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25294"
+    },
+    "PolimeraseChainReactionProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProcedure"
+    },
+    "EnzimaticAmplificationProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EnzimaticAmplificationProtocol"
+    },
+    "Cultivar" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#Cultivar"
+    },
+    "SO_0000121" : {
+      "@id" : "http://purl.org/obo/owl/SO#SO_0000121"
+    },
+    "Ecotype" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#Ecotype"
+    },
+    "SpecificallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Plan" : {
+      "@id" : "http://purl.org/net/p-plan#Plan"
+    },
+    "OBI_0000809" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0000809"
+    },
+    "BFO_0000062" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "@type" : "@id"
+    },
+    "PCRProgram" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PCRProgram"
+    },
+    "OBI_0001051" : {
+      "@id" : "http://purl.obolibrary.org/obo/OBI_0001051"
+    },
+    "RNAExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"
+    },
+    "CHEBI_33893" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_33893"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "AgaroseInGelState" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AgaroseInGelState"
+    },
+    "IAO_0000030" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    },
+    "PolimeraseChainReactionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PolimeraseChainReactionProtocol"
+    },
+    "DigestedContaminant" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DigestedContaminant"
+    },
+    "CHEBI_33695" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_33695"
+    },
+    "StrainOrLine" : {
+      "@id" : "http://mged.sourceforge.net/ontologies/MGEDOntology.owl#StrainOrLine"
+    },
+    "Variable" : {
+      "@id" : "http://purl.org/net/p-plan#Variable"
+    },
+    "Entity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1#Entity"
+    },
+    "PowderedTissue" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#PowderedTissue"
+    },
+    "IAO_0000412" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000412"
+    },
+    "DigestionReaction" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DigestionReaction"
+    },
+    "NucleicAcidExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#NucleicAcidExtractionProtocol"
+    },
+    "has_part" : {
+      "@id" : "http://www.obofoundry.org/ro/ro.owl#has_part",
+      "@type" : "@id"
+    },
+    "EnzymaticAmplificationProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#EnzymaticAmplificationProcedure"
+    },
+    "ProcessedRNA" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ProcessedRNA"
+    },
+    "AgaroseGelElectrophoresisProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AgaroseGelElectrophoresisProtocol"
+    },
+    "AnalyzingSampleData" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AnalyzingSampleData"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "RNAExtractionProcedure" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RNAExtractionProcedure"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "IAO_0000100" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000100"
+    },
+    "hasProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#hasProtocol",
+      "@type" : "@id"
+    },
+    "DNASeparatedByMolecularSize" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNASeparatedByMolecularSize"
+    },
+    "NPO_888" : {
+      "@id" : "http://purl.bioontology.org/ontology/npo#NPO_888"
+    },
+    "DNAExtractionProtocol" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#DNAExtractionProtocol"
+    },
+    "Primer" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#Primer"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "CellDisruption" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#CellDisruption"
+    },
+    "ChoosingPCRReactionCondition" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#ChoosingPCRReactionCondition"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "AnalyzedDataSet" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#AnalyzedDataSet"
+    },
+    "hasInputVar" : {
+      "@id" : "http://purl.org/net/p-plan#hasInputVar",
+      "@type" : "@id"
+    },
+    "BasicStepOfElectrophoresis" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#BasicStepOfElectrophoresis"
+    },
+    "CHEBI_35225" : {
+      "@id" : "http://purl.obolibrary.org/obo/CHEBI_35225"
+    },
+    "RawDataSet" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#RawDataSet"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}
