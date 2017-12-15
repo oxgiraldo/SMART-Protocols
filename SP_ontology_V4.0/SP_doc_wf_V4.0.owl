@@ -671,8 +671,12 @@
     <!-- http://purl.org/pav/hasVersion -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasVersion">
+<<<<<<< Updated upstream
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
         <rdfs:domain rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
+=======
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+>>>>>>> Stashed changes
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
         <obo:IAO_0000412 xml:lang="en">PAV ontology</obo:IAO_0000412>
         <rdfs:label xml:lang="en">has version</rdfs:label>
@@ -1817,7 +1821,10 @@ Natriumazetat</obo:IAO_0000118>
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+<<<<<<< Updated upstream
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
+=======
+>>>>>>> Stashed changes
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#Kit"/>
@@ -2870,7 +2877,29 @@ c2C12</obo:IAO_0000118>
     <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
+<<<<<<< Updated upstream
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+=======
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+>>>>>>> Stashed changes
         <obo:IAO_0000112 xml:lang="en">Microsoft Word is commonly used word processing software.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Software is a general term primarily used for digitally stored data such as computer programs and other kinds of information read and written by computers.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Computer_software</obo:IAO_0000119>
@@ -8217,6 +8246,27 @@ RNA extract</rdfs:seeAlso>
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+<<<<<<< Updated upstream
+=======
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+>>>>>>> Stashed changes
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition: An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: collection of random bacteria, a chair, dorsal surface of the body</rdfs:comment>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
@@ -9485,5 +9535,9 @@ RNA extract</rdfs:seeAlso>
 
 
 
+<<<<<<< Updated upstream
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+=======
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+>>>>>>> Stashed changes
 
