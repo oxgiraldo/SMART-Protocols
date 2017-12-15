@@ -370,7 +370,7 @@ node [shape = rectangle, color="black"]; "sp:LaboratoryProcedure" "sp:RecipeList
 	"sp:WaringBlenderPolytron" -> "sp:SampleMill" [ label = "rdfs:subClassOf" ];
 	"sp:FreezerMilling" -> "sp:SampleMill" [ label = "rdfs:subClassOf" ];
 	"sp:ProcedureDescription" -> "obo:IAO_0000300" [ label = "rdfs:subClassOf" ];
-	"obo:ERO_0000071" -> "snap:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"obo:ERO_0000071" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
 	"sp:ThreeDimensionalImage" -> "obo:IAO_0000100" [ label = "rdfs:subClassOf" ];
 	"obo:CHEBI_41218" -> "obo:CHEBI_15734" [ label = "rdfs:subClassOf" ];
 	"obo:PO_0009046" -> "obo:PO_0009007" [ label = "rdfs:subClassOf" ];

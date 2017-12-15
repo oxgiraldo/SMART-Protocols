@@ -8226,7 +8226,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf348" source="nid_obo:ERO_0000071" target="nid_snap:MaterialEntity">
+    <edge id="eid_rdfs:subClassOf348" source="nid_obo:ERO_0000071" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
