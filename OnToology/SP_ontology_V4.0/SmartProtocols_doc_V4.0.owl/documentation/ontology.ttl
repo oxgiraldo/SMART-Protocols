@@ -377,8 +377,7 @@
 
 ###  http://purl.org/pav/hasVersion
 <http://purl.org/pav/hasVersion> rdf:type owl:ObjectProperty ;
-                                 rdfs:domain <http://purl.obolibrary.org/obo/ERO_0000071> ,
-                                             <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> ;
+                                 rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                  rdfs:range <http://purl.obolibrary.org/obo/IAO_0000129> ;
                                  <http://purl.obolibrary.org/obo/IAO_0000412> "PAV ontology"@en ;
                                  rdfs:label "has version"@en .
@@ -1220,8 +1219,7 @@ Natriumazetat"""@en ;
                                                                owl:onProperty <http://www.obofoundry.org/ro/ro.owl#part_of> ;
                                                                owl:someValuesFrom <http://semanticscience.org/resource/SIO_001042>
                                                              ] ;
-                                             owl:disjointWith <http://purl.obolibrary.org/obo/ERO_0000071> ,
-                                                              <http://purl.obolibrary.org/obo/OBI_0000747> ,
+                                             owl:disjointWith <http://purl.obolibrary.org/obo/OBI_0000747> ,
                                                               <http://purl.obolibrary.org/obo/OBI_0100026> ,
                                                               <http://purl.org/net/SMARTprotocol#Kit> ,
                                                               <http://purl.org/net/SMARTprotocol#Manufacturer> ;
@@ -2057,7 +2055,7 @@ c2C12"""@en ;
 
 ###  http://purl.obolibrary.org/obo/ERO_0000071
 <http://purl.obolibrary.org/obo/ERO_0000071> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000112> "Microsoft Word is commonly used word processing software."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Software is a general term primarily used for digitally stored data such as computer programs and other kinds of information read and written by computers."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000119> "http://en.wikipedia.org/wiki/Computer_software"@en ;

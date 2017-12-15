@@ -350,7 +350,7 @@ node [shape = rectangle, color="black"]; "sp^^http://www.w3.org/2001/XMLSchema#s
 	"sp^^http://www.w3.org/2001/XMLSchema#string:BufferB1" -> "sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer" [ label = "rdfs:subClassOf" ];
 	"sp^^http://www.w3.org/2001/XMLSchema#string:WaringBlenderPolytron" -> "sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill" [ label = "rdfs:subClassOf" ];
 	"sp^^http://www.w3.org/2001/XMLSchema#string:FreezerMilling" -> "sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill" [ label = "rdfs:subClassOf" ];
-	"obo:ERO_0000071" -> "snap:MaterialEntity" [ label = "rdfs:subClassOf" ];
+	"obo:ERO_0000071" -> "obo:IAO_0000030" [ label = "rdfs:subClassOf" ];
 	"obo:CHEBI_41218" -> "obo:CHEBI_15734" [ label = "rdfs:subClassOf" ];
 	"obo:PO_0009046" -> "obo:PO_0009007" [ label = "rdfs:subClassOf" ];
 	"snap:Continuant" -> "bfo:Entity" [ label = "rdfs:subClassOf" ];

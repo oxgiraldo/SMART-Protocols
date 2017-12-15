@@ -332,8 +332,7 @@
 # 
 # http://purl.org/pav/hasVersion
 <http://purl.org/pav/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/ERO_0000071> .
-<http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/SMARTprotocol#ExperimentalProtocol> .
+<http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/IAO_0000030> .
 <http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/IAO_0000129> .
 <http://purl.org/pav/hasVersion> <http://purl.obolibrary.org/obo/IAO_0000412> "PAV ontology"@en .
 <http://purl.org/pav/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version"@en .
@@ -908,7 +907,6 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.obofoundry.org/ro/ro.owl#part_of> .
 _:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001042> .
-<http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/ERO_0000071> .
 <http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/OBI_0000747> .
 <http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/OBI_0100026> .
 <http://purl.obolibrary.org/obo/CHEBI_33893> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/SMARTprotocol#Kit> .
@@ -1465,7 +1463,7 @@ _:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 # 
 # http://purl.obolibrary.org/obo/ERO_0000071
 <http://purl.obolibrary.org/obo/ERO_0000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.obolibrary.org/obo/ERO_0000071> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> .
+<http://purl.obolibrary.org/obo/ERO_0000071> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/IAO_0000030> .
 <http://purl.obolibrary.org/obo/ERO_0000071> <http://purl.obolibrary.org/obo/IAO_0000112> "Microsoft Word is commonly used word processing software."@en .
 <http://purl.obolibrary.org/obo/ERO_0000071> <http://purl.obolibrary.org/obo/IAO_0000115> "Software is a general term primarily used for digitally stored data such as computer programs and other kinds of information read and written by computers."@en .
 <http://purl.obolibrary.org/obo/ERO_0000071> <http://purl.obolibrary.org/obo/IAO_0000119> "http://en.wikipedia.org/wiki/Computer_software"@en .

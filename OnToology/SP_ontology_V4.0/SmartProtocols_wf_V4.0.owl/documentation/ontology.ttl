@@ -1600,7 +1600,19 @@ sodium 3alpha,12alpha-dihydroxy-5beta-cholan-24-oate"""@en ;
 
 ###  http://purl.obolibrary.org/obo/ERO_0000071
 <http://purl.obolibrary.org/obo/ERO_0000071> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> ,
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :ExperimentalProtocolExecution
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :LaboratoryProcedure
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :LaboratorySubprocedure
+                                                             ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty :hasName ;
                                                                owl:someValuesFrom :SoftwareName
@@ -2946,7 +2958,7 @@ glycols"""@en ;
                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
                          owl:someValuesFrom :CellDisruption
                        ] ;
-       <http://purl.obolibrary.org/obo/IAO_0000115> "Grind is a experimetnal action. Grind is to reduce (something) to small particles or powder by crushing it."@en ;
+       <http://purl.obolibrary.org/obo/IAO_0000115> "Grind is a experimental action. Grind is to reduce (something) to small particles or powder by crushing it."@en ;
        <http://purl.obolibrary.org/obo/IAO_0000118> """ground
 crush
 pound
