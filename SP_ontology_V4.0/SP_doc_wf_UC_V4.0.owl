@@ -259,6 +259,16 @@
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasAge">
+        <rdfs:range rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+        <obo:IAO_0000115 xml:lang="en">hasAge is a relation that binds an organism entry or an organism part entry to an age entry</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#hasAlertMessage -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasAlertMessage">
@@ -268,6 +278,24 @@
         <obo:IAO_0000115 xml:lang="en">hasAlertMessage is a relation that binds a chemical substance or protocol to an alert message such as caution, critical step, timing, etc.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasAlertMessage is a relation that binds a chemical substance or protocol to an alert message such as caution, critical step, timing, etc.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has alert message</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#hasAlternativeProcedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasAlternativeProcedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasProcedure"/>
+        <rdfs:label xml:lang="en">has alternative procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#hasAlternativeSubprocedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasAlternativeSubprocedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasSubprocedure"/>
+        <rdfs:label xml:lang="en">has alternative subprocedure</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -354,7 +382,9 @@
     <!-- http://purl.org/net/SMARTprotocol#hasDevelopmentalStage -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasDevelopmentalStage">
-        <obo:IAO_0000115 xml:lang="en">hasDevelopmentalStage is a relation that binds a specimen to an developmental stage.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:range rdf:resource="http://purl.org/net/SMARTprotocol#DevelopmentalStage"/>
+        <obo:IAO_0000115 xml:lang="en">hasDevelopmentalStage is a relation that binds an organism to a developmental stage.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has developmental stage</rdfs:label>
     </owl:ObjectProperty>
     
@@ -363,7 +393,6 @@
     <!-- http://purl.org/net/SMARTprotocol#hasExperimentalInput -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasExperimentalInput">
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <obo:IAO_0000115 xml:lang="en">hasExperimentalInput is a relation that binds a experimental protocol to a material entity participating in a protocol.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">hasExperimentalInput is a relation that binds a experimental protocol to a material entity participating in a protocol.</rdfs:comment>
@@ -387,6 +416,7 @@
     <!-- http://purl.org/net/SMARTprotocol#hasGrowthConditions -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasGrowthConditions">
+        <rdfs:range rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
         <obo:IAO_0000115 xml:lang="en">hasGrowthConditions is a relation that binds a specimen entry to an growth conditions entry</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has growth conditions</rdfs:label>
     </owl:ObjectProperty>
@@ -396,8 +426,7 @@
     <!-- http://purl.org/net/SMARTprotocol#hasIdentifier -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasIdentifier">
-        <rdfs:domain rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
-        <rdfs:range rdf:resource="http://purl.org/net/SMARTprotocol#ProtocolIdentifier"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <obo:IAO_0000115 xml:lang="en">hasIdentifier is a relation that binds a document such as an experimental protocol to an protocol identifier</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has identifier</rdfs:label>
     </owl:ObjectProperty>
@@ -452,6 +481,24 @@
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#hasOptionalProcedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasOptionalProcedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasProcedure"/>
+        <rdfs:label xml:lang="en">has optional procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#hasOptionalSubprocedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasOptionalSubprocedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasSubprocedure"/>
+        <rdfs:label xml:lang="en">has optional subprocedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#hasOutcome -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasOutcome">
@@ -472,6 +519,24 @@
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <obo:IAO_0000115 xml:lang="en">hasOutput is a relation that binds a experimental protocol execution to a material entity (such as organism) or a data set (such as sequence reads).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#hasParallelProcedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasParallelProcedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasProcedure"/>
+        <rdfs:label xml:lang="en">has parallel procedure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#hasParallelSubprocedure -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/SMARTprotocol#hasParallelSubprocedure">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/SMARTprotocol#hasSubprocedure"/>
+        <rdfs:label xml:lang="en">has parallel subprocedure</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -671,12 +736,8 @@
     <!-- http://purl.org/pav/hasVersion -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasVersion">
-<<<<<<< Updated upstream
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
         <rdfs:domain rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
-=======
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
->>>>>>> Stashed changes
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
         <obo:IAO_0000412 xml:lang="en">PAV ontology</obo:IAO_0000412>
         <rdfs:label xml:lang="en">has version</rdfs:label>
@@ -886,6 +947,12 @@ Alcohol, Ethyl 70%
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33695"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
@@ -975,8 +1042,26 @@ Not applicable to non-print platforms.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000304"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ManufacturerName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasCatalogNumber"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#CatalogNumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
@@ -1818,13 +1903,16 @@ Natriumazetat</obo:IAO_0000118>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ReagentList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-<<<<<<< Updated upstream
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
-=======
->>>>>>> Stashed changes
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000747"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#Kit"/>
@@ -2877,29 +2965,19 @@ c2C12</obo:IAO_0000118>
     <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
-<<<<<<< Updated upstream
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-=======
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SoftwareName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+                <owl:onProperty rdf:resource="http://purl.org/pav/hasVersion"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000129"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
->>>>>>> Stashed changes
         <obo:IAO_0000112 xml:lang="en">Microsoft Word is commonly used word processing software.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Software is a general term primarily used for digitally stored data such as computer programs and other kinds of information read and written by computers.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Computer_software</obo:IAO_0000119>
@@ -3114,6 +3192,17 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000115 xml:lang="en">An intervention design is a study design in which a controlled process applied to the subjects (the intervention) serves as the independent variable manipulated by the experimentalist. The treatment (perturbation or intervention) defined can be defined as a combination of values taken by independent variable manipulated by the experimentalists are applied to the recruited subjects assigned (possibly by applying specific methods) to treatment groups. The specificity of intervention design is the fact that independent variables are being manipulated and a response of the biological system is evaluated via response variables as monitored by possibly a series of assays.</obo:IAO_0000115>
+        <obo:IAO_0000412 xml:lang="en">OBI</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">intervention design</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000136 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000136">
@@ -3139,14 +3228,32 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasDevelopmentalStage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#DevelopmentalStage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasGrowthConditions"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">sample
-        specimen
-        biospecimen</obo:IAO_0000118>
+specimen
+biospecimen</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI</obo:IAO_0000412>
         <rdfs:label xml:lang="en">sample from organism</rdfs:label>
     </owl:Class>
@@ -3244,6 +3351,36 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasDevelopmentalStage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#DevelopmentalStage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasGrowthConditions"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001616"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
@@ -3381,6 +3518,29 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A water bath is a temperature control bath in which a water acts as contact medium enabling temperature transfer from the heating element or cooling element to the sample. The temperature can be controlled in the 0 to 100 degree centigrade range (under normal pressure).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI</obo:IAO_0000412>
         <rdfs:label xml:lang="en">water bath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A information content entity comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
+        <obo:IAO_0000412 xml:lang="en">OBI</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000039">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+        <obo:IAO_0000115 xml:lang="en">A quality which is an spatial arrangement or distribution of a(n) independent continuant(s) across a Three Dimensional Region.</obo:IAO_0000115>
+        <obo:IAO_0000412 xml:lang="en">Ontology for General Medical Science</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">configuration</rdfs:label>
     </owl:Class>
     
 
@@ -3844,6 +4004,25 @@ Example of usage: A sodium dodecyl sulfate.</rdfs:comment>
         <rdfs:label xml:lang="en">alkyl sulfate reagent</rdfs:label>
         <rdfs:seeAlso xml:lang="en">HO4SR
 alkyl sulfates</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#AlternativeLaboratoryProcedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#AlternativeLaboratoryProcedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <rdfs:label xml:lang="en">alternative laboratory procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#AlternativeLaboratorySubprocedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#AlternativeLaboratorySubprocedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:IAO_0000115 xml:lang="en">one or more steps available as another possibility to execute a procedure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">alternative laboratory subprocedure</rdfs:label>
     </owl:Class>
     
 
@@ -4416,6 +4595,15 @@ heteropolymer</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#Creator -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Creator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">creator</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#CriticalStep -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#CriticalStep">
@@ -4578,6 +4766,18 @@ Definition source: Adapted from OBI</rdfs:comment>
 
 Definition source: http://www.sigmaaldrich.com/life-science/metabolomics/bioultra-reagents/denaturation.html#sthash.5rKMTmls.dpuf</rdfs:comment>
         <rdfs:label xml:lang="en">denaturation reaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#DevelopmentalStage -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#DevelopmentalStage">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000719"/>
+        <obo:IAO_0000112 xml:lang="en">adult, infant, juvenile, larval, prenatal, postnatal</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A developmental stage is spatiotemporal region encompassing some part of the life cycle of an organism, e.g. blastula stage</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Experimental Factor Ontology</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">developmental stage</rdfs:label>
     </owl:Class>
     
 
@@ -4819,6 +5019,16 @@ Tritirachium album proteinase K</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#EquipmentConfiguration -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#EquipmentConfiguration">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000039"/>
+        <obo:IAO_0000115 xml:lang="en">This is the configuration of the equipment. The parameters that make it possible to carry out an operation, procedure, or task (e.g., the configuration of a inverted confocal microscope).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">equipment configuration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">
@@ -4977,13 +5187,13 @@ Example of usage: 70% ethanol</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasExperimentalInput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasOutput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5215,6 +5425,50 @@ Put the number of seed indicated by the kit protocol in the grinding machine and
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#GrowingCondition -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#GrowingCondition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000115"/>
+        <obo:IAO_0000115 xml:lang="en">A study design in which the independent variable is the environmental condition in which the specimen is growing</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">growing condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#GrowingTime -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#GrowingTime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
+        <obo:IAO_0000115 xml:lang="en">This refers to the growing time of the biomaterial prior to a treatment. This includes information about collection, transport, storage, preparation (e.g. drying, sieving, grinding, etc.) and preservation of the sample.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">growing time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#GrowthEnvironment -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#GrowthEnvironment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
+        <obo:IAO_0000115 xml:lang="en">Including but not limited to, controlled environment such as greenhouse (details on accuracy of control of light, humidity and temperature), housing conditions (light/dark cycle). Not-controlled environment such as location of the field trial.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">growth environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#GrowthSubstrate -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#GrowthSubstrate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#GrowingCondition"/>
+        <obo:IAO_0000112 xml:lang="en">Encrusting algae that lives on a rock (its substrate).
+An animal hat lives on top of an algae.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">It is the surface on which an organism (such as a plant, fungus, or animal) lives. A substrate can include biotic or abiotic materials and animals.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">wikipedia https://en.wikipedia.org/wiki/Substrate_(biology)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">growth substrate</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#GuanidiniumThiocyanatePhenol -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#GuanidiniumThiocyanatePhenol">
@@ -5253,6 +5507,16 @@ Example of usage:
 HINT: Mix well by vortex before to use. 
 HINT: ADD NaOH to WATER to avoid splashing.</rdfs:comment>
         <rdfs:label xml:lang="en">hint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#HomePageIdentifier -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#HomePageIdentifier">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <obo:IAO_0000115 xml:lang="en">A home page identifier is a a Uniform Resource Identifier (URI) used to identify a web resource.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">home page identifier</rdfs:label>
     </owl:Class>
     
 
@@ -5420,6 +5684,12 @@ Hot-Start Taq DNA polymerase</rdfs:seeAlso>
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Kit">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Universal Linker Kit, laboratory kit that allows customization of protein microarrays.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.
@@ -5431,10 +5701,26 @@ Universal Linker Kit, laboratory kit that allows customization of protein microa
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#KitList -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitList">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <obo:IAO_0000115 xml:lang="en">kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">kit list</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#KitName -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitName">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Spectrum Plant Total RNA Kit, sufficient for 50 purifications.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Kit name is a  textual entity. Kit name is the name of a kit.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Kit name is a  textual entity. Kit name is the name of a kit.
@@ -5492,13 +5778,13 @@ Omniklentaq-LA</rdfs:seeAlso>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasExperimentalInput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasOutput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5538,17 +5824,27 @@ Omniklentaq-LA</rdfs:seeAlso>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasExperimentalInput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasOutput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A Sub procedure is a serie of statements that are executed. A sub procedure acts as a module of a procedure.</obo:IAO_0000115>
         <rdfs:label>laboratory subprocedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#LaboratoryValidationScientist -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#LaboratoryValidationScientist">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">Laboratory-validation scientist is a person who formally assesses or examines that the protocol can be understood and carried out correctly by users.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">laboratory-validation scientist</rdfs:label>
     </owl:Class>
     
 
@@ -5863,8 +6159,9 @@ MEB extraction buffer</rdfs:seeAlso>
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/MSH/D004864"/>
         <obo:IAO_0000112 xml:lang="en">Pour off supernatant into 1.5 ml microfuge tube.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Microcentrifuge tube is a supply. Microcentrifuge tubes are plastic tubes with capacities from 250 ul to 2.0 ml.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">Microcentrifuge tips
-microfuge tube</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">microcentrifuge tips
+microfuge tube
+safe-lock microcentrifuge tube</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Laboratory_centrifuge#Centrifuge_tubes</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">Microcentrifuge tube is a supply. Microcentrifuge tubes are plastic tubes with capacities from 250 ul to 2.0 ml.
 
@@ -6080,6 +6377,24 @@ oligo (dT) primers</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#OptionalLaboratoryProcedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#OptionalLaboratoryProcedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <rdfs:label xml:lang="en">optional laboratory procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#OptionalLaboratorySubprocedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#OptionalLaboratorySubprocedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <rdfs:label xml:lang="en">optional laboratory subprocedure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#OutcomeOfTheProtocol -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#OutcomeOfTheProtocol">
@@ -6137,6 +6452,25 @@ PCR enzyme buffer</rdfs:seeAlso>
         8) 10 C, forever</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">PCR program is a textual entity that consists in define a series of 20-40 repeated temperature changes, called cycles, with each cycle commonly consisting of 2-3 discrete temperature steps, usually three (denaturation, annealing and extention).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">PCR program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#ParallelLaboratoryProcedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ParallelLaboratoryProcedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <rdfs:label xml:lang="en">parallel laboratory procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#ParallelLaboratorySubprocedure -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ParallelLaboratorySubprocedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:IAO_0000115 xml:lang="en">one or more steps available to be executed in parallel</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">parallel laboratory subprocedure</rdfs:label>
     </owl:Class>
     
 
@@ -7815,16 +8149,6 @@ Problem: Low detection level for tested a miRNA (CT value&gt;35) (Step 9 - 10) P
     
 
 
-    <!-- http://purl.org/net/SMARTprotocol#ValidatorRole -->
-
-    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#ValidatorRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">validator is a person who formally assesses or examines that the protocol can be understood and carried out correctly by users.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">validator role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/net/SMARTprotocol#VinylPolymerMacromoleculeReagent -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#VinylPolymerMacromoleculeReagent">
@@ -8024,18 +8348,6 @@ The following could function as buffers when together in solution:
                 <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1184060740.owl#Class_121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasExperimentalInput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasOutput"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A procedure is a process that attempts to achieve one or more objectives by following an established set of actions.</obo:IAO_0000115>
         <obo:IAO_0000412 xml:lang="en">SIO</obo:IAO_0000412>
         <rdfs:label xml:lang="en">procedure</rdfs:label>
@@ -8102,6 +8414,18 @@ The following could function as buffers when together in solution:
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000246 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000246">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000719"/>
+        <obo:IAO_0000112 xml:lang="en">3 days post planting</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal measurement of the time period elapsed since an identifiable point in the life cycle of an organism. If a developmental stage is specified, the identifiable point would be the beginning of that stage. Otherwise the identifiable point must be specified such as planting (e.g. 3 days post planting).</obo:IAO_0000115>
+        <obo:IAO_0000412 xml:lang="en">Experimental Factor Ontology</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">age</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0000602 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000602">
@@ -8111,6 +8435,18 @@ The following could function as buffers when together in solution:
 
 Definition source: https://en.wikipedia.org/wiki/BALB/c</rdfs:comment>
         <rdfs:label xml:lang="en">BALB/c</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000719 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000719">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000070"/>
+        <obo:IAO_0000112 xml:lang="en">The life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal entity is an entity that has temporal parts and that happens, unfolds or develops through time. An occurrent is something which exists over time, rather than existing completely at many times</obo:IAO_0000115>
+        <obo:IAO_0000412 xml:lang="en">Experimental Factor Ontology</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">temporal measurement</rdfs:label>
     </owl:Class>
     
 
@@ -8246,27 +8582,6 @@ RNA extract</rdfs:seeAlso>
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-<<<<<<< Updated upstream
-=======
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
->>>>>>> Stashed changes
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition: An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples: collection of random bacteria, a chair, dorsal surface of the body</rdfs:comment>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
@@ -9013,6 +9328,14 @@ RNA extract</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#BatchMethodProtocol -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#BatchMethodProtocol">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#TitleOfProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#CrispinJMiller -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#CrispinJMiller">
@@ -9122,6 +9445,14 @@ RNA extract</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#RNAextraction2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#RNAextraction2">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#RNAExtractionProtocol"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#Scalpel -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#Scalpel">
@@ -9157,6 +9488,14 @@ RNA extract</rdfs:seeAlso>
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#SigmaAldrich">
         <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ManufacturerName"/>
         <rdfs:label xml:lang="en">Sigma-Aldrich</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#SouthernWithDIGProbe -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#SouthernWithDIGProbe">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#TitleOfProtocol"/>
     </owl:NamedIndividual>
     
 
@@ -9197,6 +9536,15 @@ RNA extract</rdfs:seeAlso>
         <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#AuthorName"/>
         <ro:part_of rdf:resource="http://purl.org/net/SMARTprotocol#authorList1"/>
         <rdfs:label xml:lang="en">Yvonne Hey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#alternativeStep6_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#alternativeStep6_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#AlternativeLaboratorySubprocedure"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step5_procedure00002b"/>
     </owl:NamedIndividual>
     
 
@@ -9313,6 +9661,14 @@ RNA extract</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#dartmouth.edu -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#dartmouth.edu">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#denaturationReaction01 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#denaturationReaction01">
@@ -9409,6 +9765,15 @@ RNA extract</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#new_england_biolabs -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#new_england_biolabs">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#Publication"/>
+        <rdfs:label xml:lang="en">New England BioLabs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#precipitationReaction01 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#precipitationReaction01">
@@ -9417,6 +9782,113 @@ RNA extract</rdfs:seeAlso>
         <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#denaturationReaction01"/>
         <terms:description xml:lang="en">“Add 0.5 mL isopropyl alcohol per 1 mL TRIzol”</terms:description>
         <rdfs:label xml:lang="en">precipitation reaction 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.10_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.11_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.12_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.1_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.2_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.3_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.4_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.5_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.6_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.7_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.8_procedure00001"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1.9_procedure00001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#procedure00002a -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#procedure00002a">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1_procedure00002a"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step2_procedure00002a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratoryProcedure"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#procedure00002a"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step1_procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step2_procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step3_procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step4_procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step5_procedure00002b"/>
+        <hasSubprocedure rdf:resource="http://purl.org/net/SMARTprotocol#step6_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocol00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocol00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
+        <hasIdentifier rdf:resource="http://purl.org/net/SMARTprotocol#protocol00001ID"/>
+        <hasTitle rdf:resource="http://purl.org/net/SMARTprotocol#BatchMethodProtocol"/>
+        <publishedIn rdf:resource="http://purl.org/net/SMARTprotocol#new_england_biolabs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocol00001ID -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocol00001ID">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ProtocolIdentifier"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.neb.com/protocols/1/01/01/batch-method-protocol-s1560</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocol00002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocol00002">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocol"/>
+        <hasIdentifier rdf:resource="http://purl.org/net/SMARTprotocol#protocol00002ID"/>
+        <hasTitle rdf:resource="http://purl.org/net/SMARTprotocol#SouthernWithDIGProbe"/>
+        <publishedIn rdf:resource="http://purl.org/net/SMARTprotocol#dartmouth.edu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocol00002ID -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocol00002ID">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ProtocolIdentifier"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.dartmouth.edu/~staphy/protocol/southern_with_dig_probe.html</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocolexecution00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocolexecution00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
+        <hasProcedure rdf:resource="http://purl.org/net/SMARTprotocol#procedure00001"/>
+        <isDocumentedIn rdf:resource="http://purl.org/net/SMARTprotocol#protocol00001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#protocolexecution00002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#protocolexecution00002">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution"/>
+        <hasProcedure rdf:resource="http://purl.org/net/SMARTprotocol#procedure00002a"/>
+        <hasProcedure rdf:resource="http://purl.org/net/SMARTprotocol#procedure00002b"/>
+        <isDocumentedIn rdf:resource="http://purl.org/net/SMARTprotocol#protocol00002"/>
     </owl:NamedIndividual>
     
 
@@ -9481,6 +9953,213 @@ RNA extract</rdfs:seeAlso>
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#step1.10_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.10_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.11_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.9_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add 400 μl of Wash Buffer to oligo (dT)25 beads, let stand at room temperature for 2 minutes agitating by hand or place horizontally on rotary shaker. Microcentrifuge for 10 seconds, then using a micropipette decant supernant to a clean 13 x 100 mm test tube.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.11_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.11_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.12_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.10_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add 400 μl of Wash Buffer to cellulose beads</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.12_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.12_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.11_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wash three times</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.1_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.1_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.2_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add 50 μl of 5M NaCl per 450 μl of cell lysate or total RNA solution or dissolve total RNA sample in 450 μl of Elution Buffer then add 50 μl of 5M NaCl. Make sure that sample is totally dissolved.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.2_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.2_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.3_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.1_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heat at 65°C for 5 minutes and quickly cool in an ice bath for 3 minutes.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.3_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.3_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.4_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.2_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apply total RNA solution to equilibrated oligo (dT)25 cellulose, seal cap and mix thoroughly. Let stand at room temperature for 5 minutes agitating by hand or place horizontally on rotary shaker.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.4_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.4_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.5_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.3_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microcentrifuge for 10 seconds</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.5_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.5_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.6_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.4_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microcentrifuge for 10 seconds</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.6_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.6_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.7_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.5_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pipet supernant back into original microcentrifuge tube.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.7_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.7_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.8_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.6_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Repeat steps 2 thru 4</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.8_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.8_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.9_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.7_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pipet supernant back into original microcentrifuge tube for storage. It is recommended that no eluates be discarded until entire isolation procedure is completed and the results are evaluated. Eluates can be stored in sterile test tubes on ice.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1.9_procedure00001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1.9_procedure00001">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step1.10_procedure00001"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1.8_procedure00001"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pipet supernant back into original microcentrifuge tube for storage. It is recommended that no eluates be discarded until entire isolation procedure is completed and the results are evaluated. Eluates can be stored in sterile test tubes on ice.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1_procedure00002a -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1_procedure00002a">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step2_procedure00002a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step1_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step1_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step2_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step2_procedure00002a -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step2_procedure00002a">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1_procedure00002a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step2_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step2_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step3_procedure00002b"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step1_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step3_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step3_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step4_procedure00002b"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step2_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step4_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step4_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step5_procedure00002b"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step3_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step5_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step5_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#alternativeStep6_procedure00002b"/>
+        <obo:BFO_0000061 rdf:resource="http://purl.org/net/SMARTprotocol#step6_procedure00002b"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step4_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#step6_procedure00002b -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#step6_procedure00002b">
+        <rdf:type rdf:resource="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure"/>
+        <obo:BFO_0000062 rdf:resource="http://purl.org/net/SMARTprotocol#step5_procedure00002b"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#title1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/net/SMARTprotocol#title1">
@@ -9535,9 +10214,5 @@ RNA extract</rdfs:seeAlso>
 
 
 
-<<<<<<< Updated upstream
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
-=======
 <!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
->>>>>>> Stashed changes
 

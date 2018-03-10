@@ -2906,8 +2906,8 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenList"/>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a material obtained from an organism in order to be a representative of the whole</obo:IAO_0000115>
@@ -3013,8 +3013,8 @@ mice C57BL/6xCBA/CaJ hybrid</obo:IAO_0000118>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenList"/>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#Primer"/>
@@ -4363,7 +4363,7 @@ Tritirachium album proteinase K</rdfs:seeAlso>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/MSH/D004864"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#ReagentList"/>
@@ -4870,6 +4870,12 @@ Hot-Start Taq DNA polymerase</rdfs:seeAlso>
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Kit">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Universal Linker Kit, laboratory kit that allows customization of protein microarrays.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.
@@ -4881,10 +4887,32 @@ Universal Linker Kit, laboratory kit that allows customization of protein microa
     
 
 
+    <!-- http://purl.org/net/SMARTprotocol#KitList -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitList">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">kit list</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/net/SMARTprotocol#KitName -->
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitName">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Spectrum Plant Total RNA Kit, sufficient for 50 purifications.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Kit name is a  textual entity. Kit name is the name of a kit.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Kit name is a  textual entity. Kit name is the name of a kit.
@@ -6152,7 +6180,7 @@ Definition source: https://www.thermofisher.com/es/en/home/life-science/pcr/reve
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33893"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#ReagentName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/net/SMARTprotocol#SoftwareList"/>
@@ -6191,7 +6219,7 @@ Example of usage: Taq DNA Polymerase from Thermus aquaticus with 10X reaction bu
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">recipe list is a data set of the names or identifiers of the recipes, that are part of materials section of a protocol.</obo:IAO_0000115>
@@ -6205,6 +6233,12 @@ Example of usage: Taq DNA Polymerase from Thermus aquaticus with 10X reaction bu
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#RecipeName">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#RecipeList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Recipe name is a textual entity. Recipe name is the name of a solution, buffer, media, etc that is prepared in the laboratory.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Recipe name is a textual entity. Recipe name is the name of a solution, buffer, media, etc that is prepared in the laboratory.</rdfs:comment>
         <rdfs:label>recipe name</rdfs:label>
@@ -6484,7 +6518,7 @@ Natriumsalz</obo:IAO_0000118>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SoftwareName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Software list is a data set of the names of softwares that are part of materials section of a protocol.</obo:IAO_0000115>
@@ -6530,13 +6564,7 @@ Example of usage: 3M NaOH (1L)</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000671"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenName"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">specimen list is a data set of the names or identifiers of the specimens that are part of materials section of a protocol.</obo:IAO_0000115>
@@ -6552,6 +6580,12 @@ Example of usage: 3M NaOH (1L)</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#SpecimenName">
         <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#SpecimenList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Specimen name is a textual entity. Specimen name is the name of the organism, strain, line, ecotype, cultivar, etc. used in a protocol.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">sample name</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Specimen name is a textual entity. Specimen name is the name of the organism, strain, line, ecotype, cultivar, etc. used in a protocol.</rdfs:comment>

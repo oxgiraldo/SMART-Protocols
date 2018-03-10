@@ -4061,6 +4061,12 @@ Hot-Start Taq DNA polymerase</obo:IAO_0000118>
 
     <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#Kit">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/SMARTprotocol#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Universal Linker Kit, laboratory kit that allows customization of protein microarrays.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">A set of chemical substances, articles or equipment needed for a specific purpose.
@@ -4068,6 +4074,38 @@ Hot-Start Taq DNA polymerase</obo:IAO_0000118>
 Example of usage:
 Universal Linker Kit, laboratory kit that allows customization of protein microarrays.</rdfs:comment>
         <rdfs:label xml:lang="en">kit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#KitList -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitList">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">kit list</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/SMARTprotocol#KitName -->
+
+    <owl:Class rdf:about="http://purl.org/net/SMARTprotocol#KitName">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/SMARTprotocol#KitList"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">kit name is a textual entity. Kit name is the name of a kit.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">kit name</rdfs:label>
     </owl:Class>
     
 
