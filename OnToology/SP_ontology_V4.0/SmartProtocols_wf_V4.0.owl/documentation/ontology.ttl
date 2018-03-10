@@ -1600,7 +1600,19 @@ sodium 3alpha,12alpha-dihydroxy-5beta-cholan-24-oate"""@en ;
 
 ###  http://purl.obolibrary.org/obo/ERO_0000071
 <http://purl.obolibrary.org/obo/ERO_0000071> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> ,
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :ExperimentalProtocolExecution
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :LaboratoryProcedure
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                               owl:someValuesFrom :LaboratorySubprocedure
+                                                             ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty :hasName ;
                                                                owl:someValuesFrom :SoftwareName
@@ -2946,7 +2958,7 @@ glycols"""@en ;
                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
                          owl:someValuesFrom :CellDisruption
                        ] ;
-       <http://purl.obolibrary.org/obo/IAO_0000115> "Grind is a experimetnal action. Grind is to reduce (something) to small particles or powder by crushing it."@en ;
+       <http://purl.obolibrary.org/obo/IAO_0000115> "Grind is a experimental action. Grind is to reduce (something) to small particles or powder by crushing it."@en ;
        <http://purl.obolibrary.org/obo/IAO_0000118> """ground
 crush
 pound
@@ -3093,7 +3105,11 @@ Hot-Start Taq DNA polymerase"""@en ;
 
 ###  http://purl.org/net/SMARTprotocol#Kit
 :Kit rdf:type owl:Class ;
-     rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> ;
+     rdfs:subClassOf <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasName ;
+                       owl:someValuesFrom :KitName
+                     ] ;
      <http://purl.obolibrary.org/obo/IAO_0000112> "Universal Linker Kit, laboratory kit that allows customization of protein microarrays."@en ;
      <http://purl.obolibrary.org/obo/IAO_0000115> "A set of chemical substances, articles or equipment needed for a specific purpose."@en ;
      rdfs:comment """A set of chemical substances, articles or equipment needed for a specific purpose.
@@ -3101,6 +3117,28 @@ Hot-Start Taq DNA polymerase"""@en ;
 Example of usage:
 Universal Linker Kit, laboratory kit that allows customization of protein microarrays."""@en ;
      rdfs:label "kit"@en .
+
+
+###  http://purl.org/net/SMARTprotocol#KitList
+:KitList rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000100> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.obofoundry.org/ro/ro.owl#has_part> ;
+                           owl:someValuesFrom :KitName
+                         ] ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "Kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol."@en ;
+         rdfs:label "kit list"@en .
+
+
+###  http://purl.org/net/SMARTprotocol#KitName
+:KitName rdf:type owl:Class ;
+         rdfs:subClassOf <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.obofoundry.org/ro/ro.owl#part_of> ;
+                           owl:someValuesFrom :KitList
+                         ] ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "kit name is a textual entity. Kit name is the name of a kit."@en ;
+         rdfs:label "kit name"@en .
 
 
 ###  http://purl.org/net/SMARTprotocol#KlenTaqDNAPolymerase

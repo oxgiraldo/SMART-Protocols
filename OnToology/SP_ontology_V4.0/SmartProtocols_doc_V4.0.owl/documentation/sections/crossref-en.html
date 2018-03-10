@@ -1064,6 +1064,9 @@ jurkat JURKAT
          <a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">kit</a>
       </li>
       <li>
+         <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
+      </li>
+      <li>
          <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
       </li>
       <li>
@@ -5379,7 +5382,6 @@ Equipment
 Inventories
 Medical Devices
 Supplies equipment and supplies</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0000747" title="http://purl.obolibrary.org/obo/OBI_0000747">sample population material sample</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0100026" title="http://purl.obolibrary.org/obo/OBI_0100026">organism</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">kit</a>
@@ -5967,6 +5969,7 @@ OBI_0000042</dd>
          <dd>
             <a href="#EquipmentAndSuppliesList"
                title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">equipment and supplies list</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">reagent list</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RecipeList" title="http://purl.org/net/SMARTprotocol#RecipeList">recipe list</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SpecimenList" title="http://purl.org/net/SMARTprotocol#SpecimenList">sample list specimen list</a>
@@ -7003,26 +7006,8 @@ human embryonal kidney cell HEK-293 cell</a>
             <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#http://purl.bioontology.org/ontology/MSH/D004864"
-               title="http://purl.bioontology.org/ontology/MSH/D004864">Device
-Apparatus and Instruments
-Device, Medical
-Devices, Medical
-Instruments and Apparatus
-Inventory
-Medical Device
-Supplies and Equipment
-MED DEVICE
-EQUIPMENT SUPPLIES
-MED DEVICES
-APPARATUS INSTRUM
-DEVICES MED
-DEVICE MED
-Devices
-Equipment
-Inventories
-Medical Devices
-Supplies equipment and supplies</a>
+            <a href="#EquipmentOrSuppliesName"
+               title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">equipment or supplies name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -7394,7 +7379,6 @@ Alcohol, Ethyl 75%
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOutcome" title="http://purl.org/net/SMARTprotocol#hasOutcome">has outcome</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasPurpose" title="http://purl.org/net/SMARTprotocol#hasPurpose">has purpose</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTitle" title="http://purl.org/net/SMARTprotocol#hasTitle">has title</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/pav/hasVersion" title="http://purl.org/pav/hasVersion">has version</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#locatedIn" title="http://purl.org/net/SMARTprotocol#locatedIn">located in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#publishedIn" title="http://purl.org/net/SMARTprotocol#publishedIn">published in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#validatedBy" title="http://purl.org/net/SMARTprotocol#validatedBy">validated by</a>
@@ -9050,8 +9034,14 @@ Primers primer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://semanticscience.org/resource/SIO_000070" title="http://semanticscience.org/resource/SIO_000070">measurement value</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Publication" title="http://purl.org/net/SMARTprotocol#Publication">publication</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Repository" title="http://purl.org/net/SMARTprotocol#Repository">repository</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/IAO_0000300" title="http://purl.obolibrary.org/obo/IAO_0000300">text textual entity</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/pav/hasVersion" title="http://purl.org/pav/hasVersion">has version</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -9289,6 +9279,13 @@ Universal Linker Kit, laboratory kit that allows customization of protein microa
                title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">material entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dd>
+            <a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">has name</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#SubcellularProteinFractionationKitforTissues"
@@ -9298,6 +9295,31 @@ Universal Linker Kit, laboratory kit that allows customization of protein microa
          <dt>is disjoint with</dt>
          <dd>
             <a href="#http://purl.obolibrary.org/obo/CHEBI_33893" title="http://purl.obolibrary.org/obo/CHEBI_33893">chemical compound reagent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="KitList">
+      <h3>kit list<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/SMARTprotocol#KitList</p>
+      <div class="comment">
+         <span class="markdown">kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/IAO_0000100" title="http://purl.obolibrary.org/obo/IAO_0000100">data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -9328,6 +9350,13 @@ Example of usage: Spectrum Plant Total RNA Kit, sufficient for 50 purifications.
          <dd>
             <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
                title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -9814,7 +9843,6 @@ Supplies equipment and supplies</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Manufacturer" title="http://purl.org/net/SMARTprotocol#Manufacturer">manufacturer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0100026" title="http://purl.obolibrary.org/obo/OBI_0100026">organism</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0000747" title="http://purl.obolibrary.org/obo/OBI_0000747">sample population material sample</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"
                title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830">solution</a>
             <sup class="type-c" title="class">c</sup>
@@ -11264,10 +11292,10 @@ Natriumazetat sodium acetate</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">has name</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#SpecimenList" title="http://purl.org/net/SMARTprotocol#SpecimenList">sample list specimen list</a>
+            <a href="#SpecimenName" title="http://purl.org/net/SMARTprotocol#SpecimenName">sample name specimen name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -13639,7 +13667,7 @@ A549<sup class="type-c" title="class">c</sup>
             <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#http://purl.obolibrary.org/obo/CHEBI_33893" title="http://purl.obolibrary.org/obo/CHEBI_33893">chemical compound reagent</a>
+            <a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">reagent name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -13823,8 +13851,7 @@ Example of usage: Taq DNA Polymerase from Thermus aquaticus with 10X reaction bu
             <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830"
-               title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70830">solution</a>
+            <a href="#RecipeName" title="http://purl.org/net/SMARTprotocol#RecipeName">recipe name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -13857,6 +13884,13 @@ Example of usage: Taq DNA Polymerase from Thermus aquaticus with 10X reaction bu
          <dd>
             <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
                title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#RecipeList" title="http://purl.org/net/SMARTprotocol#RecipeList">recipe list</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -14482,10 +14516,10 @@ portion of tissue plant tissue</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">has name</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#SpecimenList" title="http://purl.org/net/SMARTprotocol#SpecimenList">sample list specimen list</a>
+            <a href="#SpecimenName" title="http://purl.org/net/SMARTprotocol#SpecimenName">sample name specimen name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -14547,16 +14581,7 @@ portion of tissue plant tissue</a>
             <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#http://purl.obolibrary.org/obo/OBI_0000671" title="http://purl.obolibrary.org/obo/OBI_0000671">sample
-        specimen
-        biospecimen sample from organism</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#http://purl.obolibrary.org/obo/OBI_0100026" title="http://purl.obolibrary.org/obo/OBI_0100026">organism</a>
+            <a href="#SpecimenName" title="http://purl.org/net/SMARTprotocol#SpecimenName">sample name specimen name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -14658,6 +14683,13 @@ pestle and mortar mortar and pestle</a>
          <dd>
             <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
                title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#SpecimenList" title="http://purl.org/net/SMARTprotocol#SpecimenList">sample list specimen list</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -15218,18 +15250,7 @@ Natriumsalz<sup class="type-c" title="class">c</sup>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
-               title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">material entity</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#http://purl.org/pav/hasVersion" title="http://purl.org/pav/hasVersion">has version</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://purl.obolibrary.org/obo/CHEBI_33893" title="http://purl.obolibrary.org/obo/CHEBI_33893">chemical compound reagent</a>
+            <a href="#http://purl.obolibrary.org/obo/IAO_0000030" title="http://purl.obolibrary.org/obo/IAO_0000030">information content entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -15257,7 +15278,7 @@ Natriumsalz<sup class="type-c" title="class">c</sup>
             <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
             <sup class="type-op" title="object property">op</sup> 
             <span class="logic">some</span> 
-            <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
+            <a href="#SoftwareName" title="http://purl.org/net/SMARTprotocol#SoftwareName">software name</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -17914,12 +17935,7 @@ Primers primer</a>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#ExperimentalProtocol"
-                  title="http://purl.org/net/SMARTprotocol#ExperimentalProtocol">experimental protocol</a>
+               <a href="#http://purl.obolibrary.org/obo/IAO_0000030" title="http://purl.obolibrary.org/obo/IAO_0000030">information content entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

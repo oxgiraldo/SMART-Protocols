@@ -1085,6 +1085,12 @@ iecur liver</a>
          <a href="#Kit" title="http://purl.org/net/SMARTprotocol#Kit">kit</a>
       </li>
       <li>
+         <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
+      </li>
+      <li>
+         <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
+      </li>
+      <li>
          <a href="#http://purl.obolibrary.org/obo/CHEBI_16646" title="http://purl.obolibrary.org/obo/CHEBI_16646">Kohlenhydrat
 glucido
 hydrates de carbone
@@ -5821,6 +5827,7 @@ Lab Tests laboratory procedure</a>
                title="http://purl.org/net/SMARTprotocol#AnalyzedDataSet">analyzed data set</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EquipmentAndSuppliesList"
                title="http://purl.org/net/SMARTprotocol#EquipmentAndSuppliesList">equipment and supplies list</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RawDataSet" title="http://purl.org/net/SMARTprotocol#RawDataSet">raw data set</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReagentList" title="http://purl.org/net/SMARTprotocol#ReagentList">reagent list</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RecipeList" title="http://purl.org/net/SMARTprotocol#RecipeList">recipe list</a>
@@ -7942,7 +7949,7 @@ kibble<sup class="type-c" title="class">c</sup>
       <p>
          <strong>IRI:</strong> http://purl.org/net/SMARTprotocol#Grind</p>
       <div class="comment">
-         <span class="markdown">Grind is a experimetnal action. Grind is to reduce (something) to small particles or powder by crushing it.</span>
+         <span class="markdown">Grind is a experimental action. Grind is to reduce (something) to small particles or powder by crushing it.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -8639,6 +8646,7 @@ Primers primer</a>
          <dd>
             <a href="#http://purl.obolibrary.org/obo/IAO_0000100" title="http://purl.obolibrary.org/obo/IAO_0000100">data set</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/IAO_0000310" title="http://purl.obolibrary.org/obo/IAO_0000310">document</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/IAO_0000300" title="http://purl.obolibrary.org/obo/IAO_0000300">text textual entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -8918,10 +8926,68 @@ Universal Linker Kit, laboratory kit that allows customization of protein microa
                title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">material entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dd>
+            <a href="#hasName" title="http://purl.org/net/SMARTprotocol#hasName">has name</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#SubcellularProteinFractionationKitforTissues"
                title="http://purl.org/net/SMARTprotocol#SubcellularProteinFractionationKitforTissues">subcellular protein fractionation kit for tissues</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="KitList">
+      <h3>kit list<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/SMARTprotocol#KitList</p>
+      <div class="comment">
+         <span class="markdown">Kit list is a data set of the names or identifiers of the kits (purchased ready-to-use), that are part of materials section of a protocol.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/IAO_0000100" title="http://purl.obolibrary.org/obo/IAO_0000100">data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#has_part" title="http://www.obofoundry.org/ro/ro.owl#has_part">has part</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="KitName">
+      <h3>kit name<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/SMARTprotocol#KitName</p>
+      <div class="comment">
+         <span class="markdown">kit name is a textual entity. Kit name is the name of a kit.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614"
+               title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614">name</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.obofoundry.org/ro/ro.owl#part_of" title="http://www.obofoundry.org/ro/ro.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#KitList" title="http://purl.org/net/SMARTprotocol#KitList">kit list</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -9382,7 +9448,6 @@ Supplies equipment and supplies</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0100026" title="http://purl.obolibrary.org/obo/OBI_0100026">organism</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/CHEBI_33893" title="http://purl.obolibrary.org/obo/CHEBI_33893">reagent</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/OBI_0000747" title="http://purl.obolibrary.org/obo/OBI_0000747">sample population material sample</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/ERO_0000071" title="http://purl.obolibrary.org/obo/ERO_0000071">software</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -10339,6 +10404,7 @@ Bromomethyl phenyl ketone
          <dd>
             <a href="#EquipmentOrSuppliesName"
                title="http://purl.org/net/SMARTprotocol#EquipmentOrSuppliesName">equipment or supplies name</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#KitName" title="http://purl.org/net/SMARTprotocol#KitName">kit name</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ReagentName" title="http://purl.org/net/SMARTprotocol#ReagentName">reagent name</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RecipeName" title="http://purl.org/net/SMARTprotocol#RecipeName">recipe name</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SpecimenName" title="http://purl.org/net/SMARTprotocol#SpecimenName">sample name specimen name</a>
@@ -15212,8 +15278,36 @@ Natriumsalz<sup class="type-c" title="class">c</sup>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
-               title="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">material entity</a>
+            <a href="#http://purl.obolibrary.org/obo/IAO_0000030" title="http://purl.obolibrary.org/obo/IAO_0000030">information content entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/RO_0000056" title="http://purl.obolibrary.org/obo/RO_0000056">participates in</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#ExperimentalProtocolExecution"
+               title="http://purl.org/net/SMARTprotocol#ExperimentalProtocolExecution">experimental protocol execution</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/RO_0000056" title="http://purl.obolibrary.org/obo/RO_0000056">participates in</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#LaboratoryProcedure"
+               title="http://purl.org/net/SMARTprotocol#LaboratoryProcedure">Test 
+LBTEST 
+Laboratory Test 
+Tests 
+Lab Test 
+Lab Tests laboratory procedure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://purl.obolibrary.org/obo/RO_0000056" title="http://purl.obolibrary.org/obo/RO_0000056">participates in</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#LaboratorySubprocedure"
+               title="http://purl.org/net/SMARTprotocol#LaboratorySubprocedure">laboratory subprocedure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
