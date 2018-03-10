@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="398" parse.nodes="399" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="399" parse.nodes="400" parse.order="free">
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:DNAExtractionProtocol">
          <data key="d0">
             <y:ShapeNode>
@@ -7001,6 +7001,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitList">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sp^^http://www.w3.org/2001/XMLSchema#string:KitList</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf289" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitList" target="nid_obo:IAO_0000100">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_Thesaurus:C85644">
          <data key="d0">
             <y:ShapeNode>
@@ -7013,7 +7036,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf289" source="nid_Thesaurus:C85644" target="nid_Thesaurus:C41185">
+    <edge id="eid_rdfs:subClassOf290" source="nid_Thesaurus:C85644" target="nid_Thesaurus:C41185">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7024,7 +7047,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf290" source="nid_obo:CLO_0000129" target="nid_obo:CLO_0000128">
+    <edge id="eid_rdfs:subClassOf291" source="nid_obo:CLO_0000129" target="nid_obo:CLO_0000128">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7047,7 +7070,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf291" source="nid_obo:UBERON_0002048" target="nid_http://purl.bioontology.org/ontology/CSP/4000-0119">
+    <edge id="eid_rdfs:subClassOf292" source="nid_obo:UBERON_0002048" target="nid_http://purl.bioontology.org/ontology/CSP/4000-0119">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7058,7 +7081,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf292" source="nid_obo:OBI_0000671" target="nid_obo:OBI_0000747">
+    <edge id="eid_rdfs:subClassOf293" source="nid_obo:OBI_0000671" target="nid_obo:OBI_0000747">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7069,7 +7092,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf293" source="nid_obo:CHEBI_33695" target="nid_obo:OBI_0000671">
+    <edge id="eid_rdfs:subClassOf294" source="nid_obo:CHEBI_33695" target="nid_obo:OBI_0000671">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7092,7 +7115,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf294" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RecipeName" target="nid_Thesaurus:C42614">
+    <edge id="eid_rdfs:subClassOf295" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RecipeName" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7115,7 +7138,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf295" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:WashSolution" target="nid_Thesaurus:C70830">
+    <edge id="eid_rdfs:subClassOf296" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:WashSolution" target="nid_Thesaurus:C70830">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7126,7 +7149,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf296" source="nid_MGEDOntology:StrainOrLine" target="nid_obo:OBI_0100026">
+    <edge id="eid_rdfs:subClassOf297" source="nid_MGEDOntology:StrainOrLine" target="nid_obo:OBI_0100026">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7149,7 +7172,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf297" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StorageCondition" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_rdfs:subClassOf298" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StorageCondition" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7160,7 +7183,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf298" source="nid_obo:IAO_0000310" target="nid_obo:IAO_0000030">
+    <edge id="eid_rdfs:subClassOf299" source="nid_obo:IAO_0000310" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7183,7 +7206,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf299" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_obo:IAO_0000300">
+    <edge id="eid_rdfs:subClassOf300" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_obo:IAO_0000300">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7206,7 +7229,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf300" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Repository" target="nid_obo:IAO_0000030">
+    <edge id="eid_rdfs:subClassOf301" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Repository" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7229,7 +7252,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf301" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName" target="nid_Thesaurus:C42614">
+    <edge id="eid_rdfs:subClassOf302" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7240,7 +7263,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf302" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BileAcidReagent" target="nid_obo:CHEBI_24663">
+    <edge id="eid_rdfs:subClassOf303" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BileAcidReagent" target="nid_obo:CHEBI_24663">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7263,7 +7286,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf303" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ValidatorRole" target="nid_obo:BFO_0000023">
+    <edge id="eid_rdfs:subClassOf304" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ValidatorRole" target="nid_obo:BFO_0000023">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7274,7 +7297,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf304" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Homogenizer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
+    <edge id="eid_rdfs:subClassOf305" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Homogenizer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7285,7 +7308,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf305" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SteroidReagent" target="nid_obo:CHEBI_33893">
+    <edge id="eid_rdfs:subClassOf306" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SteroidReagent" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7308,7 +7331,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf306" source="nid_obo:CHEBI_38700" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SodiumSaltReagent">
+    <edge id="eid_rdfs:subClassOf307" source="nid_obo:CHEBI_38700" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SodiumSaltReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7331,7 +7354,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf307" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SuperScriptReverseTranscriptase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptase">
+    <edge id="eid_rdfs:subClassOf308" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SuperScriptReverseTranscriptase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptase">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7354,7 +7377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf308" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CriticalStep" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_rdfs:subClassOf309" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CriticalStep" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7389,7 +7412,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf309" source="nid_obo:OBI_0400155" target="nid_obo:OBI_0400120">
+    <edge id="eid_rdfs:subClassOf310" source="nid_obo:OBI_0400155" target="nid_obo:OBI_0400120">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7412,7 +7435,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf310" source="nid_obo:OBI_0001051" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProcessedDNA">
+    <edge id="eid_rdfs:subClassOf311" source="nid_obo:OBI_0001051" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProcessedDNA">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7435,7 +7458,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf311" source="nid_obo:CLO_0007365" target="nid_obo:CLO_0000748">
+    <edge id="eid_rdfs:subClassOf312" source="nid_obo:CLO_0007365" target="nid_obo:CLO_0000748">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7446,7 +7469,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf312" source="nid_obo:BFO_0000023" target="nid_snap:SpecificallyDependentContinuant">
+    <edge id="eid_rdfs:subClassOf313" source="nid_obo:BFO_0000023" target="nid_snap:SpecificallyDependentContinuant">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7469,7 +7492,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf313" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName" target="nid_Thesaurus:C42614">
+    <edge id="eid_rdfs:subClassOf314" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7492,7 +7515,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf314" source="nid_obo:CHEBI_4705" target="nid_obo:CHEBI_16991">
+    <edge id="eid_rdfs:subClassOf315" source="nid_obo:CHEBI_4705" target="nid_obo:CHEBI_16991">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7515,7 +7538,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf315" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PluronicF68" target="nid_obo:CHEBI_53514">
+    <edge id="eid_rdfs:subClassOf316" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PluronicF68" target="nid_obo:CHEBI_53514">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7526,7 +7549,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf316" source="nid_obo:CL_0002319" target="nid_obo:CL_0000548">
+    <edge id="eid_rdfs:subClassOf317" source="nid_obo:CL_0002319" target="nid_obo:CL_0000548">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7549,7 +7572,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf317" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CTABBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
+    <edge id="eid_rdfs:subClassOf318" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CTABBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7572,7 +7595,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf318" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_obo:IAO_0000028">
+    <edge id="eid_rdfs:subClassOf319" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_obo:IAO_0000028">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7595,7 +7618,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf319" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:NuclearExtractionBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
+    <edge id="eid_rdfs:subClassOf320" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:NuclearExtractionBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7618,7 +7641,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf320" source="nid_obo:CHEBI_32954" target="nid_obo:CHEBI_38700">
+    <edge id="eid_rdfs:subClassOf321" source="nid_obo:CHEBI_32954" target="nid_obo:CHEBI_38700">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7641,7 +7664,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf321" source="nid_obo:PO_0009010" target="nid_obo:PO_0009007">
+    <edge id="eid_rdfs:subClassOf322" source="nid_obo:PO_0009010" target="nid_obo:PO_0009007">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7664,7 +7687,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf322" source="nid_obo:CHEBI_33659" target="nid_obo:CHEBI_33893">
+    <edge id="eid_rdfs:subClassOf323" source="nid_obo:CHEBI_33659" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7687,7 +7710,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf323" source="nid_obo:CHEBI_1418" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AlkanesulfonateReagent">
+    <edge id="eid_rdfs:subClassOf324" source="nid_obo:CHEBI_1418" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AlkanesulfonateReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7722,7 +7745,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf324" source="nid_obo:CHEBI_62946" target="nid_obo:CHEBI_24840">
+    <edge id="eid_rdfs:subClassOf325" source="nid_obo:CHEBI_62946" target="nid_obo:CHEBI_24840">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7733,7 +7756,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf325" source="nid_obo:CHEBI_30879" target="nid_obo:CHEBI_33893">
+    <edge id="eid_rdfs:subClassOf326" source="nid_obo:CHEBI_30879" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7756,7 +7779,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf326" source="nid_obo:CHEBI_53426" target="nid_obo:CHEBI_53422">
+    <edge id="eid_rdfs:subClassOf327" source="nid_obo:CHEBI_53426" target="nid_obo:CHEBI_53422">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7779,7 +7802,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf327" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier" target="nid_obo:IAO_0000028">
+    <edge id="eid_rdfs:subClassOf328" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier" target="nid_obo:IAO_0000028">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7814,7 +7837,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf328" source="nid_obo:CHEBI_15882" target="nid_obo:CHEBI_33853">
+    <edge id="eid_rdfs:subClassOf329" source="nid_obo:CHEBI_15882" target="nid_obo:CHEBI_33853">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7837,7 +7860,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf329" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AmpliTaqGold" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TaqPolymerase">
+    <edge id="eid_rdfs:subClassOf330" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AmpliTaqGold" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TaqPolymerase">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7860,7 +7883,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf330" source="nid_http://purl.org/spar/biro/BibliographicReference" target="nid_obo:IAO_0000030">
+    <edge id="eid_rdfs:subClassOf331" source="nid_http://purl.org/spar/biro/BibliographicReference" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7883,7 +7906,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf331" source="nid_obo:OBI_0001100" target="nid_obo:OBI_0400106">
+    <edge id="eid_rdfs:subClassOf332" source="nid_obo:OBI_0001100" target="nid_obo:OBI_0400106">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7906,7 +7929,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf332" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnimalEuthanizationProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol">
+    <edge id="eid_rdfs:subClassOf333" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnimalEuthanizationProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7929,7 +7952,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf333" source="nid_obo:CHEBI_67208" target="nid_obo:CHEBI_33697">
+    <edge id="eid_rdfs:subClassOf334" source="nid_obo:CHEBI_67208" target="nid_obo:CHEBI_33697">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7952,7 +7975,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf334" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ChloroformIsoamylAlcoholMixture" target="nid_Thesaurus:C70830">
+    <edge id="eid_rdfs:subClassOf335" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ChloroformIsoamylAlcoholMixture" target="nid_Thesaurus:C70830">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7975,7 +7998,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf335" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AuthorIdentifier" target="nid_obo:IAO_0000028">
+    <edge id="eid_rdfs:subClassOf336" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AuthorIdentifier" target="nid_obo:IAO_0000028">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7986,7 +8009,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf336" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CopolymerMacromoleculeReagent" target="nid_obo:CHEBI_33893">
+    <edge id="eid_rdfs:subClassOf337" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CopolymerMacromoleculeReagent" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -7997,7 +8020,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf337" source="nid_obo:CHEBI_24840" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SulfateSaltReagent">
+    <edge id="eid_rdfs:subClassOf338" source="nid_obo:CHEBI_24840" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SulfateSaltReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8020,7 +8043,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf338" source="nid_obo:OBI_0001087" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
+    <edge id="eid_rdfs:subClassOf339" source="nid_obo:OBI_0001087" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8043,7 +8066,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf339" source="nid_obo:CHEBI_17824" target="nid_obo:CHEBI_35681">
+    <edge id="eid_rdfs:subClassOf340" source="nid_obo:CHEBI_17824" target="nid_obo:CHEBI_35681">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8054,7 +8077,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf340" source="nid_obo:CHEBI_33853" target="nid_obo:CHEBI_33659">
+    <edge id="eid_rdfs:subClassOf341" source="nid_obo:CHEBI_33853" target="nid_obo:CHEBI_33659">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8065,7 +8088,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf341" source="nid_obo:OBI_0400120" target="nid_MSH:D004864">
+    <edge id="eid_rdfs:subClassOf342" source="nid_obo:OBI_0400120" target="nid_MSH:D004864">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8088,7 +8111,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf342" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CellDisruption" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
+    <edge id="eid_rdfs:subClassOf343" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CellDisruption" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8111,7 +8134,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf343" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PowderedLeaf" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PowderedTissue">
+    <edge id="eid_rdfs:subClassOf344" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PowderedLeaf" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PowderedTissue">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8134,7 +8157,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf344" source="nid_obo:PO_0000006" target="nid_obo:PO_0000005">
+    <edge id="eid_rdfs:subClassOf345" source="nid_obo:PO_0000006" target="nid_obo:PO_0000005">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8157,7 +8180,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf345" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferB1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
+    <edge id="eid_rdfs:subClassOf346" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferB1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8180,7 +8203,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf346" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:WaringBlenderPolytron" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
+    <edge id="eid_rdfs:subClassOf347" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:WaringBlenderPolytron" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8203,7 +8226,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf347" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FreezerMilling" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
+    <edge id="eid_rdfs:subClassOf348" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FreezerMilling" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8226,7 +8249,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf348" source="nid_obo:ERO_0000071" target="nid_snap:MaterialEntity">
+    <edge id="eid_rdfs:subClassOf349" source="nid_obo:ERO_0000071" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8249,7 +8272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf349" source="nid_obo:CHEBI_41218" target="nid_obo:CHEBI_15734">
+    <edge id="eid_rdfs:subClassOf350" source="nid_obo:CHEBI_41218" target="nid_obo:CHEBI_15734">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8272,7 +8295,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf350" source="nid_obo:PO_0009046" target="nid_obo:PO_0009007">
+    <edge id="eid_rdfs:subClassOf351" source="nid_obo:PO_0009046" target="nid_obo:PO_0009007">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8295,7 +8318,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf351" source="nid_snap:Continuant" target="nid_bfo:Entity">
+    <edge id="eid_rdfs:subClassOf352" source="nid_snap:Continuant" target="nid_bfo:Entity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8318,7 +8341,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf352" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferATL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
+    <edge id="eid_rdfs:subClassOf353" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferATL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LysisBuffer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8341,7 +8364,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf353" source="nid_obo:IAO_0000129" target="nid_obo:IAO_0000028">
+    <edge id="eid_rdfs:subClassOf354" source="nid_obo:IAO_0000129" target="nid_obo:IAO_0000028">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8364,7 +8387,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf354" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CoffeMill" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
+    <edge id="eid_rdfs:subClassOf355" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CoffeMill" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8387,7 +8410,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf355" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_obo:IAO_0000300">
+    <edge id="eid_rdfs:subClassOf356" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_obo:IAO_0000300">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8398,7 +8421,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf356" source="nid_obo:CHEBI_33696" target="nid_obo:CHEBI_33695">
+    <edge id="eid_rdfs:subClassOf357" source="nid_obo:CHEBI_33696" target="nid_obo:CHEBI_33695">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8409,7 +8432,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf357" source="nid_http://purl.bioontology.org/ontology/NCBITAXON/47569" target="nid_http://purl.bioontology.org/ontology/NCBITAXON/5690">
+    <edge id="eid_rdfs:subClassOf358" source="nid_http://purl.bioontology.org/ontology/NCBITAXON/47569" target="nid_http://purl.bioontology.org/ontology/NCBITAXON/5690">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8420,7 +8443,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf358" source="nid_obo:CLO_0000076" target="nid_obo:CLO_0000128">
+    <edge id="eid_rdfs:subClassOf359" source="nid_obo:CLO_0000076" target="nid_obo:CLO_0000128">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8443,7 +8466,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf359" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:MaterialsSection" target="nid_obo:IAO_0000314">
+    <edge id="eid_rdfs:subClassOf360" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:MaterialsSection" target="nid_obo:IAO_0000314">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8466,7 +8489,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf360" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrecipitationReaction" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
+    <edge id="eid_rdfs:subClassOf361" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrecipitationReaction" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8489,7 +8512,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf361" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LyophilizedRoot" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LyophilizedTissue">
+    <edge id="eid_rdfs:subClassOf362" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LyophilizedRoot" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LyophilizedTissue">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8512,7 +8535,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf362" source="nid_obo:CHEBI_26710" target="nid_obo:CHEBI_36093">
+    <edge id="eid_rdfs:subClassOf363" source="nid_obo:CHEBI_26710" target="nid_obo:CHEBI_36093">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8523,7 +8546,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf363" source="nid_obo:CLO_0000523" target="nid_obo:CLO_0000084">
+    <edge id="eid_rdfs:subClassOf364" source="nid_obo:CLO_0000523" target="nid_obo:CLO_0000084">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8546,7 +8569,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf364" source="nid_obo:OBI_0400114" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
+    <edge id="eid_rdfs:subClassOf365" source="nid_obo:OBI_0400114" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8557,7 +8580,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf365" source="nid_obo:IAO_0000100" target="nid_obo:IAO_0000030">
+    <edge id="eid_rdfs:subClassOf366" source="nid_obo:IAO_0000100" target="nid_obo:IAO_0000030">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8580,7 +8603,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf366" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PotterElvehjemHomogenizer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Homogenizer">
+    <edge id="eid_rdfs:subClassOf367" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PotterElvehjemHomogenizer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Homogenizer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8603,7 +8626,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf367" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:MethodsSection" target="nid_obo:IAO_0000314">
+    <edge id="eid_rdfs:subClassOf368" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:MethodsSection" target="nid_obo:IAO_0000314">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8614,7 +8637,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf368" source="nid_obo:OBI_0100026" target="nid_snap:MaterialEntity">
+    <edge id="eid_rdfs:subClassOf369" source="nid_obo:OBI_0100026" target="nid_snap:MaterialEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8637,7 +8660,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf369" source="nid_http://www.ebi.ac.uk/efo/EFO_0001327" target="nid_obo:NCBITaxon_10090">
+    <edge id="eid_rdfs:subClassOf370" source="nid_http://www.ebi.ac.uk/efo/EFO_0001327" target="nid_obo:NCBITaxon_10090">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8648,7 +8671,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf370" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
+    <edge id="eid_rdfs:subClassOf371" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PhysicalDisruptionEquipmentAndSupplies">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8659,7 +8682,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf371" source="nid_obo:CLO_0000565" target="nid_obo:CLO_0000235">
+    <edge id="eid_rdfs:subClassOf372" source="nid_obo:CLO_0000565" target="nid_obo:CLO_0000235">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8682,7 +8705,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf372" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AncientDNA" target="nid_obo:CHEBI_16991">
+    <edge id="eid_rdfs:subClassOf373" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AncientDNA" target="nid_obo:CHEBI_16991">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8705,7 +8728,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf373" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList" target="nid_obo:IAO_0000100">
+    <edge id="eid_rdfs:subClassOf374" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList" target="nid_obo:IAO_0000100">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8728,7 +8751,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf374" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AmpliTaqDNAPolymerase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TaqPolymerase">
+    <edge id="eid_rdfs:subClassOf375" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AmpliTaqDNAPolymerase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TaqPolymerase">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8739,7 +8762,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf375" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProteinPrecipitationBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:buffer">
+    <edge id="eid_rdfs:subClassOf376" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProteinPrecipitationBuffer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:buffer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8750,7 +8773,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf376" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:buffer" target="nid_Thesaurus:C70830">
+    <edge id="eid_rdfs:subClassOf377" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:buffer" target="nid_Thesaurus:C70830">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8761,7 +8784,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf377" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_obo:ERO_0001203">
+    <edge id="eid_rdfs:subClassOf378" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_obo:ERO_0001203">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8784,7 +8807,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf378" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:GlycolReagent" target="nid_obo:CHEBI_33893">
+    <edge id="eid_rdfs:subClassOf379" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:GlycolReagent" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8807,7 +8830,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf379" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_Thesaurus:C42614">
+    <edge id="eid_rdfs:subClassOf380" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8830,7 +8853,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf380" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FrenchPressureCellPress" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
+    <edge id="eid_rdfs:subClassOf381" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FrenchPressureCellPress" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SampleMill">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8841,7 +8864,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf381" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PotassiumSaltReagent" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AlkaliMetalSaltReagent">
+    <edge id="eid_rdfs:subClassOf382" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PotassiumSaltReagent" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AlkaliMetalSaltReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8864,7 +8887,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf382" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Dithiothreitol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:GlycolReagent">
+    <edge id="eid_rdfs:subClassOf383" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Dithiothreitol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:GlycolReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8887,7 +8910,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf383" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptionPCRProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EnzimaticAmplificationProtocol">
+    <edge id="eid_rdfs:subClassOf384" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptionPCRProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EnzimaticAmplificationProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8898,7 +8921,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf384" source="nid_obo:BTO_0000669" target="nid_obo:CL_0000548">
+    <edge id="eid_rdfs:subClassOf385" source="nid_obo:BTO_0000669" target="nid_obo:CL_0000548">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8921,7 +8944,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf385" source="nid_http://purl.bioontology.org/ontology/SNOMEDCT/285297004" target="nid_obo:CL_0000000">
+    <edge id="eid_rdfs:subClassOf386" source="nid_http://purl.bioontology.org/ontology/SNOMEDCT/285297004" target="nid_obo:CL_0000000">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8944,7 +8967,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf386" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IntroductionSection" target="nid_obo:IAO_0000314">
+    <edge id="eid_rdfs:subClassOf387" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IntroductionSection" target="nid_obo:IAO_0000314">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8967,7 +8990,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf387" source="nid_obo:CL_0000530" target="nid_obo:CL_0000540">
+    <edge id="eid_rdfs:subClassOf388" source="nid_obo:CL_0000530" target="nid_obo:CL_0000540">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -8990,7 +9013,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf388" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:OligodTprimer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
+    <edge id="eid_rdfs:subClassOf389" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:OligodTprimer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9001,7 +9024,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf389" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Kit" target="nid_snap:MaterialEntity">
+    <edge id="eid_rdfs:subClassOf390" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Kit" target="nid_snap:MaterialEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9012,7 +9035,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf390" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EnzymeReagent">
+    <edge id="eid_rdfs:subClassOf391" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReverseTranscriptase" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EnzymeReagent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9035,7 +9058,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf391" source="nid_MGEDOntology:Cultivar" target="nid_MGEDOntology:StrainOrLine">
+    <edge id="eid_rdfs:subClassOf392" source="nid_MGEDOntology:Cultivar" target="nid_MGEDOntology:StrainOrLine">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9058,7 +9081,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf392" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" target="nid_Thesaurus:C42614">
+    <edge id="eid_rdfs:subClassOf393" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9081,7 +9104,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf393" source="nid_Thesaurus:C62218" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthanolSolution">
+    <edge id="eid_rdfs:subClassOf394" source="nid_Thesaurus:C62218" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthanolSolution">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9092,7 +9115,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf394" source="nid_snap:Quality" target="nid_snap:SpecificallyDependentContinuant">
+    <edge id="eid_rdfs:subClassOf395" source="nid_snap:Quality" target="nid_snap:SpecificallyDependentContinuant">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9115,7 +9138,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf395" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Volatile" target="nid_Ontology1184060740:Class_122">
+    <edge id="eid_rdfs:subClassOf396" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Volatile" target="nid_Ontology1184060740:Class_122">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9138,7 +9161,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf396" source="nid_obo:CHEBI_17843" target="nid_obo:CHEBI_33697">
+    <edge id="eid_rdfs:subClassOf397" source="nid_obo:CHEBI_17843" target="nid_obo:CHEBI_33697">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -9161,7 +9184,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf397" source="nid_obo:CHEBI_62947" target="nid_obo:CHEBI_47704">
+    <edge id="eid_rdfs:subClassOf398" source="nid_obo:CHEBI_62947" target="nid_obo:CHEBI_47704">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

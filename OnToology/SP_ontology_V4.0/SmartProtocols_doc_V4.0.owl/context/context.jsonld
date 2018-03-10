@@ -782,6 +782,9 @@
     "BTO_0000007" : {
       "@id" : "http://purl.obolibrary.org/obo/BTO_0000007"
     },
+    "KitList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#KitList"
+    },
     "AncientDNA" : {
       "@id" : "http://purl.org/net/SMARTprotocol#AncientDNA"
     },

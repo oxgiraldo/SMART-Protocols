@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="258" parse.nodes="160" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="257" parse.nodes="162" parse.order="free">
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent4">
          <data key="d0">
             <y:ShapeNode>
@@ -122,29 +122,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_obo:ERO_0000071">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">obo:ERO_0000071</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:disjointWith4" source="nid_obo:CHEBI_33893" target="nid_obo:ERO_0000071">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:disjointWith</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Manufacturer">
          <data key="d0">
             <y:ShapeNode>
@@ -157,7 +134,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith5" source="nid_obo:CHEBI_33893" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Manufacturer">
+    <edge id="eid_owl:disjointWith4" source="nid_obo:CHEBI_33893" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Manufacturer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -192,7 +169,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith6" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
+    <edge id="eid_owl:disjointWith5" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -215,7 +192,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith7" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_owl:disjointWith6" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -238,7 +215,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith8" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_owl:disjointWith7" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -261,7 +238,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith9" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith8" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -284,7 +261,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith10" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith9" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -307,7 +284,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith11" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith10" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -342,7 +319,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:part_of12" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
+    <edge id="eid_ro:part_of11" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -365,7 +342,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_obo:OBI_000030413" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
+    <edge id="eid_obo:OBI_000030412" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -400,7 +377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith14" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
+    <edge id="eid_owl:disjointWith13" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -423,7 +400,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith15" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList">
+    <edge id="eid_owl:disjointWith14" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -458,7 +435,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith16" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName">
+    <edge id="eid_owl:disjointWith15" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -481,7 +458,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith17" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName">
+    <edge id="eid_owl:disjointWith16" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -504,7 +481,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith18" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName">
+    <edge id="eid_owl:disjointWith17" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -527,7 +504,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith19" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
+    <edge id="eid_owl:disjointWith18" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -538,7 +515,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith20" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
+    <edge id="eid_owl:disjointWith19" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -573,7 +550,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName21" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:manufacturer2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Invitrogen">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName20" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:manufacturer2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Invitrogen">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -608,7 +585,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName22" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author5" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName21" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author5" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -619,7 +596,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith23" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith22" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -630,7 +607,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith24" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_owl:disjointWith23" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -641,7 +618,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith25" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith24" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -652,7 +629,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith26" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_owl:disjointWith25" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -663,7 +640,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith27" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith26" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -698,7 +675,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:part_of28" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_ro:part_of27" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -733,7 +710,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith29" source="nid_obo:CHEBI_16991" target="nid_obo:CHEBI_33697">
+    <edge id="eid_owl:disjointWith28" source="nid_obo:CHEBI_16991" target="nid_obo:CHEBI_33697">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -768,7 +745,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName30" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName29" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -803,7 +780,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith31" source="nid_Thesaurus:C70830" target="nid_obo:CHEBI_33695">
+    <edge id="eid_owl:disjointWith30" source="nid_Thesaurus:C70830" target="nid_obo:CHEBI_33695">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -814,7 +791,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith32" source="nid_Thesaurus:C70830" target="nid_obo:OBI_0000747">
+    <edge id="eid_owl:disjointWith31" source="nid_Thesaurus:C70830" target="nid_obo:OBI_0000747">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -825,7 +802,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith33" source="nid_Thesaurus:C70830" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Manufacturer">
+    <edge id="eid_owl:disjointWith32" source="nid_Thesaurus:C70830" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Manufacturer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -836,7 +813,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith34" source="nid_Thesaurus:C70830" target="nid_obo:OBI_0100026">
+    <edge id="eid_owl:disjointWith33" source="nid_Thesaurus:C70830" target="nid_obo:OBI_0100026">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -871,7 +848,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf35" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInitialConcentration" target="nid_obo:BCGO_0000183">
+    <edge id="eid_rdfs:subPropertyOf34" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInitialConcentration" target="nid_obo:BCGO_0000183">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -906,7 +883,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith36" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:NucleicAcidExtractionProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProteinExtractionProtocol">
+    <edge id="eid_owl:disjointWith35" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:NucleicAcidExtractionProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProteinExtractionProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -941,7 +918,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith37" source="nid_MSH:D004864" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
+    <edge id="eid_owl:disjointWith36" source="nid_MSH:D004864" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -952,7 +929,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith38" source="nid_MSH:D004864" target="nid_obo:OBI_0100026">
+    <edge id="eid_owl:disjointWith37" source="nid_MSH:D004864" target="nid_obo:OBI_0100026">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -963,7 +940,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith39" source="nid_MSH:D004864" target="nid_obo:CHEBI_33893">
+    <edge id="eid_owl:disjointWith38" source="nid_MSH:D004864" target="nid_obo:CHEBI_33893">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -974,7 +951,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith40" source="nid_MSH:D004864" target="nid_obo:OBI_0000747">
+    <edge id="eid_owl:disjointWith39" source="nid_MSH:D004864" target="nid_obo:OBI_0000747">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -997,7 +974,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith41" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AdvantageOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_owl:disjointWith40" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AdvantageOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1020,7 +997,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName42" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName41" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1043,7 +1020,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith43" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
+    <edge id="eid_owl:disjointWith42" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1054,7 +1031,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith44" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_owl:disjointWith43" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1065,7 +1042,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith45" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
+    <edge id="eid_owl:disjointWith44" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1076,7 +1053,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith46" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_owl:disjointWith45" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1087,7 +1064,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith47" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith46" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1098,7 +1075,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith48" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith47" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1109,7 +1086,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith49" source="nid_Thesaurus:C42614" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith48" source="nid_Thesaurus:C42614" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1132,7 +1109,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith50" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol">
+    <edge id="eid_owl:disjointWith49" source="nid_Thesaurus:C42614" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1143,7 +1120,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith51" source="nid_obo:OBI_0100026" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
+    <edge id="eid_owl:disjointWith50" source="nid_obo:OBI_0100026" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1166,7 +1143,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName52" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:manufacturer1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName51" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:manufacturer1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1201,7 +1178,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName53" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author4" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName52" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author4" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1236,7 +1213,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith54" source="nid_snap:GenericallyDependentContinuant" target="nid_snap:SpecificallyDependentContinuant">
+    <edge id="eid_owl:disjointWith53" source="nid_snap:GenericallyDependentContinuant" target="nid_snap:SpecificallyDependentContinuant">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1259,7 +1236,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:part_of55" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_ro:part_of54" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1282,7 +1259,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName56" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName55" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1317,7 +1294,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part57" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford">
+    <edge id="eid_ro:has_part56" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1328,7 +1305,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part58" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton">
+    <edge id="eid_ro:has_part57" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1351,7 +1328,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part59" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller">
+    <edge id="eid_ro:has_part58" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1374,7 +1351,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part60" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey">
+    <edge id="eid_ro:has_part59" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1397,7 +1374,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part61" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper">
+    <edge id="eid_ro:has_part60" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1408,7 +1385,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part62" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben">
+    <edge id="eid_ro:has_part61" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1431,7 +1408,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part63" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont">
+    <edge id="eid_ro:has_part62" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1442,7 +1419,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part64" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform">
+    <edge id="eid_ro:has_part63" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:chloroform">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1453,7 +1430,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part65" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol">
+    <edge id="eid_ro:has_part64" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1476,7 +1453,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part66" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol">
+    <edge id="eid_ro:has_part65" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1499,7 +1476,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part67" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol">
+    <edge id="eid_ro:has_part66" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1510,7 +1487,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith68" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith67" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1521,7 +1498,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith69" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith68" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1532,7 +1509,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of70" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
+    <edge id="eid_ro:part_of69" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1543,7 +1520,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_obo:OBI_000030471" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Invitrogen">
+    <edge id="eid_obo:OBI_000030470" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TRIZol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Invitrogen">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1566,7 +1543,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName72" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName71" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1589,7 +1566,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName73" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName72" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1600,7 +1577,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith74" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
+    <edge id="eid_owl:disjointWith73" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1611,7 +1588,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of75" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of74" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1622,7 +1599,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of76" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of75" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1633,7 +1610,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of77" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of76" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1644,7 +1621,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith78" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
+    <edge id="eid_owl:disjointWith77" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1679,7 +1656,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:adaptedFrom79" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:provenance1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:adaptedFrom78" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:provenance1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1690,7 +1667,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthor80" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthor79" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1713,7 +1690,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasIdentifier81" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Id1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasIdentifier80" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Id1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1736,7 +1713,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasTitle82" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:title1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasTitle81" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:title1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1747,7 +1724,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs83" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs82" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1758,7 +1735,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs84" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs83" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1781,7 +1758,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication85" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:application1">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication84" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:application1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1804,7 +1781,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs86" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:tumorTissue">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs85" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAextraction01" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:tumorTissue">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1827,7 +1804,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName87" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName86" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagent1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1838,7 +1815,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of88" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of87" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1849,7 +1826,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith89" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith88" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1860,7 +1837,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith90" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith89" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1871,7 +1848,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith91" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith90" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1906,7 +1883,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith92" source="nid_obo:CHEBI_33696" target="nid_obo:CHEBI_36080">
+    <edge id="eid_owl:disjointWith91" source="nid_obo:CHEBI_33696" target="nid_obo:CHEBI_36080">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1929,52 +1906,6 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-9a79318:15f818ce50c:-7faf">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7faf</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:unionOf93" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7faf">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fa6">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fa6</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest94" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fa6">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication">
          <data key="d0">
             <y:ShapeNode>
@@ -1987,7 +1918,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty95" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication">
+    <edge id="eid_owl:onProperty92" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2010,7 +1941,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty96" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs">
+    <edge id="eid_owl:onProperty93" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2021,19 +1952,30 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_obo:OBI_0000671">
+      <node id="nid_-2af84773:16210103866:-7fa5">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">obo:OBI_0000671</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa5</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom97" source="nid_NULL" target="nid_obo:OBI_0000671">
+    <edge id="eid_rdf:rest94" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa5">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:someValuesFrom95" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2044,7 +1986,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom98" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList">
+    <edge id="eid_owl:someValuesFrom96" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2055,18 +1997,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom99" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_owl:someValuesFrom100" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName">
+    <edge id="eid_owl:someValuesFrom97" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2089,12 +2020,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom101" source="nid_NULL" target="nid_obo:IAO_0000314">
+    <edge id="eid_owl:someValuesFrom98" source="nid_NULL" target="nid_obo:IAO_0000314">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-2af84773:16210103866:-7faa">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7faa</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest99" source="nid_NULL" target="nid_-2af84773:16210103866:-7faa">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2112,7 +2066,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom102" source="nid_NULL" target="nid_http://semanticscience.org/resource/SIO_000070">
+    <edge id="eid_owl:someValuesFrom100" source="nid_NULL" target="nid_http://semanticscience.org/resource/SIO_000070">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2123,12 +2077,24 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom103" source="nid_NULL" target="nid_obo:ERO_0000071">
+      <node id="nid_-2af84773:16210103866:-7fa2">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa2</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest101" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa2">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2146,12 +2112,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom104" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StorageCondition">
+    <edge id="eid_owl:someValuesFrom102" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StorageCondition">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-2af84773:16210103866:-7fab">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fab</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf103" source="nid_NULL" target="nid_-2af84773:16210103866:-7fab">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2169,7 +2158,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty105" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAdvantage">
+    <edge id="eid_owl:onProperty104" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAdvantage">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2192,7 +2181,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom106" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CellDisruption">
+    <edge id="eid_owl:someValuesFrom105" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CellDisruption">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2215,7 +2204,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom107" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
+    <edge id="eid_owl:someValuesFrom106" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2238,7 +2227,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom108" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier">
+    <edge id="eid_owl:someValuesFrom107" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2261,7 +2250,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom109" source="nid_NULL" target="nid_http://prismstandard.org/namespaces/basic/2.0/prism:coverDate">
+    <edge id="eid_owl:someValuesFrom108" source="nid_NULL" target="nid_http://prismstandard.org/namespaces/basic/2.0/prism:coverDate">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2284,7 +2273,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom110" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
+    <edge id="eid_owl:someValuesFrom109" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2307,7 +2296,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty111" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasOutcome">
+    <edge id="eid_owl:onProperty110" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasOutcome">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2330,7 +2319,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty112" source="nid_NULL" target="nid_obo:OBI_0000304">
+    <edge id="eid_owl:onProperty111" source="nid_NULL" target="nid_obo:OBI_0000304">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2353,7 +2342,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom113" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Hint">
+    <edge id="eid_owl:someValuesFrom112" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Hint">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2376,12 +2365,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty114" source="nid_NULL" target="nid_pav:hasVersion">
+    <edge id="eid_owl:onProperty113" source="nid_NULL" target="nid_pav:hasVersion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitList">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sp^^http://www.w3.org/2001/XMLSchema#string:KitList</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom114" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitList">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2490,58 +2502,47 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fa8">
+      <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitName">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="510.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fa8</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sp^^http://www.w3.org/2001/XMLSchema#string:KitName</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest120" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fa8">
+    <edge id="eid_owl:someValuesFrom120" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KitName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7faa">
+      <node id="nid_-2af84773:16210103866:-7fa7">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7faa</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa7</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest121" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7faa">
+    <edge id="eid_owl:members121" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa7">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_owl:onProperty122" source="nid_NULL" target="nid_obo:BCGO_0000183">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:members</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2559,7 +2560,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom123" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ManufacturerName">
+    <edge id="eid_owl:someValuesFrom122" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ManufacturerName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2570,30 +2571,41 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom124" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:onProperty123" source="nid_NULL" target="nid_obo:BCGO_0000183">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_Ontology1184060740:Class_122">
+      <node id="nid_-2af84773:16210103866:-7fa4">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="280.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">Ontology1184060740:Class_122</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa4</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom125" source="nid_NULL" target="nid_Ontology1184060740:Class_122">
+    <edge id="eid_rdf:rest124" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa4">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_owl:someValuesFrom125" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2604,18 +2616,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdf:first126" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_owl:someValuesFrom127" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
+    <edge id="eid_owl:someValuesFrom126" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2638,7 +2639,41 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom128" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReferenceList">
+    <edge id="eid_owl:someValuesFrom127" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReferenceList">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdf:first128" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ReagentList">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_Ontology1184060740:Class_122">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="280.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">Ontology1184060740:Class_122</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom129" source="nid_NULL" target="nid_Ontology1184060740:Class_122">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2661,7 +2696,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom129" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrecipitationReaction">
+    <edge id="eid_owl:someValuesFrom130" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrecipitationReaction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2684,7 +2719,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom130" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SubcellularProteinFractionationKitforTissues">
+    <edge id="eid_owl:allValuesFrom131" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SubcellularProteinFractionationKitforTissues">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2695,7 +2730,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom131" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:someValuesFrom132" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2718,7 +2753,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty132" source="nid_NULL" target="nid_ro:has_part">
+    <edge id="eid_owl:onProperty133" source="nid_NULL" target="nid_ro:has_part">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2729,35 +2764,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdf:first133" source="nid_NULL" target="nid_snap:SpecificallyDependentContinuant">
+    <edge id="eid_rdf:first134" source="nid_NULL" target="nid_snap:SpecificallyDependentContinuant">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fab">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fab</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:members134" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fab">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:members</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2785,6 +2797,17 @@
          </data>
          <data key="d3" />
       </edge>
+    <edge id="eid_rdf:first137" source="nid_NULL" target="nid_snap:GenericallyDependentContinuant">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPurpose">
          <data key="d0">
             <y:ShapeNode>
@@ -2797,23 +2820,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty137" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPurpose">
+    <edge id="eid_owl:onProperty138" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPurpose">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdf:first138" source="nid_NULL" target="nid_snap:GenericallyDependentContinuant">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3128,19 +3140,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fa7">
+      <node id="nid_-2af84773:16210103866:-7fa6">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fa7</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa6</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest154" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fa7">
+    <edge id="eid_rdf:rest154" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa6">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3242,6 +3254,17 @@
          </data>
          <data key="d3" />
       </edge>
+    <edge id="eid_owl:someValuesFrom160" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAlertMessage">
          <data key="d0">
             <y:ShapeNode>
@@ -3254,12 +3277,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty160" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAlertMessage">
+    <edge id="eid_owl:onProperty161" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAlertMessage">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-2af84773:16210103866:-7fa3">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fa3</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest162" source="nid_NULL" target="nid_-2af84773:16210103866:-7fa3">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3277,7 +3323,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom161" source="nid_NULL" target="nid_http://prismstandard.org/namespaces/basic/2.0/prism:publicationName">
+    <edge id="eid_owl:someValuesFrom163" source="nid_NULL" target="nid_http://prismstandard.org/namespaces/basic/2.0/prism:publicationName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3300,7 +3346,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty162" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasCatalogNumber">
+    <edge id="eid_owl:onProperty164" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasCatalogNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3311,7 +3357,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom163" source="nid_NULL" target="nid_obo:OBI_0100026">
+    <edge id="eid_owl:someValuesFrom165" source="nid_NULL" target="nid_obo:OBI_0100026">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3322,7 +3368,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom164" source="nid_NULL" target="nid_MSH:D004864">
+      <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenName">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="560.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenName</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom166" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3333,7 +3391,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom165" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenList">
+    <edge id="eid_owl:someValuesFrom167" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SpecimenList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3356,7 +3414,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom166" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:DenaturationReaction">
+    <edge id="eid_owl:someValuesFrom168" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:DenaturationReaction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3367,18 +3425,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom167" source="nid_NULL" target="nid_Thesaurus:C70830">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdf:first168" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList">
+    <edge id="eid_rdf:first169" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentAndSuppliesList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3401,7 +3448,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom169" source="nid_NULL" target="nid_obo:IAO_0000310">
+    <edge id="eid_owl:someValuesFrom170" source="nid_NULL" target="nid_obo:IAO_0000310">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3412,35 +3459,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:someValuesFrom170" source="nid_NULL" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:someValuesFrom171" source="nid_NULL" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fae">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fae</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest171" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fae">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3537,29 +3561,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-9a79318:15f818ce50c:-7fa9">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fa9</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest177" source="nid_NULL" target="nid_-9a79318:15f818ce50c:-7fa9">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RecipeName">
          <data key="d0">
             <y:ShapeNode>
@@ -3572,7 +3573,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom178" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RecipeName">
+    <edge id="eid_owl:someValuesFrom177" source="nid_NULL" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RecipeName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3583,7 +3584,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith179" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName">
+    <edge id="eid_owl:disjointWith178" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SolutionName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3606,7 +3607,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith180" source="nid_Thesaurus:C85644" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
+    <edge id="eid_owl:disjointWith179" source="nid_Thesaurus:C85644" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3629,7 +3630,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName181" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies5" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName180" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies5" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3652,7 +3653,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName182" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName181" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author2" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CrispinJMiller">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3663,7 +3664,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of183" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_ro:part_of182" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3686,7 +3687,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith184" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
+    <edge id="eid_owl:disjointWith183" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SoftwareName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3697,7 +3698,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith185" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName">
+    <edge id="eid_owl:disjointWith184" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3708,7 +3709,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith186" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName">
+    <edge id="eid_owl:disjointWith185" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:BufferName" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EquipmentOrSuppliesName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3719,7 +3720,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of187" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
+    <edge id="eid_ro:part_of186" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3730,7 +3731,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_obo:OBI_0000304188" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
+    <edge id="eid_obo:OBI_0000304187" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:IsopropylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3753,7 +3754,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf189" source="nid_http://purl.org/net/OCRe/OCRe.owl#OCRE900226" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName">
+    <edge id="eid_rdfs:subPropertyOf188" source="nid_http://purl.org/net/OCRe/OCRe.owl#OCRE900226" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3776,19 +3777,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-9a79318:15f818ce50c:-7fb0">
+      <node id="nid_-2af84773:16210103866:-7fac">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-9a79318:15f818ce50c:-7fb0</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-2af84773:16210103866:-7fac</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:equivalentClass190" source="nid_snap:DependentContinuant" target="nid_-9a79318:15f818ce50c:-7fb0">
+    <edge id="eid_owl:equivalentClass189" source="nid_snap:DependentContinuant" target="nid_-2af84773:16210103866:-7fac">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3811,7 +3812,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName191" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author7" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName190" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author7" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:YvonneHey">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3822,7 +3823,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of192" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of191" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:KimMLinton" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3833,7 +3834,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith193" source="nid_obo:CHEBI_33695" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
+    <edge id="eid_owl:disjointWith192" source="nid_obo:CHEBI_33695" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3844,7 +3845,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith194" source="nid_obo:CHEBI_33695" target="nid_obo:OBI_0100026">
+    <edge id="eid_owl:disjointWith193" source="nid_obo:CHEBI_33695" target="nid_obo:OBI_0100026">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3879,7 +3880,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName195" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies4" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName194" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies4" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3890,7 +3891,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of196" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
+    <edge id="eid_ro:part_of195" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:reagentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3901,7 +3902,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_obo:OBI_0000304197" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
+    <edge id="eid_obo:OBI_0000304196" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:EthylAlcohol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SigmaAldrich">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3912,7 +3913,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of198" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_ro:part_of197" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3935,7 +3936,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName199" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName198" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AnthonyJFreemont">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3958,7 +3959,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf200" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasFinalConcentration" target="nid_obo:BCGO_0000183">
+    <edge id="eid_rdfs:subPropertyOf199" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasFinalConcentration" target="nid_obo:BCGO_0000183">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3993,7 +3994,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:disjointWith201" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:DNAExtractionProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAExtractionProtocol">
+    <edge id="eid_owl:disjointWith200" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:DNAExtractionProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:RNAExtractionProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4004,7 +4005,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith202" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
+    <edge id="eid_owl:disjointWith201" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4015,7 +4016,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith203" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_owl:disjointWith202" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4026,7 +4027,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith204" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_owl:disjointWith203" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4037,7 +4038,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith205" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
+    <edge id="eid_owl:disjointWith204" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4048,7 +4049,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith206" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith205" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4059,7 +4060,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith207" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith206" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4070,7 +4071,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith208" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith207" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4081,7 +4082,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith209" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_owl:disjointWith208" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4092,7 +4093,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith210" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_owl:disjointWith209" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4103,7 +4104,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith211" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_owl:disjointWith210" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4114,7 +4115,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith212" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith211" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4125,7 +4126,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part213" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades">
+    <edge id="eid_ro:has_part212" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:HomogenizerBlades">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4148,7 +4149,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_ro:has_part214" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer">
+    <edge id="eid_ro:has_part213" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4159,7 +4160,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part215" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder">
+    <edge id="eid_ro:has_part214" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ScalpelHolder">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4170,7 +4171,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part216" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel">
+    <edge id="eid_ro:has_part215" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Scalpel">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4181,7 +4182,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:has_part217" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps">
+    <edge id="eid_ro:has_part216" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Forceps">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4192,7 +4193,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of218" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of217" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:SianDibben" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4215,7 +4216,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf219" source="nid_http://purl.org/net/OCRe/OCRe.owl#OCRE900225" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName">
+    <edge id="eid_rdfs:subPropertyOf218" source="nid_http://purl.org/net/OCRe/OCRe.owl#OCRE900225" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4238,7 +4239,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName220" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author6" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName219" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:author6" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:StuartDPepper">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4249,7 +4250,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of221" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
+    <edge id="eid_ro:part_of220" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:JohnARadford" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:authorList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4272,7 +4273,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName222" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName221" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentorsupplies3" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4283,7 +4284,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_ro:part_of223" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
+    <edge id="eid_ro:part_of222" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TissueStorageContainer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:equipmentList1">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4294,7 +4295,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith224" source="nid_obo:OBI_0000747" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
+    <edge id="eid_owl:disjointWith223" source="nid_obo:OBI_0000747" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4305,7 +4306,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:disjointWith225" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_owl:disjointWith224" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4328,7 +4329,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasLimitation226" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasLimitation225" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:LimitationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4351,7 +4352,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName227" source="nid_snap:MaterialEntity" target="nid_Thesaurus:C42614">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasName226" source="nid_snap:MaterialEntity" target="nid_Thesaurus:C42614">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4362,7 +4363,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasCatalogNumber228" source="nid_snap:MaterialEntity" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasCatalogNumber227" source="nid_snap:MaterialEntity" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:CatalogNumber">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4385,7 +4386,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_http://semanticscience.org/resource/SIO_000364229" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_:Author">
+    <edge id="eid_http://semanticscience.org/resource/SIO_000364228" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_:Author">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4408,7 +4409,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:validatedBy230" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:validatedBy229" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4419,7 +4420,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInitialConcentration231" source="nid_obo:CHEBI_33893" target="nid_Thesaurus:C85644">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInitialConcentration230" source="nid_obo:CHEBI_33893" target="nid_Thesaurus:C85644">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4430,7 +4431,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pav:hasVersion232" source="nid_obo:ERO_0000071" target="nid_obo:IAO_0000129">
+      <node id="nid_obo:IAO_0000030">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">obo:IAO_0000030</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_pav:hasVersion231" source="nid_obo:IAO_0000030" target="nid_obo:IAO_0000129">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4441,7 +4454,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://purl.org/net/OCRe/OCRe.owl#OCRE900225233" source="nid_:Author" target="nid_owl:Thing">
+    <edge id="eid_http://purl.org/net/OCRe/OCRe.owl#OCRE900225232" source="nid_:Author" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4452,7 +4465,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:adaptedFrom234" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:adaptedFrom233" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProvenanceOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4463,7 +4476,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_http://purl.org/net/OCRe/OCRe.owl#OCRE900226235" source="nid_:Author" target="nid_owl:Thing">
+    <edge id="eid_http://purl.org/net/OCRe/OCRe.owl#OCRE900226234" source="nid_:Author" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4474,7 +4487,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:modifiedBy236" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:modifiedBy235" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4485,7 +4498,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAdvantage237" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AdvantageOfTheProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAdvantage236" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AdvantageOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4508,7 +4521,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:publishedIn238" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Publication">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:publishedIn237" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Publication">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4519,7 +4532,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasIdentifier239" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasIdentifier238" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolIdentifier">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4530,7 +4543,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAnnealingTemperature240" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAnnealingTemperature239" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4553,7 +4566,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:locatedIn241" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Repository">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:locatedIn240" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Repository">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4564,7 +4577,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInstruction242" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasInstruction241" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ProtocolInstruction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4575,7 +4588,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPurpose243" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPurpose242" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PurposeOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4586,7 +4599,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAnnealingTime244" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAnnealingTime243" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4609,7 +4622,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthorIdentification245" source="nid_:Author" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AuthorIdentifier">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthorIdentification244" source="nid_:Author" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:AuthorIdentifier">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4620,7 +4633,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasOutcome246" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:OutcomeOfTheProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasOutcome245" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:OutcomeOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4631,7 +4644,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication247" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasApplication246" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ApplicationOfTheProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4642,7 +4655,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthor248" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_:Author">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAuthor247" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_:Author">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4653,7 +4666,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasTitle249" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasTitle248" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:TitleOfProtocol">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4664,7 +4677,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasFinalConcentration250" source="nid_obo:CHEBI_33893" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasFinalConcentration249" source="nid_obo:CHEBI_33893" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:FinalConcentration">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4675,7 +4688,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_pav:hasCurrentVersion251" source="nid_owl:Thing" target="nid_obo:IAO_0000129">
+    <edge id="eid_pav:hasCurrentVersion250" source="nid_owl:Thing" target="nid_obo:IAO_0000129">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4686,7 +4699,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:acceptedBy252" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Publication">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:acceptedBy251" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Publication">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4709,7 +4722,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_obo:BCGO_0000183253" source="nid_Thesaurus:C70830" target="nid_Thesaurus:C41185">
+    <edge id="eid_obo:BCGO_0000183252" source="nid_Thesaurus:C70830" target="nid_Thesaurus:C41185">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4720,7 +4733,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasSequence254" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasSequence253" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_sp^^http://www.w3.org/2001/XMLSchema#string:PrimerSequence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4731,7 +4744,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAlertMessage255" source="nid_owl:Thing" target="nid_Ontology1184060740:Class_121">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasAlertMessage254" source="nid_owl:Thing" target="nid_Ontology1184060740:Class_121">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4742,7 +4755,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs256" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasExperimentalInputs255" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:ExperimentalProtocol" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4753,7 +4766,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPrimerLength257" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
+    <edge id="eid_sp^^http://www.w3.org/2001/XMLSchema#string:hasPrimerLength256" source="nid_sp^^http://www.w3.org/2001/XMLSchema#string:Primer" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

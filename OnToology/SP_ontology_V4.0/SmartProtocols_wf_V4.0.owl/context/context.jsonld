@@ -427,6 +427,9 @@
     "BileAcidSaltReagent" : {
       "@id" : "http://purl.org/net/SMARTprotocol#BileAcidSaltReagent"
     },
+    "KitName" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#KitName"
+    },
     "CHEBI_33659" : {
       "@id" : "http://purl.obolibrary.org/obo/CHEBI_33659"
     },
@@ -730,6 +733,9 @@
     },
     "ProcedureDescription" : {
       "@id" : "http://purl.org/net/SMARTprotocol#ProcedureDescription"
+    },
+    "KitList" : {
+      "@id" : "http://purl.org/net/SMARTprotocol#KitList"
     },
     "AncientDNA" : {
       "@id" : "http://purl.org/net/SMARTprotocol#AncientDNA"
